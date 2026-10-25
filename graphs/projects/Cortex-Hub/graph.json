@@ -1,0 +1,423 @@
+{
+ "nodes": [
+  {
+   "id": "concept:LLM agents",
+   "label": "LLM agents",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "person:Goldy Pahal",
+   "label": "Goldy Pahal",
+   "type": "Person",
+   "props": {}
+  },
+  {
+   "id": "language:CSS",
+   "label": "CSS",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "tech:Prisma",
+   "label": "Prisma",
+   "type": "Technology",
+   "props": {
+    "category": "Database / storage"
+   }
+  },
+  {
+   "id": "lib:npm:@prisma/client",
+   "label": "@prisma/client",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 3,
+    "technology": "Prisma"
+   }
+  },
+  {
+   "id": "lib:npm:prisma",
+   "label": "prisma",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 3,
+    "technology": "Prisma"
+   }
+  },
+  {
+   "id": "concept:Authentication & access control",
+   "label": "Authentication & access control",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "project:Cortex-Hub",
+   "label": "Cortex-Hub",
+   "type": "Project",
+   "props": {
+    "title": "Cortex Hub // Enterprise AI Component Store & Customization Fabric",
+    "description": " Production-ready, deterministic AI engines with exact document byte-offset citations, hybrid vector retrieval, and sovereign VPC / air-gapped deployment.",
+    "url": "https://github.com/Goldypahal/Cortex-Hub",
+    "owner": "Goldypahal",
+    "status": "recent",
+    "commits": 3,
+    "files": 35,
+    "first_commit": "2026-09-16",
+    "last_commit": "2026-09-25",
+    "kind": "product"
+   }
+  },
+  {
+   "id": "language:JavaScript",
+   "label": "JavaScript",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "language:HTML",
+   "label": "HTML",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "language:Prisma",
+   "label": "Prisma",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "tech:CORS",
+   "label": "CORS",
+   "type": "Technology",
+   "props": {
+    "category": "Auth / security"
+   }
+  },
+  {
+   "id": "tech:Express",
+   "label": "Express",
+   "type": "Technology",
+   "props": {
+    "category": "Backend framework"
+   }
+  },
+  {
+   "id": "tech:dotenv",
+   "label": "dotenv",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "lib:npm:concurrently",
+   "label": "concurrently",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:cors",
+   "label": "cors",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 6,
+    "technology": "CORS"
+   }
+  },
+  {
+   "id": "lib:npm:dotenv",
+   "label": "dotenv",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 6,
+    "technology": "dotenv"
+   }
+  },
+  {
+   "id": "lib:npm:express",
+   "label": "express",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8,
+    "technology": "Express"
+   }
+  },
+  {
+   "id": "concept:Retrieval-Augmented Generation (RAG)",
+   "label": "Retrieval-Augmented Generation (RAG)",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:Vector / hybrid search",
+   "label": "Vector / hybrid search",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:Enterprise AI platform",
+   "label": "Enterprise AI platform",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:Audio / speech",
+   "label": "Audio / speech",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:Healthcare / diagnostics",
+   "label": "Healthcare / diagnostics",
+   "type": "Concept",
+   "props": {}
+  }
+ ],
+ "edges": [
+  {
+   "source": "lib:npm:@prisma/client",
+   "target": "tech:Prisma",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:prisma",
+   "target": "tech:Prisma",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "language:JavaScript",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 15,
+    "share": 0.577
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "language:CSS",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 9,
+    "share": 0.346
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "language:HTML",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 1,
+    "share": 0.038
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "language:Prisma",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 1,
+    "share": 0.038
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "tech:CORS",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "tech:Express",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "tech:Prisma",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "tech:dotenv",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:@prisma/client",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:concurrently",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:cors",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:cors",
+   "target": "tech:CORS",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:dotenv",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:dotenv",
+   "target": "tech:dotenv",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:express",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:express",
+   "target": "tech:Express",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:prisma",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "concept:Retrieval-Augmented Generation (RAG)",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "concept:Vector / hybrid search",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "concept:Enterprise AI platform",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "concept:LLM agents",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 2
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "concept:Audio / speech",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 2
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "concept:Authentication & access control",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 2
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "concept:Healthcare / diagnostics",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 2
+   }
+  },
+  {
+   "source": "person:Goldy Pahal",
+   "target": "project:Cortex-Hub",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 3
+   }
+  }
+ ]
+}

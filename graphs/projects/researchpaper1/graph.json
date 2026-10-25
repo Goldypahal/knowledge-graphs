@@ -1,0 +1,620 @@
+{
+ "nodes": [
+  {
+   "id": "language:Python",
+   "label": "Python",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "tech:pytest",
+   "label": "pytest",
+   "type": "Technology",
+   "props": {
+    "category": "Testing"
+   }
+  },
+  {
+   "id": "lib:pip:pytest",
+   "label": "pytest",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 12,
+    "technology": "pytest"
+   }
+  },
+  {
+   "id": "concept:LLM agents",
+   "label": "LLM agents",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "person:Goldy Pahal",
+   "label": "Goldy Pahal",
+   "type": "Person",
+   "props": {}
+  },
+  {
+   "id": "platform:Docker",
+   "label": "Docker",
+   "type": "Platform",
+   "props": {}
+  },
+  {
+   "id": "tech:NumPy",
+   "label": "NumPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:PyTorch",
+   "label": "PyTorch",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "lib:pip:numpy",
+   "label": "numpy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 8,
+    "technology": "NumPy"
+   }
+  },
+  {
+   "id": "tech:pandas",
+   "label": "pandas",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:Matplotlib",
+   "label": "Matplotlib",
+   "type": "Technology",
+   "props": {
+    "category": "Charts / visualisation"
+   }
+  },
+  {
+   "id": "tech:OpenAI API",
+   "label": "OpenAI API",
+   "type": "Technology",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "tech:SciPy",
+   "label": "SciPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "lib:pip:scipy",
+   "label": "scipy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 5,
+    "technology": "SciPy"
+   }
+  },
+  {
+   "id": "service:OpenRouter",
+   "label": "OpenRouter",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "concept:Research paper / benchmark",
+   "label": "Research paper / benchmark",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:LLM evaluation",
+   "label": "LLM evaluation",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "lib:pip:matplotlib",
+   "label": "matplotlib",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 5,
+    "technology": "Matplotlib"
+   }
+  },
+  {
+   "id": "lib:pip:torch",
+   "label": "torch",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 4,
+    "technology": "PyTorch"
+   }
+  },
+  {
+   "id": "concept:Transformers / deep learning",
+   "label": "Transformers / deep learning",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "project:RAGS",
+   "label": "RAGS",
+   "type": "Project",
+   "props": {
+    "title": "🚀 RAGS: Retrieval-Augmented Generation Research & Production Framework",
+    "description": "A research framework and benchmarking suite for Retrieval-Augmented Generation (RAG) systems. This project explores, implements, and empirically evaluates 9 different RAG architectures—combining classical computer science data structures (HashMaps, Tries, Inverted Indexes, Knowledge Graphs) with dense vector representations and adaptive query routing.",
+    "url": "https://github.com/Goldypahal/RAGS",
+    "owner": "Goldypahal",
+    "status": "active",
+    "commits": 8,
+    "files": 154,
+    "first_commit": "2026-10-05",
+    "last_commit": "2026-10-06",
+    "kind": "research"
+   }
+  },
+  {
+   "id": "tech:Hugging Face Transformers",
+   "label": "Hugging Face Transformers",
+   "type": "Technology",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "project:researchpaper1",
+   "label": "researchpaper1",
+   "type": "Project",
+   "props": {
+    "title": "The Search Efficiency Gap: Measuring When Semantic LLM Reasoning Actually Improves (or Hinders) Autonomous Model Optimization",
+    "description": "This repository contains the experimental infrastructure, mathematically formalized benchmarks, immutable evaluator, and statistical analysis pipeline for Research Paper 1.",
+    "url": "https://github.com/Goldypahal/researchpaper1",
+    "owner": "Goldypahal",
+    "status": "active",
+    "commits": 24,
+    "files": 346,
+    "first_commit": "2026-09-23",
+    "last_commit": "2026-10-25",
+    "kind": "research"
+   }
+  },
+  {
+   "id": "component:researchpaper1/reproducibility",
+   "label": "reproducibility",
+   "type": "Component",
+   "props": {
+    "project": "researchpaper1",
+    "role": "ml",
+    "ecosystems": [
+     "pip"
+    ]
+   }
+  },
+  {
+   "id": "tech:Anthropic API",
+   "label": "Anthropic API",
+   "type": "Technology",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "tech:Optuna",
+   "label": "Optuna",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "lib:pip:optuna",
+   "label": "optuna",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1,
+    "technology": "Optuna"
+   }
+  },
+  {
+   "id": "platform:Kaggle",
+   "label": "Kaggle",
+   "type": "Platform",
+   "props": {}
+  },
+  {
+   "id": "project:researchpaper2-",
+   "label": "researchpaper2-",
+   "type": "Project",
+   "props": {
+    "title": "EVADE — Measuring, Explaining, and Mitigating Evaluation-Aware Behavioral Shifts in LLMs",
+    "description": " Paper: EVADE: Measuring, Explaining, and Mitigating Evaluation-Aware Behavioral Shifts in Large Language Models",
+    "url": "https://github.com/Goldypahal/researchpaper2-",
+    "owner": "Goldypahal",
+    "status": "active",
+    "commits": 19,
+    "files": 130,
+    "first_commit": "2026-09-23",
+    "last_commit": "2026-10-06",
+    "kind": "research"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "source": "lib:pip:pytest",
+   "target": "tech:pytest",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:pip:numpy",
+   "target": "tech:NumPy",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:pip:scipy",
+   "target": "tech:SciPy",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:pip:matplotlib",
+   "target": "tech:Matplotlib",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:pip:torch",
+   "target": "tech:PyTorch",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "language:Python",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 50,
+    "share": 0.98
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "component:researchpaper1/reproducibility",
+   "type": "HAS_COMPONENT",
+   "props": {}
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "tech:Anthropic API",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "tech:Hugging Face Transformers",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "tech:Matplotlib",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports",
+     "reproducibility"
+    ]
+   }
+  },
+  {
+   "source": "component:researchpaper1/reproducibility",
+   "target": "tech:Matplotlib",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "tech:NumPy",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports",
+     "reproducibility"
+    ]
+   }
+  },
+  {
+   "source": "component:researchpaper1/reproducibility",
+   "target": "tech:NumPy",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "tech:OpenAI API",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "tech:Optuna",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports",
+     "reproducibility"
+    ]
+   }
+  },
+  {
+   "source": "component:researchpaper1/reproducibility",
+   "target": "tech:Optuna",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "tech:PyTorch",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports",
+     "reproducibility"
+    ]
+   }
+  },
+  {
+   "source": "component:researchpaper1/reproducibility",
+   "target": "tech:PyTorch",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "tech:SciPy",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports",
+     "reproducibility"
+    ]
+   }
+  },
+  {
+   "source": "component:researchpaper1/reproducibility",
+   "target": "tech:SciPy",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "tech:pandas",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "tech:pytest",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports",
+     "reproducibility"
+    ]
+   }
+  },
+  {
+   "source": "component:researchpaper1/reproducibility",
+   "target": "tech:pytest",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "lib:pip:matplotlib",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "reproducibility"
+    ]
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "lib:pip:numpy",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "reproducibility"
+    ]
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "lib:pip:optuna",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "reproducibility"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:optuna",
+   "target": "tech:Optuna",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "lib:pip:pytest",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "reproducibility"
+    ]
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "lib:pip:scipy",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "reproducibility"
+    ]
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "lib:pip:torch",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "reproducibility"
+    ]
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "service:OpenRouter",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "code"
+    ]
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "platform:Docker",
+   "type": "DEPLOYS_WITH",
+   "props": {}
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "platform:Kaggle",
+   "type": "DEPLOYS_WITH",
+   "props": {}
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "concept:Research paper / benchmark",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "concept:LLM evaluation",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "concept:LLM agents",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "concept:Transformers / deep learning",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 2
+   }
+  },
+  {
+   "source": "person:Goldy Pahal",
+   "target": "project:researchpaper1",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 24
+   }
+  },
+  {
+   "source": "project:RAGS",
+   "target": "project:researchpaper1",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.44,
+    "shared": [
+     "Hugging Face Transformers",
+     "Matplotlib",
+     "NumPy",
+     "PyTorch",
+     "SciPy",
+     "pandas",
+     "pytest"
+    ]
+   }
+  },
+  {
+   "source": "project:researchpaper1",
+   "target": "project:researchpaper2-",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.43,
+    "shared": [
+     "Anthropic API",
+     "Hugging Face Transformers",
+     "Matplotlib",
+     "NumPy",
+     "OpenAI API",
+     "PyTorch",
+     "SciPy",
+     "pandas",
+     "pytest"
+    ]
+   }
+  }
+ ]
+}

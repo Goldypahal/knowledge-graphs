@@ -1,0 +1,267 @@
+{
+ "nodes": [
+  {
+   "id": "person:Goldy Pahal",
+   "label": "Goldy Pahal",
+   "type": "Person",
+   "props": {}
+  },
+  {
+   "id": "language:CSS",
+   "label": "CSS",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "tech:GSAP",
+   "label": "GSAP",
+   "type": "Technology",
+   "props": {
+    "category": "UI / styling"
+   }
+  },
+  {
+   "id": "tech:Three.js",
+   "label": "Three.js",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "lib:npm:gsap",
+   "label": "gsap",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 3,
+    "technology": "GSAP"
+   }
+  },
+  {
+   "id": "lib:npm:three",
+   "label": "three",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 3,
+    "technology": "Three.js"
+   }
+  },
+  {
+   "id": "language:JavaScript",
+   "label": "JavaScript",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "language:HTML",
+   "label": "HTML",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "tech:Vite",
+   "label": "Vite",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "lib:npm:vite",
+   "label": "vite",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 12,
+    "technology": "Vite"
+   }
+  },
+  {
+   "id": "project:Portfolio",
+   "label": "Portfolio",
+   "type": "Project",
+   "props": {
+    "title": "Portfolio",
+    "description": "Personal portfolio site (AI/ML engineer, developer, researcher) with an animated sky-to-space scroll engine and preloader.",
+    "url": "https://github.com/Goldypahal/Portfolio",
+    "owner": "Goldypahal",
+    "status": "recent",
+    "commits": 2,
+    "files": 18,
+    "first_commit": "2026-08-19",
+    "last_commit": "2026-08-19",
+    "kind": "personal"
+   }
+  },
+  {
+   "id": "lib:npm:lenis",
+   "label": "lenis",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:lucide",
+   "label": "lucide",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "concept:Portfolio / personal site",
+   "label": "Portfolio / personal site",
+   "type": "Concept",
+   "props": {}
+  }
+ ],
+ "edges": [
+  {
+   "source": "lib:npm:gsap",
+   "target": "tech:GSAP",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:three",
+   "target": "tech:Three.js",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:vite",
+   "target": "tech:Vite",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:Portfolio",
+   "target": "language:JavaScript",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 10,
+    "share": 0.833
+   }
+  },
+  {
+   "source": "project:Portfolio",
+   "target": "language:HTML",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 1,
+    "share": 0.083
+   }
+  },
+  {
+   "source": "project:Portfolio",
+   "target": "language:CSS",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 1,
+    "share": 0.083
+   }
+  },
+  {
+   "source": "project:Portfolio",
+   "target": "tech:GSAP",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Portfolio",
+   "target": "tech:Three.js",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Portfolio",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Portfolio",
+   "target": "lib:npm:gsap",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Portfolio",
+   "target": "lib:npm:lenis",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Portfolio",
+   "target": "lib:npm:lucide",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Portfolio",
+   "target": "lib:npm:three",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Portfolio",
+   "target": "lib:npm:vite",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Portfolio",
+   "target": "concept:Portfolio / personal site",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "person:Goldy Pahal",
+   "target": "project:Portfolio",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 2
+   }
+  }
+ ]
+}

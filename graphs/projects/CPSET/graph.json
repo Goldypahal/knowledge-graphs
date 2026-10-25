@@ -1,0 +1,1051 @@
+{
+ "nodes": [
+  {
+   "id": "person:Goldy Pahal",
+   "label": "Goldy Pahal",
+   "type": "Person",
+   "props": {}
+  },
+  {
+   "id": "project:CPSET",
+   "label": "CPSET",
+   "type": "Project",
+   "props": {
+    "title": "CPSET",
+    "description": "Web portal and admin platform for the Centre for Privacy and Security in Emerging Technologies (Chandigarh University), with a public site and an admin console in one Next.js codebase.",
+    "url": "https://github.com/Pathi-AmanPal/CPSET",
+    "owner": "Pathi-AmanPal",
+    "status": "recent",
+    "commits": 103,
+    "files": 141,
+    "first_commit": "2026-08-08",
+    "last_commit": "2026-09-12",
+    "kind": "product"
+   }
+  },
+  {
+   "id": "language:TypeScript",
+   "label": "TypeScript",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "language:CSS",
+   "label": "CSS",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "tech:ESLint",
+   "label": "ESLint",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "tech:Framer Motion",
+   "label": "Framer Motion",
+   "type": "Technology",
+   "props": {
+    "category": "UI / styling"
+   }
+  },
+  {
+   "id": "tech:GSAP",
+   "label": "GSAP",
+   "type": "Technology",
+   "props": {
+    "category": "UI / styling"
+   }
+  },
+  {
+   "id": "tech:Lucide icons",
+   "label": "Lucide icons",
+   "type": "Technology",
+   "props": {
+    "category": "UI / styling"
+   }
+  },
+  {
+   "id": "tech:Next.js",
+   "label": "Next.js",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "tech:Prisma",
+   "label": "Prisma",
+   "type": "Technology",
+   "props": {
+    "category": "Database / storage"
+   }
+  },
+  {
+   "id": "tech:React",
+   "label": "React",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "tech:Tailwind CSS",
+   "label": "Tailwind CSS",
+   "type": "Technology",
+   "props": {
+    "category": "UI / styling"
+   }
+  },
+  {
+   "id": "tech:Three.js",
+   "label": "Three.js",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "tech:TypeScript",
+   "label": "TypeScript",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "tech:Vitest",
+   "label": "Vitest",
+   "type": "Technology",
+   "props": {
+    "category": "Testing"
+   }
+  },
+  {
+   "id": "tech:Zod",
+   "label": "Zod",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "lib:npm:@prisma/client",
+   "label": "@prisma/client",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 3,
+    "technology": "Prisma"
+   }
+  },
+  {
+   "id": "lib:npm:@react-three/drei",
+   "label": "@react-three/drei",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 2
+   }
+  },
+  {
+   "id": "lib:npm:@react-three/fiber",
+   "label": "@react-three/fiber",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 2,
+    "technology": "Three.js"
+   }
+  },
+  {
+   "id": "lib:npm:@types/node",
+   "label": "@types/node",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 10
+   }
+  },
+  {
+   "id": "lib:npm:@types/react",
+   "label": "@types/react",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 13
+   }
+  },
+  {
+   "id": "lib:npm:@types/react-dom",
+   "label": "@types/react-dom",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 12
+   }
+  },
+  {
+   "id": "lib:npm:@types/three",
+   "label": "@types/three",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 2
+   }
+  },
+  {
+   "id": "lib:npm:@vercel/blob",
+   "label": "@vercel/blob",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:argon2",
+   "label": "argon2",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 2
+   }
+  },
+  {
+   "id": "lib:npm:autoprefixer",
+   "label": "autoprefixer",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7
+   }
+  },
+  {
+   "id": "lib:npm:eslint",
+   "label": "eslint",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 9,
+    "technology": "ESLint"
+   }
+  },
+  {
+   "id": "lib:npm:eslint-config-next",
+   "label": "eslint-config-next",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 2
+   }
+  },
+  {
+   "id": "lib:npm:framer-motion",
+   "label": "framer-motion",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7,
+    "technology": "Framer Motion"
+   }
+  },
+  {
+   "id": "lib:npm:gsap",
+   "label": "gsap",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 3,
+    "technology": "GSAP"
+   }
+  },
+  {
+   "id": "lib:npm:lucide-react",
+   "label": "lucide-react",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 11,
+    "technology": "Lucide icons"
+   }
+  },
+  {
+   "id": "lib:npm:next",
+   "label": "next",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 2,
+    "technology": "Next.js"
+   }
+  },
+  {
+   "id": "lib:npm:otplib",
+   "label": "otplib",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:postcss",
+   "label": "postcss",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7
+   }
+  },
+  {
+   "id": "lib:npm:prisma",
+   "label": "prisma",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 3,
+    "technology": "Prisma"
+   }
+  },
+  {
+   "id": "lib:npm:react",
+   "label": "react",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 14,
+    "technology": "React"
+   }
+  },
+  {
+   "id": "lib:npm:react-dom",
+   "label": "react-dom",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 13
+   }
+  },
+  {
+   "id": "lib:npm:server-only",
+   "label": "server-only",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:sharp",
+   "label": "sharp",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:tailwindcss",
+   "label": "tailwindcss",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 10,
+    "technology": "Tailwind CSS"
+   }
+  },
+  {
+   "id": "lib:npm:three",
+   "label": "three",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 3,
+    "technology": "Three.js"
+   }
+  },
+  {
+   "id": "lib:npm:typescript",
+   "label": "typescript",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 11,
+    "technology": "TypeScript"
+   }
+  },
+  {
+   "id": "lib:npm:vitest",
+   "label": "vitest",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 4,
+    "technology": "Vitest"
+   }
+  },
+  {
+   "id": "lib:npm:zod",
+   "label": "zod",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 6,
+    "technology": "Zod"
+   }
+  },
+  {
+   "id": "concept:Cybersecurity",
+   "label": "Cybersecurity",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:Education / ed-tech",
+   "label": "Education / ed-tech",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:Authentication & access control",
+   "label": "Authentication & access control",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "person:Pathi-AmanPal",
+   "label": "Pathi-AmanPal",
+   "type": "Person",
+   "props": {}
+  },
+  {
+   "id": "person:Upkirat1703T",
+   "label": "Upkirat1703T",
+   "type": "Person",
+   "props": {}
+  },
+  {
+   "id": "project:EV-optimal-charging-planner-for-long-routes",
+   "label": "EV-optimal-charging-planner-for-long-routes",
+   "type": "Project",
+   "props": {
+    "title": "EV-optimal-charging-planner-for-long-routes",
+    "description": "Planner for long EV trips that picks optimal charging stops, with a route planner, station ranking, grid optimiser and a physics-based ML energy simulator.",
+    "url": "https://github.com/Goldypahal/EV-optimal-charging-planner-for-long-routes",
+    "owner": "Goldypahal",
+    "status": "recent",
+    "commits": 2,
+    "files": 266,
+    "first_commit": "2026-05-23",
+    "last_commit": "2026-09-09",
+    "kind": "product"
+   }
+  },
+  {
+   "id": "project:Vatica",
+   "label": "Vatica",
+   "type": "Project",
+   "props": {
+    "title": "Vatica",
+    "description": "Vatica, an online plant shop with product listings, cart state and Firebase auth.",
+    "url": "https://github.com/Goldypahal/Vatica",
+    "owner": "Goldypahal",
+    "status": "recent",
+    "commits": 1,
+    "files": 27,
+    "first_commit": "2026-08-16",
+    "last_commit": "2026-08-16",
+    "kind": "product"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "source": "project:CPSET",
+   "target": "language:TypeScript",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 92,
+    "share": 0.939
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "language:CSS",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 5,
+    "share": 0.051
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "tech:ESLint",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "tech:Framer Motion",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "tech:GSAP",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "tech:Lucide icons",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "tech:Next.js",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "tech:Prisma",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "tech:Tailwind CSS",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "tech:Three.js",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "tech:TypeScript",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "tech:Vitest",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "tech:Zod",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:@prisma/client",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:@prisma/client",
+   "target": "tech:Prisma",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:@react-three/drei",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:@react-three/fiber",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:@react-three/fiber",
+   "target": "tech:Three.js",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:@types/node",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:@types/react",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:@types/react-dom",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:@types/three",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:@vercel/blob",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:argon2",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:autoprefixer",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:eslint",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:eslint",
+   "target": "tech:ESLint",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:eslint-config-next",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:framer-motion",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:framer-motion",
+   "target": "tech:Framer Motion",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:gsap",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:gsap",
+   "target": "tech:GSAP",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:lucide-react",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:lucide-react",
+   "target": "tech:Lucide icons",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:next",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:next",
+   "target": "tech:Next.js",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:otplib",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:postcss",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:prisma",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:prisma",
+   "target": "tech:Prisma",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:react",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:react",
+   "target": "tech:React",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:react-dom",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:server-only",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:sharp",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:tailwindcss",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:tailwindcss",
+   "target": "tech:Tailwind CSS",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:three",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:three",
+   "target": "tech:Three.js",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:typescript",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:typescript",
+   "target": "tech:TypeScript",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:vitest",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:vitest",
+   "target": "tech:Vitest",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CPSET",
+   "target": "lib:npm:zod",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:zod",
+   "target": "tech:Zod",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CPSET",
+   "target": "concept:Cybersecurity",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "concept:Education / ed-tech",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "concept:Authentication & access control",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 5
+   }
+  },
+  {
+   "source": "person:Pathi-AmanPal",
+   "target": "project:CPSET",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 94
+   }
+  },
+  {
+   "source": "person:Goldy Pahal",
+   "target": "project:CPSET",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 6
+   }
+  },
+  {
+   "source": "person:Upkirat1703T",
+   "target": "project:CPSET",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 3
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "project:EV-optimal-charging-planner-for-long-routes",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.38,
+    "shared": [
+     "ESLint",
+     "Lucide icons",
+     "React",
+     "Tailwind CSS",
+     "TypeScript"
+    ]
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "project:Vatica",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.38,
+    "shared": [
+     "ESLint",
+     "Framer Motion",
+     "Lucide icons",
+     "React",
+     "Tailwind CSS",
+     "TypeScript"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,434 @@
+{
+ "nodes": [
+  {
+   "id": "project:CICD",
+   "label": "CICD",
+   "type": "Project",
+   "props": {
+    "title": "GitFix-Agent 🤖🛠️",
+    "description": "GitFix-Agent, an autonomous AI maintenance agent that detects regressions introduced by git commits, finds the root cause, generates and verifies a patch, and commits the fix.",
+    "url": "https://github.com/Goldypahal/CICD",
+    "owner": "Goldypahal",
+    "status": "active",
+    "commits": 4,
+    "files": 55,
+    "first_commit": "2026-09-06",
+    "last_commit": "2026-10-16",
+    "kind": "product"
+   }
+  },
+  {
+   "id": "language:Python",
+   "label": "Python",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "tech:GitPython",
+   "label": "GitPython",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "tech:Google Gemini",
+   "label": "Google Gemini",
+   "type": "Technology",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "tech:Pydantic",
+   "label": "Pydantic",
+   "type": "Technology",
+   "props": {
+    "category": "Backend framework"
+   }
+  },
+  {
+   "id": "tech:Rich (CLI)",
+   "label": "Rich (CLI)",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "tech:Typer / Click",
+   "label": "Typer / Click",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "tech:pytest",
+   "label": "pytest",
+   "type": "Technology",
+   "props": {
+    "category": "Testing"
+   }
+  },
+  {
+   "id": "lib:pip:click",
+   "label": "click",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 2,
+    "technology": "Typer / Click"
+   }
+  },
+  {
+   "id": "lib:pip:gitfix",
+   "label": "gitfix",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:pip:gitpython",
+   "label": "gitpython",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1,
+    "technology": "GitPython"
+   }
+  },
+  {
+   "id": "lib:pip:google-genai",
+   "label": "google-genai",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1,
+    "technology": "Google Gemini"
+   }
+  },
+  {
+   "id": "lib:pip:pydantic",
+   "label": "pydantic",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 11,
+    "technology": "Pydantic"
+   }
+  },
+  {
+   "id": "lib:pip:pytest",
+   "label": "pytest",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 12,
+    "technology": "pytest"
+   }
+  },
+  {
+   "id": "lib:pip:pytest-cov",
+   "label": "pytest-cov",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 2
+   }
+  },
+  {
+   "id": "lib:pip:pyyaml",
+   "label": "pyyaml",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 4
+   }
+  },
+  {
+   "id": "lib:pip:rich",
+   "label": "rich",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 3,
+    "technology": "Rich (CLI)"
+   }
+  },
+  {
+   "id": "platform:GitHub Actions",
+   "label": "GitHub Actions",
+   "type": "Platform",
+   "props": {}
+  },
+  {
+   "id": "concept:Automated code repair",
+   "label": "Automated code repair",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:LLM agents",
+   "label": "LLM agents",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:CI/CD & DevOps",
+   "label": "CI/CD & DevOps",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "person:Goldy Pahal",
+   "label": "Goldy Pahal",
+   "type": "Person",
+   "props": {}
+  }
+ ],
+ "edges": [
+  {
+   "source": "project:CICD",
+   "target": "language:Python",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 50,
+    "share": 1.0
+   }
+  },
+  {
+   "source": "project:CICD",
+   "target": "tech:GitPython",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CICD",
+   "target": "tech:Google Gemini",
+   "type": "USES",
+   "props": {
+    "via": [
+     ".",
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:CICD",
+   "target": "tech:Pydantic",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CICD",
+   "target": "tech:Rich (CLI)",
+   "type": "USES",
+   "props": {
+    "via": [
+     ".",
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:CICD",
+   "target": "tech:Typer / Click",
+   "type": "USES",
+   "props": {
+    "via": [
+     ".",
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:CICD",
+   "target": "tech:pytest",
+   "type": "USES",
+   "props": {
+    "via": [
+     ".",
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:CICD",
+   "target": "lib:pip:click",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:click",
+   "target": "tech:Typer / Click",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CICD",
+   "target": "lib:pip:gitfix",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CICD",
+   "target": "lib:pip:gitpython",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:gitpython",
+   "target": "tech:GitPython",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CICD",
+   "target": "lib:pip:google-genai",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:google-genai",
+   "target": "tech:Google Gemini",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CICD",
+   "target": "lib:pip:pydantic",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:pydantic",
+   "target": "tech:Pydantic",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CICD",
+   "target": "lib:pip:pytest",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:pytest",
+   "target": "tech:pytest",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CICD",
+   "target": "lib:pip:pytest-cov",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CICD",
+   "target": "lib:pip:pyyaml",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:CICD",
+   "target": "lib:pip:rich",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:rich",
+   "target": "tech:Rich (CLI)",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:CICD",
+   "target": "platform:GitHub Actions",
+   "type": "AUTOMATED_BY",
+   "props": {}
+  },
+  {
+   "source": "project:CICD",
+   "target": "concept:Automated code repair",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:CICD",
+   "target": "concept:LLM agents",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:CICD",
+   "target": "concept:CI/CD & DevOps",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "person:Goldy Pahal",
+   "target": "project:CICD",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 4
+   }
+  }
+ ]
+}

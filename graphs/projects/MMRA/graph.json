@@ -1,0 +1,747 @@
+{
+ "nodes": [
+  {
+   "id": "language:Python",
+   "label": "Python",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "tech:Rich (CLI)",
+   "label": "Rich (CLI)",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "lib:pip:rich",
+   "label": "rich",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 3,
+    "technology": "Rich (CLI)"
+   }
+  },
+  {
+   "id": "concept:LLM agents",
+   "label": "LLM agents",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "person:Goldy Pahal",
+   "label": "Goldy Pahal",
+   "type": "Person",
+   "props": {}
+  },
+  {
+   "id": "tech:dotenv",
+   "label": "dotenv",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "tech:SQLite",
+   "label": "SQLite",
+   "type": "Technology",
+   "props": {
+    "category": "Database / storage"
+   }
+  },
+  {
+   "id": "lib:pip:python-dotenv",
+   "label": "python-dotenv",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 4,
+    "technology": "dotenv"
+   }
+  },
+  {
+   "id": "service:OpenAI API",
+   "label": "OpenAI API",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "tech:NumPy",
+   "label": "NumPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:Requests / HTTPX",
+   "label": "Requests / HTTPX",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "lib:pip:numpy",
+   "label": "numpy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 8,
+    "technology": "NumPy"
+   }
+  },
+  {
+   "id": "tech:pandas",
+   "label": "pandas",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "project:MMRA",
+   "label": "MMRA",
+   "type": "Project",
+   "props": {
+    "title": "Multi-Agent vs Single-Model Research Framework",
+    "description": "Research study comparing multi-agent and single-model LLM reasoning across 4 conditions, 7 task categories and 140 tasks, using OpenRouter models.",
+    "url": "https://github.com/Goldypahal/MMRA",
+    "owner": "Goldypahal",
+    "status": "recent",
+    "commits": 26,
+    "files": 44,
+    "first_commit": "2026-08-16",
+    "last_commit": "2026-09-01",
+    "kind": "research"
+   }
+  },
+  {
+   "id": "tech:Matplotlib",
+   "label": "Matplotlib",
+   "type": "Technology",
+   "props": {
+    "category": "Charts / visualisation"
+   }
+  },
+  {
+   "id": "tech:OpenAI API",
+   "label": "OpenAI API",
+   "type": "Technology",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "tech:SciPy",
+   "label": "SciPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:Seaborn",
+   "label": "Seaborn",
+   "type": "Technology",
+   "props": {
+    "category": "Charts / visualisation"
+   }
+  },
+  {
+   "id": "tech:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:statsmodels",
+   "label": "statsmodels",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "lib:pip:aiohttp",
+   "label": "aiohttp",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 2,
+    "technology": "Requests / HTTPX"
+   }
+  },
+  {
+   "id": "lib:pip:openai",
+   "label": "openai",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 2,
+    "technology": "OpenAI API"
+   }
+  },
+  {
+   "id": "lib:pip:pandas",
+   "label": "pandas",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 7,
+    "technology": "pandas"
+   }
+  },
+  {
+   "id": "lib:pip:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 4,
+    "technology": "scikit-learn"
+   }
+  },
+  {
+   "id": "lib:pip:scipy",
+   "label": "scipy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 5,
+    "technology": "SciPy"
+   }
+  },
+  {
+   "id": "lib:pip:statsmodels",
+   "label": "statsmodels",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 2,
+    "technology": "statsmodels"
+   }
+  },
+  {
+   "id": "lib:pip:tabulate",
+   "label": "tabulate",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:pip:tenacity",
+   "label": "tenacity",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 4
+   }
+  },
+  {
+   "id": "service:Google Gemini",
+   "label": "Google Gemini",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "service:OpenRouter",
+   "label": "OpenRouter",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "concept:Multi-agent systems",
+   "label": "Multi-agent systems",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:Research paper / benchmark",
+   "label": "Research paper / benchmark",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:LLM evaluation",
+   "label": "LLM evaluation",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:Career guidance & skills",
+   "label": "Career guidance & skills",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "project:Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting",
+   "label": "Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting",
+   "type": "Project",
+   "props": {
+    "title": "MDSTFT: Multi-Dimensional Spatio-Temporal Fusion Transformer for Intermittent Demand Forecasting",
+    "description": "This project introduces a sophisticated deep learning framework designed to solve one of the most challenging problems in supply chain management: Intermittent Demand Forecasting. Standard models often struggle with \"lumpy\" or \"sparse\" data where sales are zero for long periods followed by sudden spikes.",
+    "url": "https://github.com/Goldypahal/Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting",
+    "owner": "Goldypahal",
+    "status": "dormant",
+    "commits": 3,
+    "files": 32,
+    "first_commit": "2026-04-29",
+    "last_commit": "2026-04-29",
+    "kind": "research"
+   }
+  },
+  {
+   "id": "project:researchpaper2-",
+   "label": "researchpaper2-",
+   "type": "Project",
+   "props": {
+    "title": "EVADE — Measuring, Explaining, and Mitigating Evaluation-Aware Behavioral Shifts in LLMs",
+    "description": " Paper: EVADE: Measuring, Explaining, and Mitigating Evaluation-Aware Behavioral Shifts in Large Language Models",
+    "url": "https://github.com/Goldypahal/researchpaper2-",
+    "owner": "Goldypahal",
+    "status": "active",
+    "commits": 19,
+    "files": 130,
+    "first_commit": "2026-09-23",
+    "last_commit": "2026-10-06",
+    "kind": "research"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "source": "lib:pip:rich",
+   "target": "tech:Rich (CLI)",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:pip:python-dotenv",
+   "target": "tech:dotenv",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:pip:numpy",
+   "target": "tech:NumPy",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:MMRA",
+   "target": "language:Python",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 22,
+    "share": 1.0
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "tech:Matplotlib",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "tech:NumPy",
+   "type": "USES",
+   "props": {
+    "via": [
+     ".",
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "tech:OpenAI API",
+   "type": "USES",
+   "props": {
+    "via": [
+     ".",
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "tech:Requests / HTTPX",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "tech:Rich (CLI)",
+   "type": "USES",
+   "props": {
+    "via": [
+     ".",
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "tech:SQLite",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "tech:SciPy",
+   "type": "USES",
+   "props": {
+    "via": [
+     ".",
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "tech:Seaborn",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "tech:dotenv",
+   "type": "USES",
+   "props": {
+    "via": [
+     ".",
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "tech:pandas",
+   "type": "USES",
+   "props": {
+    "via": [
+     ".",
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "tech:scikit-learn",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "tech:statsmodels",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "lib:pip:aiohttp",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:aiohttp",
+   "target": "tech:Requests / HTTPX",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:MMRA",
+   "target": "lib:pip:numpy",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "lib:pip:openai",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:openai",
+   "target": "tech:OpenAI API",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:MMRA",
+   "target": "lib:pip:pandas",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:pandas",
+   "target": "tech:pandas",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:MMRA",
+   "target": "lib:pip:python-dotenv",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "lib:pip:rich",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "lib:pip:scikit-learn",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:scikit-learn",
+   "target": "tech:scikit-learn",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:MMRA",
+   "target": "lib:pip:scipy",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:scipy",
+   "target": "tech:SciPy",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:MMRA",
+   "target": "lib:pip:statsmodels",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:statsmodels",
+   "target": "tech:statsmodels",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:MMRA",
+   "target": "lib:pip:tabulate",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "lib:pip:tenacity",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "service:Google Gemini",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "service:OpenAI API",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "service:OpenRouter",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "code",
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "concept:Multi-agent systems",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "concept:Research paper / benchmark",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "concept:LLM evaluation",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "concept:Career guidance & skills",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 3
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "concept:LLM agents",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 2
+   }
+  },
+  {
+   "source": "person:Goldy Pahal",
+   "target": "project:MMRA",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 26
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "project:researchpaper2-",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.45,
+    "shared": [
+     "Matplotlib",
+     "NumPy",
+     "OpenAI API",
+     "Rich (CLI)",
+     "SciPy",
+     "Seaborn",
+     "dotenv",
+     "pandas",
+     "scikit-learn",
+     "statsmodels"
+    ]
+   }
+  },
+  {
+   "source": "project:MMRA",
+   "target": "project:Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.41,
+    "shared": [
+     "Matplotlib",
+     "NumPy",
+     "SciPy",
+     "Seaborn",
+     "pandas",
+     "scikit-learn",
+     "statsmodels"
+    ]
+   }
+  }
+ ]
+}

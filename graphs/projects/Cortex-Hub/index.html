@@ -1,0 +1,305 @@
+<title>Cortex-Hub Graph</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: control rail | graph canvas | inspector. Stacks to one column on phones. */
+:root {
+  --bg: #f3f5f4; --panel: #ffffff; --ink: #18211f; --muted: #5c6b67; --line: #d6dedb;
+  --accent: #0f766e; --accent-ink: #ffffff; --dim: rgba(24,33,31,.12);
+  --c-project: #0f766e; --c-component: #5b7f95; --c-tech: #c2410c; --c-library: #9aa7a3;
+  --c-language: #7c3aed; --c-service: #b4237a; --c-platform: #4d7c0f; --c-concept: #b7791f; --c-person: #2563eb;
+  --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1514; --panel: #161e1c; --ink: #e4ecea; --muted: #93a39f; --line: #2a3634;
+  --accent: #2dd4bf; --accent-ink: #062b27; --dim: rgba(228,236,234,.10);
+  --c-project: #2dd4bf; --c-component: #8fb3c9; --c-tech: #fb923c; --c-library: #6b7a76;
+  --c-language: #a78bfa; --c-service: #f472b6; --c-platform: #a3e635; --c-concept: #fbbf24; --c-person: #60a5fa;
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f1514; --panel: #161e1c; --ink: #e4ecea; --muted: #93a39f; --line: #2a3634;
+  --accent: #2dd4bf; --accent-ink: #062b27; --dim: rgba(228,236,234,.10);
+  --c-project: #2dd4bf; --c-component: #8fb3c9; --c-tech: #fb923c; --c-library: #6b7a76;
+  --c-language: #a78bfa; --c-service: #f472b6; --c-platform: #a3e635; --c-concept: #fbbf24; --c-person: #60a5fa;
+  color-scheme: dark }
+* { box-sizing: border-box }
+html, body { height: 100% }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--f-body); margin: 0 }
+.app { height: 100%; display: grid; grid-template-columns: 260px minmax(0,1fr) 320px; grid-template-rows: auto minmax(0,1fr); }
+header { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px;
+  padding-block: 14px 12px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  border-bottom: 1px solid var(--line); background: var(--panel) }
+h1 { font: 700 22px/1.15 var(--f-display); margin: 0; text-wrap: balance; letter-spacing: -.01em }
+.sub { color: var(--muted); font-size: 14px; min-width: 0 }
+.stats { margin-left: auto; display: flex; gap: 16px; font: 500 12px var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums }
+.stats b { color: var(--ink); font-weight: 500 }
+aside, .inspector { background: var(--panel); overflow: auto; padding: 14px 16px; min-width: 0 }
+aside { border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 18px }
+.inspector { border-left: 1px solid var(--line) }
+.label { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 8px }
+input[type=search] { width: 100%; font: 15px var(--f-body); padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink) }
+input[type=search]:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.types { display: flex; flex-direction: column; gap: 2px }
+.type { display: grid; grid-template-columns: 12px 1fr auto; align-items: center; gap: 10px; padding: 5px 6px; border-radius: 5px;
+  border: 0; background: none; color: var(--ink); font: 14px var(--f-body); text-align: left; cursor: pointer }
+.type:hover { background: var(--dim) }
+.type .dot { width: 12px; height: 12px; border-radius: 50% }
+.type .n { font: 12px var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums }
+.type[aria-pressed="false"] { color: var(--muted) }
+.type[aria-pressed="false"] .dot { background: transparent !important; box-shadow: inset 0 0 0 1.5px var(--muted) }
+.plist { display: flex; flex-direction: column; gap: 1px; margin: 0; padding: 0; list-style: none }
+.plist button { width: 100%; text-align: left; border: 0; background: none; color: var(--ink); font: 14px var(--f-body); padding: 5px 6px; border-radius: 5px;
+  cursor: pointer; display: flex; justify-content: space-between; gap: 8px }
+.plist button:hover { background: var(--dim) }
+.plist button span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0 }
+.status { font: 11px var(--f-mono); padding: 1px 6px; border-radius: 99px; flex: none }
+.status.active { background: color-mix(in srgb, var(--c-platform) 22%, transparent); color: var(--ink) }
+.status.recent { background: color-mix(in srgb, var(--c-concept) 22%, transparent); color: var(--ink) }
+.status.dormant { background: var(--dim); color: var(--muted) }
+.row { display: flex; gap: 8px; flex-wrap: wrap }
+.btn { font: 13px var(--f-body); padding: 6px 10px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer }
+.btn:hover { border-color: var(--accent) }
+#graph { position: relative; min-width: 0; min-height: 0; background: var(--bg) }
+#net { position: absolute; inset: 0 }
+.hint { position: absolute; left: 12px; bottom: 10px; font: 12px var(--f-mono); color: var(--muted); pointer-events: none }
+.inspector h2 { font: 700 20px/1.2 var(--f-display); margin: 4px 0 6px; overflow-wrap: anywhere; text-wrap: balance }
+.kind { display: inline-flex; align-items: center; gap: 6px; font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted) }
+.kind i { width: 9px; height: 9px; border-radius: 50%; display: inline-block }
+.desc { margin: 8px 0 14px; max-width: 60ch }
+dl { display: grid; grid-template-columns: auto minmax(0,1fr); gap: 4px 12px; margin: 0 0 16px; font-size: 13px }
+dt { color: var(--muted); font: 12px var(--f-mono) }
+dd { margin: 0; overflow-wrap: anywhere; font-variant-numeric: tabular-nums }
+dd a { color: var(--accent) }
+.rel { margin: 0 0 14px }
+.rel h3 { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 6px; display: flex; justify-content: space-between }
+.chips { display: flex; flex-wrap: wrap; gap: 5px }
+.chip { font: 13px var(--f-body); padding: 2px 8px 2px 6px; border-radius: 99px; border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+  cursor: pointer; display: inline-flex; align-items: center; gap: 5px; max-width: 100% }
+.chip i { width: 8px; height: 8px; border-radius: 50%; flex: none }
+.chip span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.chip:hover { border-color: var(--accent) }
+.empty { color: var(--muted); font-size: 14px }
+.empty p { margin: 0 0 10px; max-width: 40ch }
+@media (max-width: 900px) {
+  .app { grid-template-columns: 1fr; grid-template-rows: auto auto 62vh auto; height: auto }
+  html, body { height: auto }
+  aside { border-right: 0; border-bottom: 1px solid var(--line); max-height: 260px }
+  .inspector { border-left: 0; border-top: 1px solid var(--line) }
+  .stats { margin-left: 0 }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important } }
+</style>
+
+<div class="app">
+  <header>
+    <h1>Cortex-Hub</h1>
+    <span class="sub">Cortex Hub // Enterprise AI Component Store & Customization Fabric</span>
+    <div class="stats" id="stats"></div>
+  </header>
+  <aside>
+    <div>
+      <p class="label"><label for="q">Find</label></p>
+      <input type="search" id="q" placeholder="Project, tech, library…" list="names" autocomplete="off">
+      <datalist id="names"></datalist>
+    </div>
+    <div>
+      <p class="label">Show</p>
+      <div class="types" id="types"></div>
+    </div>
+    <div class="row">
+      <button class="btn" id="fit" type="button">Fit view</button>
+      <button class="btn" id="freeze" type="button">Pause layout</button>
+    </div>
+    <div id="plistWrap">
+      <p class="label">Projects</p>
+      <ul class="plist" id="plist"></ul>
+    </div>
+  </aside>
+  <main id="graph"><div id="net"></div><div class="hint">Click a node · scroll to zoom · drag to move</div></main>
+  <section class="inspector" id="inspector" aria-live="polite"></section>
+</div>
+
+<script src="https://unpkg.com/vis-network@9.1.13/standalone/umd/vis-network.min.js"></script>
+<script>
+const G = {"nodes": [{"id": "concept:LLM agents", "label": "LLM agents", "type": "Concept", "props": {}}, {"id": "person:Goldy Pahal", "label": "Goldy Pahal", "type": "Person", "props": {}}, {"id": "language:CSS", "label": "CSS", "type": "Language", "props": {}}, {"id": "tech:Prisma", "label": "Prisma", "type": "Technology", "props": {"category": "Database / storage"}}, {"id": "lib:npm:@prisma/client", "label": "@prisma/client", "type": "Library", "props": {"ecosystem": "npm", "used_by_projects": 3, "technology": "Prisma"}}, {"id": "lib:npm:prisma", "label": "prisma", "type": "Library", "props": {"ecosystem": "npm", "used_by_projects": 3, "technology": "Prisma"}}, {"id": "concept:Authentication & access control", "label": "Authentication & access control", "type": "Concept", "props": {}}, {"id": "project:Cortex-Hub", "label": "Cortex-Hub", "type": "Project", "props": {"title": "Cortex Hub // Enterprise AI Component Store & Customization Fabric", "description": " Production-ready, deterministic AI engines with exact document byte-offset citations, hybrid vector retrieval, and sovereign VPC / air-gapped deployment.", "url": "https://github.com/Goldypahal/Cortex-Hub", "owner": "Goldypahal", "status": "recent", "commits": 3, "files": 35, "first_commit": "2026-09-16", "last_commit": "2026-09-25", "kind": "product"}}, {"id": "language:JavaScript", "label": "JavaScript", "type": "Language", "props": {}}, {"id": "language:HTML", "label": "HTML", "type": "Language", "props": {}}, {"id": "language:Prisma", "label": "Prisma", "type": "Language", "props": {}}, {"id": "tech:CORS", "label": "CORS", "type": "Technology", "props": {"category": "Auth / security"}}, {"id": "tech:Express", "label": "Express", "type": "Technology", "props": {"category": "Backend framework"}}, {"id": "tech:dotenv", "label": "dotenv", "type": "Technology", "props": {"category": "Tooling"}}, {"id": "lib:npm:concurrently", "label": "concurrently", "type": "Library", "props": {"ecosystem": "npm", "used_by_projects": 1}}, {"id": "lib:npm:cors", "label": "cors", "type": "Library", "props": {"ecosystem": "npm", "used_by_projects": 6, "technology": "CORS"}}, {"id": "lib:npm:dotenv", "label": "dotenv", "type": "Library", "props": {"ecosystem": "npm", "used_by_projects": 6, "technology": "dotenv"}}, {"id": "lib:npm:express", "label": "express", "type": "Library", "props": {"ecosystem": "npm", "used_by_projects": 8, "technology": "Express"}}, {"id": "concept:Retrieval-Augmented Generation (RAG)", "label": "Retrieval-Augmented Generation (RAG)", "type": "Concept", "props": {}}, {"id": "concept:Vector / hybrid search", "label": "Vector / hybrid search", "type": "Concept", "props": {}}, {"id": "concept:Enterprise AI platform", "label": "Enterprise AI platform", "type": "Concept", "props": {}}, {"id": "concept:Audio / speech", "label": "Audio / speech", "type": "Concept", "props": {}}, {"id": "concept:Healthcare / diagnostics", "label": "Healthcare / diagnostics", "type": "Concept", "props": {}}], "edges": [{"source": "lib:npm:@prisma/client", "target": "tech:Prisma", "type": "IMPLEMENTS", "props": {}}, {"source": "lib:npm:prisma", "target": "tech:Prisma", "type": "IMPLEMENTS", "props": {}}, {"source": "project:Cortex-Hub", "target": "language:JavaScript", "type": "WRITTEN_IN", "props": {"files": 15, "share": 0.577}}, {"source": "project:Cortex-Hub", "target": "language:CSS", "type": "WRITTEN_IN", "props": {"files": 9, "share": 0.346}}, {"source": "project:Cortex-Hub", "target": "language:HTML", "type": "WRITTEN_IN", "props": {"files": 1, "share": 0.038}}, {"source": "project:Cortex-Hub", "target": "language:Prisma", "type": "WRITTEN_IN", "props": {"files": 1, "share": 0.038}}, {"source": "project:Cortex-Hub", "target": "tech:CORS", "type": "USES", "props": {"via": ["."]}}, {"source": "project:Cortex-Hub", "target": "tech:Express", "type": "USES", "props": {"via": ["."]}}, {"source": "project:Cortex-Hub", "target": "tech:Prisma", "type": "USES", "props": {"via": ["."]}}, {"source": "project:Cortex-Hub", "target": "tech:dotenv", "type": "USES", "props": {"via": ["."]}}, {"source": "project:Cortex-Hub", "target": "lib:npm:@prisma/client", "type": "DEPENDS_ON", "props": {"via": ["."]}}, {"source": "project:Cortex-Hub", "target": "lib:npm:concurrently", "type": "DEPENDS_ON", "props": {"via": ["."]}}, {"source": "project:Cortex-Hub", "target": "lib:npm:cors", "type": "DEPENDS_ON", "props": {"via": ["."]}}, {"source": "lib:npm:cors", "target": "tech:CORS", "type": "IMPLEMENTS", "props": {}}, {"source": "project:Cortex-Hub", "target": "lib:npm:dotenv", "type": "DEPENDS_ON", "props": {"via": ["."]}}, {"source": "lib:npm:dotenv", "target": "tech:dotenv", "type": "IMPLEMENTS", "props": {}}, {"source": "project:Cortex-Hub", "target": "lib:npm:express", "type": "DEPENDS_ON", "props": {"via": ["."]}}, {"source": "lib:npm:express", "target": "tech:Express", "type": "IMPLEMENTS", "props": {}}, {"source": "project:Cortex-Hub", "target": "lib:npm:prisma", "type": "DEPENDS_ON", "props": {"via": ["."]}}, {"source": "project:Cortex-Hub", "target": "concept:Retrieval-Augmented Generation (RAG)", "type": "ABOUT", "props": {"source": "manual", "mentions": 0}}, {"source": "project:Cortex-Hub", "target": "concept:Vector / hybrid search", "type": "ABOUT", "props": {"source": "manual", "mentions": 0}}, {"source": "project:Cortex-Hub", "target": "concept:Enterprise AI platform", "type": "ABOUT", "props": {"source": "manual", "mentions": 0}}, {"source": "project:Cortex-Hub", "target": "concept:LLM agents", "type": "ABOUT", "props": {"source": "readme", "mentions": 2}}, {"source": "project:Cortex-Hub", "target": "concept:Audio / speech", "type": "ABOUT", "props": {"source": "readme", "mentions": 2}}, {"source": "project:Cortex-Hub", "target": "concept:Authentication & access control", "type": "ABOUT", "props": {"source": "readme", "mentions": 2}}, {"source": "project:Cortex-Hub", "target": "concept:Healthcare / diagnostics", "type": "ABOUT", "props": {"source": "readme", "mentions": 2}}, {"source": "person:Goldy Pahal", "target": "project:Cortex-Hub", "type": "CONTRIBUTED_TO", "props": {"commits": 3}}]};
+const PAGES_BASE = "";
+const TYPES = [
+  ["Project", "project", "Projects"], ["Component", "component", "Components"], ["Technology", "tech", "Technologies"],
+  ["Concept", "concept", "Concepts"], ["Service", "service", "Services & APIs"], ["Platform", "platform", "Platforms"],
+  ["Language", "language", "Languages"], ["Person", "person", "People"], ["Library", "library", "Libraries"]];
+const REL_LABEL = { USES: "Uses", DEPENDS_ON: "Depends on", WRITTEN_IN: "Written in", HAS_COMPONENT: "Components",
+  CONNECTS_TO: "Connects to", DEPLOYS_WITH: "Deploys with", AUTOMATED_BY: "Automated by", ABOUT: "About",
+  CONTRIBUTED_TO: "Contributors", IMPLEMENTS: "Implements", SIMILAR_STACK: "Similar stack", SHARES_CODE_WITH: "Shares code with",
+  EVOLVED_INTO: "Evolved into", STARTED_FROM_TEMPLATE_OF: "Started from template of", RELATED_TO: "Related to" };
+const INV_LABEL = { USES: "Used by", DEPENDS_ON: "Used by", WRITTEN_IN: "Projects", HAS_COMPONENT: "Part of",
+  CONNECTS_TO: "Used by", DEPLOYS_WITH: "Used by", AUTOMATED_BY: "Used by", ABOUT: "Projects", CONTRIBUTED_TO: "Contributors",
+  IMPLEMENTS: "Packages", SIMILAR_STACK: "Similar stack", SHARES_CODE_WITH: "Code reused by", EVOLVED_INTO: "Evolved from",
+  STARTED_FROM_TEMPLATE_OF: "Template for", RELATED_TO: "Related to" };
+
+const byId = new Map(G.nodes.map(n => [n.id, n]));
+const projects = G.nodes.filter(n => n.type === "Project");
+const single = projects.length === 1;
+const css = k => getComputedStyle(document.documentElement).getPropertyValue(k).trim();
+const typeVar = t => "--c-" + (TYPES.find(x => x[0] === t) || [, "library"])[1];
+const degree = new Map();
+G.edges.forEach(e => { degree.set(e.source, (degree.get(e.source) || 0) + 1); degree.set(e.target, (degree.get(e.target) || 0) + 1); });
+
+const nLib = G.nodes.filter(n => n.type === "Library").length;
+const visible = new Set(TYPES.map(t => t[0]).filter(t => t !== "Library" || (single && nLib <= 60)));
+try { const s = JSON.parse(localStorage.getItem("kg-types:" + document.title)); if (Array.isArray(s)) { visible.clear(); s.forEach(t => visible.add(t)); } } catch (e) {}
+
+// ---------- header stats
+const cnt = t => G.nodes.filter(n => n.type === t).length;
+document.getElementById("stats").innerHTML =
+  `<span><b>${cnt("Project")}</b> projects</span><span><b>${cnt("Technology")}</b> technologies</span><span><b>${G.edges.length}</b> links</span>`;
+
+// ---------- type toggles
+const typesEl = document.getElementById("types");
+TYPES.forEach(([t, key, label]) => {
+  const n = cnt(t); if (!n) return;
+  const b = document.createElement("button");
+  b.className = "type"; b.type = "button"; b.dataset.t = t;
+  b.setAttribute("aria-pressed", visible.has(t));
+  b.innerHTML = `<span class="dot" style="background:var(--c-${key})"></span><span>${label}</span><span class="n">${n}</span>`;
+  b.onclick = () => { visible.has(t) ? visible.delete(t) : visible.add(t); b.setAttribute("aria-pressed", visible.has(t));
+    try { localStorage.setItem("kg-types:" + document.title, JSON.stringify([...visible])); } catch (e) {}
+    applyFilter(); };
+  typesEl.appendChild(b);
+});
+
+// ---------- project list
+const plist = document.getElementById("plist");
+if (single) document.getElementById("plistWrap").hidden = true;
+projects.slice().sort((a, b) => (b.props.last_commit || "").localeCompare(a.props.last_commit || "")).forEach(p => {
+  const li = document.createElement("li");
+  li.innerHTML = `<button type="button" title="${esc(p.label)}"><span>${esc(p.label)}</span><span class="status ${p.props.status}">${p.props.status}</span></button>`;
+  li.firstChild.onclick = () => focusNode(p.id);
+  plist.appendChild(li);
+});
+const dl = document.getElementById("names");
+G.nodes.forEach(n => { const o = document.createElement("option"); o.value = n.label; dl.appendChild(o); });
+
+function esc(s) { return String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+// ---------- network
+function nodeStyle(n) {
+  const c = css(typeVar(n.type)), d = degree.get(n.id) || 1;
+  const size = n.type === "Project" ? 22 : n.type === "Library" ? 5 + Math.min(d, 8) : 8 + Math.min(Math.sqrt(d) * 3, 14);
+  return { id: n.id, label: n.type === "Library" && d < 3 ? "" : n.label, title: n.type + ": " + n.label,
+    shape: n.type === "Project" ? "dot" : n.type === "Component" ? "square" : n.type === "Person" ? "triangle" : "dot",
+    size, color: { background: c, border: c, highlight: { background: c, border: css("--ink") }, hover: { background: c, border: css("--ink") } },
+    font: { color: css("--ink"), face: "Atkinson Hyperlegible, system-ui, sans-serif", size: n.type === "Project" ? 16 : 12,
+      strokeWidth: 3, strokeColor: css("--bg"), bold: n.type === "Project" ? { color: css("--ink"), size: 16, mod: "bold" } : undefined },
+    hidden: !visible.has(n.type) };
+}
+function edgeStyle(e, i) {
+  const cross = ["SIMILAR_STACK", "SHARES_CODE_WITH", "EVOLVED_INTO", "STARTED_FROM_TEMPLATE_OF", "RELATED_TO"].includes(e.type);
+  const strong = e.type === "SHARES_CODE_WITH" || e.type === "EVOLVED_INTO";
+  return { id: "e" + i, from: e.source, to: e.target, title: REL_LABEL[e.type] || e.type,
+    arrows: cross && e.type !== "SIMILAR_STACK" ? { to: { enabled: true, scaleFactor: .5 } } : undefined,
+    dashes: e.type === "SIMILAR_STACK", width: strong ? 3 : cross ? 1.6 : .7,
+    color: { color: cross ? css("--accent") : css("--line"), highlight: css("--ink"), hover: css("--muted"), opacity: cross ? .9 : .8 },
+    smooth: false, hidden: !(visible.has(byId.get(e.source)?.type) && visible.has(byId.get(e.target)?.type)) };
+}
+const nodes = new vis.DataSet(G.nodes.map(nodeStyle));
+const edges = new vis.DataSet(G.edges.map(edgeStyle));
+const net = new vis.Network(document.getElementById("net"), { nodes, edges }, {
+  physics: { solver: "forceAtlas2Based", forceAtlas2Based: { gravitationalConstant: -60, springLength: 90, avoidOverlap: .4 },
+    stabilization: { iterations: 260 } },
+  interaction: { hover: true, tooltipDelay: 120, hideEdgesOnDrag: true }, layout: { improvedLayout: G.nodes.length < 150 } });
+net.once("stabilizationIterationsDone", () => net.fit({ animation: false }));
+
+function applyFilter() {
+  nodes.update(G.nodes.map(n => ({ id: n.id, hidden: !visible.has(n.type) })));
+  edges.update(G.edges.map((e, i) => ({ id: "e" + i, hidden: !(visible.has(byId.get(e.source)?.type) && visible.has(byId.get(e.target)?.type)) })));
+}
+function restyle() { nodes.update(G.nodes.map(nodeStyle)); edges.update(G.edges.map(edgeStyle)); if (selected) highlight(selected); }
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", restyle);
+new MutationObserver(restyle).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+let frozen = false;
+document.getElementById("freeze").onclick = e => { frozen = !frozen; net.setOptions({ physics: { enabled: !frozen } }); e.target.textContent = frozen ? "Resume layout" : "Pause layout"; };
+document.getElementById("fit").onclick = () => net.fit({ animation: { duration: 400 } });
+
+// ---------- selection
+let selected = null;
+function neighbours(id) {
+  const out = new Map();
+  G.edges.forEach(e => {
+    if (e.source === id) { const k = "→" + e.type; (out.get(k) || out.set(k, []).get(k)).push([e.target, e]); }
+    if (e.target === id) { const k = "←" + e.type; (out.get(k) || out.set(k, []).get(k)).push([e.source, e]); }
+  });
+  return out;
+}
+function highlight(id) {
+  const keep = new Set([id]);
+  G.edges.forEach(e => { if (e.source === id) keep.add(e.target); if (e.target === id) keep.add(e.source); });
+  const dim = css("--dim");
+  nodes.update(G.nodes.map(n => keep.has(n.id) ? { id: n.id, color: nodeStyle(n).color, font: nodeStyle(n).font, label: n.label }
+    : { id: n.id, color: { background: dim, border: dim }, font: { color: "rgba(0,0,0,0)", strokeWidth: 0 } }));
+}
+function clearHighlight() { selected = null; nodes.update(G.nodes.map(nodeStyle)); renderEmpty(); }
+function focusNode(id) {
+  const n = byId.get(id); if (!n) return;
+  if (!visible.has(n.type)) { visible.add(n.type); typesEl.querySelector(`[data-t="${n.type}"]`)?.setAttribute("aria-pressed", true); applyFilter(); }
+  selected = id; highlight(id); renderNode(n);
+  net.selectNodes([id]); net.focus(id, { scale: 1.1, animation: { duration: 450 } });
+}
+net.on("click", p => p.nodes.length ? focusNode(p.nodes[0]) : clearHighlight());
+document.getElementById("q").addEventListener("change", e => {
+  const v = e.target.value.trim().toLowerCase(); if (!v) return;
+  const n = G.nodes.find(n => n.label.toLowerCase() === v) || G.nodes.find(n => n.label.toLowerCase().includes(v));
+  if (n) focusNode(n.id);
+});
+
+const insp = document.getElementById("inspector");
+const PROP_ORDER = ["title", "kind", "status", "category", "role", "ecosystem", "commits", "files", "first_commit", "last_commit", "used_by_projects", "technology", "url"];
+const PROP_LABEL = { title: "Title", kind: "Kind", status: "Status", category: "Category", role: "Role", ecosystem: "Ecosystem", commits: "Commits",
+  files: "Files", first_commit: "First commit", last_commit: "Last commit", used_by_projects: "Used by", technology: "Technology", url: "Repo" };
+function renderNode(n) {
+  const key = (TYPES.find(t => t[0] === n.type) || [, "library"])[1];
+  let h = `<span class="kind"><i style="background:var(--c-${key})"></i>${esc(n.type)}</span><h2>${esc(n.label)}</h2>`;
+  if (n.props.description) h += `<p class="desc">${esc(n.props.description)}</p>`;
+  h += "<dl>";
+  PROP_ORDER.forEach(k => { const v = n.props[k]; if (v === undefined || v === "" || (k === "title" && v === n.label)) return;
+    let val = esc(Array.isArray(v) ? v.join(", ") : v);
+    if (k === "url") val = `<a href="${esc(v)}" target="_blank" rel="noopener">${esc(v.replace("https://github.com/", ""))}</a>`;
+    if (k === "used_by_projects") val += " projects";
+    h += `<dt>${PROP_LABEL[k]}</dt><dd>${val}</dd>`; });
+  if (n.type === "Project" && PAGES_BASE && !single) h += `<dt>Graph</dt><dd><a href="${PAGES_BASE}${encodeURIComponent(n.label)}/index.html">Open project graph</a></dd>`;
+  h += "</dl>";
+  const groups = [...neighbours(n.id)].sort((a, b) => b[1].length - a[1].length);
+  groups.forEach(([k, list]) => {
+    const dir = k[0], type = k.slice(1);
+    const label = dir === "→" ? (REL_LABEL[type] || type) : (INV_LABEL[type] || type);
+    list.sort((a, b) => (degree.get(b[0]) || 0) - (degree.get(a[0]) || 0));
+    h += `<div class="rel"><h3><span>${esc(label)}</span><span>${list.length}</span></h3><div class="chips">` +
+      list.map(([id, e]) => { const m = byId.get(id); if (!m) return "";
+        const mk = (TYPES.find(t => t[0] === m.type) || [, "library"])[1];
+        let extra = e.props?.identical_files ? ` · ${e.props.identical_files} files` : e.props?.score ? ` · ${Math.round(e.props.score * 100)}%` : e.props?.commits ? ` · ${e.props.commits}` : "";
+        const tip = e.props?.shared ? "Shared: " + e.props.shared.join(", ") : e.props?.examples ? "e.g. " + e.props.examples.join(", ") : "";
+        return `<button class="chip" type="button" data-id="${esc(id)}" title="${esc(tip)}"><i style="background:var(--c-${mk})"></i><span>${esc(m.label)}${extra}</span></button>`; }).join("") +
+      `</div></div>`;
+  });
+  insp.innerHTML = h;
+  insp.querySelectorAll(".chip").forEach(b => b.onclick = () => focusNode(b.dataset.id));
+  insp.scrollTop = 0;
+}
+function renderEmpty() {
+  const reuse = G.edges.filter(e => e.type === "SHARES_CODE_WITH" || e.type === "EVOLVED_INTO");
+  const topTech = G.nodes.filter(n => n.type === "Technology").map(n => [n, G.edges.filter(e => e.target === n.id && e.type === "USES" && e.source.startsWith("project:")).length])
+    .sort((a, b) => b[1] - a[1]).slice(0, 10);
+  let h = `<p class="label">Overview</p><div class="empty"><p>Select any node to see what it connects to. Projects link to their stack, the services they call, what they are about and who built them.</p></div>`;
+  if (single) { const p = projects[0]; renderNode(p); selected = null; return; }
+  h += `<div class="rel"><h3><span>Most used technologies</span><span>projects</span></h3><div class="chips">` +
+    topTech.map(([n, c]) => `<button class="chip" type="button" data-id="${esc(n.id)}"><i style="background:var(--c-tech)"></i><span>${esc(n.label)} · ${c}</span></button>`).join("") + `</div></div>`;
+  if (reuse.length) h += `<div class="rel"><h3><span>Code reuse</span><span>${reuse.length}</span></h3><div class="chips">` +
+    reuse.map(e => `<button class="chip" type="button" data-id="${esc(e.source)}"><i style="background:var(--c-project)"></i><span>${esc(byId.get(e.source).label)} → ${esc(byId.get(e.target).label)}</span></button>`).join("") + `</div></div>`;
+  insp.innerHTML = h;
+  insp.querySelectorAll(".chip").forEach(b => b.onclick = () => focusNode(b.dataset.id));
+}
+renderEmpty();
+</script>

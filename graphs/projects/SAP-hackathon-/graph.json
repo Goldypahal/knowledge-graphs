@@ -1,0 +1,338 @@
+{
+ "nodes": [
+  {
+   "id": "language:Python",
+   "label": "Python",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "tech:Pydantic",
+   "label": "Pydantic",
+   "type": "Technology",
+   "props": {
+    "category": "Backend framework"
+   }
+  },
+  {
+   "id": "lib:pip:pydantic",
+   "label": "pydantic",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 11,
+    "technology": "Pydantic"
+   }
+  },
+  {
+   "id": "platform:GitHub Actions",
+   "label": "GitHub Actions",
+   "type": "Platform",
+   "props": {}
+  },
+  {
+   "id": "concept:LLM agents",
+   "label": "LLM agents",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "person:Goldy Pahal",
+   "label": "Goldy Pahal",
+   "type": "Person",
+   "props": {}
+  },
+  {
+   "id": "language:CSS",
+   "label": "CSS",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "language:JavaScript",
+   "label": "JavaScript",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "language:HTML",
+   "label": "HTML",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "service:OpenAI API",
+   "label": "OpenAI API",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "tech:NumPy",
+   "label": "NumPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "concept:Hackathon project",
+   "label": "Hackathon project",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "tech:Matplotlib",
+   "label": "Matplotlib",
+   "type": "Technology",
+   "props": {
+    "category": "Charts / visualisation"
+   }
+  },
+  {
+   "id": "service:Google Gemini",
+   "label": "Google Gemini",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "concept:Career guidance & skills",
+   "label": "Career guidance & skills",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "project:SAP-hackathon-",
+   "label": "SAP-hackathon-",
+   "type": "Project",
+   "props": {
+    "title": "AI Career Engine (Agent-Driven Career Platform)",
+    "description": "An agentic AI architecture designed to provide continuous, explainable, and precise career guidance, skill gap analysis, course sequencing, opportunity matching, and industry intelligence.",
+    "url": "https://github.com/Goldypahal/SAP-hackathon-",
+    "owner": "Goldypahal",
+    "status": "recent",
+    "commits": 13,
+    "files": 80,
+    "first_commit": "2026-08-28",
+    "last_commit": "2026-08-31",
+    "kind": "hackathon"
+   }
+  },
+  {
+   "id": "component:SAP-hackathon-/ai-career-engine",
+   "label": "ai-career-engine",
+   "type": "Component",
+   "props": {
+    "project": "SAP-hackathon-",
+    "role": "ml",
+    "ecosystems": [
+     "pip"
+    ]
+   }
+  },
+  {
+   "id": "project:Skill-Bridge",
+   "label": "Skill-Bridge",
+   "type": "Project",
+   "props": {
+    "title": "🏆 Aptitude Quiz (Aptitude Arena)",
+    "description": "Skill-Bridge, a career and skills platform combining an agent-driven AI career engine, a real-time multiplayer aptitude quiz, group-discussion rooms and collaborative coding.",
+    "url": "https://github.com/Om07092208/Skill-Bridge",
+    "owner": "Om07092208",
+    "status": "recent",
+    "commits": 72,
+    "files": 183,
+    "first_commit": "2026-08-28",
+    "last_commit": "2026-09-01",
+    "kind": "product"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "source": "lib:pip:pydantic",
+   "target": "tech:Pydantic",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "language:Python",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 36,
+    "share": 0.837
+   }
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "language:HTML",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 5,
+    "share": 0.116
+   }
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "language:CSS",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 1,
+    "share": 0.023
+   }
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "language:JavaScript",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 1,
+    "share": 0.023
+   }
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "component:SAP-hackathon-/ai-career-engine",
+   "type": "HAS_COMPONENT",
+   "props": {}
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "tech:Matplotlib",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "tech:NumPy",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "tech:Pydantic",
+   "type": "USES",
+   "props": {
+    "via": [
+     "ai-career-engine",
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "component:SAP-hackathon-/ai-career-engine",
+   "target": "tech:Pydantic",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "lib:pip:pydantic",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "ai-career-engine"
+    ]
+   }
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "service:Google Gemini",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "service:OpenAI API",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "platform:GitHub Actions",
+   "type": "AUTOMATED_BY",
+   "props": {}
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "concept:LLM agents",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "concept:Career guidance & skills",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "concept:Hackathon project",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:SAP-hackathon-",
+   "target": "project:Skill-Bridge",
+   "type": "EVOLVED_INTO",
+   "props": {
+    "source": "manual"
+   }
+  },
+  {
+   "source": "person:Goldy Pahal",
+   "target": "project:SAP-hackathon-",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 13
+   }
+  },
+  {
+   "source": "project:Skill-Bridge",
+   "target": "project:SAP-hackathon-",
+   "type": "SHARES_CODE_WITH",
+   "props": {
+    "identical_files": 18,
+    "examples": [
+     "ai-career-engine/agents/__init__.py",
+     "ai-career-engine/agents/base_agent.py",
+     "ai-career-engine/agents/career_research_agent.py",
+     "ai-career-engine/agents/industry_intelligence_agent.py",
+     "ai-career-engine/agents/learning_agent.py",
+     "ai-career-engine/agents/opportunity_agent.py",
+     "ai-career-engine/agents/profile_intelligence_agent.py",
+     "ai-career-engine/agents/skill_analysis_agent.py"
+    ]
+   }
+  }
+ ]
+}

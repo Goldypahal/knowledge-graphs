@@ -1,0 +1,595 @@
+{
+ "nodes": [
+  {
+   "id": "person:Goldy Pahal",
+   "label": "Goldy Pahal",
+   "type": "Person",
+   "props": {}
+  },
+  {
+   "id": "language:CSS",
+   "label": "CSS",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "tech:React",
+   "label": "React",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "lib:npm:react",
+   "label": "react",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 14,
+    "technology": "React"
+   }
+  },
+  {
+   "id": "lib:npm:react-dom",
+   "label": "react-dom",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 13
+   }
+  },
+  {
+   "id": "language:JavaScript",
+   "label": "JavaScript",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "language:HTML",
+   "label": "HTML",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "tech:Vite",
+   "label": "Vite",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "lib:npm:@vitejs/plugin-react",
+   "label": "@vitejs/plugin-react",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 11
+   }
+  },
+  {
+   "id": "lib:npm:vite",
+   "label": "vite",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 12,
+    "technology": "Vite"
+   }
+  },
+  {
+   "id": "tech:React Router",
+   "label": "React Router",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "lib:npm:react-router-dom",
+   "label": "react-router-dom",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7,
+    "technology": "React Router"
+   }
+  },
+  {
+   "id": "project:Fullstack",
+   "label": "Fullstack",
+   "type": "Project",
+   "props": {
+    "title": "EXP-1/1.1 — Multi-Platform Post Composer",
+    "description": "Full-stack web development lab experiments (React + Vite apps such as a multi-platform post composer).",
+    "url": "https://github.com/Goldypahal/Fullstack",
+    "owner": "Goldypahal",
+    "status": "recent",
+    "commits": 3,
+    "files": 3300,
+    "first_commit": "2026-09-01",
+    "last_commit": "2026-09-01",
+    "kind": "coursework"
+   }
+  },
+  {
+   "id": "component:Fullstack/EXP-1/1.1",
+   "label": "EXP-1/1.1",
+   "type": "Component",
+   "props": {
+    "project": "Fullstack",
+    "role": "frontend",
+    "ecosystems": [
+     "npm"
+    ]
+   }
+  },
+  {
+   "id": "component:Fullstack/EXP-1/1.2",
+   "label": "EXP-1/1.2",
+   "type": "Component",
+   "props": {
+    "project": "Fullstack",
+    "role": "frontend",
+    "ecosystems": [
+     "npm"
+    ]
+   }
+  },
+  {
+   "id": "component:Fullstack/EXP-2/1.1",
+   "label": "EXP-2/1.1",
+   "type": "Component",
+   "props": {
+    "project": "Fullstack",
+    "role": "frontend",
+    "ecosystems": [
+     "npm"
+    ]
+   }
+  },
+  {
+   "id": "component:Fullstack/EXP-2/1.2",
+   "label": "EXP-2/1.2",
+   "type": "Component",
+   "props": {
+    "project": "Fullstack",
+    "role": "frontend",
+    "ecosystems": [
+     "npm"
+    ]
+   }
+  },
+  {
+   "id": "component:Fullstack/EXP-3/1.1",
+   "label": "EXP-3/1.1",
+   "type": "Component",
+   "props": {
+    "project": "Fullstack",
+    "role": "frontend",
+    "ecosystems": [
+     "npm"
+    ]
+   }
+  },
+  {
+   "id": "component:Fullstack/EXP-3/1.2",
+   "label": "EXP-3/1.2",
+   "type": "Component",
+   "props": {
+    "project": "Fullstack",
+    "role": "frontend",
+    "ecosystems": [
+     "npm"
+    ]
+   }
+  },
+  {
+   "id": "tech:Redux",
+   "label": "Redux",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "lib:npm:@reduxjs/toolkit",
+   "label": "@reduxjs/toolkit",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 2,
+    "technology": "Redux"
+   }
+  },
+  {
+   "id": "lib:npm:react-redux",
+   "label": "react-redux",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 2
+   }
+  },
+  {
+   "id": "concept:Web development coursework",
+   "label": "Web development coursework",
+   "type": "Concept",
+   "props": {}
+  }
+ ],
+ "edges": [
+  {
+   "source": "lib:npm:react",
+   "target": "tech:React",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:vite",
+   "target": "tech:Vite",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:react-router-dom",
+   "target": "tech:React Router",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "language:JavaScript",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 63,
+    "share": 0.84
+   }
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "language:HTML",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 6,
+    "share": 0.08
+   }
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "language:CSS",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 6,
+    "share": 0.08
+   }
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "component:Fullstack/EXP-1/1.1",
+   "type": "HAS_COMPONENT",
+   "props": {}
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "component:Fullstack/EXP-1/1.2",
+   "type": "HAS_COMPONENT",
+   "props": {}
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "component:Fullstack/EXP-2/1.1",
+   "type": "HAS_COMPONENT",
+   "props": {}
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "component:Fullstack/EXP-2/1.2",
+   "type": "HAS_COMPONENT",
+   "props": {}
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "component:Fullstack/EXP-3/1.1",
+   "type": "HAS_COMPONENT",
+   "props": {}
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "component:Fullstack/EXP-3/1.2",
+   "type": "HAS_COMPONENT",
+   "props": {}
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {
+    "via": [
+     "EXP-1/1.1",
+     "EXP-1/1.2",
+     "EXP-2/1.1",
+     "EXP-2/1.2",
+     "EXP-3/1.1",
+     "EXP-3/1.2"
+    ]
+   }
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.2",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-1/1.2",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-3/1.2",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.1",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-3/1.1",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-1/1.1",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "tech:React Router",
+   "type": "USES",
+   "props": {
+    "via": [
+     "EXP-2/1.2",
+     "EXP-3/1.1",
+     "EXP-3/1.2"
+    ]
+   }
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.2",
+   "target": "tech:React Router",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-3/1.2",
+   "target": "tech:React Router",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-3/1.1",
+   "target": "tech:React Router",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "tech:Redux",
+   "type": "USES",
+   "props": {
+    "via": [
+     "EXP-2/1.1",
+     "EXP-2/1.2",
+     "EXP-3/1.1",
+     "EXP-3/1.2"
+    ]
+   }
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.2",
+   "target": "tech:Redux",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.1",
+   "target": "tech:Redux",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-3/1.1",
+   "target": "tech:Redux",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-3/1.2",
+   "target": "tech:Redux",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {
+    "via": [
+     "EXP-1/1.1",
+     "EXP-1/1.2",
+     "EXP-2/1.1",
+     "EXP-2/1.2",
+     "EXP-3/1.1",
+     "EXP-3/1.2"
+    ]
+   }
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.2",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-1/1.2",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-3/1.2",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.1",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-3/1.1",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-1/1.1",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "lib:npm:@reduxjs/toolkit",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "EXP-2/1.1",
+     "EXP-2/1.2",
+     "EXP-3/1.1",
+     "EXP-3/1.2"
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:@reduxjs/toolkit",
+   "target": "tech:Redux",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "lib:npm:@vitejs/plugin-react",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "EXP-1/1.1",
+     "EXP-1/1.2",
+     "EXP-2/1.1",
+     "EXP-2/1.2",
+     "EXP-3/1.1",
+     "EXP-3/1.2"
+    ]
+   }
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "lib:npm:react",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "EXP-1/1.1",
+     "EXP-1/1.2",
+     "EXP-2/1.1",
+     "EXP-2/1.2",
+     "EXP-3/1.1",
+     "EXP-3/1.2"
+    ]
+   }
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "lib:npm:react-dom",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "EXP-1/1.1",
+     "EXP-1/1.2",
+     "EXP-2/1.1",
+     "EXP-2/1.2",
+     "EXP-3/1.1",
+     "EXP-3/1.2"
+    ]
+   }
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "lib:npm:react-redux",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "EXP-2/1.1",
+     "EXP-2/1.2",
+     "EXP-3/1.1",
+     "EXP-3/1.2"
+    ]
+   }
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "lib:npm:react-router-dom",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "EXP-2/1.2",
+     "EXP-3/1.1",
+     "EXP-3/1.2"
+    ]
+   }
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "lib:npm:vite",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "EXP-1/1.1",
+     "EXP-1/1.2",
+     "EXP-2/1.1",
+     "EXP-2/1.2",
+     "EXP-3/1.1",
+     "EXP-3/1.2"
+    ]
+   }
+  },
+  {
+   "source": "project:Fullstack",
+   "target": "concept:Web development coursework",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "person:Goldy Pahal",
+   "target": "project:Fullstack",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 3
+   }
+  }
+ ]
+}

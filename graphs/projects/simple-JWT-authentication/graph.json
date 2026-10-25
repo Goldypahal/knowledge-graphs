@@ -1,0 +1,381 @@
+{
+ "nodes": [
+  {
+   "id": "person:Goldy Pahal",
+   "label": "Goldy Pahal",
+   "type": "Person",
+   "props": {}
+  },
+  {
+   "id": "language:CSS",
+   "label": "CSS",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "tech:ESLint",
+   "label": "ESLint",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "tech:React",
+   "label": "React",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "lib:npm:@types/react",
+   "label": "@types/react",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 13
+   }
+  },
+  {
+   "id": "lib:npm:@types/react-dom",
+   "label": "@types/react-dom",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 12
+   }
+  },
+  {
+   "id": "lib:npm:eslint",
+   "label": "eslint",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 9,
+    "technology": "ESLint"
+   }
+  },
+  {
+   "id": "lib:npm:react",
+   "label": "react",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 14,
+    "technology": "React"
+   }
+  },
+  {
+   "id": "lib:npm:react-dom",
+   "label": "react-dom",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 13
+   }
+  },
+  {
+   "id": "concept:Authentication & access control",
+   "label": "Authentication & access control",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "language:JavaScript",
+   "label": "JavaScript",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "language:HTML",
+   "label": "HTML",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "tech:Vite",
+   "label": "Vite",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "lib:npm:@eslint/js",
+   "label": "@eslint/js",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7
+   }
+  },
+  {
+   "id": "lib:npm:@vitejs/plugin-react",
+   "label": "@vitejs/plugin-react",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 11
+   }
+  },
+  {
+   "id": "lib:npm:eslint-plugin-react-hooks",
+   "label": "eslint-plugin-react-hooks",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7
+   }
+  },
+  {
+   "id": "lib:npm:eslint-plugin-react-refresh",
+   "label": "eslint-plugin-react-refresh",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7
+   }
+  },
+  {
+   "id": "lib:npm:globals",
+   "label": "globals",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7
+   }
+  },
+  {
+   "id": "lib:npm:vite",
+   "label": "vite",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 12,
+    "technology": "Vite"
+   }
+  },
+  {
+   "id": "project:simple-JWT-authentication",
+   "label": "simple-JWT-authentication",
+   "type": "Project",
+   "props": {
+    "title": "Simple JWT Authentication",
+    "description": "A modern React application demonstrating client-side JSON Web Token (JWT) authentication, token generation, storage in localStorage, token decoding, and role-based access control.",
+    "url": "https://github.com/Goldypahal/simple-JWT-authentication",
+    "owner": "Goldypahal",
+    "status": "active",
+    "commits": 1,
+    "files": 19,
+    "first_commit": "2026-09-29",
+    "last_commit": "2026-09-29",
+    "kind": "learning"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "source": "lib:npm:eslint",
+   "target": "tech:ESLint",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:react",
+   "target": "tech:React",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:vite",
+   "target": "tech:Vite",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "language:JavaScript",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 7,
+    "share": 0.7
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "language:CSS",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 2,
+    "share": 0.2
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "language:HTML",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 1,
+    "share": 0.1
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "tech:ESLint",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "lib:npm:@eslint/js",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "lib:npm:@types/react",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "lib:npm:@types/react-dom",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "lib:npm:@vitejs/plugin-react",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "lib:npm:eslint",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "lib:npm:eslint-plugin-react-hooks",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "lib:npm:eslint-plugin-react-refresh",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "lib:npm:globals",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "lib:npm:react",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "lib:npm:react-dom",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "lib:npm:vite",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:simple-JWT-authentication",
+   "target": "concept:Authentication & access control",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "person:Goldy Pahal",
+   "target": "project:simple-JWT-authentication",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 1
+   }
+  }
+ ]
+}

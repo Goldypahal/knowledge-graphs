@@ -1,0 +1,141 @@
+# Hand-written knowledge that the scanner can't infer from code.
+# Edit freely: the next build merges this on top of what was detected.
+#
+#   description: replaces the auto-detected one
+#   kind:        product | research | hackathon | coursework | learning | personal
+#   add_concepts / remove_concepts: adjust the "ABOUT" links
+#   related:     extra Project -> Project links, as {project: relation}
+
+CICD:
+  description: GitFix-Agent, an autonomous AI maintenance agent that detects regressions introduced by git commits, finds the root cause, generates and verifies a patch, and commits the fix.
+  kind: product
+  add_concepts: [Automated code repair, LLM agents, CI/CD & DevOps]
+
+CPSET:
+  description: Web portal and admin platform for the Centre for Privacy and Security in Emerging Technologies (Chandigarh University), with a public site and an admin console in one Next.js codebase.
+  kind: product
+  add_concepts: [Cybersecurity, Education / ed-tech]
+  remove_concepts: [Agriculture / environment]
+
+Cortex-Hub:
+  kind: product
+  add_concepts: [Enterprise AI platform, Retrieval-Augmented Generation (RAG), Vector / hybrid search]
+  remove_concepts: [Real-time tracking / IoT]
+
+EV-optimal-charging-planner-for-long-routes:
+  description: Planner for long EV trips that picks optimal charging stops, with a route planner, station ranking, grid optimiser and a physics-based ML energy simulator.
+  kind: product
+  add_concepts: [Route optimisation, Transportation & mobility, Electric vehicles]
+
+EduSteam:
+  description: Educational video platform where verified educators upload lessons and students stream them, with an admin panel for reviewing videos and educator applications.
+  kind: product
+  add_concepts: [Education / ed-tech, Video platform]
+
+FFRE:
+  description: FFIRE, a Financial Fraud Investigation Reasoning Engine for running investigations over evidence, with a FastAPI backend, React frontend and a large enterprise specification set.
+  kind: product
+  add_concepts: [Fraud / financial risk, Retrieval-Augmented Generation (RAG), Vector / hybrid search]
+
+Fullstack:
+  description: Full-stack web development lab experiments (React + Vite apps such as a multi-platform post composer).
+  kind: coursework
+  add_concepts: [Web development coursework]
+  remove_concepts: [Transportation & mobility, Authentication & access control]
+
+GPH:
+  description: GIVIN, the Gujarat Integrated Video Intelligence Network, a statewide vendor-neutral CCTV integration and AI video analytics platform built for the Gujarat Police Innovation Hackathon 2026.
+  kind: hackathon
+  add_concepts: [Video intelligence / surveillance, Computer vision, Hackathon project]
+  remove_concepts: [Research paper / benchmark]
+
+HR-tracker:
+  description: Haryana Bus Tracker, a real-time bus tracking app for Haryana Roadways with route search, complaints and an admin panel, plus a PDF schedule ingestion pipeline covering 8,700+ routes.
+  kind: product
+  add_concepts: [Real-time tracking / IoT, Transportation & mobility]
+  remove_concepts: [HR / workforce management]
+
+Labsmart:
+  description: Hospital-grade LIMS and EMR platform with a backend API, doctor dashboard, lab portal, patient portal and result-entry app.
+  kind: product
+  add_concepts: [Healthcare / diagnostics]
+
+MMRA:
+  description: Research study comparing multi-agent and single-model LLM reasoning across 4 conditions, 7 task categories and 140 tasks, using OpenRouter models.
+  kind: research
+  add_concepts: [Multi-agent systems, LLM evaluation, Research paper / benchmark]
+  remove_concepts: [Transportation & mobility]
+
+Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting:
+  kind: research
+  add_concepts: [Time-series forecasting, Supply chain / demand, Transformers / deep learning]
+
+Multi-Paper-Research-RAG-System-:
+  description: Research RAG system that ingests many papers (including from S3) and answers questions across them, with intelligent retrieval, research insights, a knowledge graph layer and evaluation endpoints.
+  kind: product
+  add_concepts: [Retrieval-Augmented Generation (RAG), Vector / hybrid search, Knowledge graphs]
+
+Portfolio:
+  description: Personal portfolio site (AI/ML engineer, developer, researcher) with an animated sky-to-space scroll engine and preloader.
+  kind: personal
+  add_concepts: [Portfolio / personal site]
+
+RAGS:
+  kind: research
+  add_concepts: [Retrieval-Augmented Generation (RAG), Research paper / benchmark, LLM evaluation]
+  remove_concepts: [Transportation & mobility]
+
+ResearchReel:
+  kind: product
+  add_concepts: [Short-form video / social, Retrieval-Augmented Generation (RAG), Microservices]
+
+SAP-hackathon-:
+  kind: hackathon
+  add_concepts: [Career guidance & skills, LLM agents, Hackathon project]
+  remove_concepts: [Supply chain / demand]
+  related: {Skill-Bridge: EVOLVED_INTO}
+
+SHREE:
+  description: SHREE, an e-commerce store for premium ethnic wear with product catalogue, cart, orders, inquiries and auth on an Express + MongoDB backend.
+  kind: product
+  add_concepts: [E-commerce]
+
+Shield:
+  description: Heimdal SafeRoute, a personal-safety app for the Chandigarh tricity with fastest/safest route planning and on-device ML such as scream detection.
+  kind: product
+  add_concepts: [Women / personal safety, Route optimisation, Audio / speech]
+  remove_concepts: [Computer vision]
+
+Skill-Bridge:
+  description: Skill-Bridge, a career and skills platform combining an agent-driven AI career engine, a real-time multiplayer aptitude quiz, group-discussion rooms and collaborative coding.
+  kind: product
+  add_concepts: [Career guidance & skills, Education / ed-tech, Collaborative coding / interviews]
+
+Vatica:
+  description: Vatica, an online plant shop with product listings, cart state and Firebase auth.
+  kind: product
+  add_concepts: [E-commerce, Agriculture / environment]
+
+campusRideshare:
+  description: Campus ride-sharing platform with ML-ranked smart matching, atomic seat booking, WebSocket messaging and safety verification.
+  kind: product
+  add_concepts: [Transportation & mobility, Ride sharing, Women / personal safety]
+  related: {EduSteam: STARTED_FROM_TEMPLATE_OF}
+
+jarvis:
+  kind: personal
+  add_concepts: [Personal AI assistant, Audio / speech]
+
+researchpaper1:
+  kind: research
+  add_concepts: [Research paper / benchmark, LLM agents, LLM evaluation]
+  remove_concepts: [Cybersecurity]
+
+researchpaper2-:
+  kind: research
+  add_concepts: [Research paper / benchmark, LLM evaluation]
+
+simple-JWT-authentication:
+  kind: learning
+  add_concepts: [Authentication & access control]
+  remove_concepts: [Education / ed-tech]

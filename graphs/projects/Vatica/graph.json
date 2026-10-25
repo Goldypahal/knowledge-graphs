@@ -1,0 +1,954 @@
+{
+ "nodes": [
+  {
+   "id": "person:Goldy Pahal",
+   "label": "Goldy Pahal",
+   "type": "Person",
+   "props": {}
+  },
+  {
+   "id": "project:CPSET",
+   "label": "CPSET",
+   "type": "Project",
+   "props": {
+    "title": "CPSET",
+    "description": "Web portal and admin platform for the Centre for Privacy and Security in Emerging Technologies (Chandigarh University), with a public site and an admin console in one Next.js codebase.",
+    "url": "https://github.com/Pathi-AmanPal/CPSET",
+    "owner": "Pathi-AmanPal",
+    "status": "recent",
+    "commits": 103,
+    "files": 141,
+    "first_commit": "2026-08-08",
+    "last_commit": "2026-09-12",
+    "kind": "product"
+   }
+  },
+  {
+   "id": "language:TypeScript",
+   "label": "TypeScript",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "language:CSS",
+   "label": "CSS",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "tech:ESLint",
+   "label": "ESLint",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "tech:Framer Motion",
+   "label": "Framer Motion",
+   "type": "Technology",
+   "props": {
+    "category": "UI / styling"
+   }
+  },
+  {
+   "id": "tech:Lucide icons",
+   "label": "Lucide icons",
+   "type": "Technology",
+   "props": {
+    "category": "UI / styling"
+   }
+  },
+  {
+   "id": "tech:React",
+   "label": "React",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "tech:Tailwind CSS",
+   "label": "Tailwind CSS",
+   "type": "Technology",
+   "props": {
+    "category": "UI / styling"
+   }
+  },
+  {
+   "id": "tech:TypeScript",
+   "label": "TypeScript",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "lib:npm:@types/node",
+   "label": "@types/node",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 10
+   }
+  },
+  {
+   "id": "lib:npm:@types/react",
+   "label": "@types/react",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 13
+   }
+  },
+  {
+   "id": "lib:npm:@types/react-dom",
+   "label": "@types/react-dom",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 12
+   }
+  },
+  {
+   "id": "lib:npm:autoprefixer",
+   "label": "autoprefixer",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7
+   }
+  },
+  {
+   "id": "lib:npm:eslint",
+   "label": "eslint",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 9,
+    "technology": "ESLint"
+   }
+  },
+  {
+   "id": "lib:npm:framer-motion",
+   "label": "framer-motion",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7,
+    "technology": "Framer Motion"
+   }
+  },
+  {
+   "id": "lib:npm:lucide-react",
+   "label": "lucide-react",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 11,
+    "technology": "Lucide icons"
+   }
+  },
+  {
+   "id": "lib:npm:postcss",
+   "label": "postcss",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7
+   }
+  },
+  {
+   "id": "lib:npm:react",
+   "label": "react",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 14,
+    "technology": "React"
+   }
+  },
+  {
+   "id": "lib:npm:react-dom",
+   "label": "react-dom",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 13
+   }
+  },
+  {
+   "id": "lib:npm:tailwindcss",
+   "label": "tailwindcss",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 10,
+    "technology": "Tailwind CSS"
+   }
+  },
+  {
+   "id": "lib:npm:typescript",
+   "label": "typescript",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 11,
+    "technology": "TypeScript"
+   }
+  },
+  {
+   "id": "language:JavaScript",
+   "label": "JavaScript",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "language:HTML",
+   "label": "HTML",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "project:EV-optimal-charging-planner-for-long-routes",
+   "label": "EV-optimal-charging-planner-for-long-routes",
+   "type": "Project",
+   "props": {
+    "title": "EV-optimal-charging-planner-for-long-routes",
+    "description": "Planner for long EV trips that picks optimal charging stops, with a route planner, station ranking, grid optimiser and a physics-based ML energy simulator.",
+    "url": "https://github.com/Goldypahal/EV-optimal-charging-planner-for-long-routes",
+    "owner": "Goldypahal",
+    "status": "recent",
+    "commits": 2,
+    "files": 266,
+    "first_commit": "2026-05-23",
+    "last_commit": "2026-09-09",
+    "kind": "product"
+   }
+  },
+  {
+   "id": "tech:Vite",
+   "label": "Vite",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "lib:npm:@eslint/js",
+   "label": "@eslint/js",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7
+   }
+  },
+  {
+   "id": "lib:npm:@tailwindcss/vite",
+   "label": "@tailwindcss/vite",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7,
+    "technology": "Tailwind CSS"
+   }
+  },
+  {
+   "id": "lib:npm:@vitejs/plugin-react",
+   "label": "@vitejs/plugin-react",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 11
+   }
+  },
+  {
+   "id": "lib:npm:eslint-plugin-react-hooks",
+   "label": "eslint-plugin-react-hooks",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7
+   }
+  },
+  {
+   "id": "lib:npm:eslint-plugin-react-refresh",
+   "label": "eslint-plugin-react-refresh",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7
+   }
+  },
+  {
+   "id": "lib:npm:globals",
+   "label": "globals",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7
+   }
+  },
+  {
+   "id": "lib:npm:typescript-eslint",
+   "label": "typescript-eslint",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 3
+   }
+  },
+  {
+   "id": "lib:npm:vite",
+   "label": "vite",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 12,
+    "technology": "Vite"
+   }
+  },
+  {
+   "id": "project:EduSteam",
+   "label": "EduSteam",
+   "type": "Project",
+   "props": {
+    "title": "EduSteam",
+    "description": "Educational video platform where verified educators upload lessons and students stream them, with an admin panel for reviewing videos and educator applications.",
+    "url": "https://github.com/Goldypahal/EduSteam",
+    "owner": "Goldypahal",
+    "status": "recent",
+    "commits": 3,
+    "files": 91,
+    "first_commit": "2025-08-18",
+    "last_commit": "2026-09-09",
+    "kind": "product"
+   }
+  },
+  {
+   "id": "tech:React Router",
+   "label": "React Router",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "tech:Zustand",
+   "label": "Zustand",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
+   "id": "lib:npm:react-router-dom",
+   "label": "react-router-dom",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7,
+    "technology": "React Router"
+   }
+  },
+  {
+   "id": "lib:npm:zustand",
+   "label": "zustand",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 2,
+    "technology": "Zustand"
+   }
+  },
+  {
+   "id": "concept:E-commerce",
+   "label": "E-commerce",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "tech:Firebase",
+   "label": "Firebase",
+   "type": "Technology",
+   "props": {
+    "category": "Database / storage"
+   }
+  },
+  {
+   "id": "lib:npm:firebase",
+   "label": "firebase",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 2,
+    "technology": "Firebase"
+   }
+  },
+  {
+   "id": "project:Skill-Bridge",
+   "label": "Skill-Bridge",
+   "type": "Project",
+   "props": {
+    "title": "🏆 Aptitude Quiz (Aptitude Arena)",
+    "description": "Skill-Bridge, a career and skills platform combining an agent-driven AI career engine, a real-time multiplayer aptitude quiz, group-discussion rooms and collaborative coding.",
+    "url": "https://github.com/Om07092208/Skill-Bridge",
+    "owner": "Om07092208",
+    "status": "recent",
+    "commits": 72,
+    "files": 183,
+    "first_commit": "2026-08-28",
+    "last_commit": "2026-09-01",
+    "kind": "product"
+   }
+  },
+  {
+   "id": "project:Vatica",
+   "label": "Vatica",
+   "type": "Project",
+   "props": {
+    "title": "Vatica",
+    "description": "Vatica, an online plant shop with product listings, cart state and Firebase auth.",
+    "url": "https://github.com/Goldypahal/Vatica",
+    "owner": "Goldypahal",
+    "status": "recent",
+    "commits": 1,
+    "files": 27,
+    "first_commit": "2026-08-16",
+    "last_commit": "2026-08-16",
+    "kind": "product"
+   }
+  },
+  {
+   "id": "concept:Agriculture / environment",
+   "label": "Agriculture / environment",
+   "type": "Concept",
+   "props": {}
+  }
+ ],
+ "edges": [
+  {
+   "source": "lib:npm:eslint",
+   "target": "tech:ESLint",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:framer-motion",
+   "target": "tech:Framer Motion",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:lucide-react",
+   "target": "tech:Lucide icons",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:react",
+   "target": "tech:React",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:tailwindcss",
+   "target": "tech:Tailwind CSS",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:typescript",
+   "target": "tech:TypeScript",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:@tailwindcss/vite",
+   "target": "tech:Tailwind CSS",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:vite",
+   "target": "tech:Vite",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:react-router-dom",
+   "target": "tech:React Router",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:zustand",
+   "target": "tech:Zustand",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:firebase",
+   "target": "tech:Firebase",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:Vatica",
+   "target": "language:TypeScript",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 6,
+    "share": 0.6
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "language:CSS",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 2,
+    "share": 0.2
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "language:JavaScript",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 1,
+    "share": 0.1
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "language:HTML",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 1,
+    "share": 0.1
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "tech:ESLint",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "tech:Firebase",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "tech:Framer Motion",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "tech:Lucide icons",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "tech:React Router",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "tech:Tailwind CSS",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "tech:TypeScript",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "tech:Zustand",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:@eslint/js",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:@tailwindcss/vite",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:@types/node",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:@types/react",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:@types/react-dom",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:@vitejs/plugin-react",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:autoprefixer",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:eslint",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:eslint-plugin-react-hooks",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:eslint-plugin-react-refresh",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:firebase",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:framer-motion",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:globals",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:lucide-react",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:postcss",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:react",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:react-dom",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:react-router-dom",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:tailwindcss",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:typescript",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:typescript-eslint",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:vite",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "lib:npm:zustand",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "concept:E-commerce",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:Vatica",
+   "target": "concept:Agriculture / environment",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "person:Goldy Pahal",
+   "target": "project:Vatica",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 1
+   }
+  },
+  {
+   "source": "project:CPSET",
+   "target": "project:Vatica",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.38,
+    "shared": [
+     "ESLint",
+     "Framer Motion",
+     "Lucide icons",
+     "React",
+     "Tailwind CSS",
+     "TypeScript"
+    ]
+   }
+  },
+  {
+   "source": "project:EV-optimal-charging-planner-for-long-routes",
+   "target": "project:Vatica",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.6,
+    "shared": [
+     "ESLint",
+     "Lucide icons",
+     "React",
+     "Tailwind CSS",
+     "TypeScript",
+     "Vite"
+    ]
+   }
+  },
+  {
+   "source": "project:EduSteam",
+   "target": "project:Vatica",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.32,
+    "shared": [
+     "Framer Motion",
+     "Lucide icons",
+     "React",
+     "Tailwind CSS",
+     "TypeScript",
+     "Vite"
+    ]
+   }
+  },
+  {
+   "source": "project:Skill-Bridge",
+   "target": "project:Vatica",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.35,
+    "shared": [
+     "ESLint",
+     "Lucide icons",
+     "React",
+     "React Router",
+     "Tailwind CSS",
+     "TypeScript",
+     "Vite"
+    ]
+   }
+  }
+ ]
+}
