@@ -45,7 +45,7 @@ graphs/summary.md            table of all projects, top technologies, code reuse
 
 ## Viewing it
 
-- **On GitHub Pages** (after making the repo public and setting **Settings → Pages → Source** to *GitHub Actions*): the combined graph is at `https://goldypahal.github.io/project-knowledge-graph/` and each project at `.../projects/<name>/`.
+- **On GitHub Pages** (after making the repo public and setting **Settings → Pages → Source** to *GitHub Actions*): the combined graph is at `https://goldypahal.github.io/knowledge-graphs/` and each project at `.../projects/<name>/`.
 - **Locally:** open `graphs/all/index.html` (or any project's `index.html`) in a browser.
 - **Summary:** [graphs/summary.md](graphs/summary.md).
 
