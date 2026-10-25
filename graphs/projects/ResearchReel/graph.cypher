@@ -213,8 +213,8 @@ MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "component:Researc
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "component:ResearchReel/backend/research_rag"}) MERGE (a)-[r:HAS_COMPONENT]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "component:ResearchReel/frontend"}) MERGE (a)-[r:HAS_COMPONENT]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Axios"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend", "frontend"];
-MATCH (a:Entity {id: "component:ResearchReel/frontend"}), (b:Entity {id: "tech:Axios"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:ResearchReel/backend"}), (b:Entity {id: "tech:Axios"}) MERGE (a)-[r:USES]->(b);
+MATCH (a:Entity {id: "component:ResearchReel/frontend"}), (b:Entity {id: "tech:Axios"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:BM25"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend/research_rag", "imports"];
 MATCH (a:Entity {id: "component:ResearchReel/backend/research_rag"}), (b:Entity {id: "tech:BM25"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:BullMQ"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend"];
@@ -239,8 +239,8 @@ MATCH (a:Entity {id: "component:ResearchReel/frontend"}), (b:Entity {id: "tech:F
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:GSAP"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["frontend"];
 MATCH (a:Entity {id: "component:ResearchReel/frontend"}), (b:Entity {id: "tech:GSAP"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Google Gemini"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend", "backend/research_rag", "imports"];
-MATCH (a:Entity {id: "component:ResearchReel/backend/research_rag"}), (b:Entity {id: "tech:Google Gemini"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:ResearchReel/backend"}), (b:Entity {id: "tech:Google Gemini"}) MERGE (a)-[r:USES]->(b);
+MATCH (a:Entity {id: "component:ResearchReel/backend/research_rag"}), (b:Entity {id: "tech:Google Gemini"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Helmet"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend"];
 MATCH (a:Entity {id: "component:ResearchReel/backend"}), (b:Entity {id: "tech:Helmet"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Hugging Face Datasets"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["imports"];
@@ -284,8 +284,8 @@ MATCH (a:Entity {id: "component:ResearchReel/backend"}), (b:Entity {id: "tech:Re
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Sentence Transformers"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend/research_rag", "imports"];
 MATCH (a:Entity {id: "component:ResearchReel/backend/research_rag"}), (b:Entity {id: "tech:Sentence Transformers"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Socket.IO"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend", "frontend"];
-MATCH (a:Entity {id: "component:ResearchReel/frontend"}), (b:Entity {id: "tech:Socket.IO"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:ResearchReel/backend"}), (b:Entity {id: "tech:Socket.IO"}) MERGE (a)-[r:USES]->(b);
+MATCH (a:Entity {id: "component:ResearchReel/frontend"}), (b:Entity {id: "tech:Socket.IO"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Stripe"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend"];
 MATCH (a:Entity {id: "component:ResearchReel/backend"}), (b:Entity {id: "tech:Stripe"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Supertest"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend"];

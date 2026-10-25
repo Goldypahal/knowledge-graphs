@@ -996,13 +996,13 @@
    }
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -1049,13 +1049,13 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -1118,13 +1118,13 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -1198,13 +1198,13 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -1228,13 +1228,13 @@
    }
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -1292,7 +1292,7 @@
    }
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -1304,7 +1304,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -1345,13 +1345,13 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}

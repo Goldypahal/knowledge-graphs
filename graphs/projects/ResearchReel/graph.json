@@ -1788,13 +1788,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/frontend",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/frontend",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -2000,13 +2000,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/backend/research_rag",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Google Gemini",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/backend/research_rag",
    "target": "tech:Google Gemini",
    "type": "USES",
    "props": {}
@@ -2370,13 +2370,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/frontend",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/frontend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}

@@ -317,19 +317,19 @@
    }
   },
   {
+   "source": "component:Fullstack/EXP-1/1.1",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Fullstack/EXP-1/1.2",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-2/1.1",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-1/1.1",
+   "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -341,7 +341,7 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-3/1.1",
+   "source": "component:Fullstack/EXP-2/1.1",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -365,12 +365,6 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-3/1.1",
-   "target": "tech:React Router",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:React Router",
    "type": "USES",
@@ -378,6 +372,12 @@
   },
   {
    "source": "component:Fullstack/EXP-2/1.2",
+   "target": "tech:React Router",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -396,7 +396,7 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-3/1.1",
+   "source": "component:Fullstack/EXP-2/1.1",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -408,13 +408,13 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-2/1.1",
+   "source": "component:Fullstack/EXP-2/1.2",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-2/1.2",
+   "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -435,19 +435,19 @@
    }
   },
   {
+   "source": "component:Fullstack/EXP-1/1.1",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Fullstack/EXP-1/1.2",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-2/1.1",
-   "target": "tech:Vite",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-1/1.1",
+   "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -459,7 +459,7 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-3/1.1",
+   "source": "component:Fullstack/EXP-2/1.1",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}

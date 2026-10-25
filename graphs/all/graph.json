@@ -9123,19 +9123,19 @@
    }
   },
   {
+   "source": "component:Fullstack/EXP-1/1.1",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Fullstack/EXP-1/1.2",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-2/1.1",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-1/1.1",
+   "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -9147,7 +9147,7 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-3/1.1",
+   "source": "component:Fullstack/EXP-2/1.1",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -9171,12 +9171,6 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-3/1.1",
-   "target": "tech:React Router",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:React Router",
    "type": "USES",
@@ -9184,6 +9178,12 @@
   },
   {
    "source": "component:Fullstack/EXP-2/1.2",
+   "target": "tech:React Router",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -9202,7 +9202,7 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-3/1.1",
+   "source": "component:Fullstack/EXP-2/1.1",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -9214,13 +9214,13 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-2/1.1",
+   "source": "component:Fullstack/EXP-2/1.2",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-2/1.2",
+   "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -9241,19 +9241,19 @@
    }
   },
   {
+   "source": "component:Fullstack/EXP-1/1.1",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Fullstack/EXP-1/1.2",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-2/1.1",
-   "target": "tech:Vite",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-1/1.1",
+   "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -9265,7 +9265,7 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-3/1.1",
+   "source": "component:Fullstack/EXP-2/1.1",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -9967,13 +9967,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -10022,13 +10022,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -10061,13 +10061,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Framer Motion",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Framer Motion",
    "type": "USES",
    "props": {}
@@ -10133,13 +10133,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Leaflet",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Leaflet",
    "type": "USES",
    "props": {}
@@ -10156,13 +10156,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -10269,13 +10269,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -10292,13 +10292,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -10333,13 +10333,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -10367,13 +10367,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -10396,13 +10396,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -10446,13 +10446,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:TypeScript",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:TypeScript",
    "type": "USES",
    "props": {}
@@ -10475,13 +10475,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -11680,13 +11680,13 @@
    }
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -11733,13 +11733,13 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -11802,13 +11802,13 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -11882,13 +11882,13 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -11912,13 +11912,13 @@
    }
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -11976,7 +11976,7 @@
    }
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -11988,7 +11988,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -12029,13 +12029,13 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -14442,13 +14442,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/frontend",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/frontend",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -14654,13 +14654,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/backend/research_rag",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Google Gemini",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/backend/research_rag",
    "target": "tech:Google Gemini",
    "type": "USES",
    "props": {}
@@ -15024,13 +15024,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/frontend",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/frontend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -18429,13 +18429,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/aptitude_quiz/backend",
+   "source": "component:Skill-Bridge/code-collab/server",
    "target": "tech:CORS",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab/server",
+   "source": "component:Skill-Bridge/aptitude_quiz/backend",
    "target": "tech:CORS",
    "type": "USES",
    "props": {}
@@ -18452,13 +18452,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -18482,13 +18482,13 @@
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/aptitude_quiz/backend",
+   "source": "component:Skill-Bridge/code-collab/server",
    "target": "tech:Express",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab/server",
+   "source": "component:Skill-Bridge/aptitude_quiz/backend",
    "target": "tech:Express",
    "type": "USES",
    "props": {}
@@ -18506,13 +18506,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -18598,13 +18598,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -18621,13 +18621,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -18646,13 +18646,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/aptitude_quiz/backend",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -18664,7 +18664,7 @@
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/aptitude_quiz/backend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -18702,13 +18702,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
