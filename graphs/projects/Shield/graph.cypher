@@ -43,10 +43,8 @@ MERGE (n:Entity {id: "lib:npm:uuid"}) SET n:Library, n.`name` = "uuid", n.`ecosy
 MERGE (n:Entity {id: "tech:SciPy"}) SET n:Technology, n.`name` = "SciPy", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "tech:scikit-learn"}) SET n:Technology, n.`name` = "scikit-learn", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "concept:Research paper / benchmark"}) SET n:Concept, n.`name` = "Research paper / benchmark";
-MERGE (n:Entity {id: "lib:pip:torch"}) SET n:Library, n.`name` = "torch", n.`ecosystem` = "pip", n.`used_by_projects` = 4, n.`technology` = "PyTorch";
-MERGE (n:Entity {id: "tech:NetworkX"}) SET n:Technology, n.`name` = "NetworkX", n.`category` = "ML / data science";
+MERGE (n:Entity {id: "lib:pip:torch"}) SET n:Library, n.`name` = "torch", n.`ecosystem` = "pip", n.`used_by_projects` = 5, n.`technology` = "PyTorch";
 MERGE (n:Entity {id: "tech:joblib"}) SET n:Technology, n.`name` = "joblib", n.`category` = "ML / data science";
-MERGE (n:Entity {id: "lib:pip:networkx"}) SET n:Library, n.`name` = "networkx", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "NetworkX";
 MERGE (n:Entity {id: "project:Shield"}) SET n:Project, n.`name` = "Shield", n.`title` = "Heimdal SafeRoute: Tricity routing engine", n.`description` = "Heimdal SafeRoute, a personal-safety app for the Chandigarh tricity with fastest/safest route planning and on-device ML such as scream detection.", n.`url` = "https://github.com/Goldypahal/Shield", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 4, n.`files` = 148, n.`first_commit` = "2026-09-09", n.`last_commit` = "2026-10-25", n.`kind` = "product";
 MERGE (n:Entity {id: "component:Shield/app"}) SET n:Component, n.`name` = "app", n.`project` = "Shield", n.`role` = "frontend", n.`ecosystems` = ["npm"];
 MERGE (n:Entity {id: "component:Shield/app/assets/models"}) SET n:Component, n.`name` = "app/assets/models", n.`project` = "Shield", n.`role` = "frontend", n.`ecosystems` = ["pip"];
@@ -56,6 +54,7 @@ MERGE (n:Entity {id: "component:Shield/backend/routing"}) SET n:Component, n.`na
 MERGE (n:Entity {id: "tech:Expo"}) SET n:Technology, n.`name` = "Expo", n.`category` = "Frontend framework";
 MERGE (n:Entity {id: "tech:Firebase"}) SET n:Technology, n.`name` = "Firebase", n.`category` = "Database / storage";
 MERGE (n:Entity {id: "tech:Gradio"}) SET n:Technology, n.`name` = "Gradio", n.`category` = "Backend framework";
+MERGE (n:Entity {id: "tech:NetworkX"}) SET n:Technology, n.`name` = "NetworkX", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "tech:OSMnx"}) SET n:Technology, n.`name` = "OSMnx", n.`category` = "Maps / geo";
 MERGE (n:Entity {id: "tech:React Native"}) SET n:Technology, n.`name` = "React Native", n.`category` = "Frontend framework";
 MERGE (n:Entity {id: "tech:TensorFlow"}) SET n:Technology, n.`name` = "TensorFlow", n.`category` = "ML / data science";
@@ -85,6 +84,7 @@ MERGE (n:Entity {id: "lib:pip:folium"}) SET n:Library, n.`name` = "folium", n.`e
 MERGE (n:Entity {id: "lib:pip:gradio"}) SET n:Library, n.`name` = "gradio", n.`ecosystem` = "pip", n.`used_by_projects` = 1, n.`technology` = "Gradio";
 MERGE (n:Entity {id: "lib:pip:huggingface-hub"}) SET n:Library, n.`name` = "huggingface-hub", n.`ecosystem` = "pip", n.`used_by_projects` = 1;
 MERGE (n:Entity {id: "lib:pip:librosa"}) SET n:Library, n.`name` = "librosa", n.`ecosystem` = "pip", n.`used_by_projects` = 1, n.`technology` = "librosa";
+MERGE (n:Entity {id: "lib:pip:networkx"}) SET n:Library, n.`name` = "networkx", n.`ecosystem` = "pip", n.`used_by_projects` = 1, n.`technology` = "NetworkX";
 MERGE (n:Entity {id: "lib:pip:osmnx"}) SET n:Library, n.`name` = "osmnx", n.`ecosystem` = "pip", n.`used_by_projects` = 1, n.`technology` = "OSMnx";
 MERGE (n:Entity {id: "lib:pip:slowapi"}) SET n:Library, n.`name` = "slowapi", n.`ecosystem` = "pip", n.`used_by_projects` = 1;
 MERGE (n:Entity {id: "lib:pip:soundfile"}) SET n:Library, n.`name` = "soundfile", n.`ecosystem` = "pip", n.`used_by_projects` = 1;
@@ -104,7 +104,6 @@ MATCH (a:Entity {id: "lib:pip:numpy"}), (b:Entity {id: "tech:NumPy"}) MERGE (a)-
 MATCH (a:Entity {id: "lib:pip:redis"}), (b:Entity {id: "tech:Redis"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:npm:axios"}), (b:Entity {id: "tech:Axios"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:torch"}), (b:Entity {id: "tech:PyTorch"}) MERGE (a)-[r:IMPLEMENTS]->(b);
-MATCH (a:Entity {id: "lib:pip:networkx"}), (b:Entity {id: "tech:NetworkX"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "language:TypeScript"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 54, r.`share` = 0.462;
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "language:Python"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 49, r.`share` = 0.419;
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "language:HTML"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 6, r.`share` = 0.051;
@@ -132,9 +131,9 @@ MATCH (a:Entity {id: "component:Shield/backend"}), (b:Entity {id: "tech:JWT"}) M
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:NetworkX"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend/routing", "imports"];
 MATCH (a:Entity {id: "component:Shield/backend/routing"}), (b:Entity {id: "tech:NetworkX"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:NumPy"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["app/assets/models", "backend/ml/models/scream_detection", "backend/routing", "imports"];
+MATCH (a:Entity {id: "component:Shield/backend/routing"}), (b:Entity {id: "tech:NumPy"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:Shield/app/assets/models"}), (b:Entity {id: "tech:NumPy"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:Shield/backend/ml/models/scream_detection"}), (b:Entity {id: "tech:NumPy"}) MERGE (a)-[r:USES]->(b);
-MATCH (a:Entity {id: "component:Shield/backend/routing"}), (b:Entity {id: "tech:NumPy"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:OSMnx"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend/routing", "imports"];
 MATCH (a:Entity {id: "component:Shield/backend/routing"}), (b:Entity {id: "tech:OSMnx"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:PostgreSQL"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend", "imports"];
@@ -206,6 +205,7 @@ MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "lib:pip:huggingface-hub
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "lib:pip:librosa"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["app/assets/models", "backend/ml/models/scream_detection"];
 MATCH (a:Entity {id: "lib:pip:librosa"}), (b:Entity {id: "tech:librosa"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "lib:pip:networkx"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["backend/routing"];
+MATCH (a:Entity {id: "lib:pip:networkx"}), (b:Entity {id: "tech:NetworkX"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "lib:pip:numpy"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["app/assets/models", "backend/ml/models/scream_detection", "backend/routing"];
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "lib:pip:osmnx"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["backend/routing"];
 MATCH (a:Entity {id: "lib:pip:osmnx"}), (b:Entity {id: "tech:OSMnx"}) MERGE (a)-[r:IMPLEMENTS]->(b);

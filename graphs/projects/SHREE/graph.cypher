@@ -49,7 +49,7 @@ MERGE (n:Entity {id: "lib:npm:jsonwebtoken"}) SET n:Library, n.`name` = "jsonweb
 MERGE (n:Entity {id: "lib:npm:morgan"}) SET n:Library, n.`name` = "morgan", n.`ecosystem` = "npm", n.`used_by_projects` = 3;
 MERGE (n:Entity {id: "lib:npm:nodemon"}) SET n:Library, n.`name` = "nodemon", n.`ecosystem` = "npm", n.`used_by_projects` = 3, n.`technology` = "Nodemon";
 MERGE (n:Entity {id: "service:JWT"}) SET n:Service, n.`name` = "JWT", n.`category` = "Auth / security";
-MERGE (n:Entity {id: "project:Labsmart"}) SET n:Project, n.`name` = "Labsmart", n.`title` = "Labsmart", n.`description` = "Hospital-grade LIMS and EMR platform with a backend API, doctor dashboard, lab portal, patient portal and result-entry app.", n.`url` = "https://github.com/Goldypahal/Labsmart", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 2, n.`files` = 468, n.`first_commit` = "2026-09-09", n.`last_commit` = "2026-09-26", n.`kind` = "product";
+MERGE (n:Entity {id: "project:Labsmart"}) SET n:Project, n.`name` = "Labsmart", n.`title` = "Labsmart", n.`description` = "Hospital-grade LIMS and EMR platform with a backend API, doctor dashboard, lab portal, patient portal and result-entry app.", n.`url` = "https://github.com/Goldypahal/Labsmart", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 7, n.`files` = 243, n.`first_commit` = "2026-09-09", n.`last_commit` = "2026-10-25", n.`kind` = "product";
 MERGE (n:Entity {id: "tech:Jest"}) SET n:Technology, n.`name` = "Jest", n.`category` = "Testing";
 MERGE (n:Entity {id: "tech:MongoDB"}) SET n:Technology, n.`name` = "MongoDB", n.`category` = "Database / storage";
 MERGE (n:Entity {id: "tech:Supertest"}) SET n:Technology, n.`name` = "Supertest", n.`category` = "Testing";

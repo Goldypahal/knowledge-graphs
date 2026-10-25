@@ -2059,7 +2059,7 @@
    "label": "Fullstack",
    "type": "Project",
    "props": {
-    "title": "EXP-1/1.1 — Multi-Platform Post Composer",
+    "title": "EXP-2/1.2 — Memoized Selectors and Performance",
     "description": "Full-stack web development lab experiments (React + Vite apps such as a multi-platform post composer).",
     "url": "https://github.com/Goldypahal/Fullstack",
     "owner": "Goldypahal",
@@ -2969,10 +2969,10 @@
     "url": "https://github.com/Goldypahal/Labsmart",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 2,
-    "files": 468,
+    "commits": 7,
+    "files": 243,
     "first_commit": "2026-09-09",
-    "last_commit": "2026-09-26",
+    "last_commit": "2026-10-25",
     "kind": "product"
    }
   },
@@ -3107,7 +3107,7 @@
    "label": "MMRA",
    "type": "Project",
    "props": {
-    "title": "Multi-Agent vs Single-Model Research Framework",
+    "title": "MMRA Extended Adversarial Test Set",
     "description": "Research study comparing multi-agent and single-model LLM reasoning across 4 conditions, 7 task categories and 140 tasks, using OpenRouter models.",
     "url": "https://github.com/Goldypahal/MMRA",
     "owner": "Goldypahal",
@@ -3193,7 +3193,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 7,
+    "used_by_projects": 6,
     "technology": "pandas"
    }
   },
@@ -3379,7 +3379,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 4,
+    "used_by_projects": 5,
     "technology": "PyTorch"
    }
   },
@@ -3588,7 +3588,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 3,
+    "used_by_projects": 4,
     "technology": "Sentence Transformers"
    }
   },
@@ -3665,10 +3665,10 @@
     "url": "https://github.com/Goldypahal/RAGS",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 8,
-    "files": 154,
+    "commits": 13,
+    "files": 175,
     "first_commit": "2026-10-05",
-    "last_commit": "2026-10-06",
+    "last_commit": "2026-10-25",
     "kind": "research"
    }
   },
@@ -3693,14 +3693,6 @@
    }
   },
   {
-   "id": "tech:NetworkX",
-   "label": "NetworkX",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
-   }
-  },
-  {
    "id": "tech:arXiv API",
    "label": "arXiv API",
    "type": "Technology",
@@ -3717,40 +3709,13 @@
    }
   },
   {
-   "id": "lib:pip:black",
-   "label": "black",
+   "id": "lib:pip:joblib",
+   "label": "joblib",
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 2
-   }
-  },
-  {
-   "id": "lib:pip:flake8",
-   "label": "flake8",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2
-   }
-  },
-  {
-   "id": "lib:pip:mypy",
-   "label": "mypy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 3
-   }
-  },
-  {
-   "id": "lib:pip:networkx",
-   "label": "networkx",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2,
-    "technology": "NetworkX"
+    "used_by_projects": 1,
+    "technology": "joblib"
    }
   },
   {
@@ -3763,21 +3728,13 @@
    }
   },
   {
-   "id": "lib:pip:sphinx",
-   "label": "sphinx",
+   "id": "lib:pip:transformers",
+   "label": "transformers",
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 1
-   }
-  },
-  {
-   "id": "lib:pip:sphinx-rtd-theme",
-   "label": "sphinx-rtd-theme",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 1
+    "used_by_projects": 3,
+    "technology": "Hugging Face Transformers"
    }
   },
   {
@@ -4433,6 +4390,14 @@
    }
   },
   {
+   "id": "tech:NetworkX",
+   "label": "NetworkX",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
    "id": "tech:OSMnx",
    "label": "OSMnx",
    "type": "Technology",
@@ -4692,6 +4657,16 @@
     "ecosystem": "pip",
     "used_by_projects": 1,
     "technology": "librosa"
+   }
+  },
+  {
+   "id": "lib:pip:networkx",
+   "label": "networkx",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1,
+    "technology": "NetworkX"
    }
   },
   {
@@ -5126,6 +5101,24 @@
    }
   },
   {
+   "id": "lib:pip:black",
+   "label": "black",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:pip:flake8",
+   "label": "flake8",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1
+   }
+  },
+  {
    "id": "lib:pip:flask",
    "label": "flask",
    "type": "Library",
@@ -5133,6 +5126,15 @@
     "ecosystem": "pip",
     "used_by_projects": 1,
     "technology": "Flask"
+   }
+  },
+  {
+   "id": "lib:pip:mypy",
+   "label": "mypy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 2
    }
   },
   {
@@ -5183,16 +5185,6 @@
     "ecosystem": "pip",
     "used_by_projects": 1,
     "technology": "SQLite"
-   }
-  },
-  {
-   "id": "lib:pip:transformers",
-   "label": "transformers",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2,
-    "technology": "Hugging Face Transformers"
    }
   },
   {
@@ -9131,19 +9123,7 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-2/1.2",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Fullstack/EXP-1/1.2",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -9155,13 +9135,25 @@
    "props": {}
   },
   {
+   "source": "component:Fullstack/EXP-1/1.1",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.2",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-1/1.1",
+   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -9179,7 +9171,7 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-2/1.2",
+   "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -9191,7 +9183,7 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-3/1.1",
+   "source": "component:Fullstack/EXP-2/1.2",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -9210,7 +9202,13 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-2/1.2",
+   "source": "component:Fullstack/EXP-3/1.1",
+   "target": "tech:Redux",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -9222,13 +9220,7 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-3/1.1",
-   "target": "tech:Redux",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-3/1.2",
+   "source": "component:Fullstack/EXP-2/1.2",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -9249,19 +9241,7 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-2/1.2",
-   "target": "tech:Vite",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Fullstack/EXP-1/1.2",
-   "target": "tech:Vite",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -9273,13 +9253,25 @@
    "props": {}
   },
   {
+   "source": "component:Fullstack/EXP-1/1.1",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.2",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-1/1.1",
+   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -11602,20 +11594,11 @@
   },
   {
    "source": "project:Labsmart",
-   "target": "language:HTML",
-   "type": "WRITTEN_IN",
-   "props": {
-    "files": 114,
-    "share": 0.447
-   }
-  },
-  {
-   "source": "project:Labsmart",
    "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 103,
-    "share": 0.404
+    "files": 104,
+    "share": 0.698
    }
   },
   {
@@ -11623,8 +11606,8 @@
    "target": "language:TypeScript",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 24,
-    "share": 0.094
+    "files": 25,
+    "share": 0.168
    }
   },
   {
@@ -11633,7 +11616,16 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 7,
-    "share": 0.027
+    "share": 0.047
+   }
+  },
+  {
+   "source": "project:Labsmart",
+   "target": "language:HTML",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 6,
+    "share": 0.04
    }
   },
   {
@@ -11642,7 +11634,7 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 5,
-    "share": 0.02
+    "share": 0.034
    }
   },
   {
@@ -11688,12 +11680,6 @@
    }
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:Axios",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/patient-portal",
    "target": "tech:Axios",
    "type": "USES",
@@ -11701,6 +11687,12 @@
   },
   {
    "source": "component:Labsmart/lab-portal",
+   "target": "tech:Axios",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -11741,12 +11733,6 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:ESLint",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/patient-portal",
    "target": "tech:ESLint",
    "type": "USES",
@@ -11754,6 +11740,12 @@
   },
   {
    "source": "component:Labsmart/lab-portal",
+   "target": "tech:ESLint",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -11810,12 +11802,6 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:Lucide icons",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/patient-portal",
    "target": "tech:Lucide icons",
    "type": "USES",
@@ -11823,6 +11809,12 @@
   },
   {
    "source": "component:Labsmart/lab-portal",
+   "target": "tech:Lucide icons",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -11890,12 +11882,6 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/patient-portal",
    "target": "tech:React",
    "type": "USES",
@@ -11903,6 +11889,12 @@
   },
   {
    "source": "component:Labsmart/lab-portal",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -11920,12 +11912,6 @@
    }
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:React Router",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/patient-portal",
    "target": "tech:React Router",
    "type": "USES",
@@ -11933,6 +11919,12 @@
   },
   {
    "source": "component:Labsmart/lab-portal",
+   "target": "tech:React Router",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -12037,12 +12029,6 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:Vite",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/patient-portal",
    "target": "tech:Vite",
    "type": "USES",
@@ -12050,6 +12036,12 @@
   },
   {
    "source": "component:Labsmart/lab-portal",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -12629,7 +12621,8 @@
    "type": "CONNECTS_TO",
    "props": {
     "detected_from": [
-     "docker-compose"
+     "docker-compose",
+     "env"
     ]
    }
   },
@@ -12670,7 +12663,7 @@
    "target": "project:Labsmart",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 2
+    "commits": 7
    }
   },
   {
@@ -14044,7 +14037,7 @@
    "target": "language:Python",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 27,
+    "files": 29,
     "share": 1.0
    }
   },
@@ -14070,9 +14063,16 @@
    "type": "USES",
    "props": {
     "via": [
-     "imports"
+     "imports",
+     "rags-research-framework"
     ]
    }
+  },
+  {
+   "source": "component:RAGS/rags-research-framework",
+   "target": "tech:Hugging Face Transformers",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:RAGS",
@@ -14088,22 +14088,6 @@
   {
    "source": "component:RAGS/rags-research-framework",
    "target": "tech:Matplotlib",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "project:RAGS",
-   "target": "tech:NetworkX",
-   "type": "USES",
-   "props": {
-    "via": [
-     "rags-research-framework"
-    ]
-   }
-  },
-  {
-   "source": "component:RAGS/rags-research-framework",
-   "target": "tech:NetworkX",
    "type": "USES",
    "props": {}
   },
@@ -14130,9 +14114,16 @@
    "type": "USES",
    "props": {
     "via": [
-     "imports"
+     "imports",
+     "rags-research-framework"
     ]
    }
+  },
+  {
+   "source": "component:RAGS/rags-research-framework",
+   "target": "tech:PyTorch",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:RAGS",
@@ -14157,9 +14148,16 @@
    "type": "USES",
    "props": {
     "via": [
-     "imports"
+     "imports",
+     "rags-research-framework"
     ]
    }
+  },
+  {
+   "source": "component:RAGS/rags-research-framework",
+   "target": "tech:Sentence Transformers",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:RAGS",
@@ -14177,23 +14175,14 @@
    "type": "USES",
    "props": {
     "via": [
-     "imports"
-    ]
-   }
-  },
-  {
-   "source": "project:RAGS",
-   "target": "tech:pandas",
-   "type": "USES",
-   "props": {
-    "via": [
+     "imports",
      "rags-research-framework"
     ]
    }
   },
   {
    "source": "component:RAGS/rags-research-framework",
-   "target": "tech:pandas",
+   "target": "tech:joblib",
    "type": "USES",
    "props": {}
   },
@@ -14203,6 +14192,7 @@
    "type": "USES",
    "props": {
     "via": [
+     "imports",
      "rags-research-framework"
     ]
    }
@@ -14232,7 +14222,7 @@
   },
   {
    "source": "project:RAGS",
-   "target": "lib:pip:black",
+   "target": "lib:pip:joblib",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -14241,14 +14231,10 @@
    }
   },
   {
-   "source": "project:RAGS",
-   "target": "lib:pip:flake8",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "rags-research-framework"
-    ]
-   }
+   "source": "lib:pip:joblib",
+   "target": "tech:joblib",
+   "type": "IMPLEMENTS",
+   "props": {}
   },
   {
    "source": "project:RAGS",
@@ -14262,43 +14248,7 @@
   },
   {
    "source": "project:RAGS",
-   "target": "lib:pip:mypy",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "rags-research-framework"
-    ]
-   }
-  },
-  {
-   "source": "project:RAGS",
-   "target": "lib:pip:networkx",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "rags-research-framework"
-    ]
-   }
-  },
-  {
-   "source": "lib:pip:networkx",
-   "target": "tech:NetworkX",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "project:RAGS",
    "target": "lib:pip:numpy",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "rags-research-framework"
-    ]
-   }
-  },
-  {
-   "source": "project:RAGS",
-   "target": "lib:pip:pandas",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -14348,7 +14298,7 @@
   },
   {
    "source": "project:RAGS",
-   "target": "lib:pip:sphinx",
+   "target": "lib:pip:sentence-transformers",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -14358,13 +14308,29 @@
   },
   {
    "source": "project:RAGS",
-   "target": "lib:pip:sphinx-rtd-theme",
+   "target": "lib:pip:torch",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
      "rags-research-framework"
     ]
    }
+  },
+  {
+   "source": "project:RAGS",
+   "target": "lib:pip:transformers",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "rags-research-framework"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:transformers",
+   "target": "tech:Hugging Face Transformers",
+   "type": "IMPLEMENTS",
+   "props": {}
   },
   {
    "source": "project:RAGS",
@@ -14395,15 +14361,6 @@
   },
   {
    "source": "project:RAGS",
-   "target": "concept:Vector / hybrid search",
-   "type": "ABOUT",
-   "props": {
-    "source": "readme",
-    "mentions": 7
-   }
-  },
-  {
-   "source": "project:RAGS",
    "target": "concept:Transformers / deep learning",
    "type": "ABOUT",
    "props": {
@@ -14412,11 +14369,20 @@
    }
   },
   {
+   "source": "project:RAGS",
+   "target": "concept:Vector / hybrid search",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 6
+   }
+  },
+  {
    "source": "person:Goldy Pahal",
    "target": "project:RAGS",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 8
+    "commits": 13
    }
   },
   {
@@ -14688,13 +14654,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/backend/research_rag",
    "target": "tech:Google Gemini",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/backend/research_rag",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Google Gemini",
    "type": "USES",
    "props": {}
@@ -16456,7 +16422,7 @@
   },
   {
    "source": "project:SAP-hackathon-",
-   "target": "language:CSS",
+   "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
@@ -16465,7 +16431,7 @@
   },
   {
    "source": "project:SAP-hackathon-",
-   "target": "language:JavaScript",
+   "target": "language:CSS",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
@@ -17468,6 +17434,12 @@
    }
   },
   {
+   "source": "component:Shield/backend/routing",
+   "target": "tech:NumPy",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Shield/app/assets/models",
    "target": "tech:NumPy",
    "type": "USES",
@@ -17475,12 +17447,6 @@
   },
   {
    "source": "component:Shield/backend/ml/models/scream_detection",
-   "target": "tech:NumPy",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Shield/backend/routing",
    "target": "tech:NumPy",
    "type": "USES",
    "props": {}
@@ -18125,6 +18091,12 @@
    }
   },
   {
+   "source": "lib:pip:networkx",
+   "target": "tech:NetworkX",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
    "source": "project:Shield",
    "target": "lib:pip:numpy",
    "type": "DEPENDS_ON",
@@ -18480,13 +18452,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -18504,6 +18476,12 @@
    }
   },
   {
+   "source": "component:Skill-Bridge/gd-room",
+   "target": "tech:Express",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Skill-Bridge/aptitude_quiz/backend",
    "target": "tech:Express",
    "type": "USES",
@@ -18511,12 +18489,6 @@
   },
   {
    "source": "component:Skill-Bridge/code-collab/server",
-   "target": "tech:Express",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Express",
    "type": "USES",
    "props": {}
@@ -18534,13 +18506,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -18626,13 +18598,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -18649,13 +18621,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -18674,7 +18646,7 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -18692,7 +18664,7 @@
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -18730,13 +18702,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -21060,6 +21032,15 @@
   },
   {
    "source": "project:jarvis",
+   "target": "language:HTML",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 1,
+    "share": 0.037
+   }
+  },
+  {
+   "source": "project:jarvis",
    "target": "language:CSS",
    "type": "WRITTEN_IN",
    "props": {
@@ -21070,15 +21051,6 @@
   {
    "source": "project:jarvis",
    "target": "language:JavaScript",
-   "type": "WRITTEN_IN",
-   "props": {
-    "files": 1,
-    "share": 0.037
-   }
-  },
-  {
-   "source": "project:jarvis",
-   "target": "language:HTML",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
@@ -21494,12 +21466,6 @@
      "."
     ]
    }
-  },
-  {
-   "source": "lib:pip:transformers",
-   "target": "tech:Hugging Face Transformers",
-   "type": "IMPLEMENTS",
-   "props": {}
   },
   {
    "source": "project:jarvis",
@@ -23232,34 +23198,17 @@
    }
   },
   {
-   "source": "project:Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting",
-   "target": "project:RAGS",
-   "type": "SIMILAR_STACK",
-   "props": {
-    "score": 0.32,
-    "shared": [
-     "Matplotlib",
-     "NumPy",
-     "PyTorch",
-     "SciPy",
-     "pandas",
-     "scikit-learn"
-    ]
-   }
-  },
-  {
    "source": "project:RAGS",
    "target": "project:researchpaper1",
    "type": "SIMILAR_STACK",
    "props": {
-    "score": 0.44,
+    "score": 0.4,
     "shared": [
      "Hugging Face Transformers",
      "Matplotlib",
      "NumPy",
      "PyTorch",
      "SciPy",
-     "pandas",
      "pytest"
     ]
    }
@@ -23269,7 +23218,7 @@
    "target": "project:researchpaper2-",
    "type": "SIMILAR_STACK",
    "props": {
-    "score": 0.38,
+    "score": 0.35,
     "shared": [
      "Hugging Face Datasets",
      "Hugging Face Transformers",
@@ -23277,7 +23226,6 @@
      "NumPy",
      "PyTorch",
      "SciPy",
-     "pandas",
      "pytest",
      "scikit-learn"
     ]

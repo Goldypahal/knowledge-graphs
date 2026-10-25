@@ -91,7 +91,7 @@ MERGE (n:Entity {id: "lib:npm:socket.io-client"}) SET n:Library, n.`name` = "soc
 MERGE (n:Entity {id: "lib:npm:winston"}) SET n:Library, n.`name` = "winston", n.`ecosystem` = "npm", n.`used_by_projects` = 2, n.`technology` = "Pino / Winston logging";
 MERGE (n:Entity {id: "service:JWT"}) SET n:Service, n.`name` = "JWT", n.`category` = "Auth / security";
 MERGE (n:Entity {id: "lib:npm:cookie-parser"}) SET n:Library, n.`name` = "cookie-parser", n.`ecosystem` = "npm", n.`used_by_projects` = 2;
-MERGE (n:Entity {id: "lib:pip:pandas"}) SET n:Library, n.`name` = "pandas", n.`ecosystem` = "pip", n.`used_by_projects` = 7, n.`technology` = "pandas";
+MERGE (n:Entity {id: "lib:pip:pandas"}) SET n:Library, n.`name` = "pandas", n.`ecosystem` = "pip", n.`used_by_projects` = 6, n.`technology` = "pandas";
 MERGE (n:Entity {id: "lib:pip:tenacity"}) SET n:Library, n.`name` = "tenacity", n.`ecosystem` = "pip", n.`used_by_projects` = 4;
 MERGE (n:Entity {id: "service:Google Gemini"}) SET n:Service, n.`name` = "Google Gemini", n.`category` = "LLM / GenAI";
 MERGE (n:Entity {id: "concept:Research paper / benchmark"}) SET n:Concept, n.`name` = "Research paper / benchmark";
@@ -115,7 +115,7 @@ MERGE (n:Entity {id: "lib:pip:pymupdf"}) SET n:Library, n.`name` = "pymupdf", n.
 MERGE (n:Entity {id: "lib:pip:pytest-mock"}) SET n:Library, n.`name` = "pytest-mock", n.`ecosystem` = "pip", n.`used_by_projects` = 2;
 MERGE (n:Entity {id: "lib:pip:python-docx"}) SET n:Library, n.`name` = "python-docx", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "python-docx";
 MERGE (n:Entity {id: "lib:pip:rank-bm25"}) SET n:Library, n.`name` = "rank-bm25", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "BM25";
-MERGE (n:Entity {id: "lib:pip:sentence-transformers"}) SET n:Library, n.`name` = "sentence-transformers", n.`ecosystem` = "pip", n.`used_by_projects` = 3, n.`technology` = "Sentence Transformers";
+MERGE (n:Entity {id: "lib:pip:sentence-transformers"}) SET n:Library, n.`name` = "sentence-transformers", n.`ecosystem` = "pip", n.`used_by_projects` = 4, n.`technology` = "Sentence Transformers";
 MERGE (n:Entity {id: "lib:pip:unstructured"}) SET n:Library, n.`name` = "unstructured", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Unstructured";
 MERGE (n:Entity {id: "project:ResearchReel"}) SET n:Project, n.`name` = "ResearchReel", n.`title` = "🚀 ResearchReel — Quick Start & Run Guide", n.`description` = "ResearchReel is a microservices-based, cloud-native platform designed for sharing research via short-form videos (Reels) and interactive research documents.", n.`url` = "https://github.com/Goldypahal/ResearchReel", n.`owner` = "Goldypahal", n.`status` = "recent", n.`commits` = 18, n.`files` = 397, n.`first_commit` = "2026-06-29", n.`last_commit` = "2026-09-05", n.`kind` = "product";
 MERGE (n:Entity {id: "component:ResearchReel/backend"}) SET n:Component, n.`name` = "backend", n.`project` = "ResearchReel", n.`role` = "backend", n.`ecosystems` = ["npm"];
@@ -239,8 +239,8 @@ MATCH (a:Entity {id: "component:ResearchReel/frontend"}), (b:Entity {id: "tech:F
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:GSAP"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["frontend"];
 MATCH (a:Entity {id: "component:ResearchReel/frontend"}), (b:Entity {id: "tech:GSAP"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Google Gemini"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend", "backend/research_rag", "imports"];
-MATCH (a:Entity {id: "component:ResearchReel/backend"}), (b:Entity {id: "tech:Google Gemini"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:ResearchReel/backend/research_rag"}), (b:Entity {id: "tech:Google Gemini"}) MERGE (a)-[r:USES]->(b);
+MATCH (a:Entity {id: "component:ResearchReel/backend"}), (b:Entity {id: "tech:Google Gemini"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Helmet"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend"];
 MATCH (a:Entity {id: "component:ResearchReel/backend"}), (b:Entity {id: "tech:Helmet"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Hugging Face Datasets"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["imports"];

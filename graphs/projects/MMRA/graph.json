@@ -109,7 +109,7 @@
    "label": "MMRA",
    "type": "Project",
    "props": {
-    "title": "Multi-Agent vs Single-Model Research Framework",
+    "title": "MMRA Extended Adversarial Test Set",
     "description": "Research study comparing multi-agent and single-model LLM reasoning across 4 conditions, 7 task categories and 140 tasks, using OpenRouter models.",
     "url": "https://github.com/Goldypahal/MMRA",
     "owner": "Goldypahal",
@@ -195,7 +195,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 7,
+    "used_by_projects": 6,
     "technology": "pandas"
    }
   },

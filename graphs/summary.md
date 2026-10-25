@@ -1,18 +1,18 @@
 # Project knowledge graph: summary
 
-Generated 2026-10-25 23:19 UTC. 596 nodes (338 Library, 117 Technology, 38 Concept, 37 Component, 26 Project, 20 Service, 8 Language, 6 Platform, 6 Person), 1942 relationships.
+Generated 2026-10-25 23:41 UTC. 595 nodes (337 Library, 117 Technology, 38 Concept, 37 Component, 26 Project, 20 Service, 8 Language, 6 Platform, 6 Person), 1939 relationships.
 
 ## Projects
 | Project | Status | Last commit | Main stack | About |
 |---|---|---|---|---|
+| [Labsmart](projects/Labsmart/index.html) | active | 2026-10-25 | CORS, Express, JWT, MinIO / S3, PostgreSQL, Prisma | Healthcare / diagnostics |
+| [RAGS](projects/RAGS/index.html) | active | 2026-10-25 | Hugging Face Datasets, Hugging Face Transformers, Matplotlib, NumPy, PyTorch, SciPy | Retrieval-Augmented Generation (RAG), Research paper / benchmark, LLM evaluation |
 | [Shield](projects/Shield/index.html) | active | 2026-10-25 | Expo, FastAPI, Firebase, Gradio, JWT, NetworkX | Audio / speech, Route optimisation, Women / personal safety |
 | [researchpaper1](projects/researchpaper1/index.html) | active | 2026-10-25 | Anthropic API, Hugging Face Transformers, Matplotlib, NumPy, OpenAI API, Optuna | Research paper / benchmark, LLM evaluation, LLM agents |
 | [campusRideshare](projects/campusRideshare/index.html) | active | 2026-10-18 | Drizzle ORM, Express, FastAPI, JWT, NumPy, Passport.js | Transportation & mobility, Ride sharing, Women / personal safety |
 | [CICD](projects/CICD/index.html) | active | 2026-10-16 | Google Gemini, Pydantic | Automated code repair, LLM agents, CI/CD & DevOps |
-| [RAGS](projects/RAGS/index.html) | active | 2026-10-06 | Hugging Face Datasets, Hugging Face Transformers, Matplotlib, NetworkX, NumPy, PyTorch | Retrieval-Augmented Generation (RAG), Research paper / benchmark, LLM evaluation |
 | [researchpaper2-](projects/researchpaper2-/index.html) | active | 2026-10-06 | Accelerate, Anthropic API, Google Gemini, Hugging Face Datasets, Hugging Face Transformers, Matplotlib | Research paper / benchmark, LLM evaluation, LLM agents |
 | [simple-JWT-authentication](projects/simple-JWT-authentication/index.html) | active | 2026-09-29 | React, Vite | Authentication & access control |
-| [Labsmart](projects/Labsmart/index.html) | active | 2026-09-26 | CORS, Express, JWT, MinIO / S3, PostgreSQL, Prisma | Healthcare / diagnostics |
 | [Cortex-Hub](projects/Cortex-Hub/index.html) | recent | 2026-09-25 | CORS, Express, Prisma | Retrieval-Augmented Generation (RAG), Vector / hybrid search, Enterprise AI platform |
 | [FFRE](projects/FFRE/index.html) | recent | 2026-09-17 | Alembic, ChromaDB, Cryptography, FastAPI, JWT, LangChain | Fraud / financial risk, Retrieval-Augmented Generation (RAG), Vector / hybrid search |
 | [GPH](projects/GPH/index.html) | recent | 2026-09-14 | Alembic, Cryptography, FastAPI, JWT, MinIO / S3, NumPy | Computer vision, Video intelligence / surveillance, Hackathon project |
@@ -43,9 +43,9 @@ Generated 2026-10-25 23:19 UTC. 596 nodes (338 Library, 117 Technology, 38 Conce
 - Tailwind CSS: 10 projects
 - dotenv: 10 projects
 - ESLint: 9 projects
-- pandas: 9 projects
 - Express: 8 projects
 - JWT: 8 projects
+- pandas: 8 projects
 - Framer Motion: 7 projects
 - FastAPI: 7 projects
 - React Router: 7 projects
@@ -79,8 +79,7 @@ Generated 2026-10-25 23:19 UTC. 596 nodes (338 Library, 117 Technology, 38 Conce
 - MMRA ↔ researchpaper2- (score 0.45: Matplotlib, NumPy, OpenAI API, Rich (CLI), SciPy, Seaborn)
 - MMRA ↔ Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting (score 0.41: Matplotlib, NumPy, SciPy, Seaborn, pandas, scikit-learn)
 - Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting ↔ researchpaper2- (score 0.33: Matplotlib, NumPy, PyTorch, SciPy, Seaborn, pandas)
-- Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting ↔ RAGS (score 0.32: Matplotlib, NumPy, PyTorch, SciPy, pandas, scikit-learn)
-- RAGS ↔ researchpaper1 (score 0.44: Hugging Face Transformers, Matplotlib, NumPy, PyTorch, SciPy, pandas)
-- RAGS ↔ researchpaper2- (score 0.38: Hugging Face Datasets, Hugging Face Transformers, Matplotlib, NumPy, PyTorch, SciPy)
+- RAGS ↔ researchpaper1 (score 0.4: Hugging Face Transformers, Matplotlib, NumPy, PyTorch, SciPy, pytest)
+- RAGS ↔ researchpaper2- (score 0.35: Hugging Face Datasets, Hugging Face Transformers, Matplotlib, NumPy, PyTorch, SciPy)
 - Skill-Bridge ↔ Vatica (score 0.35: ESLint, Lucide icons, React, React Router, Tailwind CSS, TypeScript)
 - researchpaper1 ↔ researchpaper2- (score 0.43: Anthropic API, Hugging Face Transformers, Matplotlib, NumPy, OpenAI API, PyTorch)

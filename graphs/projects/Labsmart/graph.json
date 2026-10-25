@@ -631,10 +631,10 @@
     "url": "https://github.com/Goldypahal/Labsmart",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 2,
-    "files": 468,
+    "commits": 7,
+    "files": 243,
     "first_commit": "2026-09-09",
-    "last_commit": "2026-09-26",
+    "last_commit": "2026-10-25",
     "kind": "product"
    }
   },
@@ -910,20 +910,11 @@
   },
   {
    "source": "project:Labsmart",
-   "target": "language:HTML",
-   "type": "WRITTEN_IN",
-   "props": {
-    "files": 114,
-    "share": 0.447
-   }
-  },
-  {
-   "source": "project:Labsmart",
    "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 103,
-    "share": 0.404
+    "files": 104,
+    "share": 0.698
    }
   },
   {
@@ -931,8 +922,8 @@
    "target": "language:TypeScript",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 24,
-    "share": 0.094
+    "files": 25,
+    "share": 0.168
    }
   },
   {
@@ -941,7 +932,16 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 7,
-    "share": 0.027
+    "share": 0.047
+   }
+  },
+  {
+   "source": "project:Labsmart",
+   "target": "language:HTML",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 6,
+    "share": 0.04
    }
   },
   {
@@ -950,7 +950,7 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 5,
-    "share": 0.02
+    "share": 0.034
    }
   },
   {
@@ -996,12 +996,6 @@
    }
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:Axios",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/patient-portal",
    "target": "tech:Axios",
    "type": "USES",
@@ -1009,6 +1003,12 @@
   },
   {
    "source": "component:Labsmart/lab-portal",
+   "target": "tech:Axios",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -1049,12 +1049,6 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:ESLint",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/patient-portal",
    "target": "tech:ESLint",
    "type": "USES",
@@ -1062,6 +1056,12 @@
   },
   {
    "source": "component:Labsmart/lab-portal",
+   "target": "tech:ESLint",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -1118,12 +1118,6 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:Lucide icons",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/patient-portal",
    "target": "tech:Lucide icons",
    "type": "USES",
@@ -1131,6 +1125,12 @@
   },
   {
    "source": "component:Labsmart/lab-portal",
+   "target": "tech:Lucide icons",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -1198,12 +1198,6 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/patient-portal",
    "target": "tech:React",
    "type": "USES",
@@ -1211,6 +1205,12 @@
   },
   {
    "source": "component:Labsmart/lab-portal",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -1228,12 +1228,6 @@
    }
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:React Router",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/patient-portal",
    "target": "tech:React Router",
    "type": "USES",
@@ -1241,6 +1235,12 @@
   },
   {
    "source": "component:Labsmart/lab-portal",
+   "target": "tech:React Router",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -1345,12 +1345,6 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:Vite",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/patient-portal",
    "target": "tech:Vite",
    "type": "USES",
@@ -1358,6 +1352,12 @@
   },
   {
    "source": "component:Labsmart/lab-portal",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -1937,7 +1937,8 @@
    "type": "CONNECTS_TO",
    "props": {
     "detected_from": [
-     "docker-compose"
+     "docker-compose",
+     "env"
     ]
    }
   },
@@ -1978,7 +1979,7 @@
    "target": "project:Labsmart",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 2
+    "commits": 7
    }
   },
   {

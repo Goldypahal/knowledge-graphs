@@ -123,7 +123,7 @@ MERGE (n:Entity {id: "lib:npm:@types/jsonwebtoken"}) SET n:Library, n.`name` = "
 MERGE (n:Entity {id: "lib:npm:jsonwebtoken"}) SET n:Library, n.`name` = "jsonwebtoken", n.`ecosystem` = "npm", n.`used_by_projects` = 5, n.`technology` = "JWT";
 MERGE (n:Entity {id: "service:JWT"}) SET n:Service, n.`name` = "JWT", n.`category` = "Auth / security";
 MERGE (n:Entity {id: "tech:scikit-learn"}) SET n:Technology, n.`name` = "scikit-learn", n.`category` = "ML / data science";
-MERGE (n:Entity {id: "lib:pip:pandas"}) SET n:Library, n.`name` = "pandas", n.`ecosystem` = "pip", n.`used_by_projects` = 7, n.`technology` = "pandas";
+MERGE (n:Entity {id: "lib:pip:pandas"}) SET n:Library, n.`name` = "pandas", n.`ecosystem` = "pip", n.`used_by_projects` = 6, n.`technology` = "pandas";
 MERGE (n:Entity {id: "lib:pip:scikit-learn"}) SET n:Library, n.`name` = "scikit-learn", n.`ecosystem` = "pip", n.`used_by_projects` = 4, n.`technology` = "scikit-learn";
 MERGE (n:Entity {id: "concept:Women / personal safety"}) SET n:Concept, n.`name` = "Women / personal safety";
 MERGE (n:Entity {id: "project:campusRideshare"}) SET n:Project, n.`name` = "campusRideshare", n.`title` = "campusRideshare", n.`description` = "Campus ride-sharing platform with ML-ranked smart matching, atomic seat booking, WebSocket messaging and safety verification.", n.`url` = "https://github.com/Goldypahal/campusRideshare", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 7, n.`files` = 116, n.`first_commit` = "2025-09-08", n.`last_commit` = "2026-10-18", n.`kind` = "product";

@@ -460,10 +460,10 @@
     "url": "https://github.com/Goldypahal/Labsmart",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 2,
-    "files": 468,
+    "commits": 7,
+    "files": 243,
     "first_commit": "2026-09-09",
-    "last_commit": "2026-09-26",
+    "last_commit": "2026-10-25",
     "kind": "product"
    }
   },
@@ -950,13 +950,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -974,6 +974,12 @@
    }
   },
   {
+   "source": "component:Skill-Bridge/gd-room",
+   "target": "tech:Express",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Skill-Bridge/aptitude_quiz/backend",
    "target": "tech:Express",
    "type": "USES",
@@ -981,12 +987,6 @@
   },
   {
    "source": "component:Skill-Bridge/code-collab/server",
-   "target": "tech:Express",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Express",
    "type": "USES",
    "props": {}
@@ -1004,13 +1004,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -1096,13 +1096,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -1119,13 +1119,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -1144,7 +1144,7 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -1162,7 +1162,7 @@
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -1200,13 +1200,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}

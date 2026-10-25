@@ -162,7 +162,7 @@
    "label": "MMRA",
    "type": "Project",
    "props": {
-    "title": "Multi-Agent vs Single-Model Research Framework",
+    "title": "MMRA Extended Adversarial Test Set",
     "description": "Research study comparing multi-agent and single-model LLM reasoning across 4 conditions, 7 task categories and 140 tasks, using OpenRouter models.",
     "url": "https://github.com/Goldypahal/MMRA",
     "owner": "Goldypahal",
@@ -238,7 +238,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 7,
+    "used_by_projects": 6,
     "technology": "pandas"
    }
   },
@@ -348,7 +348,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 4,
+    "used_by_projects": 5,
     "technology": "PyTorch"
    }
   },
@@ -380,10 +380,10 @@
     "url": "https://github.com/Goldypahal/RAGS",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 8,
-    "files": 154,
+    "commits": 13,
+    "files": 175,
     "first_commit": "2026-10-05",
-    "last_commit": "2026-10-06",
+    "last_commit": "2026-10-25",
     "kind": "research"
    }
   },
@@ -396,12 +396,13 @@
    }
   },
   {
-   "id": "lib:pip:mypy",
-   "label": "mypy",
+   "id": "lib:pip:transformers",
+   "label": "transformers",
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 3
+    "used_by_projects": 3,
+    "technology": "Hugging Face Transformers"
    }
   },
   {
@@ -421,6 +422,15 @@
    }
   },
   {
+   "id": "lib:pip:mypy",
+   "label": "mypy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 2
+   }
+  },
+  {
    "id": "lib:pip:nltk",
    "label": "nltk",
    "type": "Library",
@@ -428,16 +438,6 @@
     "ecosystem": "pip",
     "used_by_projects": 2,
     "technology": "NLTK"
-   }
-  },
-  {
-   "id": "lib:pip:transformers",
-   "label": "transformers",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2,
-    "technology": "Hugging Face Transformers"
    }
   },
   {
@@ -773,14 +773,14 @@
    "props": {}
   },
   {
-   "source": "lib:pip:nltk",
-   "target": "tech:NLTK",
+   "source": "lib:pip:transformers",
+   "target": "tech:Hugging Face Transformers",
    "type": "IMPLEMENTS",
    "props": {}
   },
   {
-   "source": "lib:pip:transformers",
-   "target": "tech:Hugging Face Transformers",
+   "source": "lib:pip:nltk",
+   "target": "tech:NLTK",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -1664,7 +1664,7 @@
    "target": "project:researchpaper2-",
    "type": "SIMILAR_STACK",
    "props": {
-    "score": 0.38,
+    "score": 0.35,
     "shared": [
      "Hugging Face Datasets",
      "Hugging Face Transformers",
@@ -1672,7 +1672,6 @@
      "NumPy",
      "PyTorch",
      "SciPy",
-     "pandas",
      "pytest",
      "scikit-learn"
     ]

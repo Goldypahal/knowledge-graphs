@@ -352,16 +352,8 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 4,
+    "used_by_projects": 5,
     "technology": "PyTorch"
-   }
-  },
-  {
-   "id": "tech:NetworkX",
-   "label": "NetworkX",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {
@@ -370,16 +362,6 @@
    "type": "Technology",
    "props": {
     "category": "ML / data science"
-   }
-  },
-  {
-   "id": "lib:pip:networkx",
-   "label": "networkx",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2,
-    "technology": "NetworkX"
    }
   },
   {
@@ -481,6 +463,14 @@
    "type": "Technology",
    "props": {
     "category": "Backend framework"
+   }
+  },
+  {
+   "id": "tech:NetworkX",
+   "label": "NetworkX",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
    }
   },
   {
@@ -746,6 +736,16 @@
    }
   },
   {
+   "id": "lib:pip:networkx",
+   "label": "networkx",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1,
+    "technology": "NetworkX"
+   }
+  },
+  {
    "id": "lib:pip:osmnx",
    "label": "osmnx",
    "type": "Library",
@@ -878,12 +878,6 @@
   {
    "source": "lib:pip:torch",
    "target": "tech:PyTorch",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "lib:pip:networkx",
-   "target": "tech:NetworkX",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -1105,6 +1099,12 @@
    }
   },
   {
+   "source": "component:Shield/backend/routing",
+   "target": "tech:NumPy",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Shield/app/assets/models",
    "target": "tech:NumPy",
    "type": "USES",
@@ -1112,12 +1112,6 @@
   },
   {
    "source": "component:Shield/backend/ml/models/scream_detection",
-   "target": "tech:NumPy",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Shield/backend/routing",
    "target": "tech:NumPy",
    "type": "USES",
    "props": {}
@@ -1760,6 +1754,12 @@
      "backend/routing"
     ]
    }
+  },
+  {
+   "source": "lib:pip:networkx",
+   "target": "tech:NetworkX",
+   "type": "IMPLEMENTS",
+   "props": {}
   },
   {
    "source": "project:Shield",

@@ -65,7 +65,7 @@
    "label": "MMRA",
    "type": "Project",
    "props": {
-    "title": "Multi-Agent vs Single-Model Research Framework",
+    "title": "MMRA Extended Adversarial Test Set",
     "description": "Research study comparing multi-agent and single-model LLM reasoning across 4 conditions, 7 task categories and 140 tasks, using OpenRouter models.",
     "url": "https://github.com/Goldypahal/MMRA",
     "owner": "Goldypahal",
@@ -123,7 +123,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 7,
+    "used_by_projects": 6,
     "technology": "pandas"
    }
   },
@@ -237,7 +237,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 4,
+    "used_by_projects": 5,
     "technology": "PyTorch"
    }
   },
@@ -258,23 +258,6 @@
    "label": "Supply chain / demand",
    "type": "Concept",
    "props": {}
-  },
-  {
-   "id": "project:RAGS",
-   "label": "RAGS",
-   "type": "Project",
-   "props": {
-    "title": "🚀 RAGS: Retrieval-Augmented Generation Research & Production Framework",
-    "description": "A research framework and benchmarking suite for Retrieval-Augmented Generation (RAG) systems. This project explores, implements, and empirically evaluates 9 different RAG architectures—combining classical computer science data structures (HashMaps, Tries, Inverted Indexes, Knowledge Graphs) with dense vector representations and adaptive query routing.",
-    "url": "https://github.com/Goldypahal/RAGS",
-    "owner": "Goldypahal",
-    "status": "active",
-    "commits": 8,
-    "files": 154,
-    "first_commit": "2026-10-05",
-    "last_commit": "2026-10-06",
-    "kind": "research"
-   }
   },
   {
    "id": "project:researchpaper2-",
@@ -669,22 +652,6 @@
      "pandas",
      "scikit-learn",
      "statsmodels"
-    ]
-   }
-  },
-  {
-   "source": "project:Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting",
-   "target": "project:RAGS",
-   "type": "SIMILAR_STACK",
-   "props": {
-    "score": 0.32,
-    "shared": [
-     "Matplotlib",
-     "NumPy",
-     "PyTorch",
-     "SciPy",
-     "pandas",
-     "scikit-learn"
     ]
    }
   }

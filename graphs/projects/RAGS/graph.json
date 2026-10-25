@@ -69,14 +69,6 @@
    }
   },
   {
-   "id": "tech:pandas",
-   "label": "pandas",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
-   }
-  },
-  {
    "id": "tech:Matplotlib",
    "label": "Matplotlib",
    "type": "Technology",
@@ -98,16 +90,6 @@
    "type": "Technology",
    "props": {
     "category": "ML / data science"
-   }
-  },
-  {
-   "id": "lib:pip:pandas",
-   "label": "pandas",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 7,
-    "technology": "pandas"
    }
   },
   {
@@ -143,23 +125,6 @@
    "props": {}
   },
   {
-   "id": "project:Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting",
-   "label": "Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting",
-   "type": "Project",
-   "props": {
-    "title": "MDSTFT: Multi-Dimensional Spatio-Temporal Fusion Transformer for Intermittent Demand Forecasting",
-    "description": "This project introduces a sophisticated deep learning framework designed to solve one of the most challenging problems in supply chain management: Intermittent Demand Forecasting. Standard models often struggle with \"lumpy\" or \"sparse\" data where sales are zero for long periods followed by sudden spikes.",
-    "url": "https://github.com/Goldypahal/Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting",
-    "owner": "Goldypahal",
-    "status": "dormant",
-    "commits": 3,
-    "files": 32,
-    "first_commit": "2026-04-29",
-    "last_commit": "2026-04-29",
-    "kind": "research"
-   }
-  },
-  {
    "id": "lib:pip:matplotlib",
    "label": "matplotlib",
    "type": "Library",
@@ -167,6 +132,16 @@
     "ecosystem": "pip",
     "used_by_projects": 5,
     "technology": "Matplotlib"
+   }
+  },
+  {
+   "id": "lib:pip:torch",
+   "label": "torch",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 5,
+    "technology": "PyTorch"
    }
   },
   {
@@ -192,6 +167,16 @@
    }
   },
   {
+   "id": "lib:pip:sentence-transformers",
+   "label": "sentence-transformers",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 4,
+    "technology": "Sentence Transformers"
+   }
+  },
+  {
    "id": "project:RAGS",
    "label": "RAGS",
    "type": "Project",
@@ -201,10 +186,10 @@
     "url": "https://github.com/Goldypahal/RAGS",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 8,
-    "files": 154,
+    "commits": 13,
+    "files": 175,
     "first_commit": "2026-10-05",
-    "last_commit": "2026-10-06",
+    "last_commit": "2026-10-25",
     "kind": "research"
    }
   },
@@ -229,14 +214,6 @@
    }
   },
   {
-   "id": "tech:NetworkX",
-   "label": "NetworkX",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
-   }
-  },
-  {
    "id": "tech:arXiv API",
    "label": "arXiv API",
    "type": "Technology",
@@ -253,40 +230,13 @@
    }
   },
   {
-   "id": "lib:pip:black",
-   "label": "black",
+   "id": "lib:pip:joblib",
+   "label": "joblib",
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 2
-   }
-  },
-  {
-   "id": "lib:pip:flake8",
-   "label": "flake8",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2
-   }
-  },
-  {
-   "id": "lib:pip:mypy",
-   "label": "mypy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 3
-   }
-  },
-  {
-   "id": "lib:pip:networkx",
-   "label": "networkx",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2,
-    "technology": "NetworkX"
+    "used_by_projects": 1,
+    "technology": "joblib"
    }
   },
   {
@@ -299,21 +249,13 @@
    }
   },
   {
-   "id": "lib:pip:sphinx",
-   "label": "sphinx",
+   "id": "lib:pip:transformers",
+   "label": "transformers",
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 1
-   }
-  },
-  {
-   "id": "lib:pip:sphinx-rtd-theme",
-   "label": "sphinx-rtd-theme",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 1
+    "used_by_projects": 3,
+    "technology": "Hugging Face Transformers"
    }
   },
   {
@@ -365,12 +307,6 @@
    "props": {}
   },
   {
-   "source": "lib:pip:pandas",
-   "target": "tech:pandas",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
    "source": "lib:pip:scikit-learn",
    "target": "tech:scikit-learn",
    "type": "IMPLEMENTS",
@@ -389,11 +325,23 @@
    "props": {}
   },
   {
+   "source": "lib:pip:torch",
+   "target": "tech:PyTorch",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:pip:sentence-transformers",
+   "target": "tech:Sentence Transformers",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
    "source": "project:RAGS",
    "target": "language:Python",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 27,
+    "files": 29,
     "share": 1.0
    }
   },
@@ -419,9 +367,16 @@
    "type": "USES",
    "props": {
     "via": [
-     "imports"
+     "imports",
+     "rags-research-framework"
     ]
    }
+  },
+  {
+   "source": "component:RAGS/rags-research-framework",
+   "target": "tech:Hugging Face Transformers",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:RAGS",
@@ -437,22 +392,6 @@
   {
    "source": "component:RAGS/rags-research-framework",
    "target": "tech:Matplotlib",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "project:RAGS",
-   "target": "tech:NetworkX",
-   "type": "USES",
-   "props": {
-    "via": [
-     "rags-research-framework"
-    ]
-   }
-  },
-  {
-   "source": "component:RAGS/rags-research-framework",
-   "target": "tech:NetworkX",
    "type": "USES",
    "props": {}
   },
@@ -479,9 +418,16 @@
    "type": "USES",
    "props": {
     "via": [
-     "imports"
+     "imports",
+     "rags-research-framework"
     ]
    }
+  },
+  {
+   "source": "component:RAGS/rags-research-framework",
+   "target": "tech:PyTorch",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:RAGS",
@@ -506,9 +452,16 @@
    "type": "USES",
    "props": {
     "via": [
-     "imports"
+     "imports",
+     "rags-research-framework"
     ]
    }
+  },
+  {
+   "source": "component:RAGS/rags-research-framework",
+   "target": "tech:Sentence Transformers",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:RAGS",
@@ -526,23 +479,14 @@
    "type": "USES",
    "props": {
     "via": [
-     "imports"
-    ]
-   }
-  },
-  {
-   "source": "project:RAGS",
-   "target": "tech:pandas",
-   "type": "USES",
-   "props": {
-    "via": [
+     "imports",
      "rags-research-framework"
     ]
    }
   },
   {
    "source": "component:RAGS/rags-research-framework",
-   "target": "tech:pandas",
+   "target": "tech:joblib",
    "type": "USES",
    "props": {}
   },
@@ -552,6 +496,7 @@
    "type": "USES",
    "props": {
     "via": [
+     "imports",
      "rags-research-framework"
     ]
    }
@@ -581,7 +526,7 @@
   },
   {
    "source": "project:RAGS",
-   "target": "lib:pip:black",
+   "target": "lib:pip:joblib",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -590,14 +535,10 @@
    }
   },
   {
-   "source": "project:RAGS",
-   "target": "lib:pip:flake8",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "rags-research-framework"
-    ]
-   }
+   "source": "lib:pip:joblib",
+   "target": "tech:joblib",
+   "type": "IMPLEMENTS",
+   "props": {}
   },
   {
    "source": "project:RAGS",
@@ -611,43 +552,7 @@
   },
   {
    "source": "project:RAGS",
-   "target": "lib:pip:mypy",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "rags-research-framework"
-    ]
-   }
-  },
-  {
-   "source": "project:RAGS",
-   "target": "lib:pip:networkx",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "rags-research-framework"
-    ]
-   }
-  },
-  {
-   "source": "lib:pip:networkx",
-   "target": "tech:NetworkX",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "project:RAGS",
    "target": "lib:pip:numpy",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "rags-research-framework"
-    ]
-   }
-  },
-  {
-   "source": "project:RAGS",
-   "target": "lib:pip:pandas",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -697,7 +602,7 @@
   },
   {
    "source": "project:RAGS",
-   "target": "lib:pip:sphinx",
+   "target": "lib:pip:sentence-transformers",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -707,13 +612,29 @@
   },
   {
    "source": "project:RAGS",
-   "target": "lib:pip:sphinx-rtd-theme",
+   "target": "lib:pip:torch",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
      "rags-research-framework"
     ]
    }
+  },
+  {
+   "source": "project:RAGS",
+   "target": "lib:pip:transformers",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "rags-research-framework"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:transformers",
+   "target": "tech:Hugging Face Transformers",
+   "type": "IMPLEMENTS",
+   "props": {}
   },
   {
    "source": "project:RAGS",
@@ -744,15 +665,6 @@
   },
   {
    "source": "project:RAGS",
-   "target": "concept:Vector / hybrid search",
-   "type": "ABOUT",
-   "props": {
-    "source": "readme",
-    "mentions": 7
-   }
-  },
-  {
-   "source": "project:RAGS",
    "target": "concept:Transformers / deep learning",
    "type": "ABOUT",
    "props": {
@@ -761,27 +673,20 @@
    }
   },
   {
+   "source": "project:RAGS",
+   "target": "concept:Vector / hybrid search",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 6
+   }
+  },
+  {
    "source": "person:Goldy Pahal",
    "target": "project:RAGS",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 8
-   }
-  },
-  {
-   "source": "project:Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting",
-   "target": "project:RAGS",
-   "type": "SIMILAR_STACK",
-   "props": {
-    "score": 0.32,
-    "shared": [
-     "Matplotlib",
-     "NumPy",
-     "PyTorch",
-     "SciPy",
-     "pandas",
-     "scikit-learn"
-    ]
+    "commits": 13
    }
   },
   {
@@ -789,14 +694,13 @@
    "target": "project:researchpaper1",
    "type": "SIMILAR_STACK",
    "props": {
-    "score": 0.44,
+    "score": 0.4,
     "shared": [
      "Hugging Face Transformers",
      "Matplotlib",
      "NumPy",
      "PyTorch",
      "SciPy",
-     "pandas",
      "pytest"
     ]
    }
@@ -806,7 +710,7 @@
    "target": "project:researchpaper2-",
    "type": "SIMILAR_STACK",
    "props": {
-    "score": 0.38,
+    "score": 0.35,
     "shared": [
      "Hugging Face Datasets",
      "Hugging Face Transformers",
@@ -814,7 +718,6 @@
      "NumPy",
      "PyTorch",
      "SciPy",
-     "pandas",
      "pytest",
      "scikit-learn"
     ]

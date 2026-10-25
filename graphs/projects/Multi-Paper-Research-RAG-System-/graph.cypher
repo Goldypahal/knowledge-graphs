@@ -25,7 +25,7 @@ MERGE (n:Entity {id: "lib:pip:uvicorn"}) SET n:Library, n.`name` = "uvicorn", n.
 MERGE (n:Entity {id: "tech:MinIO / S3"}) SET n:Technology, n.`name` = "MinIO / S3", n.`category` = "Database / storage";
 MERGE (n:Entity {id: "tech:NumPy"}) SET n:Technology, n.`name` = "NumPy", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "tech:pandas"}) SET n:Technology, n.`name` = "pandas", n.`category` = "ML / data science";
-MERGE (n:Entity {id: "lib:pip:pandas"}) SET n:Library, n.`name` = "pandas", n.`ecosystem` = "pip", n.`used_by_projects` = 7, n.`technology` = "pandas";
+MERGE (n:Entity {id: "lib:pip:pandas"}) SET n:Library, n.`name` = "pandas", n.`ecosystem` = "pip", n.`used_by_projects` = 6, n.`technology` = "pandas";
 MERGE (n:Entity {id: "lib:pip:tenacity"}) SET n:Library, n.`name` = "tenacity", n.`ecosystem` = "pip", n.`used_by_projects` = 4;
 MERGE (n:Entity {id: "tech:python-docx"}) SET n:Technology, n.`name` = "python-docx", n.`category` = "Documents / parsing";
 MERGE (n:Entity {id: "project:Multi-Paper-Research-RAG-System-"}) SET n:Project, n.`name` = "Multi-Paper-Research-RAG-System-", n.`title` = "Multi-Paper-Research-RAG-System-", n.`description` = "Research RAG system that ingests many papers (including from S3) and answers questions across them, with intelligent retrieval, research insights, a knowledge graph layer and evaluation endpoints.", n.`url` = "https://github.com/Goldypahal/Multi-Paper-Research-RAG-System-", n.`owner` = "Goldypahal", n.`status` = "dormant", n.`commits` = 17, n.`files` = 126, n.`first_commit` = "2026-04-08", n.`last_commit` = "2026-07-20", n.`kind` = "product";
@@ -47,7 +47,7 @@ MERGE (n:Entity {id: "lib:pip:pymupdf"}) SET n:Library, n.`name` = "pymupdf", n.
 MERGE (n:Entity {id: "lib:pip:pytest-mock"}) SET n:Library, n.`name` = "pytest-mock", n.`ecosystem` = "pip", n.`used_by_projects` = 2;
 MERGE (n:Entity {id: "lib:pip:python-docx"}) SET n:Library, n.`name` = "python-docx", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "python-docx";
 MERGE (n:Entity {id: "lib:pip:rank-bm25"}) SET n:Library, n.`name` = "rank-bm25", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "BM25";
-MERGE (n:Entity {id: "lib:pip:sentence-transformers"}) SET n:Library, n.`name` = "sentence-transformers", n.`ecosystem` = "pip", n.`used_by_projects` = 3, n.`technology` = "Sentence Transformers";
+MERGE (n:Entity {id: "lib:pip:sentence-transformers"}) SET n:Library, n.`name` = "sentence-transformers", n.`ecosystem` = "pip", n.`used_by_projects` = 4, n.`technology` = "Sentence Transformers";
 MERGE (n:Entity {id: "lib:pip:unstructured"}) SET n:Library, n.`name` = "unstructured", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Unstructured";
 MERGE (n:Entity {id: "platform:Render"}) SET n:Platform, n.`name` = "Render";
 MERGE (n:Entity {id: "concept:Knowledge graphs"}) SET n:Concept, n.`name` = "Knowledge graphs";

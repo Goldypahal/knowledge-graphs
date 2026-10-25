@@ -178,7 +178,7 @@
   },
   {
    "source": "project:SAP-hackathon-",
-   "target": "language:CSS",
+   "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
@@ -187,7 +187,7 @@
   },
   {
    "source": "project:SAP-hackathon-",
-   "target": "language:JavaScript",
+   "target": "language:CSS",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,

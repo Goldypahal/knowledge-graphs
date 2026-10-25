@@ -237,7 +237,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 3,
+    "used_by_projects": 4,
     "technology": "Sentence Transformers"
    }
   },
@@ -250,30 +250,13 @@
    }
   },
   {
-   "id": "lib:pip:black",
-   "label": "black",
+   "id": "lib:pip:transformers",
+   "label": "transformers",
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 2
-   }
-  },
-  {
-   "id": "lib:pip:flake8",
-   "label": "flake8",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2
-   }
-  },
-  {
-   "id": "lib:pip:mypy",
-   "label": "mypy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 3
+    "used_by_projects": 3,
+    "technology": "Hugging Face Transformers"
    }
   },
   {
@@ -347,6 +330,24 @@
    }
   },
   {
+   "id": "lib:pip:black",
+   "label": "black",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:pip:flake8",
+   "label": "flake8",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1
+   }
+  },
+  {
    "id": "lib:pip:flask",
    "label": "flask",
    "type": "Library",
@@ -354,6 +355,15 @@
     "ecosystem": "pip",
     "used_by_projects": 1,
     "technology": "Flask"
+   }
+  },
+  {
+   "id": "lib:pip:mypy",
+   "label": "mypy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 2
    }
   },
   {
@@ -404,16 +414,6 @@
     "ecosystem": "pip",
     "used_by_projects": 1,
     "technology": "SQLite"
-   }
-  },
-  {
-   "id": "lib:pip:transformers",
-   "label": "transformers",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2,
-    "technology": "Hugging Face Transformers"
    }
   },
   {
@@ -494,12 +494,27 @@
    "props": {}
   },
   {
+   "source": "lib:pip:transformers",
+   "target": "tech:Hugging Face Transformers",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
    "source": "project:jarvis",
    "target": "language:Python",
    "type": "WRITTEN_IN",
    "props": {
     "files": 24,
     "share": 0.889
+   }
+  },
+  {
+   "source": "project:jarvis",
+   "target": "language:HTML",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 1,
+    "share": 0.037
    }
   },
   {
@@ -514,15 +529,6 @@
   {
    "source": "project:jarvis",
    "target": "language:JavaScript",
-   "type": "WRITTEN_IN",
-   "props": {
-    "files": 1,
-    "share": 0.037
-   }
-  },
-  {
-   "source": "project:jarvis",
-   "target": "language:HTML",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
@@ -938,12 +944,6 @@
      "."
     ]
    }
-  },
-  {
-   "source": "lib:pip:transformers",
-   "target": "tech:Hugging Face Transformers",
-   "type": "IMPLEMENTS",
-   "props": {}
   },
   {
    "source": "project:jarvis",

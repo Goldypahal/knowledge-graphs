@@ -101,7 +101,7 @@
    "label": "Fullstack",
    "type": "Project",
    "props": {
-    "title": "EXP-1/1.1 — Multi-Platform Post Composer",
+    "title": "EXP-2/1.2 — Memoized Selectors and Performance",
     "description": "Full-stack web development lab experiments (React + Vite apps such as a multi-platform post composer).",
     "url": "https://github.com/Goldypahal/Fullstack",
     "owner": "Goldypahal",
@@ -317,19 +317,7 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-2/1.2",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Fullstack/EXP-1/1.2",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -341,13 +329,25 @@
    "props": {}
   },
   {
+   "source": "component:Fullstack/EXP-1/1.1",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.2",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-1/1.1",
+   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -365,7 +365,7 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-2/1.2",
+   "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -377,7 +377,7 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-3/1.1",
+   "source": "component:Fullstack/EXP-2/1.2",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -396,7 +396,13 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-2/1.2",
+   "source": "component:Fullstack/EXP-3/1.1",
+   "target": "tech:Redux",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -408,13 +414,7 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-3/1.1",
-   "target": "tech:Redux",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-3/1.2",
+   "source": "component:Fullstack/EXP-2/1.2",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -435,19 +435,7 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-2/1.2",
-   "target": "tech:Vite",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Fullstack/EXP-1/1.2",
-   "target": "tech:Vite",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -459,13 +447,25 @@
    "props": {}
   },
   {
+   "source": "component:Fullstack/EXP-1/1.1",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.2",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-1/1.1",
+   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}

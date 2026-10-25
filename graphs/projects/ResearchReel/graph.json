@@ -803,7 +803,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 7,
+    "used_by_projects": 6,
     "technology": "pandas"
    }
   },
@@ -1025,7 +1025,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 3,
+    "used_by_projects": 4,
     "technology": "Sentence Transformers"
    }
   },
@@ -2000,13 +2000,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/backend/research_rag",
    "target": "tech:Google Gemini",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/backend/research_rag",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Google Gemini",
    "type": "USES",
    "props": {}

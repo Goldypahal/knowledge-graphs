@@ -21,8 +21,8 @@ MERGE (n:Entity {id: "project:Skill-Bridge"}) SET n:Project, n.`name` = "Skill-B
 MATCH (a:Entity {id: "lib:pip:pydantic"}), (b:Entity {id: "tech:Pydantic"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "project:SAP-hackathon-"}), (b:Entity {id: "language:Python"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 36, r.`share` = 0.837;
 MATCH (a:Entity {id: "project:SAP-hackathon-"}), (b:Entity {id: "language:HTML"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 5, r.`share` = 0.116;
-MATCH (a:Entity {id: "project:SAP-hackathon-"}), (b:Entity {id: "language:CSS"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 1, r.`share` = 0.023;
 MATCH (a:Entity {id: "project:SAP-hackathon-"}), (b:Entity {id: "language:JavaScript"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 1, r.`share` = 0.023;
+MATCH (a:Entity {id: "project:SAP-hackathon-"}), (b:Entity {id: "language:CSS"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 1, r.`share` = 0.023;
 MATCH (a:Entity {id: "project:SAP-hackathon-"}), (b:Entity {id: "component:SAP-hackathon-/ai-career-engine"}) MERGE (a)-[r:HAS_COMPONENT]->(b);
 MATCH (a:Entity {id: "project:SAP-hackathon-"}), (b:Entity {id: "tech:Matplotlib"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["imports"];
 MATCH (a:Entity {id: "project:SAP-hackathon-"}), (b:Entity {id: "tech:NumPy"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["imports"];

@@ -13,7 +13,7 @@ MERGE (n:Entity {id: "tech:NumPy"}) SET n:Technology, n.`name` = "NumPy", n.`cat
 MERGE (n:Entity {id: "tech:Requests / HTTPX"}) SET n:Technology, n.`name` = "Requests / HTTPX", n.`category` = "Tooling";
 MERGE (n:Entity {id: "lib:pip:numpy"}) SET n:Library, n.`name` = "numpy", n.`ecosystem` = "pip", n.`used_by_projects` = 8, n.`technology` = "NumPy";
 MERGE (n:Entity {id: "tech:pandas"}) SET n:Technology, n.`name` = "pandas", n.`category` = "ML / data science";
-MERGE (n:Entity {id: "project:MMRA"}) SET n:Project, n.`name` = "MMRA", n.`title` = "Multi-Agent vs Single-Model Research Framework", n.`description` = "Research study comparing multi-agent and single-model LLM reasoning across 4 conditions, 7 task categories and 140 tasks, using OpenRouter models.", n.`url` = "https://github.com/Goldypahal/MMRA", n.`owner` = "Goldypahal", n.`status` = "recent", n.`commits` = 26, n.`files` = 44, n.`first_commit` = "2026-08-16", n.`last_commit` = "2026-09-01", n.`kind` = "research";
+MERGE (n:Entity {id: "project:MMRA"}) SET n:Project, n.`name` = "MMRA", n.`title` = "MMRA Extended Adversarial Test Set", n.`description` = "Research study comparing multi-agent and single-model LLM reasoning across 4 conditions, 7 task categories and 140 tasks, using OpenRouter models.", n.`url` = "https://github.com/Goldypahal/MMRA", n.`owner` = "Goldypahal", n.`status` = "recent", n.`commits` = 26, n.`files` = 44, n.`first_commit` = "2026-08-16", n.`last_commit` = "2026-09-01", n.`kind` = "research";
 MERGE (n:Entity {id: "tech:Matplotlib"}) SET n:Technology, n.`name` = "Matplotlib", n.`category` = "Charts / visualisation";
 MERGE (n:Entity {id: "tech:OpenAI API"}) SET n:Technology, n.`name` = "OpenAI API", n.`category` = "LLM / GenAI";
 MERGE (n:Entity {id: "tech:SciPy"}) SET n:Technology, n.`name` = "SciPy", n.`category` = "ML / data science";
@@ -22,7 +22,7 @@ MERGE (n:Entity {id: "tech:scikit-learn"}) SET n:Technology, n.`name` = "scikit-
 MERGE (n:Entity {id: "tech:statsmodels"}) SET n:Technology, n.`name` = "statsmodels", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "lib:pip:aiohttp"}) SET n:Library, n.`name` = "aiohttp", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Requests / HTTPX";
 MERGE (n:Entity {id: "lib:pip:openai"}) SET n:Library, n.`name` = "openai", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "OpenAI API";
-MERGE (n:Entity {id: "lib:pip:pandas"}) SET n:Library, n.`name` = "pandas", n.`ecosystem` = "pip", n.`used_by_projects` = 7, n.`technology` = "pandas";
+MERGE (n:Entity {id: "lib:pip:pandas"}) SET n:Library, n.`name` = "pandas", n.`ecosystem` = "pip", n.`used_by_projects` = 6, n.`technology` = "pandas";
 MERGE (n:Entity {id: "lib:pip:scikit-learn"}) SET n:Library, n.`name` = "scikit-learn", n.`ecosystem` = "pip", n.`used_by_projects` = 4, n.`technology` = "scikit-learn";
 MERGE (n:Entity {id: "lib:pip:scipy"}) SET n:Library, n.`name` = "scipy", n.`ecosystem` = "pip", n.`used_by_projects` = 5, n.`technology` = "SciPy";
 MERGE (n:Entity {id: "lib:pip:statsmodels"}) SET n:Library, n.`name` = "statsmodels", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "statsmodels";
