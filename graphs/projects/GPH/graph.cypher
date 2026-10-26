@@ -14,6 +14,7 @@ MERGE (n:Entity {id: "tech:Alembic"}) SET n:Technology, n.`name` = "Alembic", n.
 MERGE (n:Entity {id: "tech:Cryptography"}) SET n:Technology, n.`name` = "Cryptography", n.`category` = "Auth / security";
 MERGE (n:Entity {id: "tech:FastAPI"}) SET n:Technology, n.`name` = "FastAPI", n.`category` = "Backend framework";
 MERGE (n:Entity {id: "tech:JWT"}) SET n:Technology, n.`name` = "JWT", n.`category` = "Auth / security";
+MERGE (n:Entity {id: "tech:NumPy"}) SET n:Technology, n.`name` = "NumPy", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "tech:PostgreSQL"}) SET n:Technology, n.`name` = "PostgreSQL", n.`category` = "Database / storage";
 MERGE (n:Entity {id: "tech:Redis"}) SET n:Technology, n.`name` = "Redis", n.`category` = "Database / storage";
 MERGE (n:Entity {id: "tech:SQLAlchemy"}) SET n:Technology, n.`name` = "SQLAlchemy", n.`category` = "Database / storage";
@@ -21,6 +22,7 @@ MERGE (n:Entity {id: "tech:Uvicorn"}) SET n:Technology, n.`name` = "Uvicorn", n.
 MERGE (n:Entity {id: "lib:pip:alembic"}) SET n:Library, n.`name` = "alembic", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Alembic";
 MERGE (n:Entity {id: "lib:pip:fastapi"}) SET n:Library, n.`name` = "fastapi", n.`ecosystem` = "pip", n.`used_by_projects` = 7, n.`technology` = "FastAPI";
 MERGE (n:Entity {id: "lib:pip:psycopg2-binary"}) SET n:Library, n.`name` = "psycopg2-binary", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "PostgreSQL";
+MERGE (n:Entity {id: "lib:pip:redis"}) SET n:Library, n.`name` = "redis", n.`ecosystem` = "pip", n.`used_by_projects` = 4, n.`technology` = "Redis";
 MERGE (n:Entity {id: "lib:pip:sqlalchemy"}) SET n:Library, n.`name` = "sqlalchemy", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "SQLAlchemy";
 MERGE (n:Entity {id: "lib:pip:uvicorn"}) SET n:Library, n.`name` = "uvicorn", n.`ecosystem` = "pip", n.`used_by_projects` = 7, n.`technology` = "Uvicorn";
 MERGE (n:Entity {id: "service:PostgreSQL"}) SET n:Service, n.`name` = "PostgreSQL", n.`category` = "Database / storage";
@@ -30,7 +32,6 @@ MERGE (n:Entity {id: "platform:Docker Compose"}) SET n:Platform, n.`name` = "Doc
 MERGE (n:Entity {id: "project:GPH"}) SET n:Project, n.`name` = "GPH", n.`title` = "GIVIN — Gujarat Integrated Video Intelligence Network", n.`description` = "GIVIN, the Gujarat Integrated Video Intelligence Network, a statewide vendor-neutral CCTV integration and AI video analytics platform built for the Gujarat Police Innovation Hackathon 2026.", n.`url` = "https://github.com/Goldypahal/GPH", n.`owner` = "Goldypahal", n.`status` = "recent", n.`commits` = 57, n.`files` = 212, n.`first_commit` = "2026-09-09", n.`last_commit` = "2026-09-14", n.`kind` = "hackathon";
 MERGE (n:Entity {id: "language:Shell"}) SET n:Language, n.`name` = "Shell";
 MERGE (n:Entity {id: "tech:MinIO / S3"}) SET n:Technology, n.`name` = "MinIO / S3", n.`category` = "Database / storage";
-MERGE (n:Entity {id: "tech:NumPy"}) SET n:Technology, n.`name` = "NumPy", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "tech:OpenCV"}) SET n:Technology, n.`name` = "OpenCV", n.`category` = "Computer vision / audio";
 MERGE (n:Entity {id: "tech:Pillow"}) SET n:Technology, n.`name` = "Pillow", n.`category` = "Computer vision / audio";
 MERGE (n:Entity {id: "tech:PyTorch"}) SET n:Technology, n.`name` = "PyTorch", n.`category` = "ML / data science";
@@ -40,7 +41,6 @@ MERGE (n:Entity {id: "lib:pip:minio"}) SET n:Library, n.`name` = "minio", n.`eco
 MERGE (n:Entity {id: "lib:pip:numpy"}) SET n:Library, n.`name` = "numpy", n.`ecosystem` = "pip", n.`used_by_projects` = 8, n.`technology` = "NumPy";
 MERGE (n:Entity {id: "lib:pip:opencv-python-headless"}) SET n:Library, n.`name` = "opencv-python-headless", n.`ecosystem` = "pip", n.`used_by_projects` = 1, n.`technology` = "OpenCV";
 MERGE (n:Entity {id: "lib:pip:pillow"}) SET n:Library, n.`name` = "pillow", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Pillow";
-MERGE (n:Entity {id: "lib:pip:redis"}) SET n:Library, n.`name` = "redis", n.`ecosystem` = "pip", n.`used_by_projects` = 3, n.`technology` = "Redis";
 MERGE (n:Entity {id: "lib:pip:requests"}) SET n:Library, n.`name` = "requests", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Requests / HTTPX";
 MERGE (n:Entity {id: "lib:pip:ultralytics"}) SET n:Library, n.`name` = "ultralytics", n.`ecosystem` = "pip", n.`used_by_projects` = 1, n.`technology` = "Ultralytics YOLO";
 MERGE (n:Entity {id: "service:AWS / S3"}) SET n:Service, n.`name` = "AWS / S3", n.`category` = "Cloud";
@@ -55,6 +55,7 @@ MATCH (a:Entity {id: "lib:pip:pytest"}), (b:Entity {id: "tech:pytest"}) MERGE (a
 MATCH (a:Entity {id: "lib:pip:alembic"}), (b:Entity {id: "tech:Alembic"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:fastapi"}), (b:Entity {id: "tech:FastAPI"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:psycopg2-binary"}), (b:Entity {id: "tech:PostgreSQL"}) MERGE (a)-[r:IMPLEMENTS]->(b);
+MATCH (a:Entity {id: "lib:pip:redis"}), (b:Entity {id: "tech:Redis"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:sqlalchemy"}), (b:Entity {id: "tech:SQLAlchemy"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:uvicorn"}), (b:Entity {id: "tech:Uvicorn"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "project:GPH"}), (b:Entity {id: "language:Python"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 122, r.`share` = 0.897;
@@ -91,7 +92,6 @@ MATCH (a:Entity {id: "project:GPH"}), (b:Entity {id: "lib:pip:psycopg2-binary"})
 MATCH (a:Entity {id: "project:GPH"}), (b:Entity {id: "lib:pip:pydantic"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["."];
 MATCH (a:Entity {id: "project:GPH"}), (b:Entity {id: "lib:pip:pytest"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["."];
 MATCH (a:Entity {id: "project:GPH"}), (b:Entity {id: "lib:pip:redis"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["."];
-MATCH (a:Entity {id: "lib:pip:redis"}), (b:Entity {id: "tech:Redis"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "project:GPH"}), (b:Entity {id: "lib:pip:requests"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["."];
 MATCH (a:Entity {id: "lib:pip:requests"}), (b:Entity {id: "tech:Requests / HTTPX"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "project:GPH"}), (b:Entity {id: "lib:pip:sqlalchemy"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["."];

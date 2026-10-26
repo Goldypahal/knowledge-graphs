@@ -9,8 +9,8 @@ MERGE (n:Entity {id: "person:Goldy Pahal"}) SET n:Person, n.`name` = "Goldy Paha
 MERGE (n:Entity {id: "language:CSS"}) SET n:Language, n.`name` = "CSS";
 MERGE (n:Entity {id: "language:JavaScript"}) SET n:Language, n.`name` = "JavaScript";
 MERGE (n:Entity {id: "language:HTML"}) SET n:Language, n.`name` = "HTML";
-MERGE (n:Entity {id: "service:OpenAI API"}) SET n:Service, n.`name` = "OpenAI API", n.`category` = "LLM / GenAI";
 MERGE (n:Entity {id: "tech:NumPy"}) SET n:Technology, n.`name` = "NumPy", n.`category` = "ML / data science";
+MERGE (n:Entity {id: "service:OpenAI API"}) SET n:Service, n.`name` = "OpenAI API", n.`category` = "LLM / GenAI";
 MERGE (n:Entity {id: "concept:Hackathon project"}) SET n:Concept, n.`name` = "Hackathon project";
 MERGE (n:Entity {id: "tech:Matplotlib"}) SET n:Technology, n.`name` = "Matplotlib", n.`category` = "Charts / visualisation";
 MERGE (n:Entity {id: "service:Google Gemini"}) SET n:Service, n.`name` = "Google Gemini", n.`category` = "LLM / GenAI";

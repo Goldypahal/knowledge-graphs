@@ -133,6 +133,16 @@
    }
   },
   {
+   "id": "lib:pip:redis",
+   "label": "redis",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 4,
+    "technology": "Redis"
+   }
+  },
+  {
    "id": "lib:pip:uvicorn",
    "label": "uvicorn",
    "type": "Library",
@@ -191,16 +201,6 @@
     "ecosystem": "pip",
     "used_by_projects": 2,
     "technology": "Pillow"
-   }
-  },
-  {
-   "id": "lib:pip:redis",
-   "label": "redis",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 3,
-    "technology": "Redis"
    }
   },
   {
@@ -458,6 +458,12 @@
    "props": {}
   },
   {
+   "source": "lib:pip:redis",
+   "target": "tech:Redis",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
    "source": "lib:pip:uvicorn",
    "target": "tech:Uvicorn",
    "type": "IMPLEMENTS",
@@ -466,12 +472,6 @@
   {
    "source": "lib:pip:pillow",
    "target": "tech:Pillow",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "lib:pip:redis",
-   "target": "tech:Redis",
    "type": "IMPLEMENTS",
    "props": {}
   },

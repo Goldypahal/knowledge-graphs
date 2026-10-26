@@ -14,6 +14,7 @@ MERGE (n:Entity {id: "concept:Vector / hybrid search"}) SET n:Concept, n.`name` 
 MERGE (n:Entity {id: "tech:ChromaDB"}) SET n:Technology, n.`name` = "ChromaDB", n.`category` = "Vector database";
 MERGE (n:Entity {id: "tech:FastAPI"}) SET n:Technology, n.`name` = "FastAPI", n.`category` = "Backend framework";
 MERGE (n:Entity {id: "tech:LangChain"}) SET n:Technology, n.`name` = "LangChain", n.`category` = "LLM / GenAI";
+MERGE (n:Entity {id: "tech:NumPy"}) SET n:Technology, n.`name` = "NumPy", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "tech:PyMuPDF"}) SET n:Technology, n.`name` = "PyMuPDF", n.`category` = "Documents / parsing";
 MERGE (n:Entity {id: "tech:SQLite"}) SET n:Technology, n.`name` = "SQLite", n.`category` = "Database / storage";
 MERGE (n:Entity {id: "tech:Uvicorn"}) SET n:Technology, n.`name` = "Uvicorn", n.`category` = "Backend framework";
@@ -23,7 +24,6 @@ MERGE (n:Entity {id: "lib:pip:langchain-openai"}) SET n:Library, n.`name` = "lan
 MERGE (n:Entity {id: "lib:pip:python-multipart"}) SET n:Library, n.`name` = "python-multipart", n.`ecosystem` = "pip", n.`used_by_projects` = 3;
 MERGE (n:Entity {id: "lib:pip:uvicorn"}) SET n:Library, n.`name` = "uvicorn", n.`ecosystem` = "pip", n.`used_by_projects` = 7, n.`technology` = "Uvicorn";
 MERGE (n:Entity {id: "tech:MinIO / S3"}) SET n:Technology, n.`name` = "MinIO / S3", n.`category` = "Database / storage";
-MERGE (n:Entity {id: "tech:NumPy"}) SET n:Technology, n.`name` = "NumPy", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "tech:pandas"}) SET n:Technology, n.`name` = "pandas", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "lib:pip:pandas"}) SET n:Library, n.`name` = "pandas", n.`ecosystem` = "pip", n.`used_by_projects` = 6, n.`technology` = "pandas";
 MERGE (n:Entity {id: "lib:pip:tenacity"}) SET n:Library, n.`name` = "tenacity", n.`ecosystem` = "pip", n.`used_by_projects` = 4;

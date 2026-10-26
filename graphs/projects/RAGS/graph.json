@@ -51,6 +51,34 @@
    }
   },
   {
+   "id": "tech:joblib",
+   "label": "joblib",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "concept:Research paper / benchmark",
+   "label": "Research paper / benchmark",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:LLM evaluation",
+   "label": "LLM evaluation",
+   "type": "Concept",
+   "props": {}
+  },
+  {
    "id": "tech:PyTorch",
    "label": "PyTorch",
    "type": "Technology",
@@ -85,14 +113,6 @@
    }
   },
   {
-   "id": "tech:scikit-learn",
-   "label": "scikit-learn",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
-   }
-  },
-  {
    "id": "lib:pip:scikit-learn",
    "label": "scikit-learn",
    "type": "Library",
@@ -111,18 +131,6 @@
     "used_by_projects": 5,
     "technology": "SciPy"
    }
-  },
-  {
-   "id": "concept:Research paper / benchmark",
-   "label": "Research paper / benchmark",
-   "type": "Concept",
-   "props": {}
-  },
-  {
-   "id": "concept:LLM evaluation",
-   "label": "LLM evaluation",
-   "type": "Concept",
-   "props": {}
   },
   {
    "id": "lib:pip:matplotlib",
@@ -219,14 +227,6 @@
    "type": "Technology",
    "props": {
     "category": "Documents / parsing"
-   }
-  },
-  {
-   "id": "tech:joblib",
-   "label": "joblib",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {

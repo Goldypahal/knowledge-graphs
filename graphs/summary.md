@@ -1,10 +1,11 @@
 # Project knowledge graph: summary
 
-Generated 2026-10-25 23:47 UTC. 595 nodes (337 Library, 117 Technology, 38 Concept, 37 Component, 26 Project, 20 Service, 8 Language, 6 Platform, 6 Person), 1939 relationships.
+Generated 2026-10-26 08:51 UTC. 602 nodes (342 Library, 118 Technology, 38 Concept, 37 Component, 26 Project, 21 Service, 8 Language, 6 Platform, 6 Person), 1962 relationships.
 
 ## Projects
 | Project | Status | Last commit | Main stack | About |
 |---|---|---|---|---|
+| [FFRE](projects/FFRE/index.html) | active | 2026-10-26 | Alembic, ChromaDB, Cryptography, FastAPI, JWT, LangChain | Retrieval-Augmented Generation (RAG), Vector / hybrid search, Fraud / financial risk |
 | [Labsmart](projects/Labsmart/index.html) | active | 2026-10-25 | CORS, Express, JWT, MinIO / S3, PostgreSQL, Prisma | Healthcare / diagnostics |
 | [RAGS](projects/RAGS/index.html) | active | 2026-10-25 | Hugging Face Datasets, Hugging Face Transformers, Matplotlib, NumPy, PyTorch, SciPy | Retrieval-Augmented Generation (RAG), Research paper / benchmark, LLM evaluation |
 | [Shield](projects/Shield/index.html) | active | 2026-10-25 | Expo, FastAPI, Firebase, Gradio, JWT, NetworkX | Audio / speech, Route optimisation, Women / personal safety |
@@ -14,7 +15,6 @@ Generated 2026-10-25 23:47 UTC. 595 nodes (337 Library, 117 Technology, 38 Conce
 | [researchpaper2-](projects/researchpaper2-/index.html) | active | 2026-10-06 | Accelerate, Anthropic API, Google Gemini, Hugging Face Datasets, Hugging Face Transformers, Matplotlib | Research paper / benchmark, LLM evaluation, LLM agents |
 | [simple-JWT-authentication](projects/simple-JWT-authentication/index.html) | active | 2026-09-29 | React, Vite | Authentication & access control |
 | [Cortex-Hub](projects/Cortex-Hub/index.html) | recent | 2026-09-25 | CORS, Express, Prisma | Retrieval-Augmented Generation (RAG), Vector / hybrid search, Enterprise AI platform |
-| [FFRE](projects/FFRE/index.html) | recent | 2026-09-17 | Alembic, ChromaDB, Cryptography, FastAPI, JWT, LangChain | Fraud / financial risk, Retrieval-Augmented Generation (RAG), Vector / hybrid search |
 | [GPH](projects/GPH/index.html) | recent | 2026-09-14 | Alembic, Cryptography, FastAPI, JWT, MinIO / S3, NumPy | Computer vision, Video intelligence / surveillance, Hackathon project |
 | [CPSET](projects/CPSET/index.html) | recent | 2026-09-12 | Next.js, Prisma, React, Three.js | Cybersecurity, Education / ed-tech, Authentication & access control |
 | [EV-optimal-charging-planner-for-long-routes](projects/EV-optimal-charging-planner-for-long-routes/index.html) | recent | 2026-09-09 | React, Vite | Transportation & mobility, Route optimisation, Electric vehicles |
@@ -36,10 +36,10 @@ Generated 2026-10-25 23:47 UTC. 595 nodes (337 Library, 117 Technology, 38 Conce
 - React: 14 projects
 - pytest: 12 projects
 - Vite: 12 projects
+- NumPy: 12 projects
 - Pydantic: 11 projects
 - Lucide icons: 11 projects
 - TypeScript: 11 projects
-- NumPy: 11 projects
 - Tailwind CSS: 10 projects
 - dotenv: 10 projects
 - ESLint: 9 projects
@@ -51,8 +51,8 @@ Generated 2026-10-25 23:47 UTC. 595 nodes (337 Library, 117 Technology, 38 Conce
 - React Router: 7 projects
 - Redis: 7 projects
 - Uvicorn: 7 projects
+- scikit-learn: 7 projects
 - Matplotlib: 7 projects
-- Zod: 6 projects
 
 ## Code reuse between projects
 - **campusRideshare** shares 50 identical source files with **EduSteam**
@@ -67,9 +67,8 @@ Generated 2026-10-25 23:47 UTC. 595 nodes (337 Library, 117 Technology, 38 Conce
 - EduSteam ↔ campusRideshare (score 0.56: Drizzle ORM, Express, Framer Motion, Lucide icons, Passport.js, React)
 - EduSteam ↔ Vatica (score 0.32: Framer Motion, Lucide icons, React, Tailwind CSS, TypeScript, Vite)
 - EduSteam ↔ EV-optimal-charging-planner-for-long-routes (score 0.31: Lucide icons, React, Tailwind CSS, TypeScript, Vite)
-- FFRE ↔ Labsmart (score 0.34: JWT, Lucide icons, PostgreSQL, React, React Router, Redis)
-- FFRE ↔ HR-tracker (score 0.31: JWT, Lucide icons, PostgreSQL, PyPDF, React, React Router)
-- FFRE ↔ campusRideshare (score 0.3: FastAPI, JWT, Lucide icons, Pydantic, React, Tailwind CSS)
+- FFRE ↔ campusRideshare (score 0.32: FastAPI, JWT, Lucide icons, NumPy, Pydantic, React)
+- FFRE ↔ Shield (score 0.31: FastAPI, JWT, NetworkX, NumPy, PostgreSQL, Pydantic)
 - GPH ↔ jarvis (score 0.32: FastAPI, OpenCV, Pillow, Pydantic, Redis, Requests / HTTPX)
 - HR-tracker ↔ Labsmart (score 0.42: Axios, CORS, ESLint, Express, JWT, Lucide icons)
 - HR-tracker ↔ SHREE (score 0.36: CORS, ESLint, Express, Framer Motion, JWT, Lucide icons)

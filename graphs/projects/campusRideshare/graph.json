@@ -980,15 +980,15 @@
    "label": "FFRE",
    "type": "Project",
    "props": {
-    "title": "FFRE",
+    "title": "Financial Fraud Investigation Reasoning Engine (FFIRE)",
     "description": "FFIRE, a Financial Fraud Investigation Reasoning Engine for running investigations over evidence, with a FastAPI backend, React frontend and a large enterprise specification set.",
     "url": "https://github.com/Goldypahal/FFRE",
     "owner": "Goldypahal",
-    "status": "recent",
-    "commits": 60,
-    "files": 275,
+    "status": "active",
+    "commits": 63,
+    "files": 374,
     "first_commit": "2026-08-13",
-    "last_commit": "2026-09-17",
+    "last_commit": "2026-10-26",
     "kind": "product"
    }
   },
@@ -1009,6 +1009,14 @@
    }
   },
   {
+   "id": "tech:NumPy",
+   "label": "NumPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
    "id": "tech:Uvicorn",
    "label": "Uvicorn",
    "type": "Technology",
@@ -1022,6 +1030,14 @@
    "type": "Technology",
    "props": {
     "category": "Auth / security"
+   }
+  },
+  {
+   "id": "tech:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
    }
   },
   {
@@ -1042,14 +1058,6 @@
     "ecosystem": "pip",
     "used_by_projects": 7,
     "technology": "Uvicorn"
-   }
-  },
-  {
-   "id": "tech:NumPy",
-   "label": "NumPy",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {
@@ -1095,14 +1103,6 @@
    "type": "Service",
    "props": {
     "category": "Auth / security"
-   }
-  },
-  {
-   "id": "tech:scikit-learn",
-   "label": "scikit-learn",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {
@@ -2751,11 +2751,12 @@
    "target": "project:campusRideshare",
    "type": "SIMILAR_STACK",
    "props": {
-    "score": 0.3,
+    "score": 0.32,
     "shared": [
      "FastAPI",
      "JWT",
      "Lucide icons",
+     "NumPy",
      "Pydantic",
      "React",
      "Tailwind CSS",
@@ -2764,7 +2765,8 @@
      "Uvicorn",
      "Vite",
      "bcrypt",
-     "pytest"
+     "pytest",
+     "scikit-learn"
     ]
    }
   },

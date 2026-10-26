@@ -136,6 +136,23 @@
    "props": {}
   },
   {
+   "id": "project:FFRE",
+   "label": "FFRE",
+   "type": "Project",
+   "props": {
+    "title": "Financial Fraud Investigation Reasoning Engine (FFIRE)",
+    "description": "FFIRE, a Financial Fraud Investigation Reasoning Engine for running investigations over evidence, with a FastAPI backend, React frontend and a large enterprise specification set.",
+    "url": "https://github.com/Goldypahal/FFRE",
+    "owner": "Goldypahal",
+    "status": "active",
+    "commits": 63,
+    "files": 374,
+    "first_commit": "2026-08-13",
+    "last_commit": "2026-10-26",
+    "kind": "product"
+   }
+  },
+  {
    "id": "tech:FastAPI",
    "label": "FastAPI",
    "type": "Technology",
@@ -149,6 +166,22 @@
    "type": "Technology",
    "props": {
     "category": "Auth / security"
+   }
+  },
+  {
+   "id": "tech:NetworkX",
+   "label": "NetworkX",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:NumPy",
+   "label": "NumPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
    }
   },
   {
@@ -181,6 +214,22 @@
    "type": "Technology",
    "props": {
     "category": "Auth / security"
+   }
+  },
+  {
+   "id": "tech:joblib",
+   "label": "joblib",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
    }
   },
   {
@@ -223,6 +272,16 @@
    }
   },
   {
+   "id": "lib:pip:redis",
+   "label": "redis",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 4,
+    "technology": "Redis"
+   }
+  },
+  {
    "id": "lib:pip:uvicorn",
    "label": "uvicorn",
    "type": "Library",
@@ -247,12 +306,10 @@
    "props": {}
   },
   {
-   "id": "tech:NumPy",
-   "label": "NumPy",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
-   }
+   "id": "concept:Research paper / benchmark",
+   "label": "Research paper / benchmark",
+   "type": "Concept",
+   "props": {}
   },
   {
    "id": "tech:PyTorch",
@@ -270,16 +327,6 @@
     "ecosystem": "pip",
     "used_by_projects": 8,
     "technology": "NumPy"
-   }
-  },
-  {
-   "id": "lib:pip:redis",
-   "label": "redis",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 3,
-    "technology": "Redis"
    }
   },
   {
@@ -333,20 +380,6 @@
    }
   },
   {
-   "id": "tech:scikit-learn",
-   "label": "scikit-learn",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
-   }
-  },
-  {
-   "id": "concept:Research paper / benchmark",
-   "label": "Research paper / benchmark",
-   "type": "Concept",
-   "props": {}
-  },
-  {
    "id": "lib:pip:torch",
    "label": "torch",
    "type": "Library",
@@ -354,14 +387,6 @@
     "ecosystem": "pip",
     "used_by_projects": 5,
     "technology": "PyTorch"
-   }
-  },
-  {
-   "id": "tech:joblib",
-   "label": "joblib",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {
@@ -463,14 +488,6 @@
    "type": "Technology",
    "props": {
     "category": "Backend framework"
-   }
-  },
-  {
-   "id": "tech:NetworkX",
-   "label": "NetworkX",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {
@@ -852,6 +869,12 @@
    "props": {}
   },
   {
+   "source": "lib:pip:redis",
+   "target": "tech:Redis",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
    "source": "lib:pip:uvicorn",
    "target": "tech:Uvicorn",
    "type": "IMPLEMENTS",
@@ -860,12 +883,6 @@
   {
    "source": "lib:pip:numpy",
    "target": "tech:NumPy",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "lib:pip:redis",
-   "target": "tech:Redis",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -1001,13 +1018,13 @@
    }
   },
   {
-   "source": "component:Shield/backend",
+   "source": "component:Shield/backend/routing",
    "target": "tech:FastAPI",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend/routing",
+   "source": "component:Shield/backend",
    "target": "tech:FastAPI",
    "type": "USES",
    "props": {}
@@ -1040,13 +1057,13 @@
    }
   },
   {
-   "source": "component:Shield/app/assets/models",
+   "source": "component:Shield/backend/ml/models/scream_detection",
    "target": "tech:Gradio",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend/ml/models/scream_detection",
+   "source": "component:Shield/app/assets/models",
    "target": "tech:Gradio",
    "type": "USES",
    "props": {}
@@ -1105,13 +1122,13 @@
    "props": {}
   },
   {
-   "source": "component:Shield/app/assets/models",
+   "source": "component:Shield/backend/ml/models/scream_detection",
    "target": "tech:NumPy",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend/ml/models/scream_detection",
+   "source": "component:Shield/app/assets/models",
    "target": "tech:NumPy",
    "type": "USES",
    "props": {}
@@ -1163,13 +1180,13 @@
    }
   },
   {
-   "source": "component:Shield/app/assets/models",
+   "source": "component:Shield/backend/ml/models/scream_detection",
    "target": "tech:PyTorch",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend/ml/models/scream_detection",
+   "source": "component:Shield/app/assets/models",
    "target": "tech:PyTorch",
    "type": "USES",
    "props": {}
@@ -1306,13 +1323,13 @@
    }
   },
   {
-   "source": "component:Shield/backend",
+   "source": "component:Shield/backend/routing",
    "target": "tech:Uvicorn",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend/routing",
+   "source": "component:Shield/backend",
    "target": "tech:Uvicorn",
    "type": "USES",
    "props": {}
@@ -1357,13 +1374,13 @@
    }
   },
   {
-   "source": "component:Shield/app/assets/models",
+   "source": "component:Shield/backend/ml/models/scream_detection",
    "target": "tech:librosa",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend/ml/models/scream_detection",
+   "source": "component:Shield/app/assets/models",
    "target": "tech:librosa",
    "type": "USES",
    "props": {}
@@ -2005,6 +2022,30 @@
    "type": "CONTRIBUTED_TO",
    "props": {
     "commits": 4
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "project:Shield",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.31,
+    "shared": [
+     "FastAPI",
+     "JWT",
+     "NetworkX",
+     "NumPy",
+     "PostgreSQL",
+     "Pydantic",
+     "React",
+     "Redis",
+     "TypeScript",
+     "Uvicorn",
+     "bcrypt",
+     "joblib",
+     "pytest",
+     "scikit-learn"
+    ]
    }
   }
  ]

@@ -7,15 +7,16 @@ MERGE (n:Entity {id: "person:Goldy Pahal"}) SET n:Person, n.`name` = "Goldy Paha
 MERGE (n:Entity {id: "concept:Retrieval-Augmented Generation (RAG)"}) SET n:Concept, n.`name` = "Retrieval-Augmented Generation (RAG)";
 MERGE (n:Entity {id: "concept:Vector / hybrid search"}) SET n:Concept, n.`name` = "Vector / hybrid search";
 MERGE (n:Entity {id: "tech:NumPy"}) SET n:Technology, n.`name` = "NumPy", n.`category` = "ML / data science";
+MERGE (n:Entity {id: "tech:joblib"}) SET n:Technology, n.`name` = "joblib", n.`category` = "ML / data science";
+MERGE (n:Entity {id: "tech:scikit-learn"}) SET n:Technology, n.`name` = "scikit-learn", n.`category` = "ML / data science";
+MERGE (n:Entity {id: "concept:Research paper / benchmark"}) SET n:Concept, n.`name` = "Research paper / benchmark";
+MERGE (n:Entity {id: "concept:LLM evaluation"}) SET n:Concept, n.`name` = "LLM evaluation";
 MERGE (n:Entity {id: "tech:PyTorch"}) SET n:Technology, n.`name` = "PyTorch", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "lib:pip:numpy"}) SET n:Library, n.`name` = "numpy", n.`ecosystem` = "pip", n.`used_by_projects` = 8, n.`technology` = "NumPy";
 MERGE (n:Entity {id: "tech:Matplotlib"}) SET n:Technology, n.`name` = "Matplotlib", n.`category` = "Charts / visualisation";
 MERGE (n:Entity {id: "tech:SciPy"}) SET n:Technology, n.`name` = "SciPy", n.`category` = "ML / data science";
-MERGE (n:Entity {id: "tech:scikit-learn"}) SET n:Technology, n.`name` = "scikit-learn", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "lib:pip:scikit-learn"}) SET n:Library, n.`name` = "scikit-learn", n.`ecosystem` = "pip", n.`used_by_projects` = 4, n.`technology` = "scikit-learn";
 MERGE (n:Entity {id: "lib:pip:scipy"}) SET n:Library, n.`name` = "scipy", n.`ecosystem` = "pip", n.`used_by_projects` = 5, n.`technology` = "SciPy";
-MERGE (n:Entity {id: "concept:Research paper / benchmark"}) SET n:Concept, n.`name` = "Research paper / benchmark";
-MERGE (n:Entity {id: "concept:LLM evaluation"}) SET n:Concept, n.`name` = "LLM evaluation";
 MERGE (n:Entity {id: "lib:pip:matplotlib"}) SET n:Library, n.`name` = "matplotlib", n.`ecosystem` = "pip", n.`used_by_projects` = 5, n.`technology` = "Matplotlib";
 MERGE (n:Entity {id: "lib:pip:torch"}) SET n:Library, n.`name` = "torch", n.`ecosystem` = "pip", n.`used_by_projects` = 5, n.`technology` = "PyTorch";
 MERGE (n:Entity {id: "concept:Transformers / deep learning"}) SET n:Concept, n.`name` = "Transformers / deep learning";
@@ -26,7 +27,6 @@ MERGE (n:Entity {id: "project:RAGS"}) SET n:Project, n.`name` = "RAGS", n.`title
 MERGE (n:Entity {id: "component:RAGS/rags-research-framework"}) SET n:Component, n.`name` = "rags-research-framework", n.`project` = "RAGS", n.`role` = "ml", n.`ecosystems` = ["pip"];
 MERGE (n:Entity {id: "tech:Hugging Face Transformers"}) SET n:Technology, n.`name` = "Hugging Face Transformers", n.`category` = "LLM / GenAI";
 MERGE (n:Entity {id: "tech:arXiv API"}) SET n:Technology, n.`name` = "arXiv API", n.`category` = "Documents / parsing";
-MERGE (n:Entity {id: "tech:joblib"}) SET n:Technology, n.`name` = "joblib", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "lib:pip:joblib"}) SET n:Library, n.`name` = "joblib", n.`ecosystem` = "pip", n.`used_by_projects` = 1, n.`technology` = "joblib";
 MERGE (n:Entity {id: "lib:pip:psutil"}) SET n:Library, n.`name` = "psutil", n.`ecosystem` = "pip", n.`used_by_projects` = 1;
 MERGE (n:Entity {id: "lib:pip:transformers"}) SET n:Library, n.`name` = "transformers", n.`ecosystem` = "pip", n.`used_by_projects` = 3, n.`technology` = "Hugging Face Transformers";

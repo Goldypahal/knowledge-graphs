@@ -37,18 +37,30 @@
    "props": {}
   },
   {
-   "id": "platform:Docker",
-   "label": "Docker",
-   "type": "Platform",
-   "props": {}
-  },
-  {
    "id": "tech:NumPy",
    "label": "NumPy",
    "type": "Technology",
    "props": {
     "category": "ML / data science"
    }
+  },
+  {
+   "id": "platform:Docker",
+   "label": "Docker",
+   "type": "Platform",
+   "props": {}
+  },
+  {
+   "id": "concept:Research paper / benchmark",
+   "label": "Research paper / benchmark",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:LLM evaluation",
+   "label": "LLM evaluation",
+   "type": "Concept",
+   "props": {}
   },
   {
    "id": "tech:PyTorch",
@@ -117,18 +129,6 @@
    "props": {
     "category": "LLM / GenAI"
    }
-  },
-  {
-   "id": "concept:Research paper / benchmark",
-   "label": "Research paper / benchmark",
-   "type": "Concept",
-   "props": {}
-  },
-  {
-   "id": "concept:LLM evaluation",
-   "label": "LLM evaluation",
-   "type": "Concept",
-   "props": {}
   },
   {
    "id": "lib:pip:matplotlib",

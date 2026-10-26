@@ -378,23 +378,6 @@
    }
   },
   {
-   "id": "project:FFRE",
-   "label": "FFRE",
-   "type": "Project",
-   "props": {
-    "title": "FFRE",
-    "description": "FFIRE, a Financial Fraud Investigation Reasoning Engine for running investigations over evidence, with a FastAPI backend, React frontend and a large enterprise specification set.",
-    "url": "https://github.com/Goldypahal/FFRE",
-    "owner": "Goldypahal",
-    "status": "recent",
-    "commits": 60,
-    "files": 275,
-    "first_commit": "2026-08-13",
-    "last_commit": "2026-09-17",
-    "kind": "product"
-   }
-  },
-  {
    "id": "tech:JWT",
    "label": "JWT",
    "type": "Technology",
@@ -1002,13 +985,13 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -1043,7 +1026,7 @@
    }
   },
   {
-   "source": "component:Labsmart/Result-Entry",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -1055,13 +1038,13 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
+   "source": "component:Labsmart/Result-Entry",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -1112,7 +1095,7 @@
    }
   },
   {
-   "source": "component:Labsmart/Result-Entry",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -1124,13 +1107,13 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
+   "source": "component:Labsmart/Result-Entry",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -1192,30 +1175,30 @@
    }
   },
   {
+   "source": "component:Labsmart/patient-portal",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/lab-portal",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Labsmart/Result-Entry",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Labsmart/patient-portal",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "project:Labsmart",
    "target": "tech:React Router",
    "type": "USES",
@@ -1234,13 +1217,13 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -1298,13 +1281,13 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -1339,7 +1322,7 @@
    }
   },
   {
-   "source": "component:Labsmart/Result-Entry",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -1351,13 +1334,13 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
+   "source": "component:Labsmart/Result-Entry",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -1980,28 +1963,6 @@
    "type": "CONTRIBUTED_TO",
    "props": {
     "commits": 7
-   }
-  },
-  {
-   "source": "project:FFRE",
-   "target": "project:Labsmart",
-   "type": "SIMILAR_STACK",
-   "props": {
-    "score": 0.34,
-    "shared": [
-     "JWT",
-     "Lucide icons",
-     "PostgreSQL",
-     "React",
-     "React Router",
-     "Redis",
-     "SQLite",
-     "Tailwind CSS",
-     "TypeScript",
-     "Vite",
-     "bcrypt",
-     "dotenv"
-    ]
    }
   },
   {

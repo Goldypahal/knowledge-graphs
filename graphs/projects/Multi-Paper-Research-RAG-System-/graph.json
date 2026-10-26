@@ -108,6 +108,14 @@
    }
   },
   {
+   "id": "tech:NumPy",
+   "label": "NumPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
    "id": "tech:PyMuPDF",
    "label": "PyMuPDF",
    "type": "Technology",
@@ -186,14 +194,6 @@
    "type": "Technology",
    "props": {
     "category": "Database / storage"
-   }
-  },
-  {
-   "id": "tech:NumPy",
-   "label": "NumPy",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {

@@ -546,6 +546,14 @@
    }
   },
   {
+   "id": "service:Anthropic API",
+   "label": "Anthropic API",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
    "id": "service:PostgreSQL",
    "label": "PostgreSQL",
    "type": "Service",
@@ -571,6 +579,12 @@
    "id": "platform:Docker Compose",
    "label": "Docker Compose",
    "type": "Platform",
+   "props": {}
+  },
+  {
+   "id": "concept:Research paper / benchmark",
+   "label": "Research paper / benchmark",
+   "type": "Concept",
    "props": {}
   },
   {
@@ -823,12 +837,6 @@
    "props": {
     "category": "LLM / GenAI"
    }
-  },
-  {
-   "id": "concept:Research paper / benchmark",
-   "label": "Research paper / benchmark",
-   "type": "Concept",
-   "props": {}
   },
   {
    "id": "tech:python-docx",
@@ -1456,14 +1464,6 @@
    }
   },
   {
-   "id": "service:Anthropic API",
-   "label": "Anthropic API",
-   "type": "Service",
-   "props": {
-    "category": "LLM / GenAI"
-   }
-  },
-  {
    "id": "service:Qdrant",
    "label": "Qdrant",
    "type": "Service",
@@ -1788,13 +1788,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/frontend",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/frontend",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -2000,13 +2000,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/backend/research_rag",
    "target": "tech:Google Gemini",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/backend/research_rag",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Google Gemini",
    "type": "USES",
    "props": {}
@@ -2370,13 +2370,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/frontend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/frontend",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}

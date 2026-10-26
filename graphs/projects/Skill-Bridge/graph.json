@@ -364,6 +364,14 @@
    }
   },
   {
+   "id": "tech:NumPy",
+   "label": "NumPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
    "id": "tech:React Router",
    "label": "React Router",
    "type": "Technology",
@@ -396,14 +404,6 @@
    "type": "Service",
    "props": {
     "category": "LLM / GenAI"
-   }
-  },
-  {
-   "id": "tech:NumPy",
-   "label": "NumPy",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {
@@ -927,13 +927,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab/server",
+   "source": "component:Skill-Bridge/aptitude_quiz/backend",
    "target": "tech:CORS",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/aptitude_quiz/backend",
+   "source": "component:Skill-Bridge/code-collab/server",
    "target": "tech:CORS",
    "type": "USES",
    "props": {}
@@ -974,7 +974,7 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/aptitude_quiz/backend",
    "target": "tech:Express",
    "type": "USES",
    "props": {}
@@ -986,7 +986,7 @@
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/aptitude_quiz/backend",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Express",
    "type": "USES",
    "props": {}
@@ -1150,7 +1150,7 @@
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/aptitude_quiz/backend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -1162,7 +1162,7 @@
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/aptitude_quiz/backend",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}

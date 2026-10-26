@@ -105,6 +105,14 @@
    }
   },
   {
+   "id": "tech:NumPy",
+   "label": "NumPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
    "id": "tech:PostgreSQL",
    "label": "PostgreSQL",
    "type": "Technology",
@@ -164,6 +172,16 @@
     "ecosystem": "pip",
     "used_by_projects": 2,
     "technology": "PostgreSQL"
+   }
+  },
+  {
+   "id": "lib:pip:redis",
+   "label": "redis",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 4,
+    "technology": "Redis"
    }
   },
   {
@@ -246,14 +264,6 @@
    }
   },
   {
-   "id": "tech:NumPy",
-   "label": "NumPy",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
-   }
-  },
-  {
    "id": "tech:OpenCV",
    "label": "OpenCV",
    "type": "Technology",
@@ -331,16 +341,6 @@
     "ecosystem": "pip",
     "used_by_projects": 2,
     "technology": "Pillow"
-   }
-  },
-  {
-   "id": "lib:pip:redis",
-   "label": "redis",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 3,
-    "technology": "Redis"
    }
   },
   {
@@ -451,6 +451,12 @@
   {
    "source": "lib:pip:psycopg2-binary",
    "target": "tech:PostgreSQL",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:pip:redis",
+   "target": "tech:Redis",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -798,12 +804,6 @@
      "."
     ]
    }
-  },
-  {
-   "source": "lib:pip:redis",
-   "target": "tech:Redis",
-   "type": "IMPLEMENTS",
-   "props": {}
   },
   {
    "source": "project:GPH",

@@ -43,6 +43,12 @@
    }
   },
   {
+   "id": "concept:LLM agents",
+   "label": "LLM agents",
+   "type": "Concept",
+   "props": {}
+  },
+  {
    "id": "person:Goldy Pahal",
    "label": "Goldy Pahal",
    "type": "Person",
@@ -199,6 +205,12 @@
    }
   },
   {
+   "id": "concept:Authentication & access control",
+   "label": "Authentication & access control",
+   "type": "Concept",
+   "props": {}
+  },
+  {
    "id": "language:HTML",
    "label": "HTML",
    "type": "Language",
@@ -221,6 +233,12 @@
   {
    "id": "concept:Vector / hybrid search",
    "label": "Vector / hybrid search",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:Enterprise AI platform",
+   "label": "Enterprise AI platform",
    "type": "Concept",
    "props": {}
   },
@@ -302,15 +320,15 @@
    "label": "FFRE",
    "type": "Project",
    "props": {
-    "title": "FFRE",
+    "title": "Financial Fraud Investigation Reasoning Engine (FFIRE)",
     "description": "FFIRE, a Financial Fraud Investigation Reasoning Engine for running investigations over evidence, with a FastAPI backend, React frontend and a large enterprise specification set.",
     "url": "https://github.com/Goldypahal/FFRE",
     "owner": "Goldypahal",
-    "status": "recent",
-    "commits": 60,
-    "files": 275,
+    "status": "active",
+    "commits": 63,
+    "files": 374,
     "first_commit": "2026-08-13",
-    "last_commit": "2026-09-17",
+    "last_commit": "2026-10-26",
     "kind": "product"
    }
   },
@@ -392,6 +410,38 @@
    "type": "Technology",
    "props": {
     "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "tech:LightGBM",
+   "label": "LightGBM",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:NetworkX",
+   "label": "NetworkX",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:NumPy",
+   "label": "NumPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:Playwright",
+   "label": "Playwright",
+   "type": "Technology",
+   "props": {
+    "category": "Documents / parsing"
    }
   },
   {
@@ -480,6 +530,32 @@
    "type": "Technology",
    "props": {
     "category": "Auth / security"
+   }
+  },
+  {
+   "id": "tech:joblib",
+   "label": "joblib",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "lib:npm:@playwright/test",
+   "label": "@playwright/test",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1,
+    "technology": "Playwright"
    }
   },
   {
@@ -610,6 +686,15 @@
    }
   },
   {
+   "id": "lib:pip:langgraph-checkpoint-postgres",
+   "label": "langgraph-checkpoint-postgres",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1
+   }
+  },
+  {
    "id": "lib:pip:passlib",
    "label": "passlib",
    "type": "Library",
@@ -617,6 +702,34 @@
     "ecosystem": "pip",
     "used_by_projects": 2,
     "technology": "bcrypt"
+   }
+  },
+  {
+   "id": "lib:pip:psycopg",
+   "label": "psycopg",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1,
+    "technology": "PostgreSQL"
+   }
+  },
+  {
+   "id": "lib:pip:psycopg-binary",
+   "label": "psycopg-binary",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:pip:psycopg-pool",
+   "label": "psycopg-pool",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1
    }
   },
   {
@@ -659,6 +772,16 @@
    }
   },
   {
+   "id": "lib:pip:redis",
+   "label": "redis",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 4,
+    "technology": "Redis"
+   }
+  },
+  {
    "id": "lib:pip:reportlab",
    "label": "reportlab",
    "type": "Library",
@@ -685,6 +808,22 @@
     "ecosystem": "pip",
     "used_by_projects": 7,
     "technology": "Uvicorn"
+   }
+  },
+  {
+   "id": "service:Anthropic API",
+   "label": "Anthropic API",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "service:Ollama",
+   "label": "Ollama",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
    }
   },
   {
@@ -730,34 +869,35 @@
    "props": {}
   },
   {
-   "id": "project:HR-tracker",
-   "label": "HR-tracker",
-   "type": "Project",
-   "props": {
-    "title": "HR-tracker",
-    "description": "Haryana Bus Tracker, a real-time bus tracking app for Haryana Roadways with route search, complaints and an admin panel, plus a PDF schedule ingestion pipeline covering 8,700+ routes.",
-    "url": "https://github.com/Goldypahal/HR-tracker",
-    "owner": "Goldypahal",
-    "status": "dormant",
-    "commits": 16,
-    "files": 7750,
-    "first_commit": "2026-02-04",
-    "last_commit": "2026-04-01",
-    "kind": "product"
-   }
+   "id": "concept:Research paper / benchmark",
+   "label": "Research paper / benchmark",
+   "type": "Concept",
+   "props": {}
   },
   {
-   "id": "project:Labsmart",
-   "label": "Labsmart",
+   "id": "concept:Multi-agent systems",
+   "label": "Multi-agent systems",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:LLM evaluation",
+   "label": "LLM evaluation",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "project:Shield",
+   "label": "Shield",
    "type": "Project",
    "props": {
-    "title": "Labsmart",
-    "description": "Hospital-grade LIMS and EMR platform with a backend API, doctor dashboard, lab portal, patient portal and result-entry app.",
-    "url": "https://github.com/Goldypahal/Labsmart",
+    "title": "Heimdal SafeRoute: Tricity routing engine",
+    "description": "Heimdal SafeRoute, a personal-safety app for the Chandigarh tricity with fastest/safest route planning and on-device ML such as scream detection.",
+    "url": "https://github.com/Goldypahal/Shield",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 7,
-    "files": 243,
+    "commits": 4,
+    "files": 148,
     "first_commit": "2026-09-09",
     "last_commit": "2026-10-25",
     "kind": "product"
@@ -847,8 +987,8 @@
    "target": "language:Python",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 78,
-    "share": 0.6
+    "files": 157,
+    "share": 0.744
    }
   },
   {
@@ -856,8 +996,8 @@
    "target": "language:TypeScript",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 43,
-    "share": 0.331
+    "files": 45,
+    "share": 0.213
    }
   },
   {
@@ -866,7 +1006,7 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 6,
-    "share": 0.046
+    "share": 0.028
    }
   },
   {
@@ -1002,6 +1142,16 @@
   },
   {
    "source": "project:FFRE",
+   "target": "tech:LightGBM",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {
@@ -1013,6 +1163,42 @@
   {
    "source": "component:FFRE/frontend",
    "target": "tech:Lucide icons",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
+   "target": "tech:NetworkX",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "tech:NumPy",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "tech:Playwright",
+   "type": "USES",
+   "props": {
+    "via": [
+     "frontend"
+    ]
+   }
+  },
+  {
+   "source": "component:FFRE/frontend",
+   "target": "tech:Playwright",
    "type": "USES",
    "props": {}
   },
@@ -1110,9 +1296,16 @@
    "props": {
     "via": [
      ".",
+     "backend",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:FFRE/backend",
+   "target": "tech:Redis",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -1306,6 +1499,16 @@
   },
   {
    "source": "project:FFRE",
+   "target": "tech:joblib",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
    "target": "tech:pytest",
    "type": "USES",
    "props": {
@@ -1319,6 +1522,32 @@
    "source": "component:FFRE/backend",
    "target": "tech:pytest",
    "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
+   "target": "tech:scikit-learn",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:npm:@playwright/test",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "frontend"
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:@playwright/test",
+   "target": "tech:Playwright",
+   "type": "IMPLEMENTS",
    "props": {}
   },
   {
@@ -1683,6 +1912,16 @@
   },
   {
    "source": "project:FFRE",
+   "target": "lib:pip:langgraph-checkpoint-postgres",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
    "target": "lib:pip:passlib",
    "type": "DEPENDS_ON",
    "props": {
@@ -1696,6 +1935,42 @@
    "target": "tech:bcrypt",
    "type": "IMPLEMENTS",
    "props": {}
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:pip:psycopg",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:psycopg",
+   "target": "tech:PostgreSQL",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:pip:psycopg-binary",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:pip:psycopg-pool",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
   },
   {
    "source": "project:FFRE",
@@ -1777,6 +2052,22 @@
   },
   {
    "source": "project:FFRE",
+   "target": "lib:pip:redis",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:redis",
+   "target": "tech:Redis",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
    "target": "lib:pip:reportlab",
    "type": "DEPENDS_ON",
    "props": {
@@ -1819,6 +2110,26 @@
   },
   {
    "source": "project:FFRE",
+   "target": "service:Anthropic API",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "service:Ollama",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
    "target": "service:OpenAI API",
    "type": "CONNECTS_TO",
    "props": {
@@ -1843,7 +2154,8 @@
    "type": "CONNECTS_TO",
    "props": {
     "detected_from": [
-     "docker-compose"
+     "docker-compose",
+     "env"
     ]
    }
   },
@@ -1858,15 +2170,6 @@
    "target": "platform:Docker Compose",
    "type": "DEPLOYS_WITH",
    "props": {}
-  },
-  {
-   "source": "project:FFRE",
-   "target": "concept:Fraud / financial risk",
-   "type": "ABOUT",
-   "props": {
-    "source": "manual",
-    "mentions": 0
-   }
   },
   {
    "source": "project:FFRE",
@@ -1887,58 +2190,74 @@
    }
   },
   {
+   "source": "project:FFRE",
+   "target": "concept:Fraud / financial risk",
+   "type": "ABOUT",
+   "props": {
+    "source": "manual",
+    "mentions": 0
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "concept:Research paper / benchmark",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 26
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "concept:Authentication & access control",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 7
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "concept:LLM agents",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 5
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "concept:Multi-agent systems",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 5
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "concept:Enterprise AI platform",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 5
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "concept:LLM evaluation",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 2
+   }
+  },
+  {
    "source": "person:Goldy Pahal",
    "target": "project:FFRE",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 60
-   }
-  },
-  {
-   "source": "project:FFRE",
-   "target": "project:Labsmart",
-   "type": "SIMILAR_STACK",
-   "props": {
-    "score": 0.34,
-    "shared": [
-     "JWT",
-     "Lucide icons",
-     "PostgreSQL",
-     "React",
-     "React Router",
-     "Redis",
-     "SQLite",
-     "Tailwind CSS",
-     "TypeScript",
-     "Vite",
-     "bcrypt",
-     "dotenv"
-    ]
-   }
-  },
-  {
-   "source": "project:FFRE",
-   "target": "project:HR-tracker",
-   "type": "SIMILAR_STACK",
-   "props": {
-    "score": 0.31,
-    "shared": [
-     "JWT",
-     "Lucide icons",
-     "PostgreSQL",
-     "PyPDF",
-     "React",
-     "React Router",
-     "Redis",
-     "SQLAlchemy",
-     "Tailwind CSS",
-     "TanStack Query",
-     "TypeScript",
-     "Vite",
-     "Vitest",
-     "bcrypt",
-     "dotenv"
-    ]
+    "commits": 63
    }
   },
   {
@@ -1946,11 +2265,12 @@
    "target": "project:campusRideshare",
    "type": "SIMILAR_STACK",
    "props": {
-    "score": 0.3,
+    "score": 0.32,
     "shared": [
      "FastAPI",
      "JWT",
      "Lucide icons",
+     "NumPy",
      "Pydantic",
      "React",
      "Tailwind CSS",
@@ -1959,7 +2279,32 @@
      "Uvicorn",
      "Vite",
      "bcrypt",
-     "pytest"
+     "pytest",
+     "scikit-learn"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "project:Shield",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.31,
+    "shared": [
+     "FastAPI",
+     "JWT",
+     "NetworkX",
+     "NumPy",
+     "PostgreSQL",
+     "Pydantic",
+     "React",
+     "Redis",
+     "TypeScript",
+     "Uvicorn",
+     "bcrypt",
+     "joblib",
+     "pytest",
+     "scikit-learn"
     ]
    }
   }

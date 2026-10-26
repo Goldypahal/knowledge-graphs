@@ -19,11 +19,11 @@
    "props": {}
   },
   {
-   "id": "tech:PyMuPDF",
-   "label": "PyMuPDF",
+   "id": "tech:LightGBM",
+   "label": "LightGBM",
    "type": "Technology",
    "props": {
-    "category": "Documents / parsing"
+    "category": "ML / data science"
    }
   },
   {
@@ -33,6 +33,28 @@
    "props": {
     "category": "ML / data science"
    }
+  },
+  {
+   "id": "tech:PyMuPDF",
+   "label": "PyMuPDF",
+   "type": "Technology",
+   "props": {
+    "category": "Documents / parsing"
+   }
+  },
+  {
+   "id": "tech:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "concept:Research paper / benchmark",
+   "label": "Research paper / benchmark",
+   "type": "Concept",
+   "props": {}
   },
   {
    "id": "tech:PyTorch",
@@ -102,14 +124,6 @@
    }
   },
   {
-   "id": "tech:scikit-learn",
-   "label": "scikit-learn",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
-   }
-  },
-  {
    "id": "tech:statsmodels",
    "label": "statsmodels",
    "type": "Technology",
@@ -136,12 +150,6 @@
     "used_by_projects": 5,
     "technology": "SciPy"
    }
-  },
-  {
-   "id": "concept:Research paper / benchmark",
-   "label": "Research paper / benchmark",
-   "type": "Concept",
-   "props": {}
   },
   {
    "id": "project:Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting",
@@ -176,14 +184,6 @@
     "ecosystems": [
      "pip"
     ]
-   }
-  },
-  {
-   "id": "tech:LightGBM",
-   "label": "LightGBM",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {

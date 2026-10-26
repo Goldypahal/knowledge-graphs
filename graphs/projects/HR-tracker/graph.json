@@ -446,23 +446,6 @@
    }
   },
   {
-   "id": "project:FFRE",
-   "label": "FFRE",
-   "type": "Project",
-   "props": {
-    "title": "FFRE",
-    "description": "FFIRE, a Financial Fraud Investigation Reasoning Engine for running investigations over evidence, with a FastAPI backend, React frontend and a large enterprise specification set.",
-    "url": "https://github.com/Goldypahal/FFRE",
-    "owner": "Goldypahal",
-    "status": "recent",
-    "commits": 60,
-    "files": 275,
-    "first_commit": "2026-08-13",
-    "last_commit": "2026-09-17",
-    "kind": "product"
-   }
-  },
-  {
    "id": "tech:JWT",
    "label": "JWT",
    "type": "Technology",
@@ -1787,6 +1770,12 @@
    }
   },
   {
+   "source": "component:HR-tracker/server",
+   "target": "tech:Socket.IO",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:HR-tracker/client",
    "target": "tech:Socket.IO",
    "type": "USES",
@@ -1794,12 +1783,6 @@
   },
   {
    "source": "component:HR-tracker/HR/client",
-   "target": "tech:Socket.IO",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:HR-tracker/server",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -1866,6 +1849,12 @@
    }
   },
   {
+   "source": "component:HR-tracker/server",
+   "target": "tech:TypeScript",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:HR-tracker/client",
    "target": "tech:TypeScript",
    "type": "USES",
@@ -1873,12 +1862,6 @@
   },
   {
    "source": "component:HR-tracker/HR/client",
-   "target": "tech:TypeScript",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:HR-tracker/server",
    "target": "tech:TypeScript",
    "type": "USES",
    "props": {}
@@ -1918,13 +1901,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/server",
    "target": "tech:Vitest",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/server",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Vitest",
    "type": "USES",
    "props": {}
@@ -3010,31 +2993,6 @@
    "type": "CONTRIBUTED_TO",
    "props": {
     "commits": 16
-   }
-  },
-  {
-   "source": "project:FFRE",
-   "target": "project:HR-tracker",
-   "type": "SIMILAR_STACK",
-   "props": {
-    "score": 0.31,
-    "shared": [
-     "JWT",
-     "Lucide icons",
-     "PostgreSQL",
-     "PyPDF",
-     "React",
-     "React Router",
-     "Redis",
-     "SQLAlchemy",
-     "Tailwind CSS",
-     "TanStack Query",
-     "TypeScript",
-     "Vite",
-     "Vitest",
-     "bcrypt",
-     "dotenv"
-    ]
    }
   },
   {

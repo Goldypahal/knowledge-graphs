@@ -45,11 +45,27 @@
    }
   },
   {
+   "id": "tech:NumPy",
+   "label": "NumPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
    "id": "tech:SQLite",
    "label": "SQLite",
    "type": "Technology",
    "props": {
     "category": "Database / storage"
+   }
+  },
+  {
+   "id": "tech:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
    }
   },
   {
@@ -71,12 +87,22 @@
    }
   },
   {
-   "id": "tech:NumPy",
-   "label": "NumPy",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
-   }
+   "id": "concept:Research paper / benchmark",
+   "label": "Research paper / benchmark",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:Multi-agent systems",
+   "label": "Multi-agent systems",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:LLM evaluation",
+   "label": "LLM evaluation",
+   "type": "Concept",
+   "props": {}
   },
   {
    "id": "tech:Requests / HTTPX",
@@ -151,14 +177,6 @@
    "type": "Technology",
    "props": {
     "category": "Charts / visualisation"
-   }
-  },
-  {
-   "id": "tech:scikit-learn",
-   "label": "scikit-learn",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {
@@ -262,24 +280,6 @@
    "props": {
     "category": "LLM / GenAI"
    }
-  },
-  {
-   "id": "concept:Multi-agent systems",
-   "label": "Multi-agent systems",
-   "type": "Concept",
-   "props": {}
-  },
-  {
-   "id": "concept:Research paper / benchmark",
-   "label": "Research paper / benchmark",
-   "type": "Concept",
-   "props": {}
-  },
-  {
-   "id": "concept:LLM evaluation",
-   "label": "LLM evaluation",
-   "type": "Concept",
-   "props": {}
   },
   {
    "id": "concept:Career guidance & skills",

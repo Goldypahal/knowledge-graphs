@@ -6,10 +6,14 @@ MERGE (n:Entity {id: "lib:pip:rich"}) SET n:Library, n.`name` = "rich", n.`ecosy
 MERGE (n:Entity {id: "concept:LLM agents"}) SET n:Concept, n.`name` = "LLM agents";
 MERGE (n:Entity {id: "person:Goldy Pahal"}) SET n:Person, n.`name` = "Goldy Pahal";
 MERGE (n:Entity {id: "tech:dotenv"}) SET n:Technology, n.`name` = "dotenv", n.`category` = "Tooling";
+MERGE (n:Entity {id: "tech:NumPy"}) SET n:Technology, n.`name` = "NumPy", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "tech:SQLite"}) SET n:Technology, n.`name` = "SQLite", n.`category` = "Database / storage";
+MERGE (n:Entity {id: "tech:scikit-learn"}) SET n:Technology, n.`name` = "scikit-learn", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "lib:pip:python-dotenv"}) SET n:Library, n.`name` = "python-dotenv", n.`ecosystem` = "pip", n.`used_by_projects` = 4, n.`technology` = "dotenv";
 MERGE (n:Entity {id: "service:OpenAI API"}) SET n:Service, n.`name` = "OpenAI API", n.`category` = "LLM / GenAI";
-MERGE (n:Entity {id: "tech:NumPy"}) SET n:Technology, n.`name` = "NumPy", n.`category` = "ML / data science";
+MERGE (n:Entity {id: "concept:Research paper / benchmark"}) SET n:Concept, n.`name` = "Research paper / benchmark";
+MERGE (n:Entity {id: "concept:Multi-agent systems"}) SET n:Concept, n.`name` = "Multi-agent systems";
+MERGE (n:Entity {id: "concept:LLM evaluation"}) SET n:Concept, n.`name` = "LLM evaluation";
 MERGE (n:Entity {id: "tech:Requests / HTTPX"}) SET n:Technology, n.`name` = "Requests / HTTPX", n.`category` = "Tooling";
 MERGE (n:Entity {id: "lib:pip:numpy"}) SET n:Library, n.`name` = "numpy", n.`ecosystem` = "pip", n.`used_by_projects` = 8, n.`technology` = "NumPy";
 MERGE (n:Entity {id: "tech:pandas"}) SET n:Technology, n.`name` = "pandas", n.`category` = "ML / data science";
@@ -18,7 +22,6 @@ MERGE (n:Entity {id: "tech:Matplotlib"}) SET n:Technology, n.`name` = "Matplotli
 MERGE (n:Entity {id: "tech:OpenAI API"}) SET n:Technology, n.`name` = "OpenAI API", n.`category` = "LLM / GenAI";
 MERGE (n:Entity {id: "tech:SciPy"}) SET n:Technology, n.`name` = "SciPy", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "tech:Seaborn"}) SET n:Technology, n.`name` = "Seaborn", n.`category` = "Charts / visualisation";
-MERGE (n:Entity {id: "tech:scikit-learn"}) SET n:Technology, n.`name` = "scikit-learn", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "tech:statsmodels"}) SET n:Technology, n.`name` = "statsmodels", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "lib:pip:aiohttp"}) SET n:Library, n.`name` = "aiohttp", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Requests / HTTPX";
 MERGE (n:Entity {id: "lib:pip:openai"}) SET n:Library, n.`name` = "openai", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "OpenAI API";
@@ -30,9 +33,6 @@ MERGE (n:Entity {id: "lib:pip:tabulate"}) SET n:Library, n.`name` = "tabulate", 
 MERGE (n:Entity {id: "lib:pip:tenacity"}) SET n:Library, n.`name` = "tenacity", n.`ecosystem` = "pip", n.`used_by_projects` = 4;
 MERGE (n:Entity {id: "service:Google Gemini"}) SET n:Service, n.`name` = "Google Gemini", n.`category` = "LLM / GenAI";
 MERGE (n:Entity {id: "service:OpenRouter"}) SET n:Service, n.`name` = "OpenRouter", n.`category` = "LLM / GenAI";
-MERGE (n:Entity {id: "concept:Multi-agent systems"}) SET n:Concept, n.`name` = "Multi-agent systems";
-MERGE (n:Entity {id: "concept:Research paper / benchmark"}) SET n:Concept, n.`name` = "Research paper / benchmark";
-MERGE (n:Entity {id: "concept:LLM evaluation"}) SET n:Concept, n.`name` = "LLM evaluation";
 MERGE (n:Entity {id: "concept:Career guidance & skills"}) SET n:Concept, n.`name` = "Career guidance & skills";
 MERGE (n:Entity {id: "project:Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting"}) SET n:Project, n.`name` = "Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting", n.`title` = "MDSTFT: Multi-Dimensional Spatio-Temporal Fusion Transformer for Intermittent Demand Forecasting", n.`description` = "This project introduces a sophisticated deep learning framework designed to solve one of the most challenging problems in supply chain management: Intermittent Demand Forecasting. Standard models often struggle with \"lumpy\" or \"sparse\" data where sales are zero for long periods followed by sudden spikes.", n.`url` = "https://github.com/Goldypahal/Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting", n.`owner` = "Goldypahal", n.`status` = "dormant", n.`commits` = 3, n.`files` = 32, n.`first_commit` = "2026-04-29", n.`last_commit` = "2026-04-29", n.`kind` = "research";
 MERGE (n:Entity {id: "project:researchpaper2-"}) SET n:Project, n.`name` = "researchpaper2-", n.`title` = "EVADE — Measuring, Explaining, and Mitigating Evaluation-Aware Behavioral Shifts in LLMs", n.`description` = " Paper: EVADE: Measuring, Explaining, and Mitigating Evaluation-Aware Behavioral Shifts in Large Language Models", n.`url` = "https://github.com/Goldypahal/researchpaper2-", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 19, n.`files` = 130, n.`first_commit` = "2026-09-23", n.`last_commit` = "2026-10-06", n.`kind` = "research";

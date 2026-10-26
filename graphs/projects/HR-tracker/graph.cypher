@@ -51,7 +51,6 @@ MERGE (n:Entity {id: "lib:npm:date-fns"}) SET n:Library, n.`name` = "date-fns", 
 MERGE (n:Entity {id: "lib:npm:multer"}) SET n:Library, n.`name` = "multer", n.`ecosystem` = "npm", n.`used_by_projects` = 4, n.`technology` = "Multer (uploads)";
 MERGE (n:Entity {id: "lib:npm:react-hook-form"}) SET n:Library, n.`name` = "react-hook-form", n.`ecosystem` = "npm", n.`used_by_projects` = 3;
 MERGE (n:Entity {id: "lib:npm:tsx"}) SET n:Library, n.`name` = "tsx", n.`ecosystem` = "npm", n.`used_by_projects` = 4;
-MERGE (n:Entity {id: "project:FFRE"}) SET n:Project, n.`name` = "FFRE", n.`title` = "FFRE", n.`description` = "FFIRE, a Financial Fraud Investigation Reasoning Engine for running investigations over evidence, with a FastAPI backend, React frontend and a large enterprise specification set.", n.`url` = "https://github.com/Goldypahal/FFRE", n.`owner` = "Goldypahal", n.`status` = "recent", n.`commits` = 60, n.`files` = 275, n.`first_commit` = "2026-08-13", n.`last_commit` = "2026-09-17", n.`kind` = "product";
 MERGE (n:Entity {id: "tech:JWT"}) SET n:Technology, n.`name` = "JWT", n.`category` = "Auth / security";
 MERGE (n:Entity {id: "tech:PostgreSQL"}) SET n:Technology, n.`name` = "PostgreSQL", n.`category` = "Database / storage";
 MERGE (n:Entity {id: "tech:PyPDF"}) SET n:Technology, n.`name` = "PyPDF", n.`category` = "Documents / parsing";
@@ -209,9 +208,9 @@ MATCH (a:Entity {id: "component:HR-tracker/client"}), (b:Entity {id: "tech:Redux
 MATCH (a:Entity {id: "component:HR-tracker/HR/client"}), (b:Entity {id: "tech:Redux"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "tech:SQLAlchemy"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["imports"];
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "tech:Socket.IO"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["HR/client", "client", "server"];
+MATCH (a:Entity {id: "component:HR-tracker/server"}), (b:Entity {id: "tech:Socket.IO"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:HR-tracker/client"}), (b:Entity {id: "tech:Socket.IO"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:HR-tracker/HR/client"}), (b:Entity {id: "tech:Socket.IO"}) MERGE (a)-[r:USES]->(b);
-MATCH (a:Entity {id: "component:HR-tracker/server"}), (b:Entity {id: "tech:Socket.IO"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "tech:Tailwind CSS"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["HR/client", "client"];
 MATCH (a:Entity {id: "component:HR-tracker/client"}), (b:Entity {id: "tech:Tailwind CSS"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:HR-tracker/HR/client"}), (b:Entity {id: "tech:Tailwind CSS"}) MERGE (a)-[r:USES]->(b);
@@ -219,15 +218,15 @@ MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "tech:TanStack Query
 MATCH (a:Entity {id: "component:HR-tracker/client"}), (b:Entity {id: "tech:TanStack Query"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "tech:TimescaleDB"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["HR"];
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "tech:TypeScript"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["HR/client", "client", "server"];
+MATCH (a:Entity {id: "component:HR-tracker/server"}), (b:Entity {id: "tech:TypeScript"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:HR-tracker/client"}), (b:Entity {id: "tech:TypeScript"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:HR-tracker/HR/client"}), (b:Entity {id: "tech:TypeScript"}) MERGE (a)-[r:USES]->(b);
-MATCH (a:Entity {id: "component:HR-tracker/server"}), (b:Entity {id: "tech:TypeScript"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "tech:Vite"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["HR/client", "client"];
 MATCH (a:Entity {id: "component:HR-tracker/client"}), (b:Entity {id: "tech:Vite"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:HR-tracker/HR/client"}), (b:Entity {id: "tech:Vite"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "tech:Vitest"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["HR/client", "server"];
-MATCH (a:Entity {id: "component:HR-tracker/HR/client"}), (b:Entity {id: "tech:Vitest"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:HR-tracker/server"}), (b:Entity {id: "tech:Vitest"}) MERGE (a)-[r:USES]->(b);
+MATCH (a:Entity {id: "component:HR-tracker/HR/client"}), (b:Entity {id: "tech:Vitest"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "tech:Zod"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["server"];
 MATCH (a:Entity {id: "component:HR-tracker/server"}), (b:Entity {id: "tech:Zod"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "tech:bcrypt"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["server"];
@@ -343,7 +342,6 @@ MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "platform:GitHub Act
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "concept:Transportation & mobility"}) MERGE (a)-[r:ABOUT]->(b) SET r.`source` = "manual", r.`mentions` = 0;
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "concept:Real-time tracking / IoT"}) MERGE (a)-[r:ABOUT]->(b) SET r.`source` = "manual", r.`mentions` = 0;
 MATCH (a:Entity {id: "person:HR Bus Tracker Dev"}), (b:Entity {id: "project:HR-tracker"}) MERGE (a)-[r:CONTRIBUTED_TO]->(b) SET r.`commits` = 16;
-MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "project:HR-tracker"}) MERGE (a)-[r:SIMILAR_STACK]->(b) SET r.`score` = 0.31, r.`shared` = ["JWT", "Lucide icons", "PostgreSQL", "PyPDF", "React", "React Router", "Redis", "SQLAlchemy", "Tailwind CSS", "TanStack Query", "TypeScript", "Vite", "Vitest", "bcrypt", "dotenv"];
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "project:Labsmart"}) MERGE (a)-[r:SIMILAR_STACK]->(b) SET r.`score` = 0.42, r.`shared` = ["Axios", "CORS", "ESLint", "Express", "JWT", "Lucide icons", "PostgreSQL", "React", "React Router", "Redis", "Tailwind CSS", "TypeScript", "Vite", "Zod", "bcrypt"];
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "project:SHREE"}) MERGE (a)-[r:SIMILAR_STACK]->(b) SET r.`score` = 0.36, r.`shared` = ["CORS", "ESLint", "Express", "Framer Motion", "JWT", "Lucide icons", "Multer (uploads)", "Nodemon", "React", "React Router", "Vite", "Vitest", "bcrypt", "dotenv"];
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "project:ResearchReel"}) MERGE (a)-[r:SIMILAR_STACK]->(b) SET r.`score` = 0.32, r.`shared` = ["Axios", "CORS", "ESLint", "Express", "Framer Motion", "Helmet", "JWT", "Lucide icons", "Multer (uploads)", "Nodemon", "Pino / Winston logging", "PostgreSQL", "React", "Redis", "Socket.IO"];

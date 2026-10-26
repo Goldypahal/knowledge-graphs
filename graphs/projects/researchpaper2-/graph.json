@@ -116,6 +116,22 @@
    }
   },
   {
+   "id": "tech:NumPy",
+   "label": "NumPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
    "id": "lib:pip:python-dotenv",
    "label": "python-dotenv",
    "type": "Library",
@@ -123,6 +139,14 @@
     "ecosystem": "pip",
     "used_by_projects": 4,
     "technology": "dotenv"
+   }
+  },
+  {
+   "id": "service:Anthropic API",
+   "label": "Anthropic API",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
    }
   },
   {
@@ -134,12 +158,16 @@
    }
   },
   {
-   "id": "tech:NumPy",
-   "label": "NumPy",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
-   }
+   "id": "concept:Research paper / benchmark",
+   "label": "Research paper / benchmark",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:LLM evaluation",
+   "label": "LLM evaluation",
+   "type": "Concept",
+   "props": {}
   },
   {
    "id": "tech:PyTorch",
@@ -204,14 +232,6 @@
    "type": "Technology",
    "props": {
     "category": "Charts / visualisation"
-   }
-  },
-  {
-   "id": "tech:scikit-learn",
-   "label": "scikit-learn",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {
@@ -296,18 +316,6 @@
    "props": {
     "category": "LLM / GenAI"
    }
-  },
-  {
-   "id": "concept:Research paper / benchmark",
-   "label": "Research paper / benchmark",
-   "type": "Concept",
-   "props": {}
-  },
-  {
-   "id": "concept:LLM evaluation",
-   "label": "LLM evaluation",
-   "type": "Concept",
-   "props": {}
   },
   {
    "id": "project:Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting",
@@ -403,14 +411,6 @@
     "ecosystem": "pip",
     "used_by_projects": 3,
     "technology": "Hugging Face Transformers"
-   }
-  },
-  {
-   "id": "service:Anthropic API",
-   "label": "Anthropic API",
-   "type": "Service",
-   "props": {
-    "category": "LLM / GenAI"
    }
   },
   {
