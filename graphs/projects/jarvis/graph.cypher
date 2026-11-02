@@ -13,6 +13,7 @@ MERGE (n:Entity {id: "tech:dotenv"}) SET n:Technology, n.`name` = "dotenv", n.`c
 MERGE (n:Entity {id: "concept:Audio / speech"}) SET n:Concept, n.`name` = "Audio / speech";
 MERGE (n:Entity {id: "tech:FastAPI"}) SET n:Technology, n.`name` = "FastAPI", n.`category` = "Backend framework";
 MERGE (n:Entity {id: "tech:Redis"}) SET n:Technology, n.`name` = "Redis", n.`category` = "Database / storage";
+MERGE (n:Entity {id: "tech:Requests / HTTPX"}) SET n:Technology, n.`name` = "Requests / HTTPX", n.`category` = "Tooling";
 MERGE (n:Entity {id: "tech:SQLite"}) SET n:Technology, n.`name` = "SQLite", n.`category` = "Database / storage";
 MERGE (n:Entity {id: "tech:Uvicorn"}) SET n:Technology, n.`name` = "Uvicorn", n.`category` = "Backend framework";
 MERGE (n:Entity {id: "lib:pip:fastapi"}) SET n:Library, n.`name` = "fastapi", n.`ecosystem` = "pip", n.`used_by_projects` = 7, n.`technology` = "FastAPI";
@@ -22,7 +23,6 @@ MERGE (n:Entity {id: "lib:pip:uvicorn"}) SET n:Library, n.`name` = "uvicorn", n.
 MERGE (n:Entity {id: "project:GPH"}) SET n:Project, n.`name` = "GPH", n.`title` = "GIVIN — Gujarat Integrated Video Intelligence Network", n.`description` = "GIVIN, the Gujarat Integrated Video Intelligence Network, a statewide vendor-neutral CCTV integration and AI video analytics platform built for the Gujarat Police Innovation Hackathon 2026.", n.`url` = "https://github.com/Goldypahal/GPH", n.`owner` = "Goldypahal", n.`status` = "recent", n.`commits` = 57, n.`files` = 212, n.`first_commit` = "2026-09-09", n.`last_commit` = "2026-09-14", n.`kind` = "hackathon";
 MERGE (n:Entity {id: "tech:OpenCV"}) SET n:Technology, n.`name` = "OpenCV", n.`category` = "Computer vision / audio";
 MERGE (n:Entity {id: "tech:Pillow"}) SET n:Technology, n.`name` = "Pillow", n.`category` = "Computer vision / audio";
-MERGE (n:Entity {id: "tech:Requests / HTTPX"}) SET n:Technology, n.`name` = "Requests / HTTPX", n.`category` = "Tooling";
 MERGE (n:Entity {id: "lib:pip:pillow"}) SET n:Library, n.`name` = "pillow", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Pillow";
 MERGE (n:Entity {id: "lib:pip:requests"}) SET n:Library, n.`name` = "requests", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Requests / HTTPX";
 MERGE (n:Entity {id: "lib:pip:aiohttp"}) SET n:Library, n.`name` = "aiohttp", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Requests / HTTPX";
@@ -60,9 +60,9 @@ MATCH (a:Entity {id: "lib:pip:aiohttp"}), (b:Entity {id: "tech:Requests / HTTPX"
 MATCH (a:Entity {id: "lib:pip:sentence-transformers"}), (b:Entity {id: "tech:Sentence Transformers"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:transformers"}), (b:Entity {id: "tech:Hugging Face Transformers"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "project:jarvis"}), (b:Entity {id: "language:Python"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 24, r.`share` = 0.889;
-MATCH (a:Entity {id: "project:jarvis"}), (b:Entity {id: "language:HTML"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 1, r.`share` = 0.037;
-MATCH (a:Entity {id: "project:jarvis"}), (b:Entity {id: "language:CSS"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 1, r.`share` = 0.037;
 MATCH (a:Entity {id: "project:jarvis"}), (b:Entity {id: "language:JavaScript"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 1, r.`share` = 0.037;
+MATCH (a:Entity {id: "project:jarvis"}), (b:Entity {id: "language:CSS"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 1, r.`share` = 0.037;
+MATCH (a:Entity {id: "project:jarvis"}), (b:Entity {id: "language:HTML"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 1, r.`share` = 0.037;
 MATCH (a:Entity {id: "project:jarvis"}), (b:Entity {id: "component:jarvis/web"}) MERGE (a)-[r:HAS_COMPONENT]->(b);
 MATCH (a:Entity {id: "project:jarvis"}), (b:Entity {id: "tech:FastAPI"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["."];
 MATCH (a:Entity {id: "project:jarvis"}), (b:Entity {id: "tech:Flask"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["imports", "web"];

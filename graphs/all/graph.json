@@ -145,7 +145,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 4
+    "used_by_projects": 5
    }
   },
   {
@@ -411,7 +411,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 9,
+    "used_by_projects": 10,
     "technology": "ESLint"
    }
   },
@@ -508,7 +508,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 13
+    "used_by_projects": 14
    }
   },
   {
@@ -575,7 +575,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 6,
+    "used_by_projects": 7,
     "technology": "Zod"
    }
   },
@@ -618,17 +618,23 @@
     "description": " Production-ready, deterministic AI engines with exact document byte-offset citations, hybrid vector retrieval, and sovereign VPC / air-gapped deployment.",
     "url": "https://github.com/Goldypahal/Cortex-Hub",
     "owner": "Goldypahal",
-    "status": "recent",
-    "commits": 3,
-    "files": 35,
+    "status": "active",
+    "commits": 9,
+    "files": 59,
     "first_commit": "2026-09-16",
-    "last_commit": "2026-09-25",
+    "last_commit": "2026-11-01",
     "kind": "product"
    }
   },
   {
    "id": "language:JavaScript",
    "label": "JavaScript",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "language:SQL",
+   "label": "SQL",
    "type": "Language",
    "props": {}
   },
@@ -643,6 +649,14 @@
    "label": "Prisma",
    "type": "Language",
    "props": {}
+  },
+  {
+   "id": "tech:Anthropic API",
+   "label": "Anthropic API",
+   "type": "Technology",
+   "props": {
+    "category": "LLM / GenAI"
+   }
   },
   {
    "id": "tech:CORS",
@@ -661,11 +675,47 @@
    }
   },
   {
+   "id": "tech:Prettier",
+   "label": "Prettier",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
    "id": "tech:dotenv",
    "label": "dotenv",
    "type": "Technology",
    "props": {
     "category": "Tooling"
+   }
+  },
+  {
+   "id": "lib:npm:@anthropic-ai/sdk",
+   "label": "@anthropic-ai/sdk",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1,
+    "technology": "Anthropic API"
+   }
+  },
+  {
+   "id": "lib:npm:@eslint/js",
+   "label": "@eslint/js",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8
+   }
+  },
+  {
+   "id": "lib:npm:@node-rs/argon2",
+   "label": "@node-rs/argon2",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
    }
   },
   {
@@ -708,6 +758,73 @@
    }
   },
   {
+   "id": "lib:npm:globals",
+   "label": "globals",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8
+   }
+  },
+  {
+   "id": "lib:npm:prettier",
+   "label": "prettier",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1,
+    "technology": "Prettier"
+   }
+  },
+  {
+   "id": "service:AWS / S3",
+   "label": "AWS / S3",
+   "type": "Service",
+   "props": {
+    "category": "Cloud"
+   }
+  },
+  {
+   "id": "service:Anthropic API",
+   "label": "Anthropic API",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "service:Email (SMTP)",
+   "label": "Email (SMTP)",
+   "type": "Service",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "service:Razorpay",
+   "label": "Razorpay",
+   "type": "Service",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "service:Stripe",
+   "label": "Stripe",
+   "type": "Service",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "service:Twilio",
+   "label": "Twilio",
+   "type": "Service",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
    "id": "concept:Retrieval-Augmented Generation (RAG)",
    "label": "Retrieval-Augmented Generation (RAG)",
    "type": "Concept",
@@ -738,6 +855,12 @@
    "props": {}
   },
   {
+   "id": "concept:Fraud / financial risk",
+   "label": "Fraud / financial risk",
+   "type": "Concept",
+   "props": {}
+  },
+  {
    "id": "project:EV-optimal-charging-planner-for-long-routes",
    "label": "EV-optimal-charging-planner-for-long-routes",
    "type": "Project",
@@ -760,15 +883,6 @@
    "type": "Technology",
    "props": {
     "category": "Frontend framework"
-   }
-  },
-  {
-   "id": "lib:npm:@eslint/js",
-   "label": "@eslint/js",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 7
    }
   },
   {
@@ -802,15 +916,6 @@
   {
    "id": "lib:npm:eslint-plugin-react-refresh",
    "label": "eslint-plugin-react-refresh",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 7
-   }
-  },
-  {
-   "id": "lib:npm:globals",
-   "label": "globals",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
@@ -1632,10 +1737,10 @@
     "url": "https://github.com/Goldypahal/FFRE",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 63,
-    "files": 374,
+    "commits": 72,
+    "files": 411,
     "first_commit": "2026-08-13",
-    "last_commit": "2026-10-26",
+    "last_commit": "2026-11-01",
     "kind": "product"
    }
   },
@@ -1792,6 +1897,14 @@
    }
   },
   {
+   "id": "tech:Requests / HTTPX",
+   "label": "Requests / HTTPX",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
    "id": "tech:SQLAlchemy",
    "label": "SQLAlchemy",
    "type": "Technology",
@@ -1805,6 +1918,14 @@
    "type": "Technology",
    "props": {
     "category": "Database / storage"
+   }
+  },
+  {
+   "id": "tech:SciPy",
+   "label": "SciPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
    }
   },
   {
@@ -1918,7 +2039,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 2,
+    "used_by_projects": 3,
     "technology": "Zustand"
    }
   },
@@ -1938,7 +2059,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 1,
+    "used_by_projects": 2,
     "technology": "bcrypt"
    }
   },
@@ -1973,6 +2094,16 @@
    }
   },
   {
+   "id": "lib:pip:joblib",
+   "label": "joblib",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 2,
+    "technology": "joblib"
+   }
+  },
+  {
    "id": "lib:pip:langchain-openai",
    "label": "langchain-openai",
    "type": "Library",
@@ -2002,12 +2133,42 @@
    }
   },
   {
+   "id": "lib:pip:lightgbm",
+   "label": "lightgbm",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1,
+    "technology": "LightGBM"
+   }
+  },
+  {
+   "id": "lib:pip:networkx",
+   "label": "networkx",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 2,
+    "technology": "NetworkX"
+   }
+  },
+  {
+   "id": "lib:pip:numpy",
+   "label": "numpy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 9,
+    "technology": "NumPy"
+   }
+  },
+  {
    "id": "lib:pip:passlib",
    "label": "passlib",
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 2,
+    "used_by_projects": 1,
     "technology": "bcrypt"
    }
   },
@@ -2050,6 +2211,15 @@
    }
   },
   {
+   "id": "lib:pip:pytest-mock",
+   "label": "pytest-mock",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 3
+   }
+  },
+  {
    "id": "lib:pip:python-dotenv",
    "label": "python-dotenv",
    "type": "Library",
@@ -2065,7 +2235,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 2,
+    "used_by_projects": 1,
     "technology": "JWT"
    }
   },
@@ -2094,7 +2264,27 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 1
+    "used_by_projects": 2
+   }
+  },
+  {
+   "id": "lib:pip:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 5,
+    "technology": "scikit-learn"
+   }
+  },
+  {
+   "id": "lib:pip:scipy",
+   "label": "scipy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 6,
+    "technology": "SciPy"
    }
   },
   {
@@ -2115,14 +2305,6 @@
     "ecosystem": "pip",
     "used_by_projects": 7,
     "technology": "Uvicorn"
-   }
-  },
-  {
-   "id": "service:Anthropic API",
-   "label": "Anthropic API",
-   "type": "Service",
-   "props": {
-    "category": "LLM / GenAI"
    }
   },
   {
@@ -2170,12 +2352,6 @@
    "props": {}
   },
   {
-   "id": "concept:Fraud / financial risk",
-   "label": "Fraud / financial risk",
-   "type": "Concept",
-   "props": {}
-  },
-  {
    "id": "concept:Research paper / benchmark",
    "label": "Research paper / benchmark",
    "type": "Concept",
@@ -2184,12 +2360,6 @@
   {
    "id": "concept:Multi-agent systems",
    "label": "Multi-agent systems",
-   "type": "Concept",
-   "props": {}
-  },
-  {
-   "id": "concept:LLM evaluation",
-   "label": "LLM evaluation",
    "type": "Concept",
    "props": {}
   },
@@ -2371,14 +2541,6 @@
    }
   },
   {
-   "id": "tech:Requests / HTTPX",
-   "label": "Requests / HTTPX",
-   "type": "Technology",
-   "props": {
-    "category": "Tooling"
-   }
-  },
-  {
    "id": "tech:Ultralytics YOLO",
    "label": "Ultralytics YOLO",
    "type": "Technology",
@@ -2394,16 +2556,6 @@
     "ecosystem": "pip",
     "used_by_projects": 1,
     "technology": "MinIO / S3"
-   }
-  },
-  {
-   "id": "lib:pip:numpy",
-   "label": "numpy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 8,
-    "technology": "NumPy"
    }
   },
   {
@@ -2444,14 +2596,6 @@
     "ecosystem": "pip",
     "used_by_projects": 1,
     "technology": "Ultralytics YOLO"
-   }
-  },
-  {
-   "id": "service:AWS / S3",
-   "label": "AWS / S3",
-   "type": "Service",
-   "props": {
-    "category": "Cloud"
    }
   },
   {
@@ -3061,14 +3205,6 @@
    }
   },
   {
-   "id": "service:Twilio",
-   "label": "Twilio",
-   "type": "Service",
-   "props": {
-    "category": "Tooling"
-   }
-  },
-  {
    "id": "concept:Real-time tracking / IoT",
    "label": "Real-time tracking / IoT",
    "type": "Concept",
@@ -3228,7 +3364,7 @@
    "label": "MMRA",
    "type": "Project",
    "props": {
-    "title": "MMRA Extended Adversarial Test Set",
+    "title": "Multi-Agent vs Single-Model Research Framework",
     "description": "Research study comparing multi-agent and single-model LLM reasoning across 4 conditions, 7 task categories and 140 tasks, using OpenRouter models.",
     "url": "https://github.com/Goldypahal/MMRA",
     "owner": "Goldypahal",
@@ -3254,14 +3390,6 @@
    "type": "Technology",
    "props": {
     "category": "LLM / GenAI"
-   }
-  },
-  {
-   "id": "tech:SciPy",
-   "label": "SciPy",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {
@@ -3311,26 +3439,6 @@
    }
   },
   {
-   "id": "lib:pip:scikit-learn",
-   "label": "scikit-learn",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 4,
-    "technology": "scikit-learn"
-   }
-  },
-  {
-   "id": "lib:pip:scipy",
-   "label": "scipy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 5,
-    "technology": "SciPy"
-   }
-  },
-  {
    "id": "lib:pip:statsmodels",
    "label": "statsmodels",
    "type": "Library",
@@ -3373,6 +3481,12 @@
    "props": {
     "category": "LLM / GenAI"
    }
+  },
+  {
+   "id": "concept:LLM evaluation",
+   "label": "LLM evaluation",
+   "type": "Concept",
+   "props": {}
   },
   {
    "id": "concept:Career guidance & skills",
@@ -3641,15 +3755,6 @@
    }
   },
   {
-   "id": "lib:pip:pytest-mock",
-   "label": "pytest-mock",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2
-   }
-  },
-  {
    "id": "lib:pip:python-docx",
    "label": "python-docx",
    "type": "Library",
@@ -3788,16 +3893,6 @@
    }
   },
   {
-   "id": "lib:pip:joblib",
-   "label": "joblib",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 1,
-    "technology": "joblib"
-   }
-  },
-  {
    "id": "lib:pip:psutil",
    "label": "psutil",
    "type": "Library",
@@ -3821,8 +3916,8 @@
    "label": "ResearchReel",
    "type": "Project",
    "props": {
-    "title": "🚀 ResearchReel — Quick Start & Run Guide",
-    "description": "ResearchReel is a microservices-based, cloud-native platform designed for sharing research via short-form videos (Reels) and interactive research documents.",
+    "title": "🔑 ResearchReel API & Keys Guide",
+    "description": "To make the platform fully functional, you need to obtain the following API keys. Most of these have generous free tiers for research and development.",
     "url": "https://github.com/Goldypahal/ResearchReel",
     "owner": "Goldypahal",
     "status": "recent",
@@ -4364,15 +4459,15 @@
    "label": "Shield",
    "type": "Project",
    "props": {
-    "title": "Heimdal SafeRoute: Tricity routing engine",
+    "title": "SHIELD (Heimdal) — personal safety platform",
     "description": "Heimdal SafeRoute, a personal-safety app for the Chandigarh tricity with fastest/safest route planning and on-device ML such as scream detection.",
     "url": "https://github.com/Goldypahal/Shield",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 4,
-    "files": 148,
+    "commits": 51,
+    "files": 309,
     "first_commit": "2026-09-09",
-    "last_commit": "2026-10-25",
+    "last_commit": "2026-10-27",
     "kind": "product"
    }
   },
@@ -4501,8 +4596,8 @@
    }
   },
   {
-   "id": "lib:npm:@react-native-async-storage/async-storage",
-   "label": "@react-native-async-storage/async-storage",
+   "id": "lib:npm:@expo/vector-icons",
+   "label": "@expo/vector-icons",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
@@ -4510,8 +4605,17 @@
    }
   },
   {
-   "id": "lib:npm:@react-native-community/geolocation",
-   "label": "@react-native-community/geolocation",
+   "id": "lib:npm:@maplibre/maplibre-react-native",
+   "label": "@maplibre/maplibre-react-native",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:@react-native-async-storage/async-storage",
+   "label": "@react-native-async-storage/async-storage",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
@@ -4555,6 +4659,24 @@
    }
   },
   {
+   "id": "lib:npm:@siteed/audio-studio",
+   "label": "@siteed/audio-studio",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:@types/geojson",
+   "label": "@types/geojson",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
    "id": "lib:npm:expo",
    "label": "expo",
    "type": "Library",
@@ -4574,8 +4696,44 @@
    }
   },
   {
+   "id": "lib:npm:expo-constants",
+   "label": "expo-constants",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:expo-crypto",
+   "label": "expo-crypto",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
    "id": "lib:npm:expo-file-system",
    "label": "expo-file-system",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:expo-font",
+   "label": "expo-font",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:expo-intent-launcher",
+   "label": "expo-intent-launcher",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
@@ -4601,8 +4759,35 @@
    }
   },
   {
+   "id": "lib:npm:expo-secure-store",
+   "label": "expo-secure-store",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
    "id": "lib:npm:expo-sensors",
    "label": "expo-sensors",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:expo-speech",
+   "label": "expo-speech",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:expo-speech-recognition",
+   "label": "expo-speech-recognition",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
@@ -4620,6 +4805,33 @@
    }
   },
   {
+   "id": "lib:npm:maplibre-gl",
+   "label": "maplibre-gl",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:munim-bluetooth",
+   "label": "munim-bluetooth",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:patch-package",
+   "label": "patch-package",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
    "id": "lib:npm:react-native",
    "label": "react-native",
    "type": "Library",
@@ -4627,6 +4839,15 @@
     "ecosystem": "npm",
     "used_by_projects": 1,
     "technology": "React Native"
+   }
+  },
+  {
+   "id": "lib:npm:react-native-fast-tflite",
+   "label": "react-native-fast-tflite",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
    }
   },
   {
@@ -4641,6 +4862,15 @@
   {
    "id": "lib:npm:react-native-maps",
    "label": "react-native-maps",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:react-native-nitro-modules",
+   "label": "react-native-nitro-modules",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
@@ -4666,11 +4896,38 @@
    }
   },
   {
-   "id": "lib:npm:react-native-sqlite-storage",
-   "label": "react-native-sqlite-storage",
+   "id": "lib:npm:react-native-svg",
+   "label": "react-native-svg",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:react-native-web",
+   "label": "react-native-web",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:react-native-webview",
+   "label": "react-native-webview",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:pip:aiosqlite",
+   "label": "aiosqlite",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
     "used_by_projects": 1
    }
   },
@@ -4723,16 +4980,6 @@
    }
   },
   {
-   "id": "lib:pip:networkx",
-   "label": "networkx",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 1,
-    "technology": "NetworkX"
-   }
-  },
-  {
    "id": "lib:pip:osmnx",
    "label": "osmnx",
    "type": "Library",
@@ -4740,6 +4987,16 @@
     "ecosystem": "pip",
     "used_by_projects": 1,
     "technology": "OSMnx"
+   }
+  },
+  {
+   "id": "lib:pip:pyjwt",
+   "label": "pyjwt",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1,
+    "technology": "JWT"
    }
   },
   {
@@ -4789,9 +5046,21 @@
    }
   },
   {
+   "id": "platform:Kaggle",
+   "label": "Kaggle",
+   "type": "Platform",
+   "props": {}
+  },
+  {
    "id": "concept:Women / personal safety",
    "label": "Women / personal safety",
    "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "person:Codebuff",
+   "label": "Codebuff",
+   "type": "Person",
    "props": {}
   },
   {
@@ -4799,15 +5068,15 @@
    "label": "Skill-Bridge",
    "type": "Project",
    "props": {
-    "title": "🏆 Aptitude Quiz (Aptitude Arena)",
+    "title": "Skill Bridge",
     "description": "Skill-Bridge, a career and skills platform combining an agent-driven AI career engine, a real-time multiplayer aptitude quiz, group-discussion rooms and collaborative coding.",
     "url": "https://github.com/Om07092208/Skill-Bridge",
     "owner": "Om07092208",
-    "status": "recent",
-    "commits": 72,
+    "status": "active",
+    "commits": 75,
     "files": 183,
     "first_commit": "2026-08-28",
-    "last_commit": "2026-09-01",
+    "last_commit": "2026-10-27",
     "kind": "product"
    }
   },
@@ -4980,6 +5249,12 @@
   {
    "id": "person:Om Tiwari",
    "label": "Om Tiwari",
+   "type": "Person",
+   "props": {}
+  },
+  {
+   "id": "person:Om07092208",
+   "label": "Om07092208",
    "type": "Person",
    "props": {}
   },
@@ -5295,14 +5570,6 @@
    }
   },
   {
-   "id": "tech:Anthropic API",
-   "label": "Anthropic API",
-   "type": "Technology",
-   "props": {
-    "category": "LLM / GenAI"
-   }
-  },
-  {
    "id": "tech:Optuna",
    "label": "Optuna",
    "type": "Technology",
@@ -5319,12 +5586,6 @@
     "used_by_projects": 1,
     "technology": "Optuna"
    }
-  },
-  {
-   "id": "platform:Kaggle",
-   "label": "Kaggle",
-   "type": "Platform",
-   "props": {}
   },
   {
    "id": "project:researchpaper2-",
@@ -5556,7 +5817,7 @@
     "description": "A modern React application demonstrating client-side JSON Web Token (JWT) authentication, token generation, storage in localStorage, token decoding, and role-based access control.",
     "url": "https://github.com/Goldypahal/simple-JWT-authentication",
     "owner": "Goldypahal",
-    "status": "active",
+    "status": "recent",
     "commits": 1,
     "files": 19,
     "first_commit": "2026-09-29",
@@ -6364,8 +6625,8 @@
    "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 15,
-    "share": 0.577
+    "files": 31,
+    "share": 0.66
    }
   },
   {
@@ -6373,8 +6634,17 @@
    "target": "language:CSS",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 9,
-    "share": 0.346
+    "files": 10,
+    "share": 0.213
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "language:SQL",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 3,
+    "share": 0.064
    }
   },
   {
@@ -6382,8 +6652,8 @@
    "target": "language:HTML",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 1,
-    "share": 0.038
+    "files": 2,
+    "share": 0.043
    }
   },
   {
@@ -6392,12 +6662,32 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
-    "share": 0.038
+    "share": 0.021
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "tech:Anthropic API",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
    }
   },
   {
    "source": "project:Cortex-Hub",
    "target": "tech:CORS",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "tech:ESLint",
    "type": "USES",
    "props": {
     "via": [
@@ -6417,7 +6707,27 @@
   },
   {
    "source": "project:Cortex-Hub",
+   "target": "tech:Prettier",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
    "target": "tech:Prisma",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "tech:Zod",
    "type": "USES",
    "props": {
     "via": [
@@ -6429,6 +6739,42 @@
    "source": "project:Cortex-Hub",
    "target": "tech:dotenv",
    "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:@anthropic-ai/sdk",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:@anthropic-ai/sdk",
+   "target": "tech:Anthropic API",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:@eslint/js",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:@node-rs/argon2",
+   "type": "DEPENDS_ON",
    "props": {
     "via": [
      "."
@@ -6489,6 +6835,16 @@
   },
   {
    "source": "project:Cortex-Hub",
+   "target": "lib:npm:eslint",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
    "target": "lib:npm:express",
    "type": "DEPENDS_ON",
    "props": {
@@ -6505,11 +6861,107 @@
   },
   {
    "source": "project:Cortex-Hub",
+   "target": "lib:npm:globals",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:prettier",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:prettier",
+   "target": "tech:Prettier",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:Cortex-Hub",
    "target": "lib:npm:prisma",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
      "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:zod",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "service:AWS / S3",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "service:Anthropic API",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "service:Email (SMTP)",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "service:Razorpay",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "service:Stripe",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "service:Twilio",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
     ]
    }
   },
@@ -6542,25 +6994,25 @@
   },
   {
    "source": "project:Cortex-Hub",
-   "target": "concept:LLM agents",
-   "type": "ABOUT",
-   "props": {
-    "source": "readme",
-    "mentions": 2
-   }
-  },
-  {
-   "source": "project:Cortex-Hub",
    "target": "concept:Audio / speech",
    "type": "ABOUT",
    "props": {
     "source": "readme",
-    "mentions": 2
+    "mentions": 5
    }
   },
   {
    "source": "project:Cortex-Hub",
    "target": "concept:Authentication & access control",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 3
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "concept:LLM agents",
    "type": "ABOUT",
    "props": {
     "source": "readme",
@@ -6577,11 +7029,20 @@
    }
   },
   {
+   "source": "project:Cortex-Hub",
+   "target": "concept:Fraud / financial risk",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 2
+   }
+  },
+  {
    "source": "person:Goldy Pahal",
    "target": "project:Cortex-Hub",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 3
+    "commits": 9
    }
   },
   {
@@ -6613,7 +7074,7 @@
   },
   {
    "source": "project:EV-optimal-charging-planner-for-long-routes",
-   "target": "language:HTML",
+   "target": "language:Python",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
@@ -6622,7 +7083,7 @@
   },
   {
    "source": "project:EV-optimal-charging-planner-for-long-routes",
-   "target": "language:Python",
+   "target": "language:HTML",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
@@ -8060,8 +8521,8 @@
    "target": "language:Python",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 157,
-    "share": 0.744
+    "files": 173,
+    "share": 0.762
    }
   },
   {
@@ -8070,7 +8531,7 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 45,
-    "share": 0.213
+    "share": 0.198
    }
   },
   {
@@ -8079,7 +8540,7 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 6,
-    "share": 0.028
+    "share": 0.026
    }
   },
   {
@@ -8219,9 +8680,16 @@
    "type": "USES",
    "props": {
     "via": [
+     "backend",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:FFRE/backend",
+   "target": "tech:LightGBM",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -8245,9 +8713,16 @@
    "type": "USES",
    "props": {
     "via": [
+     "backend",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:FFRE/backend",
+   "target": "tech:NetworkX",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -8255,9 +8730,16 @@
    "type": "USES",
    "props": {
     "via": [
+     "backend",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:FFRE/backend",
+   "target": "tech:NumPy",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -8382,6 +8864,16 @@
   },
   {
    "source": "project:FFRE",
+   "target": "tech:Requests / HTTPX",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
    "target": "tech:SQLAlchemy",
    "type": "USES",
    "props": {
@@ -8406,6 +8898,22 @@
      "imports"
     ]
    }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "tech:SciPy",
+   "type": "USES",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "component:FFRE/backend",
+   "target": "tech:SciPy",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -8576,9 +9084,16 @@
    "type": "USES",
    "props": {
     "via": [
+     "backend",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:FFRE/backend",
+   "target": "tech:joblib",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -8603,9 +9118,16 @@
    "type": "USES",
    "props": {
     "via": [
+     "backend",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:FFRE/backend",
+   "target": "tech:scikit-learn",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -8953,6 +9475,22 @@
   },
   {
    "source": "project:FFRE",
+   "target": "lib:pip:joblib",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:joblib",
+   "target": "tech:joblib",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
    "target": "lib:pip:langchain-openai",
    "type": "DEPENDS_ON",
    "props": {
@@ -8992,6 +9530,54 @@
      "backend"
     ]
    }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:pip:lightgbm",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:lightgbm",
+   "target": "tech:LightGBM",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:pip:networkx",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:networkx",
+   "target": "tech:NetworkX",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:pip:numpy",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:numpy",
+   "target": "tech:NumPy",
+   "type": "IMPLEMENTS",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -9083,6 +9669,16 @@
   },
   {
    "source": "project:FFRE",
+   "target": "lib:pip:pytest-mock",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
    "target": "lib:pip:python-dotenv",
    "type": "DEPENDS_ON",
    "props": {
@@ -9125,6 +9721,16 @@
   },
   {
    "source": "project:FFRE",
+   "target": "lib:pip:pyyaml",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
    "target": "lib:pip:redis",
    "type": "DEPENDS_ON",
    "props": {
@@ -9148,6 +9754,38 @@
      "backend"
     ]
    }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:pip:scikit-learn",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:scikit-learn",
+   "target": "tech:scikit-learn",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:pip:scipy",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:scipy",
+   "target": "tech:SciPy",
+   "type": "IMPLEMENTS",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -9234,6 +9872,16 @@
   },
   {
    "source": "project:FFRE",
+   "target": "service:Twilio",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
    "target": "platform:Docker",
    "type": "DEPLOYS_WITH",
    "props": {}
@@ -9242,6 +9890,12 @@
    "source": "project:FFRE",
    "target": "platform:Docker Compose",
    "type": "DEPLOYS_WITH",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
+   "target": "platform:GitHub Actions",
+   "type": "AUTOMATED_BY",
    "props": {}
   },
   {
@@ -9277,34 +9931,7 @@
    "type": "ABOUT",
    "props": {
     "source": "readme",
-    "mentions": 26
-   }
-  },
-  {
-   "source": "project:FFRE",
-   "target": "concept:Authentication & access control",
-   "type": "ABOUT",
-   "props": {
-    "source": "readme",
-    "mentions": 7
-   }
-  },
-  {
-   "source": "project:FFRE",
-   "target": "concept:LLM agents",
-   "type": "ABOUT",
-   "props": {
-    "source": "readme",
-    "mentions": 5
-   }
-  },
-  {
-   "source": "project:FFRE",
-   "target": "concept:Multi-agent systems",
-   "type": "ABOUT",
-   "props": {
-    "source": "readme",
-    "mentions": 5
+    "mentions": 28
    }
   },
   {
@@ -9318,11 +9945,29 @@
   },
   {
    "source": "project:FFRE",
-   "target": "concept:LLM evaluation",
+   "target": "concept:Authentication & access control",
    "type": "ABOUT",
    "props": {
     "source": "readme",
-    "mentions": 2
+    "mentions": 4
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "concept:LLM agents",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 3
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "concept:Multi-agent systems",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 3
    }
   },
   {
@@ -9330,7 +9975,7 @@
    "target": "project:FFRE",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 63
+    "commits": 72
    }
   },
   {
@@ -9412,7 +10057,7 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-1/1.1",
+   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -9424,25 +10069,25 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-2/1.2",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-2/1.1",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Fullstack/EXP-1/1.2",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-3/1.2",
+   "source": "component:Fullstack/EXP-2/1.2",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-1/1.1",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.1",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -9460,6 +10105,12 @@
    }
   },
   {
+   "source": "component:Fullstack/EXP-2/1.2",
+   "target": "tech:React Router",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:React Router",
    "type": "USES",
@@ -9467,12 +10118,6 @@
   },
   {
    "source": "component:Fullstack/EXP-3/1.1",
-   "target": "tech:React Router",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-2/1.2",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -9491,7 +10136,13 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-3/1.2",
+   "source": "component:Fullstack/EXP-2/1.2",
+   "target": "tech:Redux",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.1",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -9503,13 +10154,7 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-2/1.2",
-   "target": "tech:Redux",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-2/1.1",
+   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -9530,7 +10175,7 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-1/1.1",
+   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -9542,25 +10187,25 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-2/1.2",
-   "target": "tech:Vite",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-2/1.1",
-   "target": "tech:Vite",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Fullstack/EXP-1/1.2",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-3/1.2",
+   "source": "component:Fullstack/EXP-2/1.2",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-1/1.1",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.1",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -9942,12 +10587,6 @@
    }
   },
   {
-   "source": "lib:pip:numpy",
-   "target": "tech:NumPy",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
    "source": "project:GPH",
    "target": "lib:pip:opencv-python-headless",
    "type": "DEPENDS_ON",
@@ -10250,13 +10889,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -10305,13 +10944,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -10344,13 +10983,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Framer Motion",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Framer Motion",
    "type": "USES",
    "props": {}
@@ -10416,13 +11055,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Leaflet",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Leaflet",
    "type": "USES",
    "props": {}
@@ -10439,13 +11078,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -10552,13 +11191,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -10575,13 +11214,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -10616,13 +11255,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -10650,7 +11289,7 @@
    }
   },
   {
-   "source": "component:HR-tracker/server",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -10662,7 +11301,7 @@
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/server",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -10679,13 +11318,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -10729,7 +11368,7 @@
    }
   },
   {
-   "source": "component:HR-tracker/server",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:TypeScript",
    "type": "USES",
    "props": {}
@@ -10741,7 +11380,7 @@
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/server",
    "target": "tech:TypeScript",
    "type": "USES",
    "props": {}
@@ -10758,13 +11397,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -10781,13 +11420,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/server",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Vitest",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/server",
    "target": "tech:Vitest",
    "type": "USES",
    "props": {}
@@ -11963,7 +12602,7 @@
    }
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -11975,7 +12614,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -12016,7 +12655,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/Result-Entry",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -12028,7 +12667,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/Result-Entry",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -12085,7 +12724,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/Result-Entry",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -12097,7 +12736,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/Result-Entry",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -12165,24 +12804,24 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/Result-Entry",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
+   "source": "component:Labsmart/doctor-dashboard",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/lab-portal",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "project:Labsmart",
    "target": "tech:React Router",
    "type": "USES",
@@ -12195,7 +12834,7 @@
    }
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -12207,7 +12846,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -12259,7 +12898,7 @@
    }
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -12271,7 +12910,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -12312,7 +12951,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/Result-Entry",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -12324,7 +12963,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/Result-Entry",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -13173,12 +13812,6 @@
    }
   },
   {
-   "source": "lib:pip:scikit-learn",
-   "target": "tech:scikit-learn",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
    "source": "project:MMRA",
    "target": "lib:pip:scipy",
    "type": "DEPENDS_ON",
@@ -13187,12 +13820,6 @@
      "."
     ]
    }
-  },
-  {
-   "source": "lib:pip:scipy",
-   "target": "tech:SciPy",
-   "type": "IMPLEMENTS",
-   "props": {}
   },
   {
    "source": "project:MMRA",
@@ -14512,12 +15139,6 @@
      "rags-research-framework"
     ]
    }
-  },
-  {
-   "source": "lib:pip:joblib",
-   "target": "tech:joblib",
-   "type": "IMPLEMENTS",
-   "props": {}
   },
   {
    "source": "project:RAGS",
@@ -17504,8 +18125,8 @@
    "target": "language:TypeScript",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 54,
-    "share": 0.462
+    "files": 143,
+    "share": 0.581
    }
   },
   {
@@ -17513,8 +18134,8 @@
    "target": "language:Python",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 49,
-    "share": 0.419
+    "files": 83,
+    "share": 0.337
    }
   },
   {
@@ -17522,8 +18143,8 @@
    "target": "language:HTML",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 6,
-    "share": 0.051
+    "files": 7,
+    "share": 0.028
    }
   },
   {
@@ -17531,8 +18152,17 @@
    "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
+    "files": 5,
+    "share": 0.02
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "language:Jupyter Notebook",
+   "type": "WRITTEN_IN",
+   "props": {
     "files": 3,
-    "share": 0.026
+    "share": 0.012
    }
   },
   {
@@ -17541,7 +18171,7 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 3,
-    "share": 0.026
+    "share": 0.012
    }
   },
   {
@@ -17619,13 +18249,13 @@
    }
   },
   {
-   "source": "component:Shield/backend/routing",
+   "source": "component:Shield/backend",
    "target": "tech:FastAPI",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend",
+   "source": "component:Shield/backend/routing",
    "target": "tech:FastAPI",
    "type": "USES",
    "props": {}
@@ -17692,10 +18322,17 @@
    "type": "USES",
    "props": {
     "via": [
+     "backend",
      "backend/routing",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:Shield/backend",
+   "target": "tech:NetworkX",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "component:Shield/backend/routing",
@@ -17710,11 +18347,18 @@
    "props": {
     "via": [
      "app/assets/models",
+     "backend",
      "backend/ml/models/scream_detection",
      "backend/routing",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:Shield/backend",
+   "target": "tech:NumPy",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "component:Shield/backend/routing",
@@ -17857,6 +18501,16 @@
    "target": "tech:Redis",
    "type": "USES",
    "props": {}
+  },
+  {
+   "source": "project:Shield",
+   "target": "tech:Requests / HTTPX",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
   },
   {
    "source": "project:Shield",
@@ -17924,14 +18578,30 @@
    }
   },
   {
+   "source": "component:Shield/backend",
+   "target": "tech:Uvicorn",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Shield/backend/routing",
    "target": "tech:Uvicorn",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend",
-   "target": "tech:Uvicorn",
+   "source": "project:Shield",
+   "target": "tech:Zustand",
+   "type": "USES",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "component:Shield/app",
+   "target": "tech:Zustand",
    "type": "USES",
    "props": {}
   },
@@ -17992,10 +18662,17 @@
    "type": "USES",
    "props": {
     "via": [
+     "backend",
      "backend/routing",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:Shield/backend",
+   "target": "tech:pytest",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "component:Shield/backend/routing",
@@ -18015,7 +18692,7 @@
   },
   {
    "source": "project:Shield",
-   "target": "lib:npm:@react-native-async-storage/async-storage",
+   "target": "lib:npm:@expo/vector-icons",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -18025,7 +18702,17 @@
   },
   {
    "source": "project:Shield",
-   "target": "lib:npm:@react-native-community/geolocation",
+   "target": "lib:npm:@maplibre/maplibre-react-native",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:npm:@react-native-async-storage/async-storage",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -18066,6 +18753,26 @@
   {
    "source": "project:Shield",
    "target": "lib:npm:@react-navigation/native-stack",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:npm:@siteed/audio-studio",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:npm:@types/geojson",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -18131,7 +18838,47 @@
   },
   {
    "source": "project:Shield",
+   "target": "lib:npm:expo-constants",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:npm:expo-crypto",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
    "target": "lib:npm:expo-file-system",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:npm:expo-font",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:npm:expo-intent-launcher",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -18161,7 +18908,37 @@
   },
   {
    "source": "project:Shield",
+   "target": "lib:npm:expo-secure-store",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
    "target": "lib:npm:expo-sensors",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:npm:expo-speech",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:npm:expo-speech-recognition",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -18187,7 +18964,47 @@
   },
   {
    "source": "project:Shield",
+   "target": "lib:npm:maplibre-gl",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:npm:munim-bluetooth",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:npm:patch-package",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
    "target": "lib:npm:react",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:npm:react-dom",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -18213,6 +19030,16 @@
   },
   {
    "source": "project:Shield",
+   "target": "lib:npm:react-native-fast-tflite",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
    "target": "lib:npm:react-native-get-random-values",
    "type": "DEPENDS_ON",
    "props": {
@@ -18224,6 +19051,16 @@
   {
    "source": "project:Shield",
    "target": "lib:npm:react-native-maps",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:npm:react-native-nitro-modules",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -18253,7 +19090,27 @@
   },
   {
    "source": "project:Shield",
-   "target": "lib:npm:react-native-sqlite-storage",
+   "target": "lib:npm:react-native-svg",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:npm:react-native-web",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:npm:react-native-webview",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -18283,6 +19140,26 @@
   },
   {
    "source": "project:Shield",
+   "target": "lib:npm:zustand",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "app"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:pip:aiosqlite",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
    "target": "lib:pip:asyncpg",
    "type": "DEPENDS_ON",
    "props": {
@@ -18296,6 +19173,16 @@
    "target": "tech:PostgreSQL",
    "type": "IMPLEMENTS",
    "props": {}
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:pip:bcrypt",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
   },
   {
    "source": "project:Shield",
@@ -18369,15 +19256,10 @@
    "type": "DEPENDS_ON",
    "props": {
     "via": [
+     "backend",
      "backend/routing"
     ]
    }
-  },
-  {
-   "source": "lib:pip:networkx",
-   "target": "tech:NetworkX",
-   "type": "IMPLEMENTS",
-   "props": {}
   },
   {
    "source": "project:Shield",
@@ -18386,6 +19268,7 @@
    "props": {
     "via": [
      "app/assets/models",
+     "backend",
      "backend/ml/models/scream_detection",
      "backend/routing"
     ]
@@ -18409,16 +19292,6 @@
   },
   {
    "source": "project:Shield",
-   "target": "lib:pip:passlib",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "project:Shield",
    "target": "lib:pip:pydantic",
    "type": "DEPENDS_ON",
    "props": {
@@ -18429,21 +19302,28 @@
   },
   {
    "source": "project:Shield",
-   "target": "lib:pip:pytest",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend/routing"
-    ]
-   }
-  },
-  {
-   "source": "project:Shield",
-   "target": "lib:pip:python-jose",
+   "target": "lib:pip:pyjwt",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
      "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:pyjwt",
+   "target": "tech:JWT",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:pip:pytest",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend",
+     "backend/routing"
     ]
    }
   },
@@ -18460,6 +19340,16 @@
   {
    "source": "project:Shield",
    "target": "lib:pip:redis",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "lib:pip:reportlab",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -18549,6 +19439,56 @@
   },
   {
    "source": "project:Shield",
+   "target": "service:Email (SMTP)",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "service:Firebase",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "service:JWT",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "service:OpenRouteService",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "service:PostgreSQL",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
    "target": "service:Redis",
    "type": "CONNECTS_TO",
    "props": {
@@ -18559,7 +19499,41 @@
   },
   {
    "source": "project:Shield",
+   "target": "service:Twilio",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Shield",
+   "target": "platform:Docker",
+   "type": "DEPLOYS_WITH",
+   "props": {}
+  },
+  {
+   "source": "project:Shield",
    "target": "platform:Docker Compose",
+   "type": "DEPLOYS_WITH",
+   "props": {}
+  },
+  {
+   "source": "project:Shield",
+   "target": "platform:GitHub Actions",
+   "type": "AUTOMATED_BY",
+   "props": {}
+  },
+  {
+   "source": "project:Shield",
+   "target": "platform:Kaggle",
+   "type": "DEPLOYS_WITH",
+   "props": {}
+  },
+  {
+   "source": "project:Shield",
+   "target": "platform:Render",
    "type": "DEPLOYS_WITH",
    "props": {}
   },
@@ -18622,7 +19596,15 @@
    "target": "project:Shield",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 4
+    "commits": 38
+   }
+  },
+  {
+   "source": "person:Codebuff",
+   "target": "project:Shield",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 13
    }
   },
   {
@@ -18765,13 +19747,13 @@
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab/server",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Express",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab/server",
    "target": "tech:Express",
    "type": "USES",
    "props": {}
@@ -18929,25 +19911,25 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
-   "target": "tech:Socket.IO",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Skill-Bridge/aptitude_quiz/backend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab/server",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
   },
   {
    "source": "component:Skill-Bridge/gd-room",
+   "target": "tech:Socket.IO",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Skill-Bridge/code-collab/server",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -19511,11 +20493,38 @@
   },
   {
    "source": "project:Skill-Bridge",
+   "target": "concept:Research paper / benchmark",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 7
+   }
+  },
+  {
+   "source": "project:Skill-Bridge",
+   "target": "concept:Healthcare / diagnostics",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 3
+   }
+  },
+  {
+   "source": "project:Skill-Bridge",
    "target": "concept:Real-time tracking / IoT",
    "type": "ABOUT",
    "props": {
     "source": "readme",
     "mentions": 3
+   }
+  },
+  {
+   "source": "project:Skill-Bridge",
+   "target": "concept:LLM agents",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 2
    }
   },
   {
@@ -19532,6 +20541,14 @@
    "type": "CONTRIBUTED_TO",
    "props": {
     "commits": 24
+   }
+  },
+  {
+   "source": "person:Om07092208",
+   "target": "project:Skill-Bridge",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 3
    }
   },
   {
@@ -21315,7 +22332,7 @@
   },
   {
    "source": "project:jarvis",
-   "target": "language:HTML",
+   "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
@@ -21333,7 +22350,7 @@
   },
   {
    "source": "project:jarvis",
-   "target": "language:JavaScript",
+   "target": "language:HTML",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
@@ -23226,10 +24243,35 @@
   },
   {
    "source": "project:FFRE",
+   "target": "project:Shield",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.37,
+    "shared": [
+     "FastAPI",
+     "JWT",
+     "NetworkX",
+     "NumPy",
+     "PostgreSQL",
+     "Pydantic",
+     "React",
+     "Redis",
+     "Requests / HTTPX",
+     "SciPy",
+     "TypeScript",
+     "Uvicorn",
+     "Zustand",
+     "bcrypt",
+     "joblib"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
    "target": "project:campusRideshare",
    "type": "SIMILAR_STACK",
    "props": {
-    "score": 0.32,
+    "score": 0.3,
     "shared": [
      "FastAPI",
      "JWT",
@@ -23243,30 +24285,6 @@
      "Uvicorn",
      "Vite",
      "bcrypt",
-     "pytest",
-     "scikit-learn"
-    ]
-   }
-  },
-  {
-   "source": "project:FFRE",
-   "target": "project:Shield",
-   "type": "SIMILAR_STACK",
-   "props": {
-    "score": 0.31,
-    "shared": [
-     "FastAPI",
-     "JWT",
-     "NetworkX",
-     "NumPy",
-     "PostgreSQL",
-     "Pydantic",
-     "React",
-     "Redis",
-     "TypeScript",
-     "Uvicorn",
-     "bcrypt",
-     "joblib",
      "pytest",
      "scikit-learn"
     ]

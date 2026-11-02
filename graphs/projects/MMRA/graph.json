@@ -53,11 +53,27 @@
    }
   },
   {
+   "id": "tech:Requests / HTTPX",
+   "label": "Requests / HTTPX",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
    "id": "tech:SQLite",
    "label": "SQLite",
    "type": "Technology",
    "props": {
     "category": "Database / storage"
+   }
+  },
+  {
+   "id": "tech:SciPy",
+   "label": "SciPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
    }
   },
   {
@@ -69,6 +85,16 @@
    }
   },
   {
+   "id": "lib:pip:numpy",
+   "label": "numpy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 9,
+    "technology": "NumPy"
+   }
+  },
+  {
    "id": "lib:pip:python-dotenv",
    "label": "python-dotenv",
    "type": "Library",
@@ -76,6 +102,26 @@
     "ecosystem": "pip",
     "used_by_projects": 4,
     "technology": "dotenv"
+   }
+  },
+  {
+   "id": "lib:pip:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 5,
+    "technology": "scikit-learn"
+   }
+  },
+  {
+   "id": "lib:pip:scipy",
+   "label": "scipy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 6,
+    "technology": "SciPy"
    }
   },
   {
@@ -99,30 +145,6 @@
    "props": {}
   },
   {
-   "id": "concept:LLM evaluation",
-   "label": "LLM evaluation",
-   "type": "Concept",
-   "props": {}
-  },
-  {
-   "id": "tech:Requests / HTTPX",
-   "label": "Requests / HTTPX",
-   "type": "Technology",
-   "props": {
-    "category": "Tooling"
-   }
-  },
-  {
-   "id": "lib:pip:numpy",
-   "label": "numpy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 8,
-    "technology": "NumPy"
-   }
-  },
-  {
    "id": "tech:pandas",
    "label": "pandas",
    "type": "Technology",
@@ -135,7 +157,7 @@
    "label": "MMRA",
    "type": "Project",
    "props": {
-    "title": "MMRA Extended Adversarial Test Set",
+    "title": "Multi-Agent vs Single-Model Research Framework",
     "description": "Research study comparing multi-agent and single-model LLM reasoning across 4 conditions, 7 task categories and 140 tasks, using OpenRouter models.",
     "url": "https://github.com/Goldypahal/MMRA",
     "owner": "Goldypahal",
@@ -161,14 +183,6 @@
    "type": "Technology",
    "props": {
     "category": "LLM / GenAI"
-   }
-  },
-  {
-   "id": "tech:SciPy",
-   "label": "SciPy",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {
@@ -218,26 +232,6 @@
    }
   },
   {
-   "id": "lib:pip:scikit-learn",
-   "label": "scikit-learn",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 4,
-    "technology": "scikit-learn"
-   }
-  },
-  {
-   "id": "lib:pip:scipy",
-   "label": "scipy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 5,
-    "technology": "SciPy"
-   }
-  },
-  {
    "id": "lib:pip:statsmodels",
    "label": "statsmodels",
    "type": "Library",
@@ -280,6 +274,12 @@
    "props": {
     "category": "LLM / GenAI"
    }
+  },
+  {
+   "id": "concept:LLM evaluation",
+   "label": "LLM evaluation",
+   "type": "Concept",
+   "props": {}
   },
   {
    "id": "concept:Career guidance & skills",
@@ -330,14 +330,26 @@
    "props": {}
   },
   {
+   "source": "lib:pip:numpy",
+   "target": "tech:NumPy",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
    "source": "lib:pip:python-dotenv",
    "target": "tech:dotenv",
    "type": "IMPLEMENTS",
    "props": {}
   },
   {
-   "source": "lib:pip:numpy",
-   "target": "tech:NumPy",
+   "source": "lib:pip:scikit-learn",
+   "target": "tech:scikit-learn",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:pip:scipy",
+   "target": "tech:SciPy",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -565,12 +577,6 @@
    }
   },
   {
-   "source": "lib:pip:scikit-learn",
-   "target": "tech:scikit-learn",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
    "source": "project:MMRA",
    "target": "lib:pip:scipy",
    "type": "DEPENDS_ON",
@@ -579,12 +585,6 @@
      "."
     ]
    }
-  },
-  {
-   "source": "lib:pip:scipy",
-   "target": "tech:SciPy",
-   "type": "IMPLEMENTS",
-   "props": {}
   },
   {
    "source": "project:MMRA",

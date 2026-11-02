@@ -82,7 +82,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 4
+    "used_by_projects": 5
    }
   },
   {
@@ -108,6 +108,14 @@
    "props": {}
   },
   {
+   "id": "tech:Anthropic API",
+   "label": "Anthropic API",
+   "type": "Technology",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
    "id": "tech:dotenv",
    "label": "dotenv",
    "type": "Technology",
@@ -116,8 +124,24 @@
    }
   },
   {
+   "id": "service:Anthropic API",
+   "label": "Anthropic API",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
    "id": "tech:NumPy",
    "label": "NumPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:SciPy",
+   "label": "SciPy",
    "type": "Technology",
    "props": {
     "category": "ML / data science"
@@ -142,11 +166,23 @@
    }
   },
   {
-   "id": "service:Anthropic API",
-   "label": "Anthropic API",
-   "type": "Service",
+   "id": "lib:pip:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Library",
    "props": {
-    "category": "LLM / GenAI"
+    "ecosystem": "pip",
+    "used_by_projects": 5,
+    "technology": "scikit-learn"
+   }
+  },
+  {
+   "id": "lib:pip:scipy",
+   "label": "scipy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 6,
+    "technology": "SciPy"
    }
   },
   {
@@ -160,12 +196,6 @@
   {
    "id": "concept:Research paper / benchmark",
    "label": "Research paper / benchmark",
-   "type": "Concept",
-   "props": {}
-  },
-  {
-   "id": "concept:LLM evaluation",
-   "label": "LLM evaluation",
    "type": "Concept",
    "props": {}
   },
@@ -190,7 +220,7 @@
    "label": "MMRA",
    "type": "Project",
    "props": {
-    "title": "MMRA Extended Adversarial Test Set",
+    "title": "Multi-Agent vs Single-Model Research Framework",
     "description": "Research study comparing multi-agent and single-model LLM reasoning across 4 conditions, 7 task categories and 140 tasks, using OpenRouter models.",
     "url": "https://github.com/Goldypahal/MMRA",
     "owner": "Goldypahal",
@@ -216,14 +246,6 @@
    "type": "Technology",
    "props": {
     "category": "LLM / GenAI"
-   }
-  },
-  {
-   "id": "tech:SciPy",
-   "label": "SciPy",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {
@@ -263,26 +285,6 @@
    }
   },
   {
-   "id": "lib:pip:scikit-learn",
-   "label": "scikit-learn",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 4,
-    "technology": "scikit-learn"
-   }
-  },
-  {
-   "id": "lib:pip:scipy",
-   "label": "scipy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 5,
-    "technology": "SciPy"
-   }
-  },
-  {
    "id": "lib:pip:statsmodels",
    "label": "statsmodels",
    "type": "Library",
@@ -316,6 +318,12 @@
    "props": {
     "category": "LLM / GenAI"
    }
+  },
+  {
+   "id": "concept:LLM evaluation",
+   "label": "LLM evaluation",
+   "type": "Concept",
+   "props": {}
   },
   {
    "id": "project:Multi-Dimensional-Spatio-Temporal-Fusion-Transformer-for-Intermittent-Demand-Forecasting",
@@ -414,6 +422,12 @@
    }
   },
   {
+   "id": "platform:Kaggle",
+   "label": "Kaggle",
+   "type": "Platform",
+   "props": {}
+  },
+  {
    "id": "tech:NLTK",
    "label": "NLTK",
    "type": "Technology",
@@ -456,20 +470,6 @@
     "last_commit": "2026-10-25",
     "kind": "research"
    }
-  },
-  {
-   "id": "tech:Anthropic API",
-   "label": "Anthropic API",
-   "type": "Technology",
-   "props": {
-    "category": "LLM / GenAI"
-   }
-  },
-  {
-   "id": "platform:Kaggle",
-   "label": "Kaggle",
-   "type": "Platform",
-   "props": {}
   },
   {
    "id": "project:researchpaper2-",
@@ -725,18 +725,6 @@
    "props": {}
   },
   {
-   "source": "lib:pip:openai",
-   "target": "tech:OpenAI API",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "lib:pip:pandas",
-   "target": "tech:pandas",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
    "source": "lib:pip:scikit-learn",
    "target": "tech:scikit-learn",
    "type": "IMPLEMENTS",
@@ -745,6 +733,18 @@
   {
    "source": "lib:pip:scipy",
    "target": "tech:SciPy",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:pip:openai",
+   "target": "tech:OpenAI API",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:pip:pandas",
+   "target": "tech:pandas",
    "type": "IMPLEMENTS",
    "props": {}
   },

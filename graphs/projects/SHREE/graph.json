@@ -82,7 +82,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 9,
+    "used_by_projects": 10,
     "technology": "ESLint"
    }
   },
@@ -122,7 +122,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 13
+    "used_by_projects": 14
    }
   },
   {
@@ -172,6 +172,15 @@
    }
   },
   {
+   "id": "lib:npm:@eslint/js",
+   "label": "@eslint/js",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8
+   }
+  },
+  {
    "id": "lib:npm:cors",
    "label": "cors",
    "type": "Library",
@@ -202,20 +211,20 @@
    }
   },
   {
+   "id": "lib:npm:globals",
+   "label": "globals",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8
+   }
+  },
+  {
    "id": "tech:Vite",
    "label": "Vite",
    "type": "Technology",
    "props": {
     "category": "Frontend framework"
-   }
-  },
-  {
-   "id": "lib:npm:@eslint/js",
-   "label": "@eslint/js",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 7
    }
   },
   {
@@ -239,15 +248,6 @@
   {
    "id": "lib:npm:eslint-plugin-react-refresh",
    "label": "eslint-plugin-react-refresh",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 7
-   }
-  },
-  {
-   "id": "lib:npm:globals",
-   "label": "globals",
    "type": "Library",
    "props": {
     "ecosystem": "npm",

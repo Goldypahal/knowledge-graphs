@@ -125,7 +125,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 9,
+    "used_by_projects": 10,
     "technology": "ESLint"
    }
   },
@@ -174,7 +174,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 13
+    "used_by_projects": 14
    }
   },
   {
@@ -210,6 +210,24 @@
    "props": {}
   },
   {
+   "id": "lib:npm:@eslint/js",
+   "label": "@eslint/js",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8
+   }
+  },
+  {
+   "id": "lib:npm:globals",
+   "label": "globals",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8
+   }
+  },
+  {
    "id": "project:EV-optimal-charging-planner-for-long-routes",
    "label": "EV-optimal-charging-planner-for-long-routes",
    "type": "Project",
@@ -232,15 +250,6 @@
    "type": "Technology",
    "props": {
     "category": "Frontend framework"
-   }
-  },
-  {
-   "id": "lib:npm:@eslint/js",
-   "label": "@eslint/js",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 7
    }
   },
   {
@@ -274,15 +283,6 @@
   {
    "id": "lib:npm:eslint-plugin-react-refresh",
    "label": "eslint-plugin-react-refresh",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 7
-   }
-  },
-  {
-   "id": "lib:npm:globals",
-   "label": "globals",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
@@ -357,7 +357,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 2,
+    "used_by_projects": 3,
     "technology": "Zustand"
    }
   },
@@ -390,15 +390,15 @@
    "label": "Skill-Bridge",
    "type": "Project",
    "props": {
-    "title": "🏆 Aptitude Quiz (Aptitude Arena)",
+    "title": "Skill Bridge",
     "description": "Skill-Bridge, a career and skills platform combining an agent-driven AI career engine, a real-time multiplayer aptitude quiz, group-discussion rooms and collaborative coding.",
     "url": "https://github.com/Om07092208/Skill-Bridge",
     "owner": "Om07092208",
-    "status": "recent",
-    "commits": 72,
+    "status": "active",
+    "commits": 75,
     "files": 183,
     "first_commit": "2026-08-28",
-    "last_commit": "2026-09-01",
+    "last_commit": "2026-10-27",
     "kind": "product"
    }
   },

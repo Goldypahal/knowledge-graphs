@@ -56,7 +56,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 4
+    "used_by_projects": 5
    }
   },
   {
@@ -167,6 +167,15 @@
     "ecosystem": "pip",
     "used_by_projects": 3,
     "technology": "LangChain"
+   }
+  },
+  {
+   "id": "lib:pip:pytest-mock",
+   "label": "pytest-mock",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 3
    }
   },
   {
@@ -384,15 +393,6 @@
    }
   },
   {
-   "id": "lib:pip:pytest-mock",
-   "label": "pytest-mock",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2
-   }
-  },
-  {
    "id": "lib:pip:python-docx",
    "label": "python-docx",
    "type": "Library",
@@ -449,8 +449,8 @@
    "label": "ResearchReel",
    "type": "Project",
    "props": {
-    "title": "🚀 ResearchReel — Quick Start & Run Guide",
-    "description": "ResearchReel is a microservices-based, cloud-native platform designed for sharing research via short-form videos (Reels) and interactive research documents.",
+    "title": "🔑 ResearchReel API & Keys Guide",
+    "description": "To make the platform fully functional, you need to obtain the following API keys. Most of these have generous free tiers for research and development.",
     "url": "https://github.com/Goldypahal/ResearchReel",
     "owner": "Goldypahal",
     "status": "recent",

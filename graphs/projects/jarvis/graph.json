@@ -97,6 +97,14 @@
    }
   },
   {
+   "id": "tech:Requests / HTTPX",
+   "label": "Requests / HTTPX",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
    "id": "tech:SQLite",
    "label": "SQLite",
    "type": "Technology",
@@ -183,14 +191,6 @@
    "type": "Technology",
    "props": {
     "category": "Computer vision / audio"
-   }
-  },
-  {
-   "id": "tech:Requests / HTTPX",
-   "label": "Requests / HTTPX",
-   "type": "Technology",
-   "props": {
-    "category": "Tooling"
    }
   },
   {
@@ -510,7 +510,7 @@
   },
   {
    "source": "project:jarvis",
-   "target": "language:HTML",
+   "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
@@ -528,7 +528,7 @@
   },
   {
    "source": "project:jarvis",
-   "target": "language:JavaScript",
+   "target": "language:HTML",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,

@@ -16,10 +16,10 @@ MERGE (n:Entity {id: "lib:npm:framer-motion"}) SET n:Library, n.`name` = "framer
 MERGE (n:Entity {id: "lib:npm:lucide-react"}) SET n:Library, n.`name` = "lucide-react", n.`ecosystem` = "npm", n.`used_by_projects` = 11, n.`technology` = "Lucide icons";
 MERGE (n:Entity {id: "lib:npm:postcss"}) SET n:Library, n.`name` = "postcss", n.`ecosystem` = "npm", n.`used_by_projects` = 7;
 MERGE (n:Entity {id: "lib:npm:react"}) SET n:Library, n.`name` = "react", n.`ecosystem` = "npm", n.`used_by_projects` = 14, n.`technology` = "React";
-MERGE (n:Entity {id: "lib:npm:react-dom"}) SET n:Library, n.`name` = "react-dom", n.`ecosystem` = "npm", n.`used_by_projects` = 13;
+MERGE (n:Entity {id: "lib:npm:react-dom"}) SET n:Library, n.`name` = "react-dom", n.`ecosystem` = "npm", n.`used_by_projects` = 14;
 MERGE (n:Entity {id: "lib:npm:tailwindcss"}) SET n:Library, n.`name` = "tailwindcss", n.`ecosystem` = "npm", n.`used_by_projects` = 10, n.`technology` = "Tailwind CSS";
 MERGE (n:Entity {id: "lib:npm:typescript"}) SET n:Library, n.`name` = "typescript", n.`ecosystem` = "npm", n.`used_by_projects` = 11, n.`technology` = "TypeScript";
-MERGE (n:Entity {id: "lib:npm:zod"}) SET n:Library, n.`name` = "zod", n.`ecosystem` = "npm", n.`used_by_projects` = 6, n.`technology` = "Zod";
+MERGE (n:Entity {id: "lib:npm:zod"}) SET n:Library, n.`name` = "zod", n.`ecosystem` = "npm", n.`used_by_projects` = 7, n.`technology` = "Zod";
 MERGE (n:Entity {id: "concept:Education / ed-tech"}) SET n:Concept, n.`name` = "Education / ed-tech";
 MERGE (n:Entity {id: "tech:Express"}) SET n:Technology, n.`name` = "Express", n.`category` = "Backend framework";
 MERGE (n:Entity {id: "lib:npm:express"}) SET n:Library, n.`name` = "express", n.`ecosystem` = "npm", n.`used_by_projects` = 8, n.`technology` = "Express";

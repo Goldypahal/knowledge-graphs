@@ -124,7 +124,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 9,
+    "used_by_projects": 10,
     "technology": "ESLint"
    }
   },
@@ -173,7 +173,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 13
+    "used_by_projects": 14
    }
   },
   {
@@ -212,7 +212,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 6,
+    "used_by_projects": 7,
     "technology": "Zod"
    }
   },
@@ -247,6 +247,15 @@
    }
   },
   {
+   "id": "lib:npm:@eslint/js",
+   "label": "@eslint/js",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8
+   }
+  },
+  {
    "id": "lib:npm:cors",
    "label": "cors",
    "type": "Library",
@@ -277,20 +286,28 @@
    }
   },
   {
+   "id": "lib:npm:globals",
+   "label": "globals",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8
+   }
+  },
+  {
+   "id": "service:Twilio",
+   "label": "Twilio",
+   "type": "Service",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
    "id": "tech:Vite",
    "label": "Vite",
    "type": "Technology",
    "props": {
     "category": "Frontend framework"
-   }
-  },
-  {
-   "id": "lib:npm:@eslint/js",
-   "label": "@eslint/js",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 7
    }
   },
   {
@@ -324,15 +341,6 @@
   {
    "id": "lib:npm:eslint-plugin-react-refresh",
    "label": "eslint-plugin-react-refresh",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 7
-   }
-  },
-  {
-   "id": "lib:npm:globals",
-   "label": "globals",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
@@ -1139,14 +1147,6 @@
    }
   },
   {
-   "id": "service:Twilio",
-   "label": "Twilio",
-   "type": "Service",
-   "props": {
-    "category": "Tooling"
-   }
-  },
-  {
    "id": "concept:Real-time tracking / IoT",
    "label": "Real-time tracking / IoT",
    "type": "Concept",
@@ -1180,8 +1180,8 @@
    "label": "ResearchReel",
    "type": "Project",
    "props": {
-    "title": "🚀 ResearchReel — Quick Start & Run Guide",
-    "description": "ResearchReel is a microservices-based, cloud-native platform designed for sharing research via short-form videos (Reels) and interactive research documents.",
+    "title": "🔑 ResearchReel API & Keys Guide",
+    "description": "To make the platform fully functional, you need to obtain the following API keys. Most of these have generous free tiers for research and development.",
     "url": "https://github.com/Goldypahal/ResearchReel",
     "owner": "Goldypahal",
     "status": "recent",
@@ -1370,13 +1370,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -1425,13 +1425,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -1464,13 +1464,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Framer Motion",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Framer Motion",
    "type": "USES",
    "props": {}
@@ -1536,13 +1536,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Leaflet",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Leaflet",
    "type": "USES",
    "props": {}
@@ -1559,13 +1559,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -1672,13 +1672,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -1695,13 +1695,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -1736,13 +1736,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -1770,7 +1770,7 @@
    }
   },
   {
-   "source": "component:HR-tracker/server",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -1782,7 +1782,7 @@
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/server",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -1799,13 +1799,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -1849,7 +1849,7 @@
    }
   },
   {
-   "source": "component:HR-tracker/server",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:TypeScript",
    "type": "USES",
    "props": {}
@@ -1861,7 +1861,7 @@
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/server",
    "target": "tech:TypeScript",
    "type": "USES",
    "props": {}
@@ -1878,13 +1878,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -1901,13 +1901,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/server",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Vitest",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/server",
    "target": "tech:Vitest",
    "type": "USES",
    "props": {}

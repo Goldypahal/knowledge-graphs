@@ -37,11 +37,47 @@
    "props": {}
   },
   {
+   "id": "tech:Anthropic API",
+   "label": "Anthropic API",
+   "type": "Technology",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
    "id": "tech:NumPy",
    "label": "NumPy",
    "type": "Technology",
    "props": {
     "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:SciPy",
+   "label": "SciPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "lib:pip:numpy",
+   "label": "numpy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 9,
+    "technology": "NumPy"
+   }
+  },
+  {
+   "id": "lib:pip:scipy",
+   "label": "scipy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 6,
+    "technology": "SciPy"
    }
   },
   {
@@ -57,27 +93,11 @@
    "props": {}
   },
   {
-   "id": "concept:LLM evaluation",
-   "label": "LLM evaluation",
-   "type": "Concept",
-   "props": {}
-  },
-  {
    "id": "tech:PyTorch",
    "label": "PyTorch",
    "type": "Technology",
    "props": {
     "category": "ML / data science"
-   }
-  },
-  {
-   "id": "lib:pip:numpy",
-   "label": "numpy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 8,
-    "technology": "NumPy"
    }
   },
   {
@@ -105,30 +125,18 @@
    }
   },
   {
-   "id": "tech:SciPy",
-   "label": "SciPy",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
-   }
-  },
-  {
-   "id": "lib:pip:scipy",
-   "label": "scipy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 5,
-    "technology": "SciPy"
-   }
-  },
-  {
    "id": "service:OpenRouter",
    "label": "OpenRouter",
    "type": "Service",
    "props": {
     "category": "LLM / GenAI"
    }
+  },
+  {
+   "id": "concept:LLM evaluation",
+   "label": "LLM evaluation",
+   "type": "Concept",
+   "props": {}
   },
   {
    "id": "lib:pip:matplotlib",
@@ -182,6 +190,12 @@
    }
   },
   {
+   "id": "platform:Kaggle",
+   "label": "Kaggle",
+   "type": "Platform",
+   "props": {}
+  },
+  {
    "id": "project:researchpaper1",
    "label": "researchpaper1",
    "type": "Project",
@@ -211,14 +225,6 @@
    }
   },
   {
-   "id": "tech:Anthropic API",
-   "label": "Anthropic API",
-   "type": "Technology",
-   "props": {
-    "category": "LLM / GenAI"
-   }
-  },
-  {
    "id": "tech:Optuna",
    "label": "Optuna",
    "type": "Technology",
@@ -235,12 +241,6 @@
     "used_by_projects": 1,
     "technology": "Optuna"
    }
-  },
-  {
-   "id": "platform:Kaggle",
-   "label": "Kaggle",
-   "type": "Platform",
-   "props": {}
   },
   {
    "id": "project:researchpaper2-",

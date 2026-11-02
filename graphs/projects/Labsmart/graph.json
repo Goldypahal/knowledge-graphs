@@ -132,7 +132,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 9,
+    "used_by_projects": 10,
     "technology": "ESLint"
    }
   },
@@ -181,7 +181,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 13
+    "used_by_projects": 14
    }
   },
   {
@@ -210,7 +210,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 6,
+    "used_by_projects": 7,
     "technology": "Zod"
    }
   },
@@ -251,6 +251,15 @@
    }
   },
   {
+   "id": "lib:npm:@eslint/js",
+   "label": "@eslint/js",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8
+   }
+  },
+  {
    "id": "lib:npm:cors",
    "label": "cors",
    "type": "Library",
@@ -281,6 +290,23 @@
    }
   },
   {
+   "id": "lib:npm:globals",
+   "label": "globals",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8
+   }
+  },
+  {
+   "id": "service:AWS / S3",
+   "label": "AWS / S3",
+   "type": "Service",
+   "props": {
+    "category": "Cloud"
+   }
+  },
+  {
    "id": "concept:Healthcare / diagnostics",
    "label": "Healthcare / diagnostics",
    "type": "Concept",
@@ -292,15 +318,6 @@
    "type": "Technology",
    "props": {
     "category": "Frontend framework"
-   }
-  },
-  {
-   "id": "lib:npm:@eslint/js",
-   "label": "@eslint/js",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 7
    }
   },
   {
@@ -334,15 +351,6 @@
   {
    "id": "lib:npm:eslint-plugin-react-refresh",
    "label": "eslint-plugin-react-refresh",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 7
-   }
-  },
-  {
-   "id": "lib:npm:globals",
-   "label": "globals",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
@@ -469,14 +477,6 @@
    "type": "Technology",
    "props": {
     "category": "Database / storage"
-   }
-  },
-  {
-   "id": "service:AWS / S3",
-   "label": "AWS / S3",
-   "type": "Service",
-   "props": {
-    "category": "Cloud"
    }
   },
   {
@@ -769,15 +769,15 @@
    "label": "Skill-Bridge",
    "type": "Project",
    "props": {
-    "title": "🏆 Aptitude Quiz (Aptitude Arena)",
+    "title": "Skill Bridge",
     "description": "Skill-Bridge, a career and skills platform combining an agent-driven AI career engine, a real-time multiplayer aptitude quiz, group-discussion rooms and collaborative coding.",
     "url": "https://github.com/Om07092208/Skill-Bridge",
     "owner": "Om07092208",
-    "status": "recent",
-    "commits": 72,
+    "status": "active",
+    "commits": 75,
     "files": 183,
     "first_commit": "2026-08-28",
-    "last_commit": "2026-09-01",
+    "last_commit": "2026-10-27",
     "kind": "product"
    }
   }
@@ -979,7 +979,7 @@
    }
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -991,7 +991,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -1032,7 +1032,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/Result-Entry",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -1044,7 +1044,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/Result-Entry",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -1101,7 +1101,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/Result-Entry",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -1113,7 +1113,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/Result-Entry",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -1181,24 +1181,24 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/Result-Entry",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
+   "source": "component:Labsmart/doctor-dashboard",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/lab-portal",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "project:Labsmart",
    "target": "tech:React Router",
    "type": "USES",
@@ -1211,7 +1211,7 @@
    }
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -1223,7 +1223,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -1275,7 +1275,7 @@
    }
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/patient-portal",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -1287,7 +1287,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/patient-portal",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -1328,7 +1328,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/lab-portal",
+   "source": "component:Labsmart/Result-Entry",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -1340,7 +1340,7 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/Result-Entry",
+   "source": "component:Labsmart/lab-portal",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}

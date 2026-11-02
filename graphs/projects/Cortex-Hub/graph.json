@@ -19,11 +19,27 @@
    "props": {}
   },
   {
+   "id": "tech:ESLint",
+   "label": "ESLint",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
    "id": "tech:Prisma",
    "label": "Prisma",
    "type": "Technology",
    "props": {
     "category": "Database / storage"
+   }
+  },
+  {
+   "id": "tech:Zod",
+   "label": "Zod",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
    }
   },
   {
@@ -37,6 +53,16 @@
    }
   },
   {
+   "id": "lib:npm:eslint",
+   "label": "eslint",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 10,
+    "technology": "ESLint"
+   }
+  },
+  {
    "id": "lib:npm:prisma",
    "label": "prisma",
    "type": "Library",
@@ -44,6 +70,16 @@
     "ecosystem": "npm",
     "used_by_projects": 3,
     "technology": "Prisma"
+   }
+  },
+  {
+   "id": "lib:npm:zod",
+   "label": "zod",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 7,
+    "technology": "Zod"
    }
   },
   {
@@ -61,17 +97,23 @@
     "description": " Production-ready, deterministic AI engines with exact document byte-offset citations, hybrid vector retrieval, and sovereign VPC / air-gapped deployment.",
     "url": "https://github.com/Goldypahal/Cortex-Hub",
     "owner": "Goldypahal",
-    "status": "recent",
-    "commits": 3,
-    "files": 35,
+    "status": "active",
+    "commits": 9,
+    "files": 59,
     "first_commit": "2026-09-16",
-    "last_commit": "2026-09-25",
+    "last_commit": "2026-11-01",
     "kind": "product"
    }
   },
   {
    "id": "language:JavaScript",
    "label": "JavaScript",
+   "type": "Language",
+   "props": {}
+  },
+  {
+   "id": "language:SQL",
+   "label": "SQL",
    "type": "Language",
    "props": {}
   },
@@ -86,6 +128,14 @@
    "label": "Prisma",
    "type": "Language",
    "props": {}
+  },
+  {
+   "id": "tech:Anthropic API",
+   "label": "Anthropic API",
+   "type": "Technology",
+   "props": {
+    "category": "LLM / GenAI"
+   }
   },
   {
    "id": "tech:CORS",
@@ -104,11 +154,47 @@
    }
   },
   {
+   "id": "tech:Prettier",
+   "label": "Prettier",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
    "id": "tech:dotenv",
    "label": "dotenv",
    "type": "Technology",
    "props": {
     "category": "Tooling"
+   }
+  },
+  {
+   "id": "lib:npm:@anthropic-ai/sdk",
+   "label": "@anthropic-ai/sdk",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1,
+    "technology": "Anthropic API"
+   }
+  },
+  {
+   "id": "lib:npm:@eslint/js",
+   "label": "@eslint/js",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8
+   }
+  },
+  {
+   "id": "lib:npm:@node-rs/argon2",
+   "label": "@node-rs/argon2",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
    }
   },
   {
@@ -151,6 +237,73 @@
    }
   },
   {
+   "id": "lib:npm:globals",
+   "label": "globals",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8
+   }
+  },
+  {
+   "id": "lib:npm:prettier",
+   "label": "prettier",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1,
+    "technology": "Prettier"
+   }
+  },
+  {
+   "id": "service:AWS / S3",
+   "label": "AWS / S3",
+   "type": "Service",
+   "props": {
+    "category": "Cloud"
+   }
+  },
+  {
+   "id": "service:Anthropic API",
+   "label": "Anthropic API",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "service:Email (SMTP)",
+   "label": "Email (SMTP)",
+   "type": "Service",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "service:Razorpay",
+   "label": "Razorpay",
+   "type": "Service",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "service:Stripe",
+   "label": "Stripe",
+   "type": "Service",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
+   "id": "service:Twilio",
+   "label": "Twilio",
+   "type": "Service",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
    "id": "concept:Retrieval-Augmented Generation (RAG)",
    "label": "Retrieval-Augmented Generation (RAG)",
    "type": "Concept",
@@ -179,6 +332,12 @@
    "label": "Healthcare / diagnostics",
    "type": "Concept",
    "props": {}
+  },
+  {
+   "id": "concept:Fraud / financial risk",
+   "label": "Fraud / financial risk",
+   "type": "Concept",
+   "props": {}
   }
  ],
  "edges": [
@@ -189,8 +348,20 @@
    "props": {}
   },
   {
+   "source": "lib:npm:eslint",
+   "target": "tech:ESLint",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
    "source": "lib:npm:prisma",
    "target": "tech:Prisma",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:zod",
+   "target": "tech:Zod",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -199,8 +370,8 @@
    "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 15,
-    "share": 0.577
+    "files": 31,
+    "share": 0.66
    }
   },
   {
@@ -208,8 +379,17 @@
    "target": "language:CSS",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 9,
-    "share": 0.346
+    "files": 10,
+    "share": 0.213
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "language:SQL",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 3,
+    "share": 0.064
    }
   },
   {
@@ -217,8 +397,8 @@
    "target": "language:HTML",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 1,
-    "share": 0.038
+    "files": 2,
+    "share": 0.043
    }
   },
   {
@@ -227,12 +407,32 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
-    "share": 0.038
+    "share": 0.021
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "tech:Anthropic API",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
    }
   },
   {
    "source": "project:Cortex-Hub",
    "target": "tech:CORS",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "tech:ESLint",
    "type": "USES",
    "props": {
     "via": [
@@ -252,7 +452,27 @@
   },
   {
    "source": "project:Cortex-Hub",
+   "target": "tech:Prettier",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
    "target": "tech:Prisma",
+   "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "tech:Zod",
    "type": "USES",
    "props": {
     "via": [
@@ -264,6 +484,42 @@
    "source": "project:Cortex-Hub",
    "target": "tech:dotenv",
    "type": "USES",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:@anthropic-ai/sdk",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:@anthropic-ai/sdk",
+   "target": "tech:Anthropic API",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:@eslint/js",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:@node-rs/argon2",
+   "type": "DEPENDS_ON",
    "props": {
     "via": [
      "."
@@ -324,6 +580,16 @@
   },
   {
    "source": "project:Cortex-Hub",
+   "target": "lib:npm:eslint",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
    "target": "lib:npm:express",
    "type": "DEPENDS_ON",
    "props": {
@@ -340,11 +606,107 @@
   },
   {
    "source": "project:Cortex-Hub",
+   "target": "lib:npm:globals",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:prettier",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "lib:npm:prettier",
+   "target": "tech:Prettier",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:Cortex-Hub",
    "target": "lib:npm:prisma",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
      "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "lib:npm:zod",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "."
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "service:AWS / S3",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "service:Anthropic API",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "service:Email (SMTP)",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "service:Razorpay",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "service:Stripe",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "service:Twilio",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
     ]
    }
   },
@@ -377,25 +739,25 @@
   },
   {
    "source": "project:Cortex-Hub",
-   "target": "concept:LLM agents",
-   "type": "ABOUT",
-   "props": {
-    "source": "readme",
-    "mentions": 2
-   }
-  },
-  {
-   "source": "project:Cortex-Hub",
    "target": "concept:Audio / speech",
    "type": "ABOUT",
    "props": {
     "source": "readme",
-    "mentions": 2
+    "mentions": 5
    }
   },
   {
    "source": "project:Cortex-Hub",
    "target": "concept:Authentication & access control",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 3
+   }
+  },
+  {
+   "source": "project:Cortex-Hub",
+   "target": "concept:LLM agents",
    "type": "ABOUT",
    "props": {
     "source": "readme",
@@ -412,11 +774,20 @@
    }
   },
   {
+   "source": "project:Cortex-Hub",
+   "target": "concept:Fraud / financial risk",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 2
+   }
+  },
+  {
    "source": "person:Goldy Pahal",
    "target": "project:Cortex-Hub",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 3
+    "commits": 9
    }
   }
  ]

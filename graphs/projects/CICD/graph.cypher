@@ -15,7 +15,7 @@ MERGE (n:Entity {id: "lib:pip:google-genai"}) SET n:Library, n.`name` = "google-
 MERGE (n:Entity {id: "lib:pip:pydantic"}) SET n:Library, n.`name` = "pydantic", n.`ecosystem` = "pip", n.`used_by_projects` = 11, n.`technology` = "Pydantic";
 MERGE (n:Entity {id: "lib:pip:pytest"}) SET n:Library, n.`name` = "pytest", n.`ecosystem` = "pip", n.`used_by_projects` = 12, n.`technology` = "pytest";
 MERGE (n:Entity {id: "lib:pip:pytest-cov"}) SET n:Library, n.`name` = "pytest-cov", n.`ecosystem` = "pip", n.`used_by_projects` = 2;
-MERGE (n:Entity {id: "lib:pip:pyyaml"}) SET n:Library, n.`name` = "pyyaml", n.`ecosystem` = "pip", n.`used_by_projects` = 4;
+MERGE (n:Entity {id: "lib:pip:pyyaml"}) SET n:Library, n.`name` = "pyyaml", n.`ecosystem` = "pip", n.`used_by_projects` = 5;
 MERGE (n:Entity {id: "lib:pip:rich"}) SET n:Library, n.`name` = "rich", n.`ecosystem` = "pip", n.`used_by_projects` = 3, n.`technology` = "Rich (CLI)";
 MERGE (n:Entity {id: "platform:GitHub Actions"}) SET n:Platform, n.`name` = "GitHub Actions";
 MERGE (n:Entity {id: "concept:Automated code repair"}) SET n:Concept, n.`name` = "Automated code repair";

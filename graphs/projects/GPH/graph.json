@@ -67,6 +67,14 @@
    "props": {}
   },
   {
+   "id": "service:AWS / S3",
+   "label": "AWS / S3",
+   "type": "Service",
+   "props": {
+    "category": "Cloud"
+   }
+  },
+  {
    "id": "concept:Enterprise AI platform",
    "label": "Enterprise AI platform",
    "type": "Concept",
@@ -129,6 +137,14 @@
    }
   },
   {
+   "id": "tech:Requests / HTTPX",
+   "label": "Requests / HTTPX",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
    "id": "tech:SQLAlchemy",
    "label": "SQLAlchemy",
    "type": "Technology",
@@ -162,6 +178,16 @@
     "ecosystem": "pip",
     "used_by_projects": 7,
     "technology": "FastAPI"
+   }
+  },
+  {
+   "id": "lib:pip:numpy",
+   "label": "numpy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 9,
+    "technology": "NumPy"
    }
   },
   {
@@ -288,14 +314,6 @@
    }
   },
   {
-   "id": "tech:Requests / HTTPX",
-   "label": "Requests / HTTPX",
-   "type": "Technology",
-   "props": {
-    "category": "Tooling"
-   }
-  },
-  {
    "id": "tech:Ultralytics YOLO",
    "label": "Ultralytics YOLO",
    "type": "Technology",
@@ -311,16 +329,6 @@
     "ecosystem": "pip",
     "used_by_projects": 1,
     "technology": "MinIO / S3"
-   }
-  },
-  {
-   "id": "lib:pip:numpy",
-   "label": "numpy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 8,
-    "technology": "NumPy"
    }
   },
   {
@@ -361,14 +369,6 @@
     "ecosystem": "pip",
     "used_by_projects": 1,
     "technology": "Ultralytics YOLO"
-   }
-  },
-  {
-   "id": "service:AWS / S3",
-   "label": "AWS / S3",
-   "type": "Service",
-   "props": {
-    "category": "Cloud"
    }
   },
   {
@@ -445,6 +445,12 @@
   {
    "source": "lib:pip:fastapi",
    "target": "tech:FastAPI",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:pip:numpy",
+   "target": "tech:NumPy",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -726,12 +732,6 @@
      "."
     ]
    }
-  },
-  {
-   "source": "lib:pip:numpy",
-   "target": "tech:NumPy",
-   "type": "IMPLEMENTS",
-   "props": {}
   },
   {
    "source": "project:GPH",

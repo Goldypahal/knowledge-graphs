@@ -183,7 +183,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 13
+    "used_by_projects": 14
    }
   },
   {
@@ -212,7 +212,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 6,
+    "used_by_projects": 7,
     "technology": "Zod"
    }
   },
@@ -985,10 +985,10 @@
     "url": "https://github.com/Goldypahal/FFRE",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 63,
-    "files": 374,
+    "commits": 72,
+    "files": 411,
     "first_commit": "2026-08-13",
-    "last_commit": "2026-10-26",
+    "last_commit": "2026-11-01",
     "kind": "product"
    }
   },
@@ -1051,6 +1051,26 @@
    }
   },
   {
+   "id": "lib:pip:numpy",
+   "label": "numpy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 9,
+    "technology": "NumPy"
+   }
+  },
+  {
+   "id": "lib:pip:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 5,
+    "technology": "scikit-learn"
+   }
+  },
+  {
    "id": "lib:pip:uvicorn",
    "label": "uvicorn",
    "type": "Library",
@@ -1058,16 +1078,6 @@
     "ecosystem": "pip",
     "used_by_projects": 7,
     "technology": "Uvicorn"
-   }
-  },
-  {
-   "id": "lib:pip:numpy",
-   "label": "numpy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 8,
-    "technology": "NumPy"
    }
   },
   {
@@ -1113,16 +1123,6 @@
     "ecosystem": "pip",
     "used_by_projects": 6,
     "technology": "pandas"
-   }
-  },
-  {
-   "id": "lib:pip:scikit-learn",
-   "label": "scikit-learn",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 4,
-    "technology": "scikit-learn"
    }
   },
   {
@@ -1323,14 +1323,20 @@
    "props": {}
   },
   {
-   "source": "lib:pip:uvicorn",
-   "target": "tech:Uvicorn",
+   "source": "lib:pip:numpy",
+   "target": "tech:NumPy",
    "type": "IMPLEMENTS",
    "props": {}
   },
   {
-   "source": "lib:pip:numpy",
-   "target": "tech:NumPy",
+   "source": "lib:pip:scikit-learn",
+   "target": "tech:scikit-learn",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:pip:uvicorn",
+   "target": "tech:Uvicorn",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -1343,12 +1349,6 @@
   {
    "source": "lib:pip:pandas",
    "target": "tech:pandas",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "lib:pip:scikit-learn",
-   "target": "tech:scikit-learn",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -2751,7 +2751,7 @@
    "target": "project:campusRideshare",
    "type": "SIMILAR_STACK",
    "props": {
-    "score": 0.32,
+    "score": 0.3,
     "shared": [
      "FastAPI",
      "JWT",

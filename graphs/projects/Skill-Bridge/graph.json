@@ -58,6 +58,12 @@
    "props": {}
   },
   {
+   "id": "concept:LLM agents",
+   "label": "LLM agents",
+   "type": "Concept",
+   "props": {}
+  },
+  {
    "id": "person:Goldy Pahal",
    "label": "Goldy Pahal",
    "type": "Person",
@@ -148,7 +154,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 9,
+    "used_by_projects": 10,
     "technology": "ESLint"
    }
   },
@@ -178,7 +184,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 13
+    "used_by_projects": 14
    }
   },
   {
@@ -244,6 +250,15 @@
    }
   },
   {
+   "id": "lib:npm:@eslint/js",
+   "label": "@eslint/js",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8
+   }
+  },
+  {
    "id": "lib:npm:cors",
    "label": "cors",
    "type": "Library",
@@ -274,6 +289,21 @@
    }
   },
   {
+   "id": "lib:npm:globals",
+   "label": "globals",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 8
+   }
+  },
+  {
+   "id": "concept:Healthcare / diagnostics",
+   "label": "Healthcare / diagnostics",
+   "type": "Concept",
+   "props": {}
+  },
+  {
    "id": "project:EV-optimal-charging-planner-for-long-routes",
    "label": "EV-optimal-charging-planner-for-long-routes",
    "type": "Project",
@@ -296,15 +326,6 @@
    "type": "Technology",
    "props": {
     "category": "Frontend framework"
-   }
-  },
-  {
-   "id": "lib:npm:@eslint/js",
-   "label": "@eslint/js",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 7
    }
   },
   {
@@ -338,15 +359,6 @@
   {
    "id": "lib:npm:eslint-plugin-react-refresh",
    "label": "eslint-plugin-react-refresh",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 7
-   }
-  },
-  {
-   "id": "lib:npm:globals",
-   "label": "globals",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
@@ -399,6 +411,16 @@
    }
   },
   {
+   "id": "lib:pip:numpy",
+   "label": "numpy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 9,
+    "technology": "NumPy"
+   }
+  },
+  {
    "id": "service:OpenAI API",
    "label": "OpenAI API",
    "type": "Service",
@@ -407,14 +429,10 @@
    }
   },
   {
-   "id": "lib:pip:numpy",
-   "label": "numpy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 8,
-    "technology": "NumPy"
-   }
+   "id": "concept:Research paper / benchmark",
+   "label": "Research paper / benchmark",
+   "type": "Concept",
+   "props": {}
   },
   {
    "id": "tech:Socket.IO",
@@ -521,15 +539,15 @@
    "label": "Skill-Bridge",
    "type": "Project",
    "props": {
-    "title": "🏆 Aptitude Quiz (Aptitude Arena)",
+    "title": "Skill Bridge",
     "description": "Skill-Bridge, a career and skills platform combining an agent-driven AI career engine, a real-time multiplayer aptitude quiz, group-discussion rooms and collaborative coding.",
     "url": "https://github.com/Om07092208/Skill-Bridge",
     "owner": "Om07092208",
-    "status": "recent",
-    "commits": 72,
+    "status": "active",
+    "commits": 75,
     "files": 183,
     "first_commit": "2026-08-28",
-    "last_commit": "2026-09-01",
+    "last_commit": "2026-10-27",
     "kind": "product"
    }
   },
@@ -702,6 +720,12 @@
   {
    "id": "person:Om Tiwari",
    "label": "Om Tiwari",
+   "type": "Person",
+   "props": {}
+  },
+  {
+   "id": "person:Om07092208",
+   "label": "Om07092208",
    "type": "Person",
    "props": {}
   },
@@ -980,13 +1004,13 @@
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab/server",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Express",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab/server",
    "target": "tech:Express",
    "type": "USES",
    "props": {}
@@ -1144,25 +1168,25 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
-   "target": "tech:Socket.IO",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Skill-Bridge/aptitude_quiz/backend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab/server",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
   },
   {
    "source": "component:Skill-Bridge/gd-room",
+   "target": "tech:Socket.IO",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Skill-Bridge/code-collab/server",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -1726,11 +1750,38 @@
   },
   {
    "source": "project:Skill-Bridge",
+   "target": "concept:Research paper / benchmark",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 7
+   }
+  },
+  {
+   "source": "project:Skill-Bridge",
+   "target": "concept:Healthcare / diagnostics",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 3
+   }
+  },
+  {
+   "source": "project:Skill-Bridge",
    "target": "concept:Real-time tracking / IoT",
    "type": "ABOUT",
    "props": {
     "source": "readme",
     "mentions": 3
+   }
+  },
+  {
+   "source": "project:Skill-Bridge",
+   "target": "concept:LLM agents",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 2
    }
   },
   {
@@ -1747,6 +1798,14 @@
    "type": "CONTRIBUTED_TO",
    "props": {
     "commits": 24
+   }
+  },
+  {
+   "source": "person:Om07092208",
+   "target": "project:Skill-Bridge",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 3
    }
   },
   {

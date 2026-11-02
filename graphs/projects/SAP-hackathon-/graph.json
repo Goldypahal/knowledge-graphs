@@ -138,15 +138,15 @@
    "label": "Skill-Bridge",
    "type": "Project",
    "props": {
-    "title": "🏆 Aptitude Quiz (Aptitude Arena)",
+    "title": "Skill Bridge",
     "description": "Skill-Bridge, a career and skills platform combining an agent-driven AI career engine, a real-time multiplayer aptitude quiz, group-discussion rooms and collaborative coding.",
     "url": "https://github.com/Om07092208/Skill-Bridge",
     "owner": "Om07092208",
-    "status": "recent",
-    "commits": 72,
+    "status": "active",
+    "commits": 75,
     "files": 183,
     "first_commit": "2026-08-28",
-    "last_commit": "2026-09-01",
+    "last_commit": "2026-10-27",
     "kind": "product"
    }
   }

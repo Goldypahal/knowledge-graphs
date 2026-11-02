@@ -43,6 +43,21 @@
    }
   },
   {
+   "id": "lib:pip:pyyaml",
+   "label": "pyyaml",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 5
+   }
+  },
+  {
+   "id": "platform:GitHub Actions",
+   "label": "GitHub Actions",
+   "type": "Platform",
+   "props": {}
+  },
+  {
    "id": "concept:LLM agents",
    "label": "LLM agents",
    "type": "Concept",
@@ -171,7 +186,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 13
+    "used_by_projects": 14
    }
   },
   {
@@ -225,6 +240,22 @@
    }
   },
   {
+   "id": "service:Anthropic API",
+   "label": "Anthropic API",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
+   }
+  },
+  {
+   "id": "service:Twilio",
+   "label": "Twilio",
+   "type": "Service",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
    "id": "concept:Retrieval-Augmented Generation (RAG)",
    "label": "Retrieval-Augmented Generation (RAG)",
    "type": "Concept",
@@ -239,6 +270,12 @@
   {
    "id": "concept:Enterprise AI platform",
    "label": "Enterprise AI platform",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:Fraud / financial risk",
+   "label": "Fraud / financial risk",
    "type": "Concept",
    "props": {}
   },
@@ -325,10 +362,10 @@
     "url": "https://github.com/Goldypahal/FFRE",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 63,
-    "files": 374,
+    "commits": 72,
+    "files": 411,
     "first_commit": "2026-08-13",
-    "last_commit": "2026-10-26",
+    "last_commit": "2026-11-01",
     "kind": "product"
    }
   },
@@ -485,6 +522,14 @@
    }
   },
   {
+   "id": "tech:Requests / HTTPX",
+   "label": "Requests / HTTPX",
+   "type": "Technology",
+   "props": {
+    "category": "Tooling"
+   }
+  },
+  {
    "id": "tech:SQLAlchemy",
    "label": "SQLAlchemy",
    "type": "Technology",
@@ -498,6 +543,14 @@
    "type": "Technology",
    "props": {
     "category": "Database / storage"
+   }
+  },
+  {
+   "id": "tech:SciPy",
+   "label": "SciPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
    }
   },
   {
@@ -611,7 +664,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 2,
+    "used_by_projects": 3,
     "technology": "Zustand"
    }
   },
@@ -631,7 +684,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 1,
+    "used_by_projects": 2,
     "technology": "bcrypt"
    }
   },
@@ -666,6 +719,16 @@
    }
   },
   {
+   "id": "lib:pip:joblib",
+   "label": "joblib",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 2,
+    "technology": "joblib"
+   }
+  },
+  {
    "id": "lib:pip:langchain-openai",
    "label": "langchain-openai",
    "type": "Library",
@@ -695,12 +758,42 @@
    }
   },
   {
+   "id": "lib:pip:lightgbm",
+   "label": "lightgbm",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1,
+    "technology": "LightGBM"
+   }
+  },
+  {
+   "id": "lib:pip:networkx",
+   "label": "networkx",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 2,
+    "technology": "NetworkX"
+   }
+  },
+  {
+   "id": "lib:pip:numpy",
+   "label": "numpy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 9,
+    "technology": "NumPy"
+   }
+  },
+  {
    "id": "lib:pip:passlib",
    "label": "passlib",
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 2,
+    "used_by_projects": 1,
     "technology": "bcrypt"
    }
   },
@@ -743,6 +836,15 @@
    }
   },
   {
+   "id": "lib:pip:pytest-mock",
+   "label": "pytest-mock",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 3
+   }
+  },
+  {
    "id": "lib:pip:python-dotenv",
    "label": "python-dotenv",
    "type": "Library",
@@ -758,7 +860,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 2,
+    "used_by_projects": 1,
     "technology": "JWT"
    }
   },
@@ -787,7 +889,27 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 1
+    "used_by_projects": 2
+   }
+  },
+  {
+   "id": "lib:pip:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 5,
+    "technology": "scikit-learn"
+   }
+  },
+  {
+   "id": "lib:pip:scipy",
+   "label": "scipy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 6,
+    "technology": "SciPy"
    }
   },
   {
@@ -808,14 +930,6 @@
     "ecosystem": "pip",
     "used_by_projects": 7,
     "technology": "Uvicorn"
-   }
-  },
-  {
-   "id": "service:Anthropic API",
-   "label": "Anthropic API",
-   "type": "Service",
-   "props": {
-    "category": "LLM / GenAI"
    }
   },
   {
@@ -863,12 +977,6 @@
    "props": {}
   },
   {
-   "id": "concept:Fraud / financial risk",
-   "label": "Fraud / financial risk",
-   "type": "Concept",
-   "props": {}
-  },
-  {
    "id": "concept:Research paper / benchmark",
    "label": "Research paper / benchmark",
    "type": "Concept",
@@ -881,25 +989,19 @@
    "props": {}
   },
   {
-   "id": "concept:LLM evaluation",
-   "label": "LLM evaluation",
-   "type": "Concept",
-   "props": {}
-  },
-  {
    "id": "project:Shield",
    "label": "Shield",
    "type": "Project",
    "props": {
-    "title": "Heimdal SafeRoute: Tricity routing engine",
+    "title": "SHIELD (Heimdal) — personal safety platform",
     "description": "Heimdal SafeRoute, a personal-safety app for the Chandigarh tricity with fastest/safest route planning and on-device ML such as scream detection.",
     "url": "https://github.com/Goldypahal/Shield",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 4,
-    "files": 148,
+    "commits": 51,
+    "files": 309,
     "first_commit": "2026-09-09",
-    "last_commit": "2026-10-25",
+    "last_commit": "2026-10-27",
     "kind": "product"
    }
   },
@@ -987,8 +1089,8 @@
    "target": "language:Python",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 157,
-    "share": 0.744
+    "files": 173,
+    "share": 0.762
    }
   },
   {
@@ -997,7 +1099,7 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 45,
-    "share": 0.213
+    "share": 0.198
    }
   },
   {
@@ -1006,7 +1108,7 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 6,
-    "share": 0.028
+    "share": 0.026
    }
   },
   {
@@ -1146,9 +1248,16 @@
    "type": "USES",
    "props": {
     "via": [
+     "backend",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:FFRE/backend",
+   "target": "tech:LightGBM",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -1172,9 +1281,16 @@
    "type": "USES",
    "props": {
     "via": [
+     "backend",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:FFRE/backend",
+   "target": "tech:NetworkX",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -1182,9 +1298,16 @@
    "type": "USES",
    "props": {
     "via": [
+     "backend",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:FFRE/backend",
+   "target": "tech:NumPy",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -1309,6 +1432,16 @@
   },
   {
    "source": "project:FFRE",
+   "target": "tech:Requests / HTTPX",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
    "target": "tech:SQLAlchemy",
    "type": "USES",
    "props": {
@@ -1333,6 +1466,22 @@
      "imports"
     ]
    }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "tech:SciPy",
+   "type": "USES",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "component:FFRE/backend",
+   "target": "tech:SciPy",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -1503,9 +1652,16 @@
    "type": "USES",
    "props": {
     "via": [
+     "backend",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:FFRE/backend",
+   "target": "tech:joblib",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -1530,9 +1686,16 @@
    "type": "USES",
    "props": {
     "via": [
+     "backend",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:FFRE/backend",
+   "target": "tech:scikit-learn",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -1880,6 +2043,22 @@
   },
   {
    "source": "project:FFRE",
+   "target": "lib:pip:joblib",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:joblib",
+   "target": "tech:joblib",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
    "target": "lib:pip:langchain-openai",
    "type": "DEPENDS_ON",
    "props": {
@@ -1919,6 +2098,54 @@
      "backend"
     ]
    }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:pip:lightgbm",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:lightgbm",
+   "target": "tech:LightGBM",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:pip:networkx",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:networkx",
+   "target": "tech:NetworkX",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:pip:numpy",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:numpy",
+   "target": "tech:NumPy",
+   "type": "IMPLEMENTS",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -2010,6 +2237,16 @@
   },
   {
    "source": "project:FFRE",
+   "target": "lib:pip:pytest-mock",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
    "target": "lib:pip:python-dotenv",
    "type": "DEPENDS_ON",
    "props": {
@@ -2052,6 +2289,16 @@
   },
   {
    "source": "project:FFRE",
+   "target": "lib:pip:pyyaml",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
    "target": "lib:pip:redis",
    "type": "DEPENDS_ON",
    "props": {
@@ -2075,6 +2322,38 @@
      "backend"
     ]
    }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:pip:scikit-learn",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:scikit-learn",
+   "target": "tech:scikit-learn",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:pip:scipy",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "backend"
+    ]
+   }
+  },
+  {
+   "source": "lib:pip:scipy",
+   "target": "tech:SciPy",
+   "type": "IMPLEMENTS",
+   "props": {}
   },
   {
    "source": "project:FFRE",
@@ -2161,6 +2440,16 @@
   },
   {
    "source": "project:FFRE",
+   "target": "service:Twilio",
+   "type": "CONNECTS_TO",
+   "props": {
+    "detected_from": [
+     "env"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
    "target": "platform:Docker",
    "type": "DEPLOYS_WITH",
    "props": {}
@@ -2169,6 +2458,12 @@
    "source": "project:FFRE",
    "target": "platform:Docker Compose",
    "type": "DEPLOYS_WITH",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
+   "target": "platform:GitHub Actions",
+   "type": "AUTOMATED_BY",
    "props": {}
   },
   {
@@ -2204,34 +2499,7 @@
    "type": "ABOUT",
    "props": {
     "source": "readme",
-    "mentions": 26
-   }
-  },
-  {
-   "source": "project:FFRE",
-   "target": "concept:Authentication & access control",
-   "type": "ABOUT",
-   "props": {
-    "source": "readme",
-    "mentions": 7
-   }
-  },
-  {
-   "source": "project:FFRE",
-   "target": "concept:LLM agents",
-   "type": "ABOUT",
-   "props": {
-    "source": "readme",
-    "mentions": 5
-   }
-  },
-  {
-   "source": "project:FFRE",
-   "target": "concept:Multi-agent systems",
-   "type": "ABOUT",
-   "props": {
-    "source": "readme",
-    "mentions": 5
+    "mentions": 28
    }
   },
   {
@@ -2245,11 +2513,29 @@
   },
   {
    "source": "project:FFRE",
-   "target": "concept:LLM evaluation",
+   "target": "concept:Authentication & access control",
    "type": "ABOUT",
    "props": {
     "source": "readme",
-    "mentions": 2
+    "mentions": 4
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "concept:LLM agents",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 3
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "concept:Multi-agent systems",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 3
    }
   },
   {
@@ -2257,7 +2543,32 @@
    "target": "project:FFRE",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 63
+    "commits": 72
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "project:Shield",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.37,
+    "shared": [
+     "FastAPI",
+     "JWT",
+     "NetworkX",
+     "NumPy",
+     "PostgreSQL",
+     "Pydantic",
+     "React",
+     "Redis",
+     "Requests / HTTPX",
+     "SciPy",
+     "TypeScript",
+     "Uvicorn",
+     "Zustand",
+     "bcrypt",
+     "joblib"
+    ]
    }
   },
   {
@@ -2265,7 +2576,7 @@
    "target": "project:campusRideshare",
    "type": "SIMILAR_STACK",
    "props": {
-    "score": 0.32,
+    "score": 0.3,
     "shared": [
      "FastAPI",
      "JWT",
@@ -2279,30 +2590,6 @@
      "Uvicorn",
      "Vite",
      "bcrypt",
-     "pytest",
-     "scikit-learn"
-    ]
-   }
-  },
-  {
-   "source": "project:FFRE",
-   "target": "project:Shield",
-   "type": "SIMILAR_STACK",
-   "props": {
-    "score": 0.31,
-    "shared": [
-     "FastAPI",
-     "JWT",
-     "NetworkX",
-     "NumPy",
-     "PostgreSQL",
-     "Pydantic",
-     "React",
-     "Redis",
-     "TypeScript",
-     "Uvicorn",
-     "bcrypt",
-     "joblib",
      "pytest",
      "scikit-learn"
     ]

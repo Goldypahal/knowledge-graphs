@@ -56,7 +56,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 4
+    "used_by_projects": 5
    }
   },
   {
@@ -227,7 +227,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 9,
+    "used_by_projects": 10,
     "technology": "ESLint"
    }
   },
@@ -296,7 +296,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 13
+    "used_by_projects": 14
    }
   },
   {
@@ -335,7 +335,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 6,
+    "used_by_projects": 7,
     "technology": "Zod"
    }
   },
@@ -397,6 +397,22 @@
     "ecosystem": "npm",
     "used_by_projects": 8,
     "technology": "Express"
+   }
+  },
+  {
+   "id": "service:AWS / S3",
+   "label": "AWS / S3",
+   "type": "Service",
+   "props": {
+    "category": "Cloud"
+   }
+  },
+  {
+   "id": "service:Anthropic API",
+   "label": "Anthropic API",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
    }
   },
   {
@@ -536,6 +552,15 @@
    }
   },
   {
+   "id": "lib:pip:pytest-mock",
+   "label": "pytest-mock",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 3
+   }
+  },
+  {
    "id": "lib:pip:uvicorn",
    "label": "uvicorn",
    "type": "Library",
@@ -543,14 +568,6 @@
     "ecosystem": "pip",
     "used_by_projects": 7,
     "technology": "Uvicorn"
-   }
-  },
-  {
-   "id": "service:Anthropic API",
-   "label": "Anthropic API",
-   "type": "Service",
-   "props": {
-    "category": "LLM / GenAI"
    }
   },
   {
@@ -593,14 +610,6 @@
    "type": "Technology",
    "props": {
     "category": "Database / storage"
-   }
-  },
-  {
-   "id": "service:AWS / S3",
-   "label": "AWS / S3",
-   "type": "Service",
-   "props": {
-    "category": "Cloud"
    }
   },
   {
@@ -999,15 +1008,6 @@
    }
   },
   {
-   "id": "lib:pip:pytest-mock",
-   "label": "pytest-mock",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2
-   }
-  },
-  {
    "id": "lib:pip:python-docx",
    "label": "python-docx",
    "type": "Library",
@@ -1052,8 +1052,8 @@
    "label": "ResearchReel",
    "type": "Project",
    "props": {
-    "title": "🚀 ResearchReel — Quick Start & Run Guide",
-    "description": "ResearchReel is a microservices-based, cloud-native platform designed for sharing research via short-form videos (Reels) and interactive research documents.",
+    "title": "🔑 ResearchReel API & Keys Guide",
+    "description": "To make the platform fully functional, you need to obtain the following API keys. Most of these have generous free tiers for research and development.",
     "url": "https://github.com/Goldypahal/ResearchReel",
     "owner": "Goldypahal",
     "status": "recent",

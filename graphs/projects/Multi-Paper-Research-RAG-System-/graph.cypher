@@ -6,7 +6,7 @@ MERGE (n:Entity {id: "tech:Pydantic"}) SET n:Technology, n.`name` = "Pydantic", 
 MERGE (n:Entity {id: "tech:pytest"}) SET n:Technology, n.`name` = "pytest", n.`category` = "Testing";
 MERGE (n:Entity {id: "lib:pip:pydantic"}) SET n:Library, n.`name` = "pydantic", n.`ecosystem` = "pip", n.`used_by_projects` = 11, n.`technology` = "Pydantic";
 MERGE (n:Entity {id: "lib:pip:pytest"}) SET n:Library, n.`name` = "pytest", n.`ecosystem` = "pip", n.`used_by_projects` = 12, n.`technology` = "pytest";
-MERGE (n:Entity {id: "lib:pip:pyyaml"}) SET n:Library, n.`name` = "pyyaml", n.`ecosystem` = "pip", n.`used_by_projects` = 4;
+MERGE (n:Entity {id: "lib:pip:pyyaml"}) SET n:Library, n.`name` = "pyyaml", n.`ecosystem` = "pip", n.`used_by_projects` = 5;
 MERGE (n:Entity {id: "platform:GitHub Actions"}) SET n:Platform, n.`name` = "GitHub Actions";
 MERGE (n:Entity {id: "person:Goldy Pahal"}) SET n:Person, n.`name` = "Goldy Pahal";
 MERGE (n:Entity {id: "concept:Retrieval-Augmented Generation (RAG)"}) SET n:Concept, n.`name` = "Retrieval-Augmented Generation (RAG)";
@@ -21,6 +21,7 @@ MERGE (n:Entity {id: "tech:Uvicorn"}) SET n:Technology, n.`name` = "Uvicorn", n.
 MERGE (n:Entity {id: "lib:pip:chromadb"}) SET n:Library, n.`name` = "chromadb", n.`ecosystem` = "pip", n.`used_by_projects` = 3, n.`technology` = "ChromaDB";
 MERGE (n:Entity {id: "lib:pip:fastapi"}) SET n:Library, n.`name` = "fastapi", n.`ecosystem` = "pip", n.`used_by_projects` = 7, n.`technology` = "FastAPI";
 MERGE (n:Entity {id: "lib:pip:langchain-openai"}) SET n:Library, n.`name` = "langchain-openai", n.`ecosystem` = "pip", n.`used_by_projects` = 3, n.`technology` = "LangChain";
+MERGE (n:Entity {id: "lib:pip:pytest-mock"}) SET n:Library, n.`name` = "pytest-mock", n.`ecosystem` = "pip", n.`used_by_projects` = 3;
 MERGE (n:Entity {id: "lib:pip:python-multipart"}) SET n:Library, n.`name` = "python-multipart", n.`ecosystem` = "pip", n.`used_by_projects` = 3;
 MERGE (n:Entity {id: "lib:pip:uvicorn"}) SET n:Library, n.`name` = "uvicorn", n.`ecosystem` = "pip", n.`used_by_projects` = 7, n.`technology` = "Uvicorn";
 MERGE (n:Entity {id: "tech:MinIO / S3"}) SET n:Technology, n.`name` = "MinIO / S3", n.`category` = "Database / storage";
@@ -44,14 +45,13 @@ MERGE (n:Entity {id: "lib:pip:langchain-google-genai"}) SET n:Library, n.`name` 
 MERGE (n:Entity {id: "lib:pip:langchain-ollama"}) SET n:Library, n.`name` = "langchain-ollama", n.`ecosystem` = "pip", n.`used_by_projects` = 2;
 MERGE (n:Entity {id: "lib:pip:pydantic-settings"}) SET n:Library, n.`name` = "pydantic-settings", n.`ecosystem` = "pip", n.`used_by_projects` = 2;
 MERGE (n:Entity {id: "lib:pip:pymupdf"}) SET n:Library, n.`name` = "pymupdf", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "PyMuPDF";
-MERGE (n:Entity {id: "lib:pip:pytest-mock"}) SET n:Library, n.`name` = "pytest-mock", n.`ecosystem` = "pip", n.`used_by_projects` = 2;
 MERGE (n:Entity {id: "lib:pip:python-docx"}) SET n:Library, n.`name` = "python-docx", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "python-docx";
 MERGE (n:Entity {id: "lib:pip:rank-bm25"}) SET n:Library, n.`name` = "rank-bm25", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "BM25";
 MERGE (n:Entity {id: "lib:pip:sentence-transformers"}) SET n:Library, n.`name` = "sentence-transformers", n.`ecosystem` = "pip", n.`used_by_projects` = 4, n.`technology` = "Sentence Transformers";
 MERGE (n:Entity {id: "lib:pip:unstructured"}) SET n:Library, n.`name` = "unstructured", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Unstructured";
 MERGE (n:Entity {id: "platform:Render"}) SET n:Platform, n.`name` = "Render";
 MERGE (n:Entity {id: "concept:Knowledge graphs"}) SET n:Concept, n.`name` = "Knowledge graphs";
-MERGE (n:Entity {id: "project:ResearchReel"}) SET n:Project, n.`name` = "ResearchReel", n.`title` = "🚀 ResearchReel — Quick Start & Run Guide", n.`description` = "ResearchReel is a microservices-based, cloud-native platform designed for sharing research via short-form videos (Reels) and interactive research documents.", n.`url` = "https://github.com/Goldypahal/ResearchReel", n.`owner` = "Goldypahal", n.`status` = "recent", n.`commits` = 18, n.`files` = 397, n.`first_commit` = "2026-06-29", n.`last_commit` = "2026-09-05", n.`kind` = "product";
+MERGE (n:Entity {id: "project:ResearchReel"}) SET n:Project, n.`name` = "ResearchReel", n.`title` = "🔑 ResearchReel API & Keys Guide", n.`description` = "To make the platform fully functional, you need to obtain the following API keys. Most of these have generous free tiers for research and development.", n.`url` = "https://github.com/Goldypahal/ResearchReel", n.`owner` = "Goldypahal", n.`status` = "recent", n.`commits` = 18, n.`files` = 397, n.`first_commit` = "2026-06-29", n.`last_commit` = "2026-09-05", n.`kind` = "product";
 MATCH (a:Entity {id: "lib:pip:pydantic"}), (b:Entity {id: "tech:Pydantic"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:pytest"}), (b:Entity {id: "tech:pytest"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:chromadb"}), (b:Entity {id: "tech:ChromaDB"}) MERGE (a)-[r:IMPLEMENTS]->(b);

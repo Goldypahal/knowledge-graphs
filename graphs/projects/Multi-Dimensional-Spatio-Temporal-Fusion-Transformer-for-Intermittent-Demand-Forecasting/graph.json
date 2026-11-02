@@ -43,11 +43,39 @@
    }
   },
   {
+   "id": "tech:SciPy",
+   "label": "SciPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
    "id": "tech:scikit-learn",
    "label": "scikit-learn",
    "type": "Technology",
    "props": {
     "category": "ML / data science"
+   }
+  },
+  {
+   "id": "lib:pip:numpy",
+   "label": "numpy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 9,
+    "technology": "NumPy"
+   }
+  },
+  {
+   "id": "lib:pip:scipy",
+   "label": "scipy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 6,
+    "technology": "SciPy"
    }
   },
   {
@@ -65,16 +93,6 @@
    }
   },
   {
-   "id": "lib:pip:numpy",
-   "label": "numpy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 8,
-    "technology": "NumPy"
-   }
-  },
-  {
    "id": "tech:pandas",
    "label": "pandas",
    "type": "Technology",
@@ -87,7 +105,7 @@
    "label": "MMRA",
    "type": "Project",
    "props": {
-    "title": "MMRA Extended Adversarial Test Set",
+    "title": "Multi-Agent vs Single-Model Research Framework",
     "description": "Research study comparing multi-agent and single-model LLM reasoning across 4 conditions, 7 task categories and 140 tasks, using OpenRouter models.",
     "url": "https://github.com/Goldypahal/MMRA",
     "owner": "Goldypahal",
@@ -105,14 +123,6 @@
    "type": "Technology",
    "props": {
     "category": "Charts / visualisation"
-   }
-  },
-  {
-   "id": "tech:SciPy",
-   "label": "SciPy",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
    }
   },
   {
@@ -139,16 +149,6 @@
     "ecosystem": "pip",
     "used_by_projects": 6,
     "technology": "pandas"
-   }
-  },
-  {
-   "id": "lib:pip:scipy",
-   "label": "scipy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 5,
-    "technology": "SciPy"
    }
   },
   {
@@ -285,14 +285,14 @@
    "props": {}
   },
   {
-   "source": "lib:pip:pandas",
-   "target": "tech:pandas",
+   "source": "lib:pip:scipy",
+   "target": "tech:SciPy",
    "type": "IMPLEMENTS",
    "props": {}
   },
   {
-   "source": "lib:pip:scipy",
-   "target": "tech:SciPy",
+   "source": "lib:pip:pandas",
+   "target": "tech:pandas",
    "type": "IMPLEMENTS",
    "props": {}
   },

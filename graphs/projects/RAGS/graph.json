@@ -51,6 +51,14 @@
    }
   },
   {
+   "id": "tech:SciPy",
+   "label": "SciPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
    "id": "tech:joblib",
    "label": "joblib",
    "type": "Technology",
@@ -67,14 +75,48 @@
    }
   },
   {
-   "id": "concept:Research paper / benchmark",
-   "label": "Research paper / benchmark",
-   "type": "Concept",
-   "props": {}
+   "id": "lib:pip:joblib",
+   "label": "joblib",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 2,
+    "technology": "joblib"
+   }
   },
   {
-   "id": "concept:LLM evaluation",
-   "label": "LLM evaluation",
+   "id": "lib:pip:numpy",
+   "label": "numpy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 9,
+    "technology": "NumPy"
+   }
+  },
+  {
+   "id": "lib:pip:scikit-learn",
+   "label": "scikit-learn",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 5,
+    "technology": "scikit-learn"
+   }
+  },
+  {
+   "id": "lib:pip:scipy",
+   "label": "scipy",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 6,
+    "technology": "SciPy"
+   }
+  },
+  {
+   "id": "concept:Research paper / benchmark",
+   "label": "Research paper / benchmark",
    "type": "Concept",
    "props": {}
   },
@@ -87,16 +129,6 @@
    }
   },
   {
-   "id": "lib:pip:numpy",
-   "label": "numpy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 8,
-    "technology": "NumPy"
-   }
-  },
-  {
    "id": "tech:Matplotlib",
    "label": "Matplotlib",
    "type": "Technology",
@@ -105,32 +137,10 @@
    }
   },
   {
-   "id": "tech:SciPy",
-   "label": "SciPy",
-   "type": "Technology",
-   "props": {
-    "category": "ML / data science"
-   }
-  },
-  {
-   "id": "lib:pip:scikit-learn",
-   "label": "scikit-learn",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 4,
-    "technology": "scikit-learn"
-   }
-  },
-  {
-   "id": "lib:pip:scipy",
-   "label": "scipy",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 5,
-    "technology": "SciPy"
-   }
+   "id": "concept:LLM evaluation",
+   "label": "LLM evaluation",
+   "type": "Concept",
+   "props": {}
   },
   {
    "id": "lib:pip:matplotlib",
@@ -230,16 +240,6 @@
    }
   },
   {
-   "id": "lib:pip:joblib",
-   "label": "joblib",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 1,
-    "technology": "joblib"
-   }
-  },
-  {
    "id": "lib:pip:psutil",
    "label": "psutil",
    "type": "Library",
@@ -297,6 +297,12 @@
   {
    "source": "lib:pip:pytest",
    "target": "tech:pytest",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:pip:joblib",
+   "target": "tech:joblib",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -533,12 +539,6 @@
      "rags-research-framework"
     ]
    }
-  },
-  {
-   "source": "lib:pip:joblib",
-   "target": "tech:joblib",
-   "type": "IMPLEMENTS",
-   "props": {}
   },
   {
    "source": "project:RAGS",
