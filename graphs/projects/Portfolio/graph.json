@@ -44,7 +44,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 3,
+    "used_by_projects": 4,
     "technology": "Three.js"
    }
   },
@@ -87,11 +87,11 @@
     "description": "Personal portfolio site (AI/ML engineer, developer, researcher) with an animated sky-to-space scroll engine and preloader.",
     "url": "https://github.com/Goldypahal/Portfolio",
     "owner": "Goldypahal",
-    "status": "recent",
-    "commits": 2,
-    "files": 18,
+    "status": "active",
+    "commits": 6,
+    "files": 29,
     "first_commit": "2026-08-19",
-    "last_commit": "2026-08-19",
+    "last_commit": "2026-11-07",
     "kind": "personal"
    }
   },
@@ -144,8 +144,17 @@
    "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 10,
-    "share": 0.833
+    "files": 13,
+    "share": 0.812
+   }
+  },
+  {
+   "source": "project:Portfolio",
+   "target": "language:CSS",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 2,
+    "share": 0.125
    }
   },
   {
@@ -154,16 +163,7 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
-    "share": 0.083
-   }
-  },
-  {
-   "source": "project:Portfolio",
-   "target": "language:CSS",
-   "type": "WRITTEN_IN",
-   "props": {
-    "files": 1,
-    "share": 0.083
+    "share": 0.062
    }
   },
   {
@@ -260,7 +260,7 @@
    "target": "project:Portfolio",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 2
+    "commits": 6
    }
   }
  ]

@@ -22,7 +22,7 @@ MERGE (n:Entity {id: "service:Twilio"}) SET n:Service, n.`name` = "Twilio", n.`c
 MERGE (n:Entity {id: "concept:Audio / speech"}) SET n:Concept, n.`name` = "Audio / speech";
 MERGE (n:Entity {id: "concept:Healthcare / diagnostics"}) SET n:Concept, n.`name` = "Healthcare / diagnostics";
 MERGE (n:Entity {id: "concept:Route optimisation"}) SET n:Concept, n.`name` = "Route optimisation";
-MERGE (n:Entity {id: "project:FFRE"}) SET n:Project, n.`name` = "FFRE", n.`title` = "Financial Fraud Investigation Reasoning Engine (FFIRE)", n.`description` = "FFIRE, a Financial Fraud Investigation Reasoning Engine for running investigations over evidence, with a FastAPI backend, React frontend and a large enterprise specification set.", n.`url` = "https://github.com/Goldypahal/FFRE", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 72, n.`files` = 411, n.`first_commit` = "2026-08-13", n.`last_commit` = "2026-11-01", n.`kind` = "product";
+MERGE (n:Entity {id: "project:FFRE"}) SET n:Project, n.`name` = "FFRE", n.`title` = "Financial Fraud Investigation Reasoning Engine (FFIRE)", n.`description` = "FFIRE, a Financial Fraud Investigation Reasoning Engine for running investigations over evidence, with a FastAPI backend, React frontend and a large enterprise specification set.", n.`url` = "https://github.com/Goldypahal/FFRE", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 81, n.`files` = 431, n.`first_commit` = "2026-08-13", n.`last_commit` = "2026-11-07", n.`kind` = "product";
 MERGE (n:Entity {id: "tech:FastAPI"}) SET n:Technology, n.`name` = "FastAPI", n.`category` = "Backend framework";
 MERGE (n:Entity {id: "tech:JWT"}) SET n:Technology, n.`name` = "JWT", n.`category` = "Auth / security";
 MERGE (n:Entity {id: "tech:NetworkX"}) SET n:Technology, n.`name` = "NetworkX", n.`category` = "ML / data science";
@@ -41,7 +41,7 @@ MERGE (n:Entity {id: "lib:pip:bcrypt"}) SET n:Library, n.`name` = "bcrypt", n.`e
 MERGE (n:Entity {id: "lib:pip:fastapi"}) SET n:Library, n.`name` = "fastapi", n.`ecosystem` = "pip", n.`used_by_projects` = 7, n.`technology` = "FastAPI";
 MERGE (n:Entity {id: "lib:pip:networkx"}) SET n:Library, n.`name` = "networkx", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "NetworkX";
 MERGE (n:Entity {id: "lib:pip:numpy"}) SET n:Library, n.`name` = "numpy", n.`ecosystem` = "pip", n.`used_by_projects` = 9, n.`technology` = "NumPy";
-MERGE (n:Entity {id: "lib:pip:python-multipart"}) SET n:Library, n.`name` = "python-multipart", n.`ecosystem` = "pip", n.`used_by_projects` = 3;
+MERGE (n:Entity {id: "lib:pip:python-multipart"}) SET n:Library, n.`name` = "python-multipart", n.`ecosystem` = "pip", n.`used_by_projects` = 4;
 MERGE (n:Entity {id: "lib:pip:redis"}) SET n:Library, n.`name` = "redis", n.`ecosystem` = "pip", n.`used_by_projects` = 4, n.`technology` = "Redis";
 MERGE (n:Entity {id: "lib:pip:reportlab"}) SET n:Library, n.`name` = "reportlab", n.`ecosystem` = "pip", n.`used_by_projects` = 2;
 MERGE (n:Entity {id: "lib:pip:uvicorn"}) SET n:Library, n.`name` = "uvicorn", n.`ecosystem` = "pip", n.`used_by_projects` = 7, n.`technology` = "Uvicorn";
@@ -145,8 +145,8 @@ MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "language:TypeScript"}) 
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "language:Python"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 83, r.`share` = 0.337;
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "language:HTML"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 7, r.`share` = 0.028;
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "language:JavaScript"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 5, r.`share` = 0.02;
-MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "language:Jupyter Notebook"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 3, r.`share` = 0.012;
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "language:CSS"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 3, r.`share` = 0.012;
+MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "language:Jupyter Notebook"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 3, r.`share` = 0.012;
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "component:Shield/app"}) MERGE (a)-[r:HAS_COMPONENT]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "component:Shield/app/assets/models"}) MERGE (a)-[r:HAS_COMPONENT]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "component:Shield/backend"}) MERGE (a)-[r:HAS_COMPONENT]->(b);
@@ -308,4 +308,4 @@ MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "concept:Healthcare / di
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "concept:Research paper / benchmark"}) MERGE (a)-[r:ABOUT]->(b) SET r.`source` = "readme", r.`mentions` = 1;
 MATCH (a:Entity {id: "person:Goldy Pahal"}), (b:Entity {id: "project:Shield"}) MERGE (a)-[r:CONTRIBUTED_TO]->(b) SET r.`commits` = 38;
 MATCH (a:Entity {id: "person:Codebuff"}), (b:Entity {id: "project:Shield"}) MERGE (a)-[r:CONTRIBUTED_TO]->(b) SET r.`commits` = 13;
-MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "project:Shield"}) MERGE (a)-[r:SIMILAR_STACK]->(b) SET r.`score` = 0.37, r.`shared` = ["FastAPI", "JWT", "NetworkX", "NumPy", "PostgreSQL", "Pydantic", "React", "Redis", "Requests / HTTPX", "SciPy", "TypeScript", "Uvicorn", "Zustand", "bcrypt", "joblib"];
+MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "project:Shield"}) MERGE (a)-[r:SIMILAR_STACK]->(b) SET r.`score` = 0.36, r.`shared` = ["FastAPI", "JWT", "NetworkX", "NumPy", "PostgreSQL", "Pydantic", "React", "Redis", "Requests / HTTPX", "SciPy", "TypeScript", "Uvicorn", "Zustand", "bcrypt", "joblib"];

@@ -106,7 +106,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 1,
+    "used_by_projects": 2,
     "technology": "Google Gemini"
    }
   },

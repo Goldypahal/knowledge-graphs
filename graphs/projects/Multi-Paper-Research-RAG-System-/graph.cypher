@@ -20,9 +20,9 @@ MERGE (n:Entity {id: "tech:SQLite"}) SET n:Technology, n.`name` = "SQLite", n.`c
 MERGE (n:Entity {id: "tech:Uvicorn"}) SET n:Technology, n.`name` = "Uvicorn", n.`category` = "Backend framework";
 MERGE (n:Entity {id: "lib:pip:chromadb"}) SET n:Library, n.`name` = "chromadb", n.`ecosystem` = "pip", n.`used_by_projects` = 3, n.`technology` = "ChromaDB";
 MERGE (n:Entity {id: "lib:pip:fastapi"}) SET n:Library, n.`name` = "fastapi", n.`ecosystem` = "pip", n.`used_by_projects` = 7, n.`technology` = "FastAPI";
-MERGE (n:Entity {id: "lib:pip:langchain-openai"}) SET n:Library, n.`name` = "langchain-openai", n.`ecosystem` = "pip", n.`used_by_projects` = 3, n.`technology` = "LangChain";
+MERGE (n:Entity {id: "lib:pip:langchain-openai"}) SET n:Library, n.`name` = "langchain-openai", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "LangChain";
 MERGE (n:Entity {id: "lib:pip:pytest-mock"}) SET n:Library, n.`name` = "pytest-mock", n.`ecosystem` = "pip", n.`used_by_projects` = 3;
-MERGE (n:Entity {id: "lib:pip:python-multipart"}) SET n:Library, n.`name` = "python-multipart", n.`ecosystem` = "pip", n.`used_by_projects` = 3;
+MERGE (n:Entity {id: "lib:pip:python-multipart"}) SET n:Library, n.`name` = "python-multipart", n.`ecosystem` = "pip", n.`used_by_projects` = 4;
 MERGE (n:Entity {id: "lib:pip:uvicorn"}) SET n:Library, n.`name` = "uvicorn", n.`ecosystem` = "pip", n.`used_by_projects` = 7, n.`technology` = "Uvicorn";
 MERGE (n:Entity {id: "tech:MinIO / S3"}) SET n:Technology, n.`name` = "MinIO / S3", n.`category` = "Database / storage";
 MERGE (n:Entity {id: "tech:pandas"}) SET n:Technology, n.`name` = "pandas", n.`category` = "ML / data science";
@@ -35,11 +35,11 @@ MERGE (n:Entity {id: "tech:Cohere"}) SET n:Technology, n.`name` = "Cohere", n.`c
 MERGE (n:Entity {id: "tech:Hugging Face Datasets"}) SET n:Technology, n.`name` = "Hugging Face Datasets", n.`category` = "ML / data science";
 MERGE (n:Entity {id: "tech:Sentence Transformers"}) SET n:Technology, n.`name` = "Sentence Transformers", n.`category` = "LLM / GenAI";
 MERGE (n:Entity {id: "tech:Unstructured"}) SET n:Technology, n.`name` = "Unstructured", n.`category` = "Documents / parsing";
-MERGE (n:Entity {id: "lib:pip:boto3"}) SET n:Library, n.`name` = "boto3", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "MinIO / S3";
-MERGE (n:Entity {id: "lib:pip:google-generativeai"}) SET n:Library, n.`name` = "google-generativeai", n.`ecosystem` = "pip", n.`used_by_projects` = 3, n.`technology` = "Google Gemini";
-MERGE (n:Entity {id: "lib:pip:langchain"}) SET n:Library, n.`name` = "langchain", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "LangChain";
+MERGE (n:Entity {id: "lib:pip:boto3"}) SET n:Library, n.`name` = "boto3", n.`ecosystem` = "pip", n.`used_by_projects` = 1, n.`technology` = "MinIO / S3";
+MERGE (n:Entity {id: "lib:pip:google-generativeai"}) SET n:Library, n.`name` = "google-generativeai", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Google Gemini";
+MERGE (n:Entity {id: "lib:pip:langchain"}) SET n:Library, n.`name` = "langchain", n.`ecosystem` = "pip", n.`used_by_projects` = 1, n.`technology` = "LangChain";
 MERGE (n:Entity {id: "lib:pip:langchain-chroma"}) SET n:Library, n.`name` = "langchain-chroma", n.`ecosystem` = "pip", n.`used_by_projects` = 2;
-MERGE (n:Entity {id: "lib:pip:langchain-cohere"}) SET n:Library, n.`name` = "langchain-cohere", n.`ecosystem` = "pip", n.`used_by_projects` = 2;
+MERGE (n:Entity {id: "lib:pip:langchain-cohere"}) SET n:Library, n.`name` = "langchain-cohere", n.`ecosystem` = "pip", n.`used_by_projects` = 1;
 MERGE (n:Entity {id: "lib:pip:langchain-community"}) SET n:Library, n.`name` = "langchain-community", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "LangChain";
 MERGE (n:Entity {id: "lib:pip:langchain-google-genai"}) SET n:Library, n.`name` = "langchain-google-genai", n.`ecosystem` = "pip", n.`used_by_projects` = 2;
 MERGE (n:Entity {id: "lib:pip:langchain-ollama"}) SET n:Library, n.`name` = "langchain-ollama", n.`ecosystem` = "pip", n.`used_by_projects` = 2;
@@ -51,7 +51,7 @@ MERGE (n:Entity {id: "lib:pip:sentence-transformers"}) SET n:Library, n.`name` =
 MERGE (n:Entity {id: "lib:pip:unstructured"}) SET n:Library, n.`name` = "unstructured", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Unstructured";
 MERGE (n:Entity {id: "platform:Render"}) SET n:Platform, n.`name` = "Render";
 MERGE (n:Entity {id: "concept:Knowledge graphs"}) SET n:Concept, n.`name` = "Knowledge graphs";
-MERGE (n:Entity {id: "project:ResearchReel"}) SET n:Project, n.`name` = "ResearchReel", n.`title` = "🔑 ResearchReel API & Keys Guide", n.`description` = "To make the platform fully functional, you need to obtain the following API keys. Most of these have generous free tiers for research and development.", n.`url` = "https://github.com/Goldypahal/ResearchReel", n.`owner` = "Goldypahal", n.`status` = "recent", n.`commits` = 18, n.`files` = 397, n.`first_commit` = "2026-06-29", n.`last_commit` = "2026-09-05", n.`kind` = "product";
+MERGE (n:Entity {id: "project:ResearchReel"}) SET n:Project, n.`name` = "ResearchReel", n.`title` = "ResearchReel", n.`description` = "A social platform for research. People share findings as posts, papers and short video reels, follow each other, discuss, collaborate on projects, host live lectures, and ask an AI assistant about papers.", n.`url` = "https://github.com/Goldypahal/ResearchReel", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 26, n.`files` = 421, n.`first_commit` = "2026-06-29", n.`last_commit` = "2026-11-07", n.`kind` = "product";
 MATCH (a:Entity {id: "lib:pip:pydantic"}), (b:Entity {id: "tech:Pydantic"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:pytest"}), (b:Entity {id: "tech:pytest"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:chromadb"}), (b:Entity {id: "tech:ChromaDB"}) MERGE (a)-[r:IMPLEMENTS]->(b);
@@ -118,4 +118,5 @@ MATCH (a:Entity {id: "project:Multi-Paper-Research-RAG-System-"}), (b:Entity {id
 MATCH (a:Entity {id: "project:Multi-Paper-Research-RAG-System-"}), (b:Entity {id: "concept:Vector / hybrid search"}) MERGE (a)-[r:ABOUT]->(b) SET r.`source` = "manual", r.`mentions` = 0;
 MATCH (a:Entity {id: "project:Multi-Paper-Research-RAG-System-"}), (b:Entity {id: "concept:Knowledge graphs"}) MERGE (a)-[r:ABOUT]->(b) SET r.`source` = "manual", r.`mentions` = 0;
 MATCH (a:Entity {id: "person:Goldy Pahal"}), (b:Entity {id: "project:Multi-Paper-Research-RAG-System-"}) MERGE (a)-[r:CONTRIBUTED_TO]->(b) SET r.`commits` = 17;
-MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "project:Multi-Paper-Research-RAG-System-"}) MERGE (a)-[r:SHARES_CODE_WITH]->(b) SET r.`identical_files` = 23, r.`examples` = ["backend/research_rag/app/api/routes_eval.py", "backend/research_rag/app/api/routes_feedback.py", "backend/research_rag/app/cloud/s3_ingestion_worker.py", "backend/research_rag/app/cloud/s3_watcher.py", "backend/research_rag/app/core/init_system.py", "backend/research_rag/app/core/logging.py", "backend/research_rag/app/core/retry_utils.py", "backend/research_rag/app/export/literature_notes.py"];
+MATCH (a:Entity {id: "project:Multi-Paper-Research-RAG-System-"}), (b:Entity {id: "project:ResearchReel"}) MERGE (a)-[r:SIMILAR_STACK]->(b) SET r.`score` = 0.38, r.`shared` = ["BM25", "ChromaDB", "Cohere", "FastAPI", "Google Gemini", "Hugging Face Datasets", "LangChain", "MinIO / S3", "NumPy", "PyMuPDF", "Pydantic", "SQLite", "Sentence Transformers", "Unstructured", "Uvicorn"];
+MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "project:Multi-Paper-Research-RAG-System-"}) MERGE (a)-[r:SHARES_CODE_WITH]->(b) SET r.`identical_files` = 21, r.`examples` = ["backend/research_rag/app/api/routes_feedback.py", "backend/research_rag/app/core/logging.py", "backend/research_rag/app/evaluation/offline_eval.py", "backend/research_rag/app/export/literature_notes.py", "backend/research_rag/app/generation/grounded_formatter.py", "backend/research_rag/app/ingestion/parser_factory.py", "backend/research_rag/app/models/paper.py", "backend/research_rag/app/models/query_trace.py"];

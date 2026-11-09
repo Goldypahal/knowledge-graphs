@@ -382,7 +382,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 3,
+    "used_by_projects": 2,
     "technology": "Google Gemini"
    }
   },
@@ -480,7 +480,7 @@
     "description": " Paper: EVADE: Measuring, Explaining, and Mitigating Evaluation-Aware Behavioral Shifts in Large Language Models",
     "url": "https://github.com/Goldypahal/researchpaper2-",
     "owner": "Goldypahal",
-    "status": "active",
+    "status": "recent",
     "commits": 19,
     "files": 130,
     "first_commit": "2026-09-23",

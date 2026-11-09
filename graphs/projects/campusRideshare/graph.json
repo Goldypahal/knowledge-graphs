@@ -976,23 +976,6 @@
    "props": {}
   },
   {
-   "id": "project:FFRE",
-   "label": "FFRE",
-   "type": "Project",
-   "props": {
-    "title": "Financial Fraud Investigation Reasoning Engine (FFIRE)",
-    "description": "FFIRE, a Financial Fraud Investigation Reasoning Engine for running investigations over evidence, with a FastAPI backend, React frontend and a large enterprise specification set.",
-    "url": "https://github.com/Goldypahal/FFRE",
-    "owner": "Goldypahal",
-    "status": "active",
-    "commits": 72,
-    "files": 411,
-    "first_commit": "2026-08-13",
-    "last_commit": "2026-11-01",
-    "kind": "product"
-   }
-  },
-  {
    "id": "tech:FastAPI",
    "label": "FastAPI",
    "type": "Technology",
@@ -2743,30 +2726,6 @@
      "WebSockets",
      "Zod",
      "shadcn/ui"
-    ]
-   }
-  },
-  {
-   "source": "project:FFRE",
-   "target": "project:campusRideshare",
-   "type": "SIMILAR_STACK",
-   "props": {
-    "score": 0.3,
-    "shared": [
-     "FastAPI",
-     "JWT",
-     "Lucide icons",
-     "NumPy",
-     "Pydantic",
-     "React",
-     "Tailwind CSS",
-     "TanStack Query",
-     "TypeScript",
-     "Uvicorn",
-     "Vite",
-     "bcrypt",
-     "pytest",
-     "scikit-learn"
     ]
    }
   },

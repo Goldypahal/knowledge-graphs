@@ -30,6 +30,7 @@ MERGE (n:Entity {id: "tech:Sentence Transformers"}) SET n:Technology, n.`name` =
 MERGE (n:Entity {id: "lib:pip:sentence-transformers"}) SET n:Library, n.`name` = "sentence-transformers", n.`ecosystem` = "pip", n.`used_by_projects` = 4, n.`technology` = "Sentence Transformers";
 MERGE (n:Entity {id: "tech:Hugging Face Transformers"}) SET n:Technology, n.`name` = "Hugging Face Transformers", n.`category` = "LLM / GenAI";
 MERGE (n:Entity {id: "lib:pip:transformers"}) SET n:Library, n.`name` = "transformers", n.`ecosystem` = "pip", n.`used_by_projects` = 3, n.`technology` = "Hugging Face Transformers";
+MERGE (n:Entity {id: "concept:Personal AI assistant"}) SET n:Concept, n.`name` = "Personal AI assistant";
 MERGE (n:Entity {id: "project:jarvis"}) SET n:Project, n.`name` = "jarvis", n.`title` = "NEXUS: Advanced AI Personal Assistant", n.`description` = "This project implements NEXUS (Neural Executive Understanding System), an advanced AI personal assistant designed to transcend conventional assistant capabilities.", n.`url` = "https://github.com/Goldypahal/jarvis", n.`owner` = "Goldypahal", n.`status` = "recent", n.`commits` = 1, n.`files` = 43, n.`first_commit` = "2026-09-09", n.`last_commit` = "2026-09-09", n.`kind` = "personal";
 MERGE (n:Entity {id: "component:jarvis/web"}) SET n:Component, n.`name` = "web", n.`project` = "jarvis", n.`role` = "frontend", n.`ecosystems` = ["pip"];
 MERGE (n:Entity {id: "tech:Flask"}) SET n:Technology, n.`name` = "Flask", n.`category` = "Backend framework";
@@ -47,7 +48,6 @@ MERGE (n:Entity {id: "lib:pip:pyaudio"}) SET n:Library, n.`name` = "pyaudio", n.
 MERGE (n:Entity {id: "lib:pip:spacy"}) SET n:Library, n.`name` = "spacy", n.`ecosystem` = "pip", n.`used_by_projects` = 1, n.`technology` = "spaCy";
 MERGE (n:Entity {id: "lib:pip:sqlite3"}) SET n:Library, n.`name` = "sqlite3", n.`ecosystem` = "pip", n.`used_by_projects` = 1, n.`technology` = "SQLite";
 MERGE (n:Entity {id: "lib:pip:typing-extensions"}) SET n:Library, n.`name` = "typing-extensions", n.`ecosystem` = "pip", n.`used_by_projects` = 1;
-MERGE (n:Entity {id: "concept:Personal AI assistant"}) SET n:Concept, n.`name` = "Personal AI assistant";
 MATCH (a:Entity {id: "lib:pip:pydantic"}), (b:Entity {id: "tech:Pydantic"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:pytest"}), (b:Entity {id: "tech:pytest"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:fastapi"}), (b:Entity {id: "tech:FastAPI"}) MERGE (a)-[r:IMPLEMENTS]->(b);

@@ -156,7 +156,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 2,
+    "used_by_projects": 3,
     "technology": "Three.js"
    }
   },
@@ -193,7 +193,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 2
+    "used_by_projects": 3
    }
   },
   {
@@ -363,7 +363,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 3,
+    "used_by_projects": 4,
     "technology": "Three.js"
    }
   },

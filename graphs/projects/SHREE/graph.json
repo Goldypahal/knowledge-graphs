@@ -459,14 +459,6 @@
    }
   },
   {
-   "id": "tech:MongoDB",
-   "label": "MongoDB",
-   "type": "Technology",
-   "props": {
-    "category": "Database / storage"
-   }
-  },
-  {
    "id": "tech:Supertest",
    "label": "Supertest",
    "type": "Technology",
@@ -482,16 +474,6 @@
     "ecosystem": "npm",
     "used_by_projects": 2,
     "technology": "Jest"
-   }
-  },
-  {
-   "id": "lib:npm:mongoose",
-   "label": "mongoose",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 2,
-    "technology": "MongoDB"
    }
   },
   {
@@ -534,12 +516,30 @@
    }
   },
   {
+   "id": "tech:MongoDB",
+   "label": "MongoDB",
+   "type": "Technology",
+   "props": {
+    "category": "Database / storage"
+   }
+  },
+  {
    "id": "lib:npm:cloudinary",
    "label": "cloudinary",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
     "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:mongoose",
+   "label": "mongoose",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1,
+    "technology": "MongoDB"
    }
   },
   {
@@ -677,12 +677,6 @@
   {
    "source": "lib:npm:jest",
    "target": "tech:Jest",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "lib:npm:mongoose",
-   "target": "tech:MongoDB",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -1174,6 +1168,12 @@
      "server"
     ]
    }
+  },
+  {
+   "source": "lib:npm:mongoose",
+   "target": "tech:MongoDB",
+   "type": "IMPLEMENTS",
+   "props": {}
   },
   {
    "source": "project:SHREE",

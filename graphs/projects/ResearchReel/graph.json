@@ -31,6 +31,16 @@
    }
   },
   {
+   "id": "lib:pip:google-genai",
+   "label": "google-genai",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 2,
+    "technology": "Google Gemini"
+   }
+  },
+  {
    "id": "lib:pip:pydantic",
    "label": "pydantic",
    "type": "Library",
@@ -172,7 +182,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 2,
+    "used_by_projects": 3,
     "technology": "Three.js"
    }
   },
@@ -209,7 +219,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 2
+    "used_by_projects": 3
    }
   },
   {
@@ -315,7 +325,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 3,
+    "used_by_projects": 4,
     "technology": "Three.js"
    }
   },
@@ -400,24 +410,22 @@
    }
   },
   {
-   "id": "service:AWS / S3",
-   "label": "AWS / S3",
+   "id": "service:Email (SMTP)",
+   "label": "Email (SMTP)",
    "type": "Service",
    "props": {
-    "category": "Cloud"
-   }
-  },
-  {
-   "id": "service:Anthropic API",
-   "label": "Anthropic API",
-   "type": "Service",
-   "props": {
-    "category": "LLM / GenAI"
+    "category": "Tooling"
    }
   },
   {
    "id": "concept:Retrieval-Augmented Generation (RAG)",
    "label": "Retrieval-Augmented Generation (RAG)",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "concept:Vector / hybrid search",
+   "label": "Vector / hybrid search",
    "type": "Concept",
    "props": {}
   },
@@ -490,6 +498,22 @@
    }
   },
   {
+   "id": "tech:NumPy",
+   "label": "NumPy",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
+   "id": "tech:Playwright",
+   "label": "Playwright",
+   "type": "Technology",
+   "props": {
+    "category": "Documents / parsing"
+   }
+  },
+  {
    "id": "tech:PostgreSQL",
    "label": "PostgreSQL",
    "type": "Technology",
@@ -514,11 +538,29 @@
    }
   },
   {
+   "id": "tech:SQLite",
+   "label": "SQLite",
+   "type": "Technology",
+   "props": {
+    "category": "Database / storage"
+   }
+  },
+  {
    "id": "tech:Uvicorn",
    "label": "Uvicorn",
    "type": "Technology",
    "props": {
     "category": "Backend framework"
+   }
+  },
+  {
+   "id": "lib:npm:@playwright/test",
+   "label": "@playwright/test",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 2,
+    "technology": "Playwright"
    }
   },
   {
@@ -542,22 +584,21 @@
    }
   },
   {
-   "id": "lib:pip:langchain-openai",
-   "label": "langchain-openai",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 3,
-    "technology": "LangChain"
-   }
-  },
-  {
    "id": "lib:pip:pytest-mock",
    "label": "pytest-mock",
    "type": "Library",
    "props": {
     "ecosystem": "pip",
     "used_by_projects": 3
+   }
+  },
+  {
+   "id": "lib:pip:python-multipart",
+   "label": "python-multipart",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 4
    }
   },
   {
@@ -568,6 +609,14 @@
     "ecosystem": "pip",
     "used_by_projects": 7,
     "technology": "Uvicorn"
+   }
+  },
+  {
+   "id": "service:Ollama",
+   "label": "Ollama",
+   "type": "Service",
+   "props": {
+    "category": "LLM / GenAI"
    }
   },
   {
@@ -596,12 +645,6 @@
    "id": "platform:Docker Compose",
    "label": "Docker Compose",
    "type": "Platform",
-   "props": {}
-  },
-  {
-   "id": "concept:Research paper / benchmark",
-   "label": "Research paper / benchmark",
-   "type": "Concept",
    "props": {}
   },
   {
@@ -913,47 +956,8 @@
    }
   },
   {
-   "id": "lib:pip:boto3",
-   "label": "boto3",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2,
-    "technology": "MinIO / S3"
-   }
-  },
-  {
-   "id": "lib:pip:google-generativeai",
-   "label": "google-generativeai",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 3,
-    "technology": "Google Gemini"
-   }
-  },
-  {
-   "id": "lib:pip:langchain",
-   "label": "langchain",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2,
-    "technology": "LangChain"
-   }
-  },
-  {
    "id": "lib:pip:langchain-chroma",
    "label": "langchain-chroma",
-   "type": "Library",
-   "props": {
-    "ecosystem": "pip",
-    "used_by_projects": 2
-   }
-  },
-  {
-   "id": "lib:pip:langchain-cohere",
-   "label": "langchain-cohere",
    "type": "Library",
    "props": {
     "ecosystem": "pip",
@@ -1048,19 +1052,25 @@
    }
   },
   {
+   "id": "platform:Render",
+   "label": "Render",
+   "type": "Platform",
+   "props": {}
+  },
+  {
    "id": "project:ResearchReel",
    "label": "ResearchReel",
    "type": "Project",
    "props": {
-    "title": "🔑 ResearchReel API & Keys Guide",
-    "description": "To make the platform fully functional, you need to obtain the following API keys. Most of these have generous free tiers for research and development.",
+    "title": "ResearchReel",
+    "description": "A social platform for research. People share findings as posts, papers and short video reels, follow each other, discuss, collaborate on projects, host live lectures, and ask an AI assistant about papers.",
     "url": "https://github.com/Goldypahal/ResearchReel",
     "owner": "Goldypahal",
-    "status": "recent",
-    "commits": 18,
-    "files": 397,
+    "status": "active",
+    "commits": 26,
+    "files": 421,
     "first_commit": "2026-06-29",
-    "last_commit": "2026-09-05",
+    "last_commit": "2026-11-07",
     "kind": "product"
    }
   },
@@ -1073,7 +1083,8 @@
     "role": "backend",
     "ecosystems": [
      "npm"
-    ]
+    ],
+    "description": "ResearchReel API server"
    }
   },
   {
@@ -1086,6 +1097,19 @@
     "ecosystems": [
      "pip"
     ]
+   }
+  },
+  {
+   "id": "component:ResearchReel/e2e",
+   "label": "e2e",
+   "type": "Component",
+   "props": {
+    "project": "ResearchReel",
+    "role": "module",
+    "ecosystems": [
+     "npm"
+    ],
+    "description": "Browser tests against a running ResearchReel stack (web + API + Postgres + Redis + Mailpit)."
    }
   },
   {
@@ -1109,22 +1133,6 @@
    }
   },
   {
-   "id": "tech:Elasticsearch",
-   "label": "Elasticsearch",
-   "type": "Technology",
-   "props": {
-    "category": "Database / storage"
-   }
-  },
-  {
-   "id": "tech:FFmpeg",
-   "label": "FFmpeg",
-   "type": "Technology",
-   "props": {
-    "category": "Computer vision / audio"
-   }
-  },
-  {
    "id": "tech:Jest",
    "label": "Jest",
    "type": "Technology",
@@ -1133,48 +1141,8 @@
    }
   },
   {
-   "id": "tech:MongoDB",
-   "label": "MongoDB",
-   "type": "Technology",
-   "props": {
-    "category": "Database / storage"
-   }
-  },
-  {
-   "id": "tech:Neo4j",
-   "label": "Neo4j",
-   "type": "Technology",
-   "props": {
-    "category": "Database / storage"
-   }
-  },
-  {
    "id": "tech:Nodemailer",
    "label": "Nodemailer",
-   "type": "Technology",
-   "props": {
-    "category": "Tooling"
-   }
-  },
-  {
-   "id": "tech:Puppeteer",
-   "label": "Puppeteer",
-   "type": "Technology",
-   "props": {
-    "category": "Documents / parsing"
-   }
-  },
-  {
-   "id": "tech:Qdrant",
-   "label": "Qdrant",
-   "type": "Technology",
-   "props": {
-    "category": "Vector database"
-   }
-  },
-  {
-   "id": "tech:Stripe",
-   "label": "Stripe",
    "type": "Technology",
    "props": {
     "category": "Tooling"
@@ -1189,14 +1157,6 @@
    }
   },
   {
-   "id": "tech:Swagger / OpenAPI",
-   "label": "Swagger / OpenAPI",
-   "type": "Technology",
-   "props": {
-    "category": "Tooling"
-   }
-  },
-  {
    "id": "tech:pdf.js",
    "label": "pdf.js",
    "type": "Technology",
@@ -1205,37 +1165,18 @@
    }
   },
   {
-   "id": "lib:npm:@elastic/elasticsearch",
-   "label": "@elastic/elasticsearch",
+   "id": "lib:npm:@aws-sdk/client-s3",
+   "label": "@aws-sdk/client-s3",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
     "used_by_projects": 1,
-    "technology": "Elasticsearch"
-   }
-  },
-  {
-   "id": "lib:npm:@google/genai",
-   "label": "@google/genai",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 1,
-    "technology": "Google Gemini"
+    "technology": "MinIO / S3"
    }
   },
   {
    "id": "lib:npm:@hello-pangea/dnd",
    "label": "@hello-pangea/dnd",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 1
-   }
-  },
-  {
-   "id": "lib:npm:@qdrant/js-client-rest",
-   "label": "@qdrant/js-client-rest",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
@@ -1262,35 +1203,6 @@
    }
   },
   {
-   "id": "lib:npm:elasticsearch",
-   "label": "elasticsearch",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 1,
-    "technology": "Elasticsearch"
-   }
-  },
-  {
-   "id": "lib:npm:fluent-ffmpeg",
-   "label": "fluent-ffmpeg",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 1,
-    "technology": "FFmpeg"
-   }
-  },
-  {
-   "id": "lib:npm:husky",
-   "label": "husky",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 1
-   }
-  },
-  {
    "id": "lib:npm:jest",
    "label": "jest",
    "type": "Library",
@@ -1298,53 +1210,6 @@
     "ecosystem": "npm",
     "used_by_projects": 2,
     "technology": "Jest"
-   }
-  },
-  {
-   "id": "lib:npm:mammoth",
-   "label": "mammoth",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 1
-   }
-  },
-  {
-   "id": "lib:npm:markdown-it",
-   "label": "markdown-it",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 1
-   }
-  },
-  {
-   "id": "lib:npm:marked",
-   "label": "marked",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 1
-   }
-  },
-  {
-   "id": "lib:npm:mongoose",
-   "label": "mongoose",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 2,
-    "technology": "MongoDB"
-   }
-  },
-  {
-   "id": "lib:npm:neo4j-driver",
-   "label": "neo4j-driver",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 1,
-    "technology": "Neo4j"
    }
   },
   {
@@ -1385,26 +1250,6 @@
    }
   },
   {
-   "id": "lib:npm:puppeteer",
-   "label": "puppeteer",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 1,
-    "technology": "Puppeteer"
-   }
-  },
-  {
-   "id": "lib:npm:qdrant-client",
-   "label": "qdrant-client",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 1,
-    "technology": "Qdrant"
-   }
-  },
-  {
    "id": "lib:npm:react-pdf",
    "label": "react-pdf",
    "type": "Library",
@@ -1412,16 +1257,6 @@
     "ecosystem": "npm",
     "used_by_projects": 1,
     "technology": "pdf.js"
-   }
-  },
-  {
-   "id": "lib:npm:stripe",
-   "label": "stripe",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 1,
-    "technology": "Stripe"
    }
   },
   {
@@ -1435,40 +1270,31 @@
    }
   },
   {
-   "id": "lib:npm:swagger-jsdoc",
-   "label": "swagger-jsdoc",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 1,
-    "technology": "Swagger / OpenAPI"
-   }
-  },
-  {
-   "id": "lib:npm:swagger-ui-express",
-   "label": "swagger-ui-express",
-   "type": "Library",
-   "props": {
-    "ecosystem": "npm",
-    "used_by_projects": 1,
-    "technology": "Swagger / OpenAPI"
-   }
-  },
-  {
-   "id": "lib:pip:ragas",
-   "label": "ragas",
+   "id": "lib:pip:cohere",
+   "label": "cohere",
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 1
+    "used_by_projects": 1,
+    "technology": "Cohere"
    }
   },
   {
-   "id": "service:Qdrant",
-   "label": "Qdrant",
+   "id": "lib:pip:langchain-core",
+   "label": "langchain-core",
+   "type": "Library",
+   "props": {
+    "ecosystem": "pip",
+    "used_by_projects": 1,
+    "technology": "LangChain"
+   }
+  },
+  {
+   "id": "service:Cohere",
+   "label": "Cohere",
    "type": "Service",
    "props": {
-    "category": "Vector database"
+    "category": "LLM / GenAI"
    }
   },
   {
@@ -1482,9 +1308,21 @@
    "label": "Microservices",
    "type": "Concept",
    "props": {}
+  },
+  {
+   "id": "concept:Personal AI assistant",
+   "label": "Personal AI assistant",
+   "type": "Concept",
+   "props": {}
   }
  ],
  "edges": [
+  {
+   "source": "lib:pip:google-genai",
+   "target": "tech:Google Gemini",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
   {
    "source": "lib:pip:pydantic",
    "target": "tech:Pydantic",
@@ -1588,6 +1426,12 @@
    "props": {}
   },
   {
+   "source": "lib:npm:@playwright/test",
+   "target": "tech:Playwright",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
    "source": "lib:pip:chromadb",
    "target": "tech:ChromaDB",
    "type": "IMPLEMENTS",
@@ -1596,12 +1440,6 @@
   {
    "source": "lib:pip:fastapi",
    "target": "tech:FastAPI",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "lib:pip:langchain-openai",
-   "target": "tech:LangChain",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -1678,24 +1516,6 @@
    "props": {}
   },
   {
-   "source": "lib:pip:boto3",
-   "target": "tech:MinIO / S3",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "lib:pip:google-generativeai",
-   "target": "tech:Google Gemini",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "lib:pip:langchain",
-   "target": "tech:LangChain",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
    "source": "lib:pip:langchain-community",
    "target": "tech:LangChain",
    "type": "IMPLEMENTS",
@@ -1736,8 +1556,8 @@
    "target": "language:TypeScript",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 118,
-    "share": 0.435
+    "files": 126,
+    "share": 0.395
    }
   },
   {
@@ -1745,8 +1565,8 @@
    "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 101,
-    "share": 0.373
+    "files": 124,
+    "share": 0.389
    }
   },
   {
@@ -1754,8 +1574,8 @@
    "target": "language:Python",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 48,
-    "share": 0.177
+    "files": 66,
+    "share": 0.207
    }
   },
   {
@@ -1767,6 +1587,12 @@
   {
    "source": "project:ResearchReel",
    "target": "component:ResearchReel/backend/research_rag",
+   "type": "HAS_COMPONENT",
+   "props": {}
+  },
+  {
+   "source": "project:ResearchReel",
+   "target": "component:ResearchReel/e2e",
    "type": "HAS_COMPONENT",
    "props": {}
   },
@@ -1788,13 +1614,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/frontend",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/frontend",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -1870,9 +1696,16 @@
    "type": "USES",
    "props": {
     "via": [
+     "backend/research_rag",
      "imports"
     ]
    }
+  },
+  {
+   "source": "component:ResearchReel/backend/research_rag",
+   "target": "tech:Cohere",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "project:ResearchReel",
@@ -1892,22 +1725,6 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "tech:Elasticsearch",
-   "type": "USES",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "component:ResearchReel/backend",
-   "target": "tech:Elasticsearch",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "project:ResearchReel",
    "target": "tech:Express",
    "type": "USES",
    "props": {
@@ -1919,22 +1736,6 @@
   {
    "source": "component:ResearchReel/backend",
    "target": "tech:Express",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "tech:FFmpeg",
-   "type": "USES",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "component:ResearchReel/backend",
-   "target": "tech:FFmpeg",
    "type": "USES",
    "props": {}
   },
@@ -1993,7 +1794,6 @@
    "type": "USES",
    "props": {
     "via": [
-     "backend",
      "backend/research_rag",
      "imports"
     ]
@@ -2001,12 +1801,6 @@
   },
   {
    "source": "component:ResearchReel/backend/research_rag",
-   "target": "tech:Google Gemini",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:ResearchReel/backend",
    "target": "tech:Google Gemini",
    "type": "USES",
    "props": {}
@@ -2108,35 +1902,18 @@
    "type": "USES",
    "props": {
     "via": [
-     "backend/research_rag",
-     "imports"
+     "backend"
     ]
    }
   },
   {
-   "source": "component:ResearchReel/backend/research_rag",
+   "source": "component:ResearchReel/backend",
    "target": "tech:MinIO / S3",
    "type": "USES",
    "props": {}
   },
   {
    "source": "project:ResearchReel",
-   "target": "tech:MongoDB",
-   "type": "USES",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "component:ResearchReel/backend",
-   "target": "tech:MongoDB",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "project:ResearchReel",
    "target": "tech:Multer (uploads)",
    "type": "USES",
    "props": {
@@ -2148,22 +1925,6 @@
   {
    "source": "component:ResearchReel/backend",
    "target": "tech:Multer (uploads)",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "tech:Neo4j",
-   "type": "USES",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "component:ResearchReel/backend",
-   "target": "tech:Neo4j",
    "type": "USES",
    "props": {}
   },
@@ -2217,6 +1978,16 @@
   },
   {
    "source": "project:ResearchReel",
+   "target": "tech:NumPy",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:ResearchReel",
    "target": "tech:Pino / Winston logging",
    "type": "USES",
    "props": {
@@ -2228,6 +1999,22 @@
   {
    "source": "component:ResearchReel/backend",
    "target": "tech:Pino / Winston logging",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:ResearchReel",
+   "target": "tech:Playwright",
+   "type": "USES",
+   "props": {
+    "via": [
+     "e2e"
+    ]
+   }
+  },
+  {
+   "source": "component:ResearchReel/e2e",
+   "target": "tech:Playwright",
    "type": "USES",
    "props": {}
   },
@@ -2238,9 +2025,16 @@
    "props": {
     "via": [
      ".",
-     "backend"
+     "backend",
+     "e2e"
     ]
    }
+  },
+  {
+   "source": "component:ResearchReel/e2e",
+   "target": "tech:PostgreSQL",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "component:ResearchReel/backend",
@@ -2250,16 +2044,6 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "tech:Puppeteer",
-   "type": "USES",
-   "props": {
-    "via": [
-     "."
-    ]
-   }
-  },
-  {
-   "source": "project:ResearchReel",
    "target": "tech:PyMuPDF",
    "type": "USES",
    "props": {
@@ -2289,22 +2073,6 @@
   {
    "source": "component:ResearchReel/backend/research_rag",
    "target": "tech:Pydantic",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "tech:Qdrant",
-   "type": "USES",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "component:ResearchReel/backend",
-   "target": "tech:Qdrant",
    "type": "USES",
    "props": {}
   },
@@ -2340,6 +2108,16 @@
    "target": "tech:Redis",
    "type": "USES",
    "props": {}
+  },
+  {
+   "source": "project:ResearchReel",
+   "target": "tech:SQLite",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
   },
   {
    "source": "project:ResearchReel",
@@ -2370,34 +2148,18 @@
    }
   },
   {
+   "source": "component:ResearchReel/backend",
+   "target": "tech:Socket.IO",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:ResearchReel/frontend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/backend",
-   "target": "tech:Socket.IO",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "tech:Stripe",
-   "type": "USES",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "component:ResearchReel/backend",
-   "target": "tech:Stripe",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "project:ResearchReel",
    "target": "tech:Supertest",
    "type": "USES",
@@ -2410,22 +2172,6 @@
   {
    "source": "component:ResearchReel/backend",
    "target": "tech:Supertest",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "tech:Swagger / OpenAPI",
-   "type": "USES",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "component:ResearchReel/backend",
-   "target": "tech:Swagger / OpenAPI",
    "type": "USES",
    "props": {}
   },
@@ -2467,9 +2213,16 @@
    "type": "USES",
    "props": {
     "via": [
+     "e2e",
      "frontend"
     ]
    }
+  },
+  {
+   "source": "component:ResearchReel/e2e",
+   "target": "tech:TypeScript",
+   "type": "USES",
+   "props": {}
   },
   {
    "source": "component:ResearchReel/frontend",
@@ -2628,7 +2381,7 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "lib:npm:@elastic/elasticsearch",
+   "target": "lib:npm:@aws-sdk/client-s3",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -2637,24 +2390,8 @@
    }
   },
   {
-   "source": "lib:npm:@elastic/elasticsearch",
-   "target": "tech:Elasticsearch",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "lib:npm:@google/genai",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "lib:npm:@google/genai",
-   "target": "tech:Google Gemini",
+   "source": "lib:npm:@aws-sdk/client-s3",
+   "target": "tech:MinIO / S3",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -2670,11 +2407,11 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "lib:npm:@qdrant/js-client-rest",
+   "target": "lib:npm:@playwright/test",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
-     "backend"
+     "e2e"
     ]
    }
   },
@@ -2724,6 +2461,7 @@
    "type": "DEPENDS_ON",
    "props": {
     "via": [
+     "e2e",
      "frontend"
     ]
    }
@@ -2837,22 +2575,6 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "lib:npm:elasticsearch",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "lib:npm:elasticsearch",
-   "target": "tech:Elasticsearch",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "project:ResearchReel",
    "target": "lib:npm:eslint",
    "type": "DEPENDS_ON",
    "props": {
@@ -2893,22 +2615,6 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "lib:npm:fluent-ffmpeg",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "lib:npm:fluent-ffmpeg",
-   "target": "tech:FFmpeg",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "project:ResearchReel",
    "target": "lib:npm:framer-motion",
    "type": "DEPENDS_ON",
    "props": {
@@ -2930,16 +2636,6 @@
   {
    "source": "project:ResearchReel",
    "target": "lib:npm:helmet",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "lib:npm:husky",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -2985,52 +2681,6 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "lib:npm:mammoth",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "lib:npm:markdown-it",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "lib:npm:marked",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "."
-    ]
-   }
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "lib:npm:mongoose",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "lib:npm:mongoose",
-   "target": "tech:MongoDB",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "project:ResearchReel",
    "target": "lib:npm:morgan",
    "type": "DEPENDS_ON",
    "props": {
@@ -3048,22 +2698,6 @@
      "backend"
     ]
    }
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "lib:npm:neo4j-driver",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "lib:npm:neo4j-driver",
-   "target": "tech:Neo4j",
-   "type": "IMPLEMENTS",
-   "props": {}
   },
   {
    "source": "project:ResearchReel",
@@ -3127,7 +2761,8 @@
    "type": "DEPENDS_ON",
    "props": {
     "via": [
-     "backend"
+     "backend",
+     "e2e"
     ]
    }
   },
@@ -3140,38 +2775,6 @@
      "frontend"
     ]
    }
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "lib:npm:puppeteer",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "."
-    ]
-   }
-  },
-  {
-   "source": "lib:npm:puppeteer",
-   "target": "tech:Puppeteer",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "lib:npm:qdrant-client",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "lib:npm:qdrant-client",
-   "target": "tech:Qdrant",
-   "type": "IMPLEMENTS",
-   "props": {}
   },
   {
    "source": "project:ResearchReel",
@@ -3235,26 +2838,9 @@
    "type": "DEPENDS_ON",
    "props": {
     "via": [
-     "backend",
      "frontend"
     ]
    }
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "lib:npm:stripe",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "lib:npm:stripe",
-   "target": "tech:Stripe",
-   "type": "IMPLEMENTS",
-   "props": {}
   },
   {
    "source": "project:ResearchReel",
@@ -3269,38 +2855,6 @@
   {
    "source": "lib:npm:supertest",
    "target": "tech:Supertest",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "lib:npm:swagger-jsdoc",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "lib:npm:swagger-jsdoc",
-   "target": "tech:Swagger / OpenAPI",
-   "type": "IMPLEMENTS",
-   "props": {}
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "lib:npm:swagger-ui-express",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend"
-    ]
-   }
-  },
-  {
-   "source": "lib:npm:swagger-ui-express",
-   "target": "tech:Swagger / OpenAPI",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -3340,6 +2894,7 @@
    "type": "DEPENDS_ON",
    "props": {
     "via": [
+     "e2e",
      "frontend"
     ]
    }
@@ -3366,7 +2921,7 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "lib:pip:boto3",
+   "target": "lib:pip:chromadb",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -3376,13 +2931,19 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "lib:pip:chromadb",
+   "target": "lib:pip:cohere",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
      "backend/research_rag"
     ]
    }
+  },
+  {
+   "source": "lib:pip:cohere",
+   "target": "tech:Cohere",
+   "type": "IMPLEMENTS",
+   "props": {}
   },
   {
    "source": "project:ResearchReel",
@@ -3396,17 +2957,7 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "lib:pip:google-generativeai",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend/research_rag"
-    ]
-   }
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "lib:pip:langchain",
+   "target": "lib:pip:google-genai",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -3426,7 +2977,7 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "lib:pip:langchain-cohere",
+   "target": "lib:pip:langchain-community",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -3436,13 +2987,19 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "lib:pip:langchain-community",
+   "target": "lib:pip:langchain-core",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
      "backend/research_rag"
     ]
    }
+  },
+  {
+   "source": "lib:pip:langchain-core",
+   "target": "tech:LangChain",
+   "type": "IMPLEMENTS",
+   "props": {}
   },
   {
    "source": "project:ResearchReel",
@@ -3457,16 +3014,6 @@
   {
    "source": "project:ResearchReel",
    "target": "lib:pip:langchain-ollama",
-   "type": "DEPENDS_ON",
-   "props": {
-    "via": [
-     "backend/research_rag"
-    ]
-   }
-  },
-  {
-   "source": "project:ResearchReel",
-   "target": "lib:pip:langchain-openai",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -3546,7 +3093,7 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "lib:pip:pyyaml",
+   "target": "lib:pip:python-multipart",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -3556,7 +3103,7 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "lib:pip:ragas",
+   "target": "lib:pip:pyyaml",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -3616,7 +3163,7 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "service:AWS / S3",
+   "target": "service:Cohere",
    "type": "CONNECTS_TO",
    "props": {
     "detected_from": [
@@ -3626,7 +3173,7 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "service:Anthropic API",
+   "target": "service:Email (SMTP)",
    "type": "CONNECTS_TO",
    "props": {
     "detected_from": [
@@ -3656,22 +3203,21 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "service:PostgreSQL",
+   "target": "service:Ollama",
    "type": "CONNECTS_TO",
    "props": {
     "detected_from": [
-     "docker-compose",
      "env"
     ]
    }
   },
   {
    "source": "project:ResearchReel",
-   "target": "service:Qdrant",
+   "target": "service:PostgreSQL",
    "type": "CONNECTS_TO",
    "props": {
     "detected_from": [
-     "env"
+     "docker-compose"
     ]
    }
   },
@@ -3706,6 +3252,12 @@
   },
   {
    "source": "project:ResearchReel",
+   "target": "platform:Render",
+   "type": "DEPLOYS_WITH",
+   "props": {}
+  },
+  {
+   "source": "project:ResearchReel",
    "target": "concept:Retrieval-Augmented Generation (RAG)",
    "type": "ABOUT",
    "props": {
@@ -3733,11 +3285,20 @@
   },
   {
    "source": "project:ResearchReel",
-   "target": "concept:Research paper / benchmark",
+   "target": "concept:Vector / hybrid search",
    "type": "ABOUT",
    "props": {
     "source": "readme",
-    "mentions": 1
+    "mentions": 4
+   }
+  },
+  {
+   "source": "project:ResearchReel",
+   "target": "concept:Personal AI assistant",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 2
    }
   },
   {
@@ -3745,7 +3306,7 @@
    "target": "project:ResearchReel",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 18
+    "commits": 26
    }
   },
   {
@@ -3753,7 +3314,7 @@
    "target": "project:ResearchReel",
    "type": "SIMILAR_STACK",
    "props": {
-    "score": 0.32,
+    "score": 0.34,
     "shared": [
      "Axios",
      "CORS",
@@ -3774,20 +3335,45 @@
    }
   },
   {
+   "source": "project:Multi-Paper-Research-RAG-System-",
+   "target": "project:ResearchReel",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.38,
+    "shared": [
+     "BM25",
+     "ChromaDB",
+     "Cohere",
+     "FastAPI",
+     "Google Gemini",
+     "Hugging Face Datasets",
+     "LangChain",
+     "MinIO / S3",
+     "NumPy",
+     "PyMuPDF",
+     "Pydantic",
+     "SQLite",
+     "Sentence Transformers",
+     "Unstructured",
+     "Uvicorn"
+    ]
+   }
+  },
+  {
    "source": "project:ResearchReel",
    "target": "project:Multi-Paper-Research-RAG-System-",
    "type": "SHARES_CODE_WITH",
    "props": {
-    "identical_files": 23,
+    "identical_files": 21,
     "examples": [
-     "backend/research_rag/app/api/routes_eval.py",
      "backend/research_rag/app/api/routes_feedback.py",
-     "backend/research_rag/app/cloud/s3_ingestion_worker.py",
-     "backend/research_rag/app/cloud/s3_watcher.py",
-     "backend/research_rag/app/core/init_system.py",
      "backend/research_rag/app/core/logging.py",
-     "backend/research_rag/app/core/retry_utils.py",
-     "backend/research_rag/app/export/literature_notes.py"
+     "backend/research_rag/app/evaluation/offline_eval.py",
+     "backend/research_rag/app/export/literature_notes.py",
+     "backend/research_rag/app/generation/grounded_formatter.py",
+     "backend/research_rag/app/ingestion/parser_factory.py",
+     "backend/research_rag/app/models/paper.py",
+     "backend/research_rag/app/models/query_trace.py"
     ]
    }
   }

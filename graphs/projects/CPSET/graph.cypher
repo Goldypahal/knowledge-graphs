@@ -18,11 +18,11 @@ MERGE (n:Entity {id: "tech:Vitest"}) SET n:Technology, n.`name` = "Vitest", n.`c
 MERGE (n:Entity {id: "tech:Zod"}) SET n:Technology, n.`name` = "Zod", n.`category` = "Tooling";
 MERGE (n:Entity {id: "lib:npm:@prisma/client"}) SET n:Library, n.`name` = "@prisma/client", n.`ecosystem` = "npm", n.`used_by_projects` = 3, n.`technology` = "Prisma";
 MERGE (n:Entity {id: "lib:npm:@react-three/drei"}) SET n:Library, n.`name` = "@react-three/drei", n.`ecosystem` = "npm", n.`used_by_projects` = 2;
-MERGE (n:Entity {id: "lib:npm:@react-three/fiber"}) SET n:Library, n.`name` = "@react-three/fiber", n.`ecosystem` = "npm", n.`used_by_projects` = 2, n.`technology` = "Three.js";
+MERGE (n:Entity {id: "lib:npm:@react-three/fiber"}) SET n:Library, n.`name` = "@react-three/fiber", n.`ecosystem` = "npm", n.`used_by_projects` = 3, n.`technology` = "Three.js";
 MERGE (n:Entity {id: "lib:npm:@types/node"}) SET n:Library, n.`name` = "@types/node", n.`ecosystem` = "npm", n.`used_by_projects` = 10;
 MERGE (n:Entity {id: "lib:npm:@types/react"}) SET n:Library, n.`name` = "@types/react", n.`ecosystem` = "npm", n.`used_by_projects` = 13;
 MERGE (n:Entity {id: "lib:npm:@types/react-dom"}) SET n:Library, n.`name` = "@types/react-dom", n.`ecosystem` = "npm", n.`used_by_projects` = 12;
-MERGE (n:Entity {id: "lib:npm:@types/three"}) SET n:Library, n.`name` = "@types/three", n.`ecosystem` = "npm", n.`used_by_projects` = 2;
+MERGE (n:Entity {id: "lib:npm:@types/three"}) SET n:Library, n.`name` = "@types/three", n.`ecosystem` = "npm", n.`used_by_projects` = 3;
 MERGE (n:Entity {id: "lib:npm:@vercel/blob"}) SET n:Library, n.`name` = "@vercel/blob", n.`ecosystem` = "npm", n.`used_by_projects` = 1;
 MERGE (n:Entity {id: "lib:npm:argon2"}) SET n:Library, n.`name` = "argon2", n.`ecosystem` = "npm", n.`used_by_projects` = 2;
 MERGE (n:Entity {id: "lib:npm:autoprefixer"}) SET n:Library, n.`name` = "autoprefixer", n.`ecosystem` = "npm", n.`used_by_projects` = 7;
@@ -40,7 +40,7 @@ MERGE (n:Entity {id: "lib:npm:react-dom"}) SET n:Library, n.`name` = "react-dom"
 MERGE (n:Entity {id: "lib:npm:server-only"}) SET n:Library, n.`name` = "server-only", n.`ecosystem` = "npm", n.`used_by_projects` = 1;
 MERGE (n:Entity {id: "lib:npm:sharp"}) SET n:Library, n.`name` = "sharp", n.`ecosystem` = "npm", n.`used_by_projects` = 1;
 MERGE (n:Entity {id: "lib:npm:tailwindcss"}) SET n:Library, n.`name` = "tailwindcss", n.`ecosystem` = "npm", n.`used_by_projects` = 10, n.`technology` = "Tailwind CSS";
-MERGE (n:Entity {id: "lib:npm:three"}) SET n:Library, n.`name` = "three", n.`ecosystem` = "npm", n.`used_by_projects` = 3, n.`technology` = "Three.js";
+MERGE (n:Entity {id: "lib:npm:three"}) SET n:Library, n.`name` = "three", n.`ecosystem` = "npm", n.`used_by_projects` = 4, n.`technology` = "Three.js";
 MERGE (n:Entity {id: "lib:npm:typescript"}) SET n:Library, n.`name` = "typescript", n.`ecosystem` = "npm", n.`used_by_projects` = 11, n.`technology` = "TypeScript";
 MERGE (n:Entity {id: "lib:npm:vitest"}) SET n:Library, n.`name` = "vitest", n.`ecosystem` = "npm", n.`used_by_projects` = 4, n.`technology` = "Vitest";
 MERGE (n:Entity {id: "lib:npm:zod"}) SET n:Library, n.`name` = "zod", n.`ecosystem` = "npm", n.`used_by_projects` = 7, n.`technology` = "Zod";

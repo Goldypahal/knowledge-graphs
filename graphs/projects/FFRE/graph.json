@@ -76,6 +76,12 @@
    "props": {}
   },
   {
+   "id": "language:CSS",
+   "label": "CSS",
+   "type": "Language",
+   "props": {}
+  },
+  {
    "id": "tech:Lucide icons",
    "label": "Lucide icons",
    "type": "Technology",
@@ -100,6 +106,14 @@
    }
   },
   {
+   "id": "tech:Three.js",
+   "label": "Three.js",
+   "type": "Technology",
+   "props": {
+    "category": "Frontend framework"
+   }
+  },
+  {
    "id": "tech:TypeScript",
    "label": "TypeScript",
    "type": "Technology",
@@ -113,6 +127,16 @@
    "type": "Technology",
    "props": {
     "category": "Testing"
+   }
+  },
+  {
+   "id": "lib:npm:@react-three/fiber",
+   "label": "@react-three/fiber",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 3,
+    "technology": "Three.js"
    }
   },
   {
@@ -140,6 +164,15 @@
    "props": {
     "ecosystem": "npm",
     "used_by_projects": 12
+   }
+  },
+  {
+   "id": "lib:npm:@types/three",
+   "label": "@types/three",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 3
    }
   },
   {
@@ -197,6 +230,16 @@
     "ecosystem": "npm",
     "used_by_projects": 10,
     "technology": "Tailwind CSS"
+   }
+  },
+  {
+   "id": "lib:npm:three",
+   "label": "three",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 4,
+    "technology": "Three.js"
    }
   },
   {
@@ -362,10 +405,10 @@
     "url": "https://github.com/Goldypahal/FFRE",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 72,
-    "files": 411,
+    "commits": 81,
+    "files": 431,
     "first_commit": "2026-08-13",
-    "last_commit": "2026-11-01",
+    "last_commit": "2026-11-07",
     "kind": "product"
    }
   },
@@ -602,12 +645,30 @@
    }
   },
   {
+   "id": "lib:npm:@fontsource-variable/bricolage-grotesque",
+   "label": "@fontsource-variable/bricolage-grotesque",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
+   "id": "lib:npm:@fontsource-variable/instrument-sans",
+   "label": "@fontsource-variable/instrument-sans",
+   "type": "Library",
+   "props": {
+    "ecosystem": "npm",
+    "used_by_projects": 1
+   }
+  },
+  {
    "id": "lib:npm:@playwright/test",
    "label": "@playwright/test",
    "type": "Library",
    "props": {
     "ecosystem": "npm",
-    "used_by_projects": 1,
+    "used_by_projects": 2,
     "technology": "Playwright"
    }
   },
@@ -734,7 +795,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 3,
+    "used_by_projects": 2,
     "technology": "LangChain"
    }
   },
@@ -870,7 +931,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 3
+    "used_by_projects": 4
    }
   },
   {
@@ -989,6 +1050,12 @@
    "props": {}
   },
   {
+   "id": "person:Claude",
+   "label": "Claude",
+   "type": "Person",
+   "props": {}
+  },
+  {
    "id": "project:Shield",
    "label": "Shield",
    "type": "Project",
@@ -1002,23 +1069,6 @@
     "files": 309,
     "first_commit": "2026-09-09",
     "last_commit": "2026-10-27",
-    "kind": "product"
-   }
-  },
-  {
-   "id": "project:campusRideshare",
-   "label": "campusRideshare",
-   "type": "Project",
-   "props": {
-    "title": "campusRideshare",
-    "description": "Campus ride-sharing platform with ML-ranked smart matching, atomic seat booking, WebSocket messaging and safety verification.",
-    "url": "https://github.com/Goldypahal/campusRideshare",
-    "owner": "Goldypahal",
-    "status": "active",
-    "commits": 7,
-    "files": 116,
-    "first_commit": "2025-09-08",
-    "last_commit": "2026-10-18",
     "kind": "product"
    }
   }
@@ -1037,6 +1087,12 @@
    "props": {}
   },
   {
+   "source": "lib:npm:@react-three/fiber",
+   "target": "tech:Three.js",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
    "source": "lib:npm:lucide-react",
    "target": "tech:Lucide icons",
    "type": "IMPLEMENTS",
@@ -1051,6 +1107,12 @@
   {
    "source": "lib:npm:tailwindcss",
    "target": "tech:Tailwind CSS",
+   "type": "IMPLEMENTS",
+   "props": {}
+  },
+  {
+   "source": "lib:npm:three",
+   "target": "tech:Three.js",
    "type": "IMPLEMENTS",
    "props": {}
   },
@@ -1089,8 +1151,8 @@
    "target": "language:Python",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 173,
-    "share": 0.762
+    "files": 177,
+    "share": 0.731
    }
   },
   {
@@ -1098,8 +1160,8 @@
    "target": "language:TypeScript",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 45,
-    "share": 0.198
+    "files": 55,
+    "share": 0.227
    }
   },
   {
@@ -1108,7 +1170,16 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 6,
-    "share": 0.026
+    "share": 0.025
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "language:CSS",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 3,
+    "share": 0.012
    }
   },
   {
@@ -1533,6 +1604,22 @@
   },
   {
    "source": "project:FFRE",
+   "target": "tech:Three.js",
+   "type": "USES",
+   "props": {
+    "via": [
+     "frontend"
+    ]
+   }
+  },
+  {
+   "source": "component:FFRE/frontend",
+   "target": "tech:Three.js",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "project:FFRE",
    "target": "tech:TypeScript",
    "type": "USES",
    "props": {
@@ -1696,6 +1783,26 @@
    "target": "tech:scikit-learn",
    "type": "USES",
    "props": {}
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:npm:@fontsource-variable/bricolage-grotesque",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "frontend"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:npm:@fontsource-variable/instrument-sans",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "frontend"
+    ]
+   }
   },
   {
    "source": "project:FFRE",
@@ -1712,6 +1819,16 @@
    "target": "tech:Playwright",
    "type": "IMPLEMENTS",
    "props": {}
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:npm:@react-three/fiber",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "frontend"
+    ]
+   }
   },
   {
    "source": "project:FFRE",
@@ -1782,6 +1899,16 @@
   {
    "source": "project:FFRE",
    "target": "lib:npm:@types/react-dom",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "frontend"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:npm:@types/three",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -1908,6 +2035,16 @@
   {
    "source": "project:FFRE",
    "target": "lib:npm:tailwindcss",
+   "type": "DEPENDS_ON",
+   "props": {
+    "via": [
+     "frontend"
+    ]
+   }
+  },
+  {
+   "source": "project:FFRE",
+   "target": "lib:npm:three",
    "type": "DEPENDS_ON",
    "props": {
     "via": [
@@ -2543,7 +2680,15 @@
    "target": "project:FFRE",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 72
+    "commits": 79
+   }
+  },
+  {
+   "source": "person:Claude",
+   "target": "project:FFRE",
+   "type": "CONTRIBUTED_TO",
+   "props": {
+    "commits": 2
    }
   },
   {
@@ -2551,7 +2696,7 @@
    "target": "project:Shield",
    "type": "SIMILAR_STACK",
    "props": {
-    "score": 0.37,
+    "score": 0.36,
     "shared": [
      "FastAPI",
      "JWT",
@@ -2568,30 +2713,6 @@
      "Zustand",
      "bcrypt",
      "joblib"
-    ]
-   }
-  },
-  {
-   "source": "project:FFRE",
-   "target": "project:campusRideshare",
-   "type": "SIMILAR_STACK",
-   "props": {
-    "score": 0.3,
-    "shared": [
-     "FastAPI",
-     "JWT",
-     "Lucide icons",
-     "NumPy",
-     "Pydantic",
-     "React",
-     "Tailwind CSS",
-     "TanStack Query",
-     "TypeScript",
-     "Uvicorn",
-     "Vite",
-     "bcrypt",
-     "pytest",
-     "scikit-learn"
     ]
    }
   }

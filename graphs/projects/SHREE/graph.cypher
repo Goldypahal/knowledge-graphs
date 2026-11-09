@@ -51,14 +51,14 @@ MERGE (n:Entity {id: "lib:npm:nodemon"}) SET n:Library, n.`name` = "nodemon", n.
 MERGE (n:Entity {id: "service:JWT"}) SET n:Service, n.`name` = "JWT", n.`category` = "Auth / security";
 MERGE (n:Entity {id: "project:Labsmart"}) SET n:Project, n.`name` = "Labsmart", n.`title` = "Labsmart", n.`description` = "Hospital-grade LIMS and EMR platform with a backend API, doctor dashboard, lab portal, patient portal and result-entry app.", n.`url` = "https://github.com/Goldypahal/Labsmart", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 7, n.`files` = 243, n.`first_commit` = "2026-09-09", n.`last_commit` = "2026-10-25", n.`kind` = "product";
 MERGE (n:Entity {id: "tech:Jest"}) SET n:Technology, n.`name` = "Jest", n.`category` = "Testing";
-MERGE (n:Entity {id: "tech:MongoDB"}) SET n:Technology, n.`name` = "MongoDB", n.`category` = "Database / storage";
 MERGE (n:Entity {id: "tech:Supertest"}) SET n:Technology, n.`name` = "Supertest", n.`category` = "Testing";
 MERGE (n:Entity {id: "lib:npm:jest"}) SET n:Library, n.`name` = "jest", n.`ecosystem` = "npm", n.`used_by_projects` = 2, n.`technology` = "Jest";
-MERGE (n:Entity {id: "lib:npm:mongoose"}) SET n:Library, n.`name` = "mongoose", n.`ecosystem` = "npm", n.`used_by_projects` = 2, n.`technology` = "MongoDB";
 MERGE (n:Entity {id: "lib:npm:supertest"}) SET n:Library, n.`name` = "supertest", n.`ecosystem` = "npm", n.`used_by_projects` = 2, n.`technology` = "Supertest";
 MERGE (n:Entity {id: "project:SHREE"}) SET n:Project, n.`name` = "SHREE", n.`title` = "SHREE", n.`description` = "SHREE, an e-commerce store for premium ethnic wear with product catalogue, cart, orders, inquiries and auth on an Express + MongoDB backend.", n.`url` = "https://github.com/Goldypahal/SHREE", n.`owner` = "Goldypahal", n.`status` = "recent", n.`commits` = 18, n.`files` = 103, n.`first_commit` = "2026-04-12", n.`last_commit` = "2026-08-25", n.`kind` = "product";
 MERGE (n:Entity {id: "component:SHREE/server"}) SET n:Component, n.`name` = "server", n.`project` = "SHREE", n.`role` = "backend", n.`ecosystems` = ["npm"];
+MERGE (n:Entity {id: "tech:MongoDB"}) SET n:Technology, n.`name` = "MongoDB", n.`category` = "Database / storage";
 MERGE (n:Entity {id: "lib:npm:cloudinary"}) SET n:Library, n.`name` = "cloudinary", n.`ecosystem` = "npm", n.`used_by_projects` = 1;
+MERGE (n:Entity {id: "lib:npm:mongoose"}) SET n:Library, n.`name` = "mongoose", n.`ecosystem` = "npm", n.`used_by_projects` = 1, n.`technology` = "MongoDB";
 MERGE (n:Entity {id: "lib:npm:multer-storage-cloudinary"}) SET n:Library, n.`name` = "multer-storage-cloudinary", n.`ecosystem` = "npm", n.`used_by_projects` = 1;
 MERGE (n:Entity {id: "lib:npm:pptxgenjs"}) SET n:Library, n.`name` = "pptxgenjs", n.`ecosystem` = "npm", n.`used_by_projects` = 1;
 MERGE (n:Entity {id: "service:Cloudinary"}) SET n:Service, n.`name` = "Cloudinary", n.`category` = "Cloud";
@@ -80,7 +80,6 @@ MATCH (a:Entity {id: "lib:npm:bcryptjs"}), (b:Entity {id: "tech:bcrypt"}) MERGE 
 MATCH (a:Entity {id: "lib:npm:jsonwebtoken"}), (b:Entity {id: "tech:JWT"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:npm:nodemon"}), (b:Entity {id: "tech:Nodemon"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:npm:jest"}), (b:Entity {id: "tech:Jest"}) MERGE (a)-[r:IMPLEMENTS]->(b);
-MATCH (a:Entity {id: "lib:npm:mongoose"}), (b:Entity {id: "tech:MongoDB"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:npm:supertest"}), (b:Entity {id: "tech:Supertest"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "project:SHREE"}), (b:Entity {id: "language:JavaScript"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 35, r.`share` = 0.897;
 MATCH (a:Entity {id: "project:SHREE"}), (b:Entity {id: "language:HTML"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 2, r.`share` = 0.051;
@@ -135,6 +134,7 @@ MATCH (a:Entity {id: "project:SHREE"}), (b:Entity {id: "lib:npm:jsdom"}) MERGE (
 MATCH (a:Entity {id: "project:SHREE"}), (b:Entity {id: "lib:npm:jsonwebtoken"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["server"];
 MATCH (a:Entity {id: "project:SHREE"}), (b:Entity {id: "lib:npm:lucide-react"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["."];
 MATCH (a:Entity {id: "project:SHREE"}), (b:Entity {id: "lib:npm:mongoose"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["server"];
+MATCH (a:Entity {id: "lib:npm:mongoose"}), (b:Entity {id: "tech:MongoDB"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "project:SHREE"}), (b:Entity {id: "lib:npm:morgan"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["server"];
 MATCH (a:Entity {id: "project:SHREE"}), (b:Entity {id: "lib:npm:multer"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["server"];
 MATCH (a:Entity {id: "project:SHREE"}), (b:Entity {id: "lib:npm:multer-storage-cloudinary"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["server"];

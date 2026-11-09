@@ -260,6 +260,12 @@
    }
   },
   {
+   "id": "concept:Personal AI assistant",
+   "label": "Personal AI assistant",
+   "type": "Concept",
+   "props": {}
+  },
+  {
    "id": "project:jarvis",
    "label": "jarvis",
    "type": "Project",
@@ -424,12 +430,6 @@
     "ecosystem": "pip",
     "used_by_projects": 1
    }
-  },
-  {
-   "id": "concept:Personal AI assistant",
-   "label": "Personal AI assistant",
-   "type": "Concept",
-   "props": {}
   }
  ],
  "edges": [

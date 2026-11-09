@@ -165,7 +165,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 3,
+    "used_by_projects": 2,
     "technology": "LangChain"
    }
   },
@@ -184,7 +184,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 3
+    "used_by_projects": 4
    }
   },
   {
@@ -303,7 +303,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 2,
+    "used_by_projects": 1,
     "technology": "MinIO / S3"
    }
   },
@@ -313,7 +313,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 3,
+    "used_by_projects": 2,
     "technology": "Google Gemini"
    }
   },
@@ -323,7 +323,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 2,
+    "used_by_projects": 1,
     "technology": "LangChain"
    }
   },
@@ -342,7 +342,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 2
+    "used_by_projects": 1
    }
   },
   {
@@ -449,15 +449,15 @@
    "label": "ResearchReel",
    "type": "Project",
    "props": {
-    "title": "🔑 ResearchReel API & Keys Guide",
-    "description": "To make the platform fully functional, you need to obtain the following API keys. Most of these have generous free tiers for research and development.",
+    "title": "ResearchReel",
+    "description": "A social platform for research. People share findings as posts, papers and short video reels, follow each other, discuss, collaborate on projects, host live lectures, and ask an AI assistant about papers.",
     "url": "https://github.com/Goldypahal/ResearchReel",
     "owner": "Goldypahal",
-    "status": "recent",
-    "commits": 18,
-    "files": 397,
+    "status": "active",
+    "commits": 26,
+    "files": 421,
     "first_commit": "2026-06-29",
-    "last_commit": "2026-09-05",
+    "last_commit": "2026-11-07",
     "kind": "product"
    }
   }
@@ -1059,20 +1059,45 @@
    }
   },
   {
+   "source": "project:Multi-Paper-Research-RAG-System-",
+   "target": "project:ResearchReel",
+   "type": "SIMILAR_STACK",
+   "props": {
+    "score": 0.38,
+    "shared": [
+     "BM25",
+     "ChromaDB",
+     "Cohere",
+     "FastAPI",
+     "Google Gemini",
+     "Hugging Face Datasets",
+     "LangChain",
+     "MinIO / S3",
+     "NumPy",
+     "PyMuPDF",
+     "Pydantic",
+     "SQLite",
+     "Sentence Transformers",
+     "Unstructured",
+     "Uvicorn"
+    ]
+   }
+  },
+  {
    "source": "project:ResearchReel",
    "target": "project:Multi-Paper-Research-RAG-System-",
    "type": "SHARES_CODE_WITH",
    "props": {
-    "identical_files": 23,
+    "identical_files": 21,
     "examples": [
-     "backend/research_rag/app/api/routes_eval.py",
      "backend/research_rag/app/api/routes_feedback.py",
-     "backend/research_rag/app/cloud/s3_ingestion_worker.py",
-     "backend/research_rag/app/cloud/s3_watcher.py",
-     "backend/research_rag/app/core/init_system.py",
      "backend/research_rag/app/core/logging.py",
-     "backend/research_rag/app/core/retry_utils.py",
-     "backend/research_rag/app/export/literature_notes.py"
+     "backend/research_rag/app/evaluation/offline_eval.py",
+     "backend/research_rag/app/export/literature_notes.py",
+     "backend/research_rag/app/generation/grounded_formatter.py",
+     "backend/research_rag/app/ingestion/parser_factory.py",
+     "backend/research_rag/app/models/paper.py",
+     "backend/research_rag/app/models/query_trace.py"
     ]
    }
   }

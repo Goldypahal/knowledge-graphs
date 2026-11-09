@@ -513,7 +513,7 @@
   },
   {
    "source": "project:Vatica",
-   "target": "language:JavaScript",
+   "target": "language:HTML",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
@@ -522,7 +522,7 @@
   },
   {
    "source": "project:Vatica",
-   "target": "language:HTML",
+   "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,

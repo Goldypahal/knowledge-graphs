@@ -11,7 +11,7 @@ MERGE (n:Entity {id: "tech:pytest"}) SET n:Technology, n.`name` = "pytest", n.`c
 MERGE (n:Entity {id: "lib:pip:click"}) SET n:Library, n.`name` = "click", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Typer / Click";
 MERGE (n:Entity {id: "lib:pip:gitfix"}) SET n:Library, n.`name` = "gitfix", n.`ecosystem` = "pip", n.`used_by_projects` = 1;
 MERGE (n:Entity {id: "lib:pip:gitpython"}) SET n:Library, n.`name` = "gitpython", n.`ecosystem` = "pip", n.`used_by_projects` = 1, n.`technology` = "GitPython";
-MERGE (n:Entity {id: "lib:pip:google-genai"}) SET n:Library, n.`name` = "google-genai", n.`ecosystem` = "pip", n.`used_by_projects` = 1, n.`technology` = "Google Gemini";
+MERGE (n:Entity {id: "lib:pip:google-genai"}) SET n:Library, n.`name` = "google-genai", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Google Gemini";
 MERGE (n:Entity {id: "lib:pip:pydantic"}) SET n:Library, n.`name` = "pydantic", n.`ecosystem` = "pip", n.`used_by_projects` = 11, n.`technology` = "Pydantic";
 MERGE (n:Entity {id: "lib:pip:pytest"}) SET n:Library, n.`name` = "pytest", n.`ecosystem` = "pip", n.`used_by_projects` = 12, n.`technology` = "pytest";
 MERGE (n:Entity {id: "lib:pip:pytest-cov"}) SET n:Library, n.`name` = "pytest-cov", n.`ecosystem` = "pip", n.`used_by_projects` = 2;

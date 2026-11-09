@@ -58,8 +58,8 @@ MATCH (a:Entity {id: "lib:npm:zustand"}), (b:Entity {id: "tech:Zustand"}) MERGE 
 MATCH (a:Entity {id: "lib:npm:firebase"}), (b:Entity {id: "tech:Firebase"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "project:Vatica"}), (b:Entity {id: "language:TypeScript"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 6, r.`share` = 0.6;
 MATCH (a:Entity {id: "project:Vatica"}), (b:Entity {id: "language:CSS"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 2, r.`share` = 0.2;
-MATCH (a:Entity {id: "project:Vatica"}), (b:Entity {id: "language:JavaScript"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 1, r.`share` = 0.1;
 MATCH (a:Entity {id: "project:Vatica"}), (b:Entity {id: "language:HTML"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 1, r.`share` = 0.1;
+MATCH (a:Entity {id: "project:Vatica"}), (b:Entity {id: "language:JavaScript"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 1, r.`share` = 0.1;
 MATCH (a:Entity {id: "project:Vatica"}), (b:Entity {id: "tech:ESLint"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["."];
 MATCH (a:Entity {id: "project:Vatica"}), (b:Entity {id: "tech:Firebase"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["."];
 MATCH (a:Entity {id: "project:Vatica"}), (b:Entity {id: "tech:Framer Motion"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["."];

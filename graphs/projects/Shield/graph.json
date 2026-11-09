@@ -176,10 +176,10 @@
     "url": "https://github.com/Goldypahal/FFRE",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 72,
-    "files": 411,
+    "commits": 81,
+    "files": 431,
     "first_commit": "2026-08-13",
-    "last_commit": "2026-11-01",
+    "last_commit": "2026-11-07",
     "kind": "product"
    }
   },
@@ -343,7 +343,7 @@
    "type": "Library",
    "props": {
     "ecosystem": "pip",
-    "used_by_projects": 3
+    "used_by_projects": 4
    }
   },
   {
@@ -1232,7 +1232,7 @@
   },
   {
    "source": "project:Shield",
-   "target": "language:Jupyter Notebook",
+   "target": "language:CSS",
    "type": "WRITTEN_IN",
    "props": {
     "files": 3,
@@ -1241,7 +1241,7 @@
   },
   {
    "source": "project:Shield",
-   "target": "language:CSS",
+   "target": "language:Jupyter Notebook",
    "type": "WRITTEN_IN",
    "props": {
     "files": 3,
@@ -2686,7 +2686,7 @@
    "target": "project:Shield",
    "type": "SIMILAR_STACK",
    "props": {
-    "score": 0.37,
+    "score": 0.36,
     "shared": [
      "FastAPI",
      "JWT",

@@ -1180,15 +1180,15 @@
    "label": "ResearchReel",
    "type": "Project",
    "props": {
-    "title": "🔑 ResearchReel API & Keys Guide",
-    "description": "To make the platform fully functional, you need to obtain the following API keys. Most of these have generous free tiers for research and development.",
+    "title": "ResearchReel",
+    "description": "A social platform for research. People share findings as posts, papers and short video reels, follow each other, discuss, collaborate on projects, host live lectures, and ask an AI assistant about papers.",
     "url": "https://github.com/Goldypahal/ResearchReel",
     "owner": "Goldypahal",
-    "status": "recent",
-    "commits": 18,
-    "files": 397,
+    "status": "active",
+    "commits": 26,
+    "files": 421,
     "first_commit": "2026-06-29",
-    "last_commit": "2026-09-05",
+    "last_commit": "2026-11-07",
     "kind": "product"
    }
   },
@@ -1370,13 +1370,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -1425,13 +1425,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -1464,13 +1464,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Framer Motion",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Framer Motion",
    "type": "USES",
    "props": {}
@@ -1536,13 +1536,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Leaflet",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Leaflet",
    "type": "USES",
    "props": {}
@@ -1559,13 +1559,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -1672,13 +1672,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -1695,13 +1695,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -1736,13 +1736,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -1770,12 +1770,6 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
-   "target": "tech:Socket.IO",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:HR-tracker/client",
    "target": "tech:Socket.IO",
    "type": "USES",
@@ -1783,6 +1777,12 @@
   },
   {
    "source": "component:HR-tracker/server",
+   "target": "tech:Socket.IO",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -1799,13 +1799,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -1849,12 +1849,6 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
-   "target": "tech:TypeScript",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:HR-tracker/client",
    "target": "tech:TypeScript",
    "type": "USES",
@@ -1862,6 +1856,12 @@
   },
   {
    "source": "component:HR-tracker/server",
+   "target": "tech:TypeScript",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:TypeScript",
    "type": "USES",
    "props": {}
@@ -1878,13 +1878,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -1901,13 +1901,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/server",
    "target": "tech:Vitest",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/server",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Vitest",
    "type": "USES",
    "props": {}
@@ -3049,7 +3049,7 @@
    "target": "project:ResearchReel",
    "type": "SIMILAR_STACK",
    "props": {
-    "score": 0.32,
+    "score": 0.34,
     "shared": [
      "Axios",
      "CORS",

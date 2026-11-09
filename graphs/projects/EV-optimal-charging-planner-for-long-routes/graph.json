@@ -399,6 +399,15 @@
   },
   {
    "source": "project:EV-optimal-charging-planner-for-long-routes",
+   "target": "language:HTML",
+   "type": "WRITTEN_IN",
+   "props": {
+    "files": 1,
+    "share": 0.077
+   }
+  },
+  {
+   "source": "project:EV-optimal-charging-planner-for-long-routes",
    "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
@@ -409,15 +418,6 @@
   {
    "source": "project:EV-optimal-charging-planner-for-long-routes",
    "target": "language:Python",
-   "type": "WRITTEN_IN",
-   "props": {
-    "files": 1,
-    "share": 0.077
-   }
-  },
-  {
-   "source": "project:EV-optimal-charging-planner-for-long-routes",
-   "target": "language:HTML",
    "type": "WRITTEN_IN",
    "props": {
     "files": 1,
