@@ -49,7 +49,6 @@ MERGE (n:Entity {id: "service:OpenRouteService"}) SET n:Service, n.`name` = "Ope
 MERGE (n:Entity {id: "concept:Computer vision"}) SET n:Concept, n.`name` = "Computer vision";
 MERGE (n:Entity {id: "concept:Video intelligence / surveillance"}) SET n:Concept, n.`name` = "Video intelligence / surveillance";
 MERGE (n:Entity {id: "concept:Hackathon project"}) SET n:Concept, n.`name` = "Hackathon project";
-MERGE (n:Entity {id: "project:jarvis"}) SET n:Project, n.`name` = "jarvis", n.`title` = "NEXUS: Advanced AI Personal Assistant", n.`description` = "This project implements NEXUS (Neural Executive Understanding System), an advanced AI personal assistant designed to transcend conventional assistant capabilities.", n.`url` = "https://github.com/Goldypahal/jarvis", n.`owner` = "Goldypahal", n.`status` = "recent", n.`commits` = 1, n.`files` = 43, n.`first_commit` = "2026-09-09", n.`last_commit` = "2026-09-09", n.`kind` = "personal";
 MATCH (a:Entity {id: "lib:pip:pydantic"}), (b:Entity {id: "tech:Pydantic"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:pytest"}), (b:Entity {id: "tech:pytest"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:alembic"}), (b:Entity {id: "tech:Alembic"}) MERGE (a)-[r:IMPLEMENTS]->(b);
@@ -112,4 +111,3 @@ MATCH (a:Entity {id: "project:GPH"}), (b:Entity {id: "concept:Hackathon project"
 MATCH (a:Entity {id: "project:GPH"}), (b:Entity {id: "concept:Authentication & access control"}) MERGE (a)-[r:ABOUT]->(b) SET r.`source` = "readme", r.`mentions` = 4;
 MATCH (a:Entity {id: "project:GPH"}), (b:Entity {id: "concept:Enterprise AI platform"}) MERGE (a)-[r:ABOUT]->(b) SET r.`source` = "readme", r.`mentions` = 2;
 MATCH (a:Entity {id: "person:Goldy Pahal"}), (b:Entity {id: "project:GPH"}) MERGE (a)-[r:CONTRIBUTED_TO]->(b) SET r.`commits` = 57;
-MATCH (a:Entity {id: "project:GPH"}), (b:Entity {id: "project:jarvis"}) MERGE (a)-[r:SIMILAR_STACK]->(b) SET r.`score` = 0.32, r.`shared` = ["FastAPI", "OpenCV", "Pillow", "Pydantic", "Redis", "Requests / HTTPX", "Uvicorn", "pytest"];

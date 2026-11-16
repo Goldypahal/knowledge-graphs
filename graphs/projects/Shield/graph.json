@@ -176,10 +176,10 @@
     "url": "https://github.com/Goldypahal/FFRE",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 81,
-    "files": 431,
+    "commits": 93,
+    "files": 433,
     "first_commit": "2026-08-13",
-    "last_commit": "2026-11-07",
+    "last_commit": "2026-11-12",
     "kind": "product"
    }
   },
@@ -1323,13 +1323,13 @@
    }
   },
   {
-   "source": "component:Shield/backend",
+   "source": "component:Shield/backend/routing",
    "target": "tech:FastAPI",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend/routing",
+   "source": "component:Shield/backend",
    "target": "tech:FastAPI",
    "type": "USES",
    "props": {}
@@ -1403,13 +1403,13 @@
    }
   },
   {
-   "source": "component:Shield/backend",
+   "source": "component:Shield/backend/routing",
    "target": "tech:NetworkX",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend/routing",
+   "source": "component:Shield/backend",
    "target": "tech:NetworkX",
    "type": "USES",
    "props": {}
@@ -1429,12 +1429,6 @@
    }
   },
   {
-   "source": "component:Shield/backend",
-   "target": "tech:NumPy",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Shield/backend/routing",
    "target": "tech:NumPy",
    "type": "USES",
@@ -1442,6 +1436,12 @@
   },
   {
    "source": "component:Shield/backend/ml/models/scream_detection",
+   "target": "tech:NumPy",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Shield/backend",
    "target": "tech:NumPy",
    "type": "USES",
    "props": {}
@@ -1652,13 +1652,13 @@
    }
   },
   {
-   "source": "component:Shield/backend",
+   "source": "component:Shield/backend/routing",
    "target": "tech:Uvicorn",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend/routing",
+   "source": "component:Shield/backend",
    "target": "tech:Uvicorn",
    "type": "USES",
    "props": {}
@@ -1743,13 +1743,13 @@
    }
   },
   {
-   "source": "component:Shield/backend",
+   "source": "component:Shield/backend/routing",
    "target": "tech:pytest",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend/routing",
+   "source": "component:Shield/backend",
    "target": "tech:pytest",
    "type": "USES",
    "props": {}

@@ -48,7 +48,7 @@ MERGE (n:Entity {id: "tech:TanStack Query"}) SET n:Technology, n.`name` = "TanSt
 MERGE (n:Entity {id: "lib:npm:@tanstack/react-query"}) SET n:Library, n.`name` = "@tanstack/react-query", n.`ecosystem` = "npm", n.`used_by_projects` = 4, n.`technology` = "TanStack Query";
 MERGE (n:Entity {id: "lib:npm:clsx"}) SET n:Library, n.`name` = "clsx", n.`ecosystem` = "npm", n.`used_by_projects` = 4;
 MERGE (n:Entity {id: "lib:npm:tailwind-merge"}) SET n:Library, n.`name` = "tailwind-merge", n.`ecosystem` = "npm", n.`used_by_projects` = 4;
-MERGE (n:Entity {id: "project:FFRE"}) SET n:Project, n.`name` = "FFRE", n.`title` = "Financial Fraud Investigation Reasoning Engine (FFIRE)", n.`description` = "FFIRE, a Financial Fraud Investigation Reasoning Engine for running investigations over evidence, with a FastAPI backend, React frontend and a large enterprise specification set.", n.`url` = "https://github.com/Goldypahal/FFRE", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 81, n.`files` = 431, n.`first_commit` = "2026-08-13", n.`last_commit` = "2026-11-07", n.`kind` = "product";
+MERGE (n:Entity {id: "project:FFRE"}) SET n:Project, n.`name` = "FFRE", n.`title` = "Financial Fraud Investigation Reasoning Engine (FFIRE)", n.`description` = "FFIRE, a Financial Fraud Investigation Reasoning Engine for running investigations over evidence, with a FastAPI backend, React frontend and a large enterprise specification set.", n.`url` = "https://github.com/Goldypahal/FFRE", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 93, n.`files` = 433, n.`first_commit` = "2026-08-13", n.`last_commit` = "2026-11-12", n.`kind` = "product";
 MERGE (n:Entity {id: "component:FFRE/backend"}) SET n:Component, n.`name` = "backend", n.`project` = "FFRE", n.`role` = "backend", n.`ecosystems` = ["pip"];
 MERGE (n:Entity {id: "component:FFRE/frontend"}) SET n:Component, n.`name` = "frontend", n.`project` = "FFRE", n.`role` = "frontend", n.`ecosystems` = ["npm"];
 MERGE (n:Entity {id: "tech:Alembic"}) SET n:Technology, n.`name` = "Alembic", n.`category` = "Database / storage";
@@ -135,8 +135,8 @@ MATCH (a:Entity {id: "lib:npm:vitest"}), (b:Entity {id: "tech:Vitest"}) MERGE (a
 MATCH (a:Entity {id: "lib:npm:@tailwindcss/vite"}), (b:Entity {id: "tech:Tailwind CSS"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:npm:vite"}), (b:Entity {id: "tech:Vite"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:npm:@tanstack/react-query"}), (b:Entity {id: "tech:TanStack Query"}) MERGE (a)-[r:IMPLEMENTS]->(b);
-MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "language:Python"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 177, r.`share` = 0.731;
-MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "language:TypeScript"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 55, r.`share` = 0.227;
+MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "language:Python"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 179, r.`share` = 0.734;
+MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "language:TypeScript"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 55, r.`share` = 0.225;
 MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "language:HTML"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 6, r.`share` = 0.025;
 MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "language:CSS"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 3, r.`share` = 0.012;
 MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "component:FFRE/backend"}) MERGE (a)-[r:HAS_COMPONENT]->(b);
@@ -312,6 +312,6 @@ MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "concept:Enterprise AI pla
 MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "concept:Authentication & access control"}) MERGE (a)-[r:ABOUT]->(b) SET r.`source` = "readme", r.`mentions` = 4;
 MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "concept:LLM agents"}) MERGE (a)-[r:ABOUT]->(b) SET r.`source` = "readme", r.`mentions` = 3;
 MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "concept:Multi-agent systems"}) MERGE (a)-[r:ABOUT]->(b) SET r.`source` = "readme", r.`mentions` = 3;
-MATCH (a:Entity {id: "person:Goldy Pahal"}), (b:Entity {id: "project:FFRE"}) MERGE (a)-[r:CONTRIBUTED_TO]->(b) SET r.`commits` = 79;
-MATCH (a:Entity {id: "person:Claude"}), (b:Entity {id: "project:FFRE"}) MERGE (a)-[r:CONTRIBUTED_TO]->(b) SET r.`commits` = 2;
+MATCH (a:Entity {id: "person:Goldy Pahal"}), (b:Entity {id: "project:FFRE"}) MERGE (a)-[r:CONTRIBUTED_TO]->(b) SET r.`commits` = 81;
+MATCH (a:Entity {id: "person:Claude"}), (b:Entity {id: "project:FFRE"}) MERGE (a)-[r:CONTRIBUTED_TO]->(b) SET r.`commits` = 12;
 MATCH (a:Entity {id: "project:FFRE"}), (b:Entity {id: "project:Shield"}) MERGE (a)-[r:SIMILAR_STACK]->(b) SET r.`score` = 0.36, r.`shared` = ["FastAPI", "JWT", "NetworkX", "NumPy", "PostgreSQL", "Pydantic", "React", "Redis", "Requests / HTTPX", "SciPy", "TypeScript", "Uvicorn", "Zustand", "bcrypt", "joblib"];

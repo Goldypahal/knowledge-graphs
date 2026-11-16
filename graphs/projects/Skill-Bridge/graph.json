@@ -744,7 +744,7 @@
     "description": "Vatica, an online plant shop with product listings, cart state and Firebase auth.",
     "url": "https://github.com/Goldypahal/Vatica",
     "owner": "Goldypahal",
-    "status": "recent",
+    "status": "dormant",
     "commits": 1,
     "files": 27,
     "first_commit": "2026-08-16",
@@ -974,13 +974,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -1028,13 +1028,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -1120,13 +1120,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -1143,13 +1143,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -1168,6 +1168,12 @@
    }
   },
   {
+   "source": "component:Skill-Bridge/code-collab",
+   "target": "tech:Socket.IO",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Skill-Bridge/code-collab/server",
    "target": "tech:Socket.IO",
    "type": "USES",
@@ -1181,12 +1187,6 @@
   },
   {
    "source": "component:Skill-Bridge/gd-room",
-   "target": "tech:Socket.IO",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -1224,13 +1224,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}

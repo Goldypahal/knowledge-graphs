@@ -22,7 +22,7 @@ MERGE (n:Entity {id: "service:Twilio"}) SET n:Service, n.`name` = "Twilio", n.`c
 MERGE (n:Entity {id: "concept:Audio / speech"}) SET n:Concept, n.`name` = "Audio / speech";
 MERGE (n:Entity {id: "concept:Healthcare / diagnostics"}) SET n:Concept, n.`name` = "Healthcare / diagnostics";
 MERGE (n:Entity {id: "concept:Route optimisation"}) SET n:Concept, n.`name` = "Route optimisation";
-MERGE (n:Entity {id: "project:FFRE"}) SET n:Project, n.`name` = "FFRE", n.`title` = "Financial Fraud Investigation Reasoning Engine (FFIRE)", n.`description` = "FFIRE, a Financial Fraud Investigation Reasoning Engine for running investigations over evidence, with a FastAPI backend, React frontend and a large enterprise specification set.", n.`url` = "https://github.com/Goldypahal/FFRE", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 81, n.`files` = 431, n.`first_commit` = "2026-08-13", n.`last_commit` = "2026-11-07", n.`kind` = "product";
+MERGE (n:Entity {id: "project:FFRE"}) SET n:Project, n.`name` = "FFRE", n.`title` = "Financial Fraud Investigation Reasoning Engine (FFIRE)", n.`description` = "FFIRE, a Financial Fraud Investigation Reasoning Engine for running investigations over evidence, with a FastAPI backend, React frontend and a large enterprise specification set.", n.`url` = "https://github.com/Goldypahal/FFRE", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 93, n.`files` = 433, n.`first_commit` = "2026-08-13", n.`last_commit` = "2026-11-12", n.`kind` = "product";
 MERGE (n:Entity {id: "tech:FastAPI"}) SET n:Technology, n.`name` = "FastAPI", n.`category` = "Backend framework";
 MERGE (n:Entity {id: "tech:JWT"}) SET n:Technology, n.`name` = "JWT", n.`category` = "Auth / security";
 MERGE (n:Entity {id: "tech:NetworkX"}) SET n:Technology, n.`name` = "NetworkX", n.`category` = "ML / data science";
@@ -157,8 +157,8 @@ MATCH (a:Entity {id: "component:Shield/app"}), (b:Entity {id: "tech:Axios"}) MER
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:Expo"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["app"];
 MATCH (a:Entity {id: "component:Shield/app"}), (b:Entity {id: "tech:Expo"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:FastAPI"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend", "backend/routing", "imports"];
-MATCH (a:Entity {id: "component:Shield/backend"}), (b:Entity {id: "tech:FastAPI"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:Shield/backend/routing"}), (b:Entity {id: "tech:FastAPI"}) MERGE (a)-[r:USES]->(b);
+MATCH (a:Entity {id: "component:Shield/backend"}), (b:Entity {id: "tech:FastAPI"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:Firebase"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["app"];
 MATCH (a:Entity {id: "component:Shield/app"}), (b:Entity {id: "tech:Firebase"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:Gradio"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["app/assets/models", "backend/ml/models/scream_detection"];
@@ -167,12 +167,12 @@ MATCH (a:Entity {id: "component:Shield/app/assets/models"}), (b:Entity {id: "tec
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:JWT"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend", "imports"];
 MATCH (a:Entity {id: "component:Shield/backend"}), (b:Entity {id: "tech:JWT"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:NetworkX"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend", "backend/routing", "imports"];
-MATCH (a:Entity {id: "component:Shield/backend"}), (b:Entity {id: "tech:NetworkX"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:Shield/backend/routing"}), (b:Entity {id: "tech:NetworkX"}) MERGE (a)-[r:USES]->(b);
+MATCH (a:Entity {id: "component:Shield/backend"}), (b:Entity {id: "tech:NetworkX"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:NumPy"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["app/assets/models", "backend", "backend/ml/models/scream_detection", "backend/routing", "imports"];
-MATCH (a:Entity {id: "component:Shield/backend"}), (b:Entity {id: "tech:NumPy"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:Shield/backend/routing"}), (b:Entity {id: "tech:NumPy"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:Shield/backend/ml/models/scream_detection"}), (b:Entity {id: "tech:NumPy"}) MERGE (a)-[r:USES]->(b);
+MATCH (a:Entity {id: "component:Shield/backend"}), (b:Entity {id: "tech:NumPy"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:Shield/app/assets/models"}), (b:Entity {id: "tech:NumPy"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:OSMnx"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend/routing", "imports"];
 MATCH (a:Entity {id: "component:Shield/backend/routing"}), (b:Entity {id: "tech:OSMnx"}) MERGE (a)-[r:USES]->(b);
@@ -197,8 +197,8 @@ MATCH (a:Entity {id: "component:Shield/backend"}), (b:Entity {id: "tech:Twilio"}
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:TypeScript"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["app"];
 MATCH (a:Entity {id: "component:Shield/app"}), (b:Entity {id: "tech:TypeScript"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:Uvicorn"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend", "backend/routing", "imports"];
-MATCH (a:Entity {id: "component:Shield/backend"}), (b:Entity {id: "tech:Uvicorn"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:Shield/backend/routing"}), (b:Entity {id: "tech:Uvicorn"}) MERGE (a)-[r:USES]->(b);
+MATCH (a:Entity {id: "component:Shield/backend"}), (b:Entity {id: "tech:Uvicorn"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:Zustand"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["app"];
 MATCH (a:Entity {id: "component:Shield/app"}), (b:Entity {id: "tech:Zustand"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:bcrypt"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend", "imports"];
@@ -208,8 +208,8 @@ MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:librosa"}) MERGE (
 MATCH (a:Entity {id: "component:Shield/backend/ml/models/scream_detection"}), (b:Entity {id: "tech:librosa"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:Shield/app/assets/models"}), (b:Entity {id: "tech:librosa"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:pytest"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend", "backend/routing", "imports"];
-MATCH (a:Entity {id: "component:Shield/backend"}), (b:Entity {id: "tech:pytest"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:Shield/backend/routing"}), (b:Entity {id: "tech:pytest"}) MERGE (a)-[r:USES]->(b);
+MATCH (a:Entity {id: "component:Shield/backend"}), (b:Entity {id: "tech:pytest"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "tech:scikit-learn"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["imports"];
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "lib:npm:@expo/vector-icons"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["app"];
 MATCH (a:Entity {id: "project:Shield"}), (b:Entity {id: "lib:npm:@maplibre/maplibre-react-native"}) MERGE (a)-[r:DEPENDS_ON]->(b) SET r.`via` = ["app"];

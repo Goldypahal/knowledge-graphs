@@ -43,21 +43,15 @@
    }
   },
   {
+   "id": "platform:GitHub Actions",
+   "label": "GitHub Actions",
+   "type": "Platform",
+   "props": {}
+  },
+  {
    "id": "person:Goldy Pahal",
    "label": "Goldy Pahal",
    "type": "Person",
-   "props": {}
-  },
-  {
-   "id": "language:CSS",
-   "label": "CSS",
-   "type": "Language",
-   "props": {}
-  },
-  {
-   "id": "language:JavaScript",
-   "label": "JavaScript",
-   "type": "Language",
    "props": {}
   },
   {
@@ -86,6 +80,14 @@
    "type": "Technology",
    "props": {
     "category": "Backend framework"
+   }
+  },
+  {
+   "id": "tech:PyPDF",
+   "label": "PyPDF",
+   "type": "Technology",
+   "props": {
+    "category": "Documents / parsing"
    }
   },
   {
@@ -161,23 +163,6 @@
    }
   },
   {
-   "id": "project:GPH",
-   "label": "GPH",
-   "type": "Project",
-   "props": {
-    "title": "GIVIN — Gujarat Integrated Video Intelligence Network",
-    "description": "GIVIN, the Gujarat Integrated Video Intelligence Network, a statewide vendor-neutral CCTV integration and AI video analytics platform built for the Gujarat Police Innovation Hackathon 2026.",
-    "url": "https://github.com/Goldypahal/GPH",
-    "owner": "Goldypahal",
-    "status": "recent",
-    "commits": 57,
-    "files": 212,
-    "first_commit": "2026-09-09",
-    "last_commit": "2026-09-14",
-    "kind": "hackathon"
-   }
-  },
-  {
    "id": "tech:OpenCV",
    "label": "OpenCV",
    "type": "Technology",
@@ -214,6 +199,20 @@
    }
   },
   {
+   "id": "concept:Computer vision",
+   "label": "Computer vision",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "tech:pandas",
+   "label": "pandas",
+   "type": "Technology",
+   "props": {
+    "category": "ML / data science"
+   }
+  },
+  {
    "id": "lib:pip:aiohttp",
    "label": "aiohttp",
    "type": "Library",
@@ -221,6 +220,20 @@
     "ecosystem": "pip",
     "used_by_projects": 2,
     "technology": "Requests / HTTPX"
+   }
+  },
+  {
+   "id": "concept:Career guidance & skills",
+   "label": "Career guidance & skills",
+   "type": "Concept",
+   "props": {}
+  },
+  {
+   "id": "tech:python-docx",
+   "label": "python-docx",
+   "type": "Technology",
+   "props": {
+    "category": "Documents / parsing"
    }
   },
   {
@@ -274,13 +287,19 @@
     "description": "This project implements NEXUS (Neural Executive Understanding System), an advanced AI personal assistant designed to transcend conventional assistant capabilities.",
     "url": "https://github.com/Goldypahal/jarvis",
     "owner": "Goldypahal",
-    "status": "recent",
-    "commits": 1,
-    "files": 43,
+    "status": "active",
+    "commits": 7,
+    "files": 157,
     "first_commit": "2026-09-09",
-    "last_commit": "2026-09-09",
+    "last_commit": "2026-11-15",
     "kind": "personal"
    }
+  },
+  {
+   "id": "language:Rust",
+   "label": "Rust",
+   "type": "Language",
+   "props": {}
   },
   {
    "id": "component:jarvis/web",
@@ -504,26 +523,17 @@
    "target": "language:Python",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 24,
-    "share": 0.889
+    "files": 57,
+    "share": 0.594
    }
   },
   {
    "source": "project:jarvis",
-   "target": "language:JavaScript",
+   "target": "language:Rust",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 1,
-    "share": 0.037
-   }
-  },
-  {
-   "source": "project:jarvis",
-   "target": "language:CSS",
-   "type": "WRITTEN_IN",
-   "props": {
-    "files": 1,
-    "share": 0.037
+    "files": 35,
+    "share": 0.365
    }
   },
   {
@@ -531,8 +541,8 @@
    "target": "language:HTML",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 1,
-    "share": 0.037
+    "files": 2,
+    "share": 0.021
    }
   },
   {
@@ -620,6 +630,16 @@
   },
   {
    "source": "project:jarvis",
+   "target": "tech:PyPDF",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:jarvis",
    "target": "tech:Pydantic",
    "type": "USES",
    "props": {
@@ -691,11 +711,31 @@
   },
   {
    "source": "project:jarvis",
+   "target": "tech:pandas",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:jarvis",
    "target": "tech:pytest",
    "type": "USES",
    "props": {
     "via": [
      "."
+    ]
+   }
+  },
+  {
+   "source": "project:jarvis",
+   "target": "tech:python-docx",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
     ]
    }
   },
@@ -967,6 +1007,12 @@
   },
   {
    "source": "project:jarvis",
+   "target": "platform:GitHub Actions",
+   "type": "AUTOMATED_BY",
+   "props": {}
+  },
+  {
+   "source": "project:jarvis",
    "target": "concept:Personal AI assistant",
    "type": "ABOUT",
    "props": {
@@ -984,29 +1030,29 @@
    }
   },
   {
+   "source": "project:jarvis",
+   "target": "concept:Career guidance & skills",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 5
+   }
+  },
+  {
+   "source": "project:jarvis",
+   "target": "concept:Computer vision",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 2
+   }
+  },
+  {
    "source": "person:Goldy Pahal",
    "target": "project:jarvis",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 1
-   }
-  },
-  {
-   "source": "project:GPH",
-   "target": "project:jarvis",
-   "type": "SIMILAR_STACK",
-   "props": {
-    "score": 0.32,
-    "shared": [
-     "FastAPI",
-     "OpenCV",
-     "Pillow",
-     "Pydantic",
-     "Redis",
-     "Requests / HTTPX",
-     "Uvicorn",
-     "pytest"
-    ]
+    "commits": 7
    }
   }
  ]

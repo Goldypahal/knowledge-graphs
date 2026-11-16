@@ -10,10 +10,10 @@
     "url": "https://github.com/Goldypahal/CICD",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 4,
-    "files": 55,
+    "commits": 8,
+    "files": 58,
     "first_commit": "2026-09-06",
-    "last_commit": "2026-10-16",
+    "last_commit": "2026-11-12",
     "kind": "product"
    }
   },
@@ -1737,10 +1737,10 @@
     "url": "https://github.com/Goldypahal/FFRE",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 81,
-    "files": 431,
+    "commits": 93,
+    "files": 433,
     "first_commit": "2026-08-13",
-    "last_commit": "2026-11-07",
+    "last_commit": "2026-11-12",
     "kind": "product"
    }
   },
@@ -3945,10 +3945,10 @@
     "url": "https://github.com/Goldypahal/ResearchReel",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 26,
-    "files": 421,
+    "commits": 27,
+    "files": 422,
     "first_commit": "2026-06-29",
-    "last_commit": "2026-11-07",
+    "last_commit": "2026-11-13",
     "kind": "product"
    }
   },
@@ -5137,7 +5137,7 @@
     "description": "Vatica, an online plant shop with product listings, cart state and Firebase auth.",
     "url": "https://github.com/Goldypahal/Vatica",
     "owner": "Goldypahal",
-    "status": "recent",
+    "status": "dormant",
     "commits": 1,
     "files": 27,
     "first_commit": "2026-08-16",
@@ -5241,13 +5241,19 @@
     "description": "This project implements NEXUS (Neural Executive Understanding System), an advanced AI personal assistant designed to transcend conventional assistant capabilities.",
     "url": "https://github.com/Goldypahal/jarvis",
     "owner": "Goldypahal",
-    "status": "recent",
-    "commits": 1,
-    "files": 43,
+    "status": "active",
+    "commits": 7,
+    "files": 157,
     "first_commit": "2026-09-09",
-    "last_commit": "2026-09-09",
+    "last_commit": "2026-11-15",
     "kind": "personal"
    }
+  },
+  {
+   "id": "language:Rust",
+   "label": "Rust",
+   "type": "Language",
+   "props": {}
   },
   {
    "id": "component:jarvis/web",
@@ -5690,7 +5696,7 @@
    "target": "language:Python",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 50,
+    "files": 52,
     "share": 1.0
    }
   },
@@ -5922,7 +5928,7 @@
    "target": "project:CICD",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 4
+    "commits": 8
    }
   },
   {
@@ -8379,8 +8385,8 @@
    "target": "language:Python",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 177,
-    "share": 0.731
+    "files": 179,
+    "share": 0.734
    }
   },
   {
@@ -8389,7 +8395,7 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 55,
-    "share": 0.227
+    "share": 0.225
    }
   },
   {
@@ -9908,7 +9914,7 @@
    "target": "project:FFRE",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 79
+    "commits": 81
    }
   },
   {
@@ -9916,7 +9922,7 @@
    "target": "project:FFRE",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 2
+    "commits": 12
    }
   },
   {
@@ -10004,6 +10010,18 @@
    "props": {}
   },
   {
+   "source": "component:Fullstack/EXP-1/1.2",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.1",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Fullstack/EXP-1/1.1",
    "target": "tech:React",
    "type": "USES",
@@ -10016,19 +10034,7 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-2/1.1",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Fullstack/EXP-3/1.1",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-1/1.2",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -10046,6 +10052,12 @@
    }
   },
   {
+   "source": "component:Fullstack/EXP-3/1.2",
+   "target": "tech:React Router",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:React Router",
    "type": "USES",
@@ -10053,12 +10065,6 @@
   },
   {
    "source": "component:Fullstack/EXP-2/1.2",
-   "target": "tech:React Router",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -10077,13 +10083,13 @@
    }
   },
   {
-   "source": "component:Fullstack/EXP-3/1.1",
+   "source": "component:Fullstack/EXP-3/1.2",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-2/1.2",
+   "source": "component:Fullstack/EXP-3/1.1",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -10095,7 +10101,7 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-3/1.2",
+   "source": "component:Fullstack/EXP-2/1.2",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -10122,6 +10128,18 @@
    "props": {}
   },
   {
+   "source": "component:Fullstack/EXP-1/1.2",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Fullstack/EXP-2/1.1",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Fullstack/EXP-1/1.1",
    "target": "tech:Vite",
    "type": "USES",
@@ -10134,19 +10152,7 @@
    "props": {}
   },
   {
-   "source": "component:Fullstack/EXP-2/1.1",
-   "target": "tech:Vite",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Fullstack/EXP-3/1.1",
-   "target": "tech:Vite",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Fullstack/EXP-1/1.2",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -10830,13 +10836,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -10885,13 +10891,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -10924,13 +10930,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Framer Motion",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Framer Motion",
    "type": "USES",
    "props": {}
@@ -10996,13 +11002,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Leaflet",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Leaflet",
    "type": "USES",
    "props": {}
@@ -11019,13 +11025,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -11132,13 +11138,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -11155,13 +11161,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -11196,13 +11202,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -11230,7 +11236,7 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -11242,7 +11248,7 @@
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -11259,13 +11265,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -11309,7 +11315,7 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:TypeScript",
    "type": "USES",
    "props": {}
@@ -11321,7 +11327,7 @@
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:TypeScript",
    "type": "USES",
    "props": {}
@@ -11338,13 +11344,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -11361,13 +11367,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/server",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Vitest",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/server",
    "target": "tech:Vitest",
    "type": "USES",
    "props": {}
@@ -12543,12 +12549,6 @@
    }
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:Axios",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/lab-portal",
    "target": "tech:Axios",
    "type": "USES",
@@ -12556,6 +12556,12 @@
   },
   {
    "source": "component:Labsmart/patient-portal",
+   "target": "tech:Axios",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -12596,12 +12602,6 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:ESLint",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/Result-Entry",
    "target": "tech:ESLint",
    "type": "USES",
@@ -12609,6 +12609,12 @@
   },
   {
    "source": "component:Labsmart/patient-portal",
+   "target": "tech:ESLint",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -12665,12 +12671,6 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:Lucide icons",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/Result-Entry",
    "target": "tech:Lucide icons",
    "type": "USES",
@@ -12678,6 +12678,12 @@
   },
   {
    "source": "component:Labsmart/patient-portal",
+   "target": "tech:Lucide icons",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -12745,12 +12751,6 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:React",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/Result-Entry",
    "target": "tech:React",
    "type": "USES",
@@ -12763,6 +12763,12 @@
    "props": {}
   },
   {
+   "source": "component:Labsmart/doctor-dashboard",
+   "target": "tech:React",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "project:Labsmart",
    "target": "tech:React Router",
    "type": "USES",
@@ -12775,12 +12781,6 @@
    }
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:React Router",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/lab-portal",
    "target": "tech:React Router",
    "type": "USES",
@@ -12788,6 +12788,12 @@
   },
   {
    "source": "component:Labsmart/patient-portal",
+   "target": "tech:React Router",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -12839,12 +12845,6 @@
    }
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:Tailwind CSS",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/lab-portal",
    "target": "tech:Tailwind CSS",
    "type": "USES",
@@ -12852,6 +12852,12 @@
   },
   {
    "source": "component:Labsmart/patient-portal",
+   "target": "tech:Tailwind CSS",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -12892,12 +12898,6 @@
    "props": {}
   },
   {
-   "source": "component:Labsmart/doctor-dashboard",
-   "target": "tech:Vite",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Labsmart/Result-Entry",
    "target": "tech:Vite",
    "type": "USES",
@@ -12905,6 +12905,12 @@
   },
   {
    "source": "component:Labsmart/patient-portal",
+   "target": "tech:Vite",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Labsmart/doctor-dashboard",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -15236,7 +15242,7 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 126,
-    "share": 0.395
+    "share": 0.394
    }
   },
   {
@@ -15244,8 +15250,8 @@
    "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 124,
-    "share": 0.389
+    "files": 125,
+    "share": 0.391
    }
   },
   {
@@ -15254,7 +15260,7 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 66,
-    "share": 0.207
+    "share": 0.206
    }
   },
   {
@@ -15293,13 +15299,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/frontend",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/frontend",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -15827,13 +15833,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/frontend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/frontend",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -16985,7 +16991,7 @@
    "target": "project:ResearchReel",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 26
+    "commits": 27
    }
   },
   {
@@ -17937,13 +17943,13 @@
    }
   },
   {
-   "source": "component:Shield/backend",
+   "source": "component:Shield/backend/routing",
    "target": "tech:FastAPI",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend/routing",
+   "source": "component:Shield/backend",
    "target": "tech:FastAPI",
    "type": "USES",
    "props": {}
@@ -18017,13 +18023,13 @@
    }
   },
   {
-   "source": "component:Shield/backend",
+   "source": "component:Shield/backend/routing",
    "target": "tech:NetworkX",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend/routing",
+   "source": "component:Shield/backend",
    "target": "tech:NetworkX",
    "type": "USES",
    "props": {}
@@ -18043,12 +18049,6 @@
    }
   },
   {
-   "source": "component:Shield/backend",
-   "target": "tech:NumPy",
-   "type": "USES",
-   "props": {}
-  },
-  {
    "source": "component:Shield/backend/routing",
    "target": "tech:NumPy",
    "type": "USES",
@@ -18056,6 +18056,12 @@
   },
   {
    "source": "component:Shield/backend/ml/models/scream_detection",
+   "target": "tech:NumPy",
+   "type": "USES",
+   "props": {}
+  },
+  {
+   "source": "component:Shield/backend",
    "target": "tech:NumPy",
    "type": "USES",
    "props": {}
@@ -18266,13 +18272,13 @@
    }
   },
   {
-   "source": "component:Shield/backend",
+   "source": "component:Shield/backend/routing",
    "target": "tech:Uvicorn",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend/routing",
+   "source": "component:Shield/backend",
    "target": "tech:Uvicorn",
    "type": "USES",
    "props": {}
@@ -18357,13 +18363,13 @@
    }
   },
   {
-   "source": "component:Shield/backend",
+   "source": "component:Shield/backend/routing",
    "target": "tech:pytest",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Shield/backend/routing",
+   "source": "component:Shield/backend",
    "target": "tech:pytest",
    "type": "USES",
    "props": {}
@@ -19405,13 +19411,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -19459,13 +19465,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -19551,13 +19557,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -19574,13 +19580,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -19599,6 +19605,12 @@
    }
   },
   {
+   "source": "component:Skill-Bridge/code-collab",
+   "target": "tech:Socket.IO",
+   "type": "USES",
+   "props": {}
+  },
+  {
    "source": "component:Skill-Bridge/code-collab/server",
    "target": "tech:Socket.IO",
    "type": "USES",
@@ -19612,12 +19624,6 @@
   },
   {
    "source": "component:Skill-Bridge/gd-room",
-   "target": "tech:Socket.IO",
-   "type": "USES",
-   "props": {}
-  },
-  {
-   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -19655,13 +19661,13 @@
    }
   },
   {
-   "source": "component:Skill-Bridge/gd-room",
+   "source": "component:Skill-Bridge/code-collab",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:Skill-Bridge/code-collab",
+   "source": "component:Skill-Bridge/gd-room",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -22014,26 +22020,17 @@
    "target": "language:Python",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 24,
-    "share": 0.889
+    "files": 57,
+    "share": 0.594
    }
   },
   {
    "source": "project:jarvis",
-   "target": "language:JavaScript",
+   "target": "language:Rust",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 1,
-    "share": 0.037
-   }
-  },
-  {
-   "source": "project:jarvis",
-   "target": "language:CSS",
-   "type": "WRITTEN_IN",
-   "props": {
-    "files": 1,
-    "share": 0.037
+    "files": 35,
+    "share": 0.365
    }
   },
   {
@@ -22041,8 +22038,8 @@
    "target": "language:HTML",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 1,
-    "share": 0.037
+    "files": 2,
+    "share": 0.021
    }
   },
   {
@@ -22130,6 +22127,16 @@
   },
   {
    "source": "project:jarvis",
+   "target": "tech:PyPDF",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:jarvis",
    "target": "tech:Pydantic",
    "type": "USES",
    "props": {
@@ -22201,11 +22208,31 @@
   },
   {
    "source": "project:jarvis",
+   "target": "tech:pandas",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
+    ]
+   }
+  },
+  {
+   "source": "project:jarvis",
    "target": "tech:pytest",
    "type": "USES",
    "props": {
     "via": [
      "."
+    ]
+   }
+  },
+  {
+   "source": "project:jarvis",
+   "target": "tech:python-docx",
+   "type": "USES",
+   "props": {
+    "via": [
+     "imports"
     ]
    }
   },
@@ -22477,6 +22504,12 @@
   },
   {
    "source": "project:jarvis",
+   "target": "platform:GitHub Actions",
+   "type": "AUTOMATED_BY",
+   "props": {}
+  },
+  {
+   "source": "project:jarvis",
    "target": "concept:Personal AI assistant",
    "type": "ABOUT",
    "props": {
@@ -22494,11 +22527,29 @@
    }
   },
   {
+   "source": "project:jarvis",
+   "target": "concept:Career guidance & skills",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 5
+   }
+  },
+  {
+   "source": "project:jarvis",
+   "target": "concept:Computer vision",
+   "type": "ABOUT",
+   "props": {
+    "source": "readme",
+    "mentions": 2
+   }
+  },
+  {
    "source": "person:Goldy Pahal",
    "target": "project:jarvis",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 1
+    "commits": 7
    }
   },
   {
@@ -23951,24 +24002,6 @@
      "Zustand",
      "bcrypt",
      "joblib"
-    ]
-   }
-  },
-  {
-   "source": "project:GPH",
-   "target": "project:jarvis",
-   "type": "SIMILAR_STACK",
-   "props": {
-    "score": 0.32,
-    "shared": [
-     "FastAPI",
-     "OpenCV",
-     "Pillow",
-     "Pydantic",
-     "Redis",
-     "Requests / HTTPX",
-     "Uvicorn",
-     "pytest"
     ]
    }
   },

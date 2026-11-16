@@ -120,7 +120,7 @@ MERGE (n:Entity {id: "lib:pip:rank-bm25"}) SET n:Library, n.`name` = "rank-bm25"
 MERGE (n:Entity {id: "lib:pip:sentence-transformers"}) SET n:Library, n.`name` = "sentence-transformers", n.`ecosystem` = "pip", n.`used_by_projects` = 4, n.`technology` = "Sentence Transformers";
 MERGE (n:Entity {id: "lib:pip:unstructured"}) SET n:Library, n.`name` = "unstructured", n.`ecosystem` = "pip", n.`used_by_projects` = 2, n.`technology` = "Unstructured";
 MERGE (n:Entity {id: "platform:Render"}) SET n:Platform, n.`name` = "Render";
-MERGE (n:Entity {id: "project:ResearchReel"}) SET n:Project, n.`name` = "ResearchReel", n.`title` = "ResearchReel", n.`description` = "A social platform for research. People share findings as posts, papers and short video reels, follow each other, discuss, collaborate on projects, host live lectures, and ask an AI assistant about papers.", n.`url` = "https://github.com/Goldypahal/ResearchReel", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 26, n.`files` = 421, n.`first_commit` = "2026-06-29", n.`last_commit` = "2026-11-07", n.`kind` = "product";
+MERGE (n:Entity {id: "project:ResearchReel"}) SET n:Project, n.`name` = "ResearchReel", n.`title` = "ResearchReel", n.`description` = "A social platform for research. People share findings as posts, papers and short video reels, follow each other, discuss, collaborate on projects, host live lectures, and ask an AI assistant about papers.", n.`url` = "https://github.com/Goldypahal/ResearchReel", n.`owner` = "Goldypahal", n.`status` = "active", n.`commits` = 27, n.`files` = 422, n.`first_commit` = "2026-06-29", n.`last_commit` = "2026-11-13", n.`kind` = "product";
 MERGE (n:Entity {id: "component:ResearchReel/backend"}) SET n:Component, n.`name` = "backend", n.`project` = "ResearchReel", n.`role` = "backend", n.`ecosystems` = ["npm"], n.`description` = "ResearchReel API server";
 MERGE (n:Entity {id: "component:ResearchReel/backend/research_rag"}) SET n:Component, n.`name` = "backend/research_rag", n.`project` = "ResearchReel", n.`role` = "backend", n.`ecosystems` = ["pip"];
 MERGE (n:Entity {id: "component:ResearchReel/e2e"}) SET n:Component, n.`name` = "e2e", n.`project` = "ResearchReel", n.`role` = "module", n.`ecosystems` = ["npm"], n.`description` = "Browser tests against a running ResearchReel stack (web + API + Postgres + Redis + Mailpit).";
@@ -186,16 +186,16 @@ MATCH (a:Entity {id: "lib:pip:python-docx"}), (b:Entity {id: "tech:python-docx"}
 MATCH (a:Entity {id: "lib:pip:rank-bm25"}), (b:Entity {id: "tech:BM25"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:sentence-transformers"}), (b:Entity {id: "tech:Sentence Transformers"}) MERGE (a)-[r:IMPLEMENTS]->(b);
 MATCH (a:Entity {id: "lib:pip:unstructured"}), (b:Entity {id: "tech:Unstructured"}) MERGE (a)-[r:IMPLEMENTS]->(b);
-MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "language:TypeScript"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 126, r.`share` = 0.395;
-MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "language:JavaScript"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 124, r.`share` = 0.389;
-MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "language:Python"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 66, r.`share` = 0.207;
+MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "language:TypeScript"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 126, r.`share` = 0.394;
+MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "language:JavaScript"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 125, r.`share` = 0.391;
+MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "language:Python"}) MERGE (a)-[r:WRITTEN_IN]->(b) SET r.`files` = 66, r.`share` = 0.206;
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "component:ResearchReel/backend"}) MERGE (a)-[r:HAS_COMPONENT]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "component:ResearchReel/backend/research_rag"}) MERGE (a)-[r:HAS_COMPONENT]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "component:ResearchReel/e2e"}) MERGE (a)-[r:HAS_COMPONENT]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "component:ResearchReel/frontend"}) MERGE (a)-[r:HAS_COMPONENT]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Axios"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend", "frontend"];
-MATCH (a:Entity {id: "component:ResearchReel/backend"}), (b:Entity {id: "tech:Axios"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:ResearchReel/frontend"}), (b:Entity {id: "tech:Axios"}) MERGE (a)-[r:USES]->(b);
+MATCH (a:Entity {id: "component:ResearchReel/backend"}), (b:Entity {id: "tech:Axios"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:BM25"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend/research_rag", "imports"];
 MATCH (a:Entity {id: "component:ResearchReel/backend/research_rag"}), (b:Entity {id: "tech:BM25"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:BullMQ"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend"];
@@ -259,8 +259,8 @@ MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:SQLite"}) ME
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Sentence Transformers"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend/research_rag", "imports"];
 MATCH (a:Entity {id: "component:ResearchReel/backend/research_rag"}), (b:Entity {id: "tech:Sentence Transformers"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Socket.IO"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend", "frontend"];
-MATCH (a:Entity {id: "component:ResearchReel/backend"}), (b:Entity {id: "tech:Socket.IO"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "component:ResearchReel/frontend"}), (b:Entity {id: "tech:Socket.IO"}) MERGE (a)-[r:USES]->(b);
+MATCH (a:Entity {id: "component:ResearchReel/backend"}), (b:Entity {id: "tech:Socket.IO"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Supertest"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["backend"];
 MATCH (a:Entity {id: "component:ResearchReel/backend"}), (b:Entity {id: "tech:Supertest"}) MERGE (a)-[r:USES]->(b);
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "tech:Tailwind CSS"}) MERGE (a)-[r:USES]->(b) SET r.`via` = ["frontend"];
@@ -385,7 +385,7 @@ MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "concept:Short-for
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "concept:Microservices"}) MERGE (a)-[r:ABOUT]->(b) SET r.`source` = "manual", r.`mentions` = 0;
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "concept:Vector / hybrid search"}) MERGE (a)-[r:ABOUT]->(b) SET r.`source` = "readme", r.`mentions` = 4;
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "concept:Personal AI assistant"}) MERGE (a)-[r:ABOUT]->(b) SET r.`source` = "readme", r.`mentions` = 2;
-MATCH (a:Entity {id: "person:Goldy Pahal"}), (b:Entity {id: "project:ResearchReel"}) MERGE (a)-[r:CONTRIBUTED_TO]->(b) SET r.`commits` = 26;
+MATCH (a:Entity {id: "person:Goldy Pahal"}), (b:Entity {id: "project:ResearchReel"}) MERGE (a)-[r:CONTRIBUTED_TO]->(b) SET r.`commits` = 27;
 MATCH (a:Entity {id: "project:HR-tracker"}), (b:Entity {id: "project:ResearchReel"}) MERGE (a)-[r:SIMILAR_STACK]->(b) SET r.`score` = 0.34, r.`shared` = ["Axios", "CORS", "ESLint", "Express", "Framer Motion", "Helmet", "JWT", "Lucide icons", "Multer (uploads)", "Nodemon", "Pino / Winston logging", "PostgreSQL", "React", "Redis", "Socket.IO"];
 MATCH (a:Entity {id: "project:Multi-Paper-Research-RAG-System-"}), (b:Entity {id: "project:ResearchReel"}) MERGE (a)-[r:SIMILAR_STACK]->(b) SET r.`score` = 0.38, r.`shared` = ["BM25", "ChromaDB", "Cohere", "FastAPI", "Google Gemini", "Hugging Face Datasets", "LangChain", "MinIO / S3", "NumPy", "PyMuPDF", "Pydantic", "SQLite", "Sentence Transformers", "Unstructured", "Uvicorn"];
 MATCH (a:Entity {id: "project:ResearchReel"}), (b:Entity {id: "project:Multi-Paper-Research-RAG-System-"}) MERGE (a)-[r:SHARES_CODE_WITH]->(b) SET r.`identical_files` = 21, r.`examples` = ["backend/research_rag/app/api/routes_feedback.py", "backend/research_rag/app/core/logging.py", "backend/research_rag/app/evaluation/offline_eval.py", "backend/research_rag/app/export/literature_notes.py", "backend/research_rag/app/generation/grounded_formatter.py", "backend/research_rag/app/ingestion/parser_factory.py", "backend/research_rag/app/models/paper.py", "backend/research_rag/app/models/query_trace.py"];

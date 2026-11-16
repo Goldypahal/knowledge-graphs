@@ -404,23 +404,6 @@
    "label": "Hackathon project",
    "type": "Concept",
    "props": {}
-  },
-  {
-   "id": "project:jarvis",
-   "label": "jarvis",
-   "type": "Project",
-   "props": {
-    "title": "NEXUS: Advanced AI Personal Assistant",
-    "description": "This project implements NEXUS (Neural Executive Understanding System), an advanced AI personal assistant designed to transcend conventional assistant capabilities.",
-    "url": "https://github.com/Goldypahal/jarvis",
-    "owner": "Goldypahal",
-    "status": "recent",
-    "commits": 1,
-    "files": 43,
-    "first_commit": "2026-09-09",
-    "last_commit": "2026-09-09",
-    "kind": "personal"
-   }
   }
  ],
  "edges": [
@@ -977,24 +960,6 @@
    "type": "CONTRIBUTED_TO",
    "props": {
     "commits": 57
-   }
-  },
-  {
-   "source": "project:GPH",
-   "target": "project:jarvis",
-   "type": "SIMILAR_STACK",
-   "props": {
-    "score": 0.32,
-    "shared": [
-     "FastAPI",
-     "OpenCV",
-     "Pillow",
-     "Pydantic",
-     "Redis",
-     "Requests / HTTPX",
-     "Uvicorn",
-     "pytest"
-    ]
    }
   }
  ]

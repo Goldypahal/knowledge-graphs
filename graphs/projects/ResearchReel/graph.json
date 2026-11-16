@@ -1067,10 +1067,10 @@
     "url": "https://github.com/Goldypahal/ResearchReel",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 26,
-    "files": 421,
+    "commits": 27,
+    "files": 422,
     "first_commit": "2026-06-29",
-    "last_commit": "2026-11-07",
+    "last_commit": "2026-11-13",
     "kind": "product"
    }
   },
@@ -1557,7 +1557,7 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 126,
-    "share": 0.395
+    "share": 0.394
    }
   },
   {
@@ -1565,8 +1565,8 @@
    "target": "language:JavaScript",
    "type": "WRITTEN_IN",
    "props": {
-    "files": 124,
-    "share": 0.389
+    "files": 125,
+    "share": 0.391
    }
   },
   {
@@ -1575,7 +1575,7 @@
    "type": "WRITTEN_IN",
    "props": {
     "files": 66,
-    "share": 0.207
+    "share": 0.206
    }
   },
   {
@@ -1614,13 +1614,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/frontend",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/frontend",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -2148,13 +2148,13 @@
    }
   },
   {
-   "source": "component:ResearchReel/backend",
+   "source": "component:ResearchReel/frontend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:ResearchReel/frontend",
+   "source": "component:ResearchReel/backend",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -3306,7 +3306,7 @@
    "target": "project:ResearchReel",
    "type": "CONTRIBUTED_TO",
    "props": {
-    "commits": 26
+    "commits": 27
    }
   },
   {

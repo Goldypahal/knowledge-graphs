@@ -1185,10 +1185,10 @@
     "url": "https://github.com/Goldypahal/ResearchReel",
     "owner": "Goldypahal",
     "status": "active",
-    "commits": 26,
-    "files": 421,
+    "commits": 27,
+    "files": 422,
     "first_commit": "2026-06-29",
-    "last_commit": "2026-11-07",
+    "last_commit": "2026-11-13",
     "kind": "product"
    }
   },
@@ -1370,13 +1370,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Axios",
    "type": "USES",
    "props": {}
@@ -1425,13 +1425,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:ESLint",
    "type": "USES",
    "props": {}
@@ -1464,13 +1464,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Framer Motion",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Framer Motion",
    "type": "USES",
    "props": {}
@@ -1536,13 +1536,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Leaflet",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Leaflet",
    "type": "USES",
    "props": {}
@@ -1559,13 +1559,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Lucide icons",
    "type": "USES",
    "props": {}
@@ -1672,13 +1672,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:React",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:React",
    "type": "USES",
    "props": {}
@@ -1695,13 +1695,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:React Router",
    "type": "USES",
    "props": {}
@@ -1736,13 +1736,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Redux",
    "type": "USES",
    "props": {}
@@ -1770,7 +1770,7 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -1782,7 +1782,7 @@
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Socket.IO",
    "type": "USES",
    "props": {}
@@ -1799,13 +1799,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Tailwind CSS",
    "type": "USES",
    "props": {}
@@ -1849,7 +1849,7 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:TypeScript",
    "type": "USES",
    "props": {}
@@ -1861,7 +1861,7 @@
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:TypeScript",
    "type": "USES",
    "props": {}
@@ -1878,13 +1878,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/client",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/client",
    "target": "tech:Vite",
    "type": "USES",
    "props": {}
@@ -1901,13 +1901,13 @@
    }
   },
   {
-   "source": "component:HR-tracker/server",
+   "source": "component:HR-tracker/HR/client",
    "target": "tech:Vitest",
    "type": "USES",
    "props": {}
   },
   {
-   "source": "component:HR-tracker/HR/client",
+   "source": "component:HR-tracker/server",
    "target": "tech:Vitest",
    "type": "USES",
    "props": {}
